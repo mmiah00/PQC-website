@@ -48,6 +48,13 @@ teamTabButtons.forEach((btn) => {
   });
 });
 
+// Team member flip cards (team.html)
+document.querySelectorAll(".flip-trigger").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    btn.closest(".flip-card").classList.toggle("flipped");
+  });
+});
+
 // Opportunities filter (opportunities.html)
 const filterButtons = document.querySelectorAll(".filter-btn");
 const jobCards = document.querySelectorAll(".job-card");

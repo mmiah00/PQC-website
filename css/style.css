@@ -368,7 +368,108 @@ img { max-width: 100%; display: block; }
 .member-card p.bio {
   font-size: 0.9rem;
   color: var(--ink-soft);
+  margin-bottom: 14px;
+}
+
+.member-photo-link,
+.member-name-link {
+  display: block;
+  color: inherit;
+}
+
+.member-photo-link:hover .placeholder-photo {
+  filter: brightness(0.96);
+}
+
+.member-name-link:hover h3 {
+  text-decoration: underline;
+}
+
+/* Flip card */
+
+.member-card.flip-card {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  overflow: visible;
+  perspective: 1200px;
+}
+
+.flip-card-inner {
+  position: relative;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  backface-visibility: hidden;
+  background: #fff;
+  border: 1px solid var(--cream-line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.flip-card-front {
+  position: relative;
+}
+
+.flip-card-back {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 22px;
+  text-align: center;
+}
+
+.flip-card:not(.flipped) .flip-card-back {
+  pointer-events: none;
+}
+
+.flip-card.flipped .flip-card-front {
+  pointer-events: none;
+}
+
+.flip-card-back .quote {
+  font-family: var(--font-head);
+  font-style: italic;
+  color: var(--ink);
+  font-size: 0.98rem;
+  line-height: 1.5;
   margin-bottom: 0;
+}
+
+.flip-trigger {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--maroon-tint);
+  color: var(--maroon);
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.flip-trigger:hover {
+  background: var(--maroon);
+  color: var(--cream);
 }
 
 .team-tabs {
@@ -476,6 +577,67 @@ img { max-width: 100%; display: block; }
 
 .job-card .job-action {
   flex: 0 0 auto;
+}
+
+.job-preview-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.job-preview-link p {
+  color: var(--ink-soft);
+  margin-bottom: 10px;
+}
+
+.job-learn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--maroon);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.job-learn-more span {
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+.job-preview-link:hover .job-learn-more,
+.job-preview-link:focus-visible .job-learn-more {
+  text-decoration: underline;
+}
+
+.job-preview-link:hover .job-learn-more span,
+.job-preview-link:focus-visible .job-learn-more span {
+  transform: translateX(4px);
+}
+
+.job-posted {
+  margin: 14px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--cream-line);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+/* ---------- Job detail page (jobs/<slug>.html) ---------- */
+
+.job-detail-card h3 {
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+.job-detail-card ul {
+  margin: 0 0 24px;
+  padding-left: 20px;
+  color: var(--ink-soft);
+}
+
+.job-detail-card li {
+  margin-bottom: 8px;
 }
 
 /* ---------- FAQ / accordion ---------- */
