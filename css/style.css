@@ -811,7 +811,7 @@ form.contact-form {
 /* ---------- Footer ---------- */
 
 .site-footer {
-  background: var(--maroon-darker);
+  background: var(--maroon-darker) url("../assets/maroon_marble.jpg") center / cover no-repeat;
   color: var(--cream-dim);
   padding: 56px 0 28px;
 }
