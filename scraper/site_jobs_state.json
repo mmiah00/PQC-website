@@ -2,6 +2,7 @@
   {
     "role": "Graduate Quantitative Trader",
     "company": "Flow Traders",
+    "company_type": "Market Maker",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -18,6 +19,7 @@
   {
     "role": "Junior Quantitative Trader / Researcher",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -34,6 +36,7 @@
   {
     "role": "Software Engineer II",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -50,6 +53,7 @@
   {
     "role": "Software Developer - Data Platform",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -66,6 +70,7 @@
   {
     "role": "Software Developer - Data Reliability",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -82,6 +87,7 @@
   {
     "role": "Quantitative Researcher - Data Science",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -98,6 +104,7 @@
   {
     "role": "Quantitative Researcher - Volatility",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -114,6 +121,7 @@
   {
     "role": "Software Engineer",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -130,6 +138,7 @@
   {
     "role": "Software Developer - Market Data Integration",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -146,6 +155,7 @@
   {
     "role": "Intern Quant Researcher",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Internship",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -162,6 +172,7 @@
   {
     "role": "Software Developer - Core Data",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -178,6 +189,7 @@
   {
     "role": "Software Engineer - Machine Learning Frameworks",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -194,6 +206,7 @@
   {
     "role": "Software Engineer - Tooling",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -210,6 +223,7 @@
   {
     "role": "Quantitative Researcher",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -226,6 +240,7 @@
   {
     "role": "Quantitative Trader",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -242,6 +257,7 @@
   {
     "role": "Software Engineer",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -258,6 +274,7 @@
   {
     "role": "Software Engineer",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -274,6 +291,7 @@
   {
     "role": "Software Engineer III",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -290,6 +308,7 @@
   {
     "role": "C++ Software Engineer",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -306,6 +325,7 @@
   {
     "role": "Graduate Software Engineer - Digital Assets",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -322,6 +342,7 @@
   {
     "role": "Lead Alpha Researcher, Systematic Equities",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -338,6 +359,7 @@
   {
     "role": "Software Engineer - Risk Technology",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -354,6 +376,7 @@
   {
     "role": "Trading Strategy Software Engineer",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -370,6 +393,7 @@
   {
     "role": "Software Engineer | Market Data Systems",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -386,6 +410,7 @@
   {
     "role": "Software Engineer | GUI",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -402,6 +427,7 @@
   {
     "role": "Software Engineer \u2013 2027 Internship Program (June Start)",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -418,6 +444,7 @@
   {
     "role": "Campus Quantitative Researcher (Full-Time)",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -434,6 +461,7 @@
   {
     "role": "Campus Quantitative Researcher (Intern)",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -450,6 +478,7 @@
   {
     "role": "Campus Quantitative Researcher (M1/M2 Intern)",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -466,6 +495,7 @@
   {
     "role": "Campus Quantitative Trader (Full-Time)",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -482,6 +512,7 @@
   {
     "role": "Campus Quantitative Trader (Intern)",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -498,6 +529,7 @@
   {
     "role": "Campus Software Engineer (Intern)",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -514,6 +546,7 @@
   {
     "role": "Campus UI Software Engineer (Intern)",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -530,6 +563,7 @@
   {
     "role": "Trading Services Specialist | Client Market Making",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -546,6 +580,7 @@
   {
     "role": "Junior Quantitative Developer & Strategist",
     "company": "Akuna Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -562,6 +597,7 @@
   {
     "role": "Junior Quantitative Researcher",
     "company": "Akuna Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -578,6 +614,7 @@
   {
     "role": "Quantitative Research Intern, Summer 2027",
     "company": "Akuna Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -594,6 +631,7 @@
   {
     "role": "Software Engineer (Entry-Level) - C++",
     "company": "Akuna Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -610,6 +648,7 @@
   {
     "role": "Software Engineer (Entry-Level) - Python",
     "company": "Akuna Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -626,6 +665,7 @@
   {
     "role": "Software Engineer Intern - C# .NET Desktop, Summer 2027",
     "company": "Akuna Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -642,6 +682,7 @@
   {
     "role": "Software Engineer Intern - C++, Summer 2027",
     "company": "Akuna Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -658,6 +699,7 @@
   {
     "role": "Software Engineer Intern - Full Stack Web, Summer 2027",
     "company": "Akuna Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -674,6 +716,7 @@
   {
     "role": "Software Engineer Intern - Python, Summer 2027",
     "company": "Akuna Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -690,6 +733,7 @@
   {
     "role": "Quantitative Trader \u2013 2027 Graduate Program (August Start)",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -706,6 +750,7 @@
   {
     "role": "Quantitative Trader \u2013 2027 Graduate Program (August Start)",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -722,6 +767,7 @@
   {
     "role": "Quantitative Trader \u2013 2027 Graduate Program (February Start)",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -738,6 +784,7 @@
   {
     "role": "Software Engineer \u2013 2027 Graduate Program (August Start)",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -754,6 +801,7 @@
   {
     "role": "Software Engineer",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -770,6 +818,7 @@
   {
     "role": "Senior Software Engineer, C++",
     "company": "Flow Traders",
+    "company_type": "Market Maker",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -786,6 +835,7 @@
   {
     "role": "Senior Software Engineer, C++",
     "company": "Flow Traders",
+    "company_type": "Market Maker",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -802,6 +852,7 @@
   {
     "role": "Senior Software Engineer, C++ (Market Data)",
     "company": "Flow Traders",
+    "company_type": "Market Maker",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -818,6 +869,7 @@
   {
     "role": "Senior Software Engineer, C++ (Market Data)",
     "company": "Flow Traders",
+    "company_type": "Market Maker",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -834,6 +886,7 @@
   {
     "role": "Campus Quantitative Researcher, PhD (Intern)",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -850,6 +903,7 @@
   {
     "role": "Campus Quantitative Researcher, UG/MS (Full-Time)",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -866,6 +920,7 @@
   {
     "role": "Campus Quantitative Researcher, UG/MS (Intern)",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -882,6 +937,7 @@
   {
     "role": "Campus Quantitative Trader (Full-Time)",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -898,6 +954,7 @@
   {
     "role": "Campus Quantitative Trader (Intern)",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -914,6 +971,7 @@
   {
     "role": "Campus Software Engineer (Full-Time)",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -930,6 +988,7 @@
   {
     "role": "Campus Software Engineer (Intern)",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -946,6 +1005,7 @@
   {
     "role": "Campus UI Software Engineer (Intern)",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -962,6 +1022,7 @@
   {
     "role": "Quantitative Trading Intern Summer 2027",
     "company": "Flow Traders",
+    "company_type": "Market Maker",
     "type": "Internship",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -978,6 +1039,7 @@
   {
     "role": "Machine Learning Researcher",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -994,6 +1056,7 @@
   {
     "role": "Quantitative Researcher",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1010,6 +1073,7 @@
   {
     "role": "Quantitative Trader",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -1026,6 +1090,7 @@
   {
     "role": "Software Engineer",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1042,6 +1107,7 @@
   {
     "role": "Software Engineer",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1058,6 +1124,7 @@
   {
     "role": "Software Engineer",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1074,6 +1141,7 @@
   {
     "role": "Junior Quantitative Risk Analyst",
     "company": "Akuna Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Finance",
     "women_focused": "No",
@@ -1090,6 +1158,7 @@
   {
     "role": "Quant Developer (C++)",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1106,6 +1175,7 @@
   {
     "role": "2027 - Software Engineering Intern - BITS Pilani",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1122,6 +1192,7 @@
   {
     "role": "Graduate Machine Learning Researcher - London",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1138,6 +1209,7 @@
   {
     "role": "Machine Learning Research Intern - Summer 2027 - Amsterdam",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1154,6 +1226,7 @@
   {
     "role": "Quantitative Developer Intern - Summer 2027",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1170,6 +1243,7 @@
   {
     "role": "Quantitative Trader - 2027",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -1186,6 +1260,7 @@
   {
     "role": "Quantitative Trader Intern, PhD",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -1202,6 +1277,7 @@
   {
     "role": "Quantitative Trader Intern - Summer 2027",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -1218,6 +1294,7 @@
   {
     "role": "Graduate Machine Learning Researcher - Chicago",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1234,6 +1311,7 @@
   {
     "role": "Graduate Quantitative Researcher (BS/MS)",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1250,6 +1328,7 @@
   {
     "role": "Graduate Quantitative Researcher (PhD)",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1266,6 +1345,7 @@
   {
     "role": "Graduate Quantitative Trader",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -1282,6 +1362,7 @@
   {
     "role": "Graduate Software Engineer",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1298,6 +1379,7 @@
   {
     "role": "Machine Learning Research Intern - Summer 2027 - Chicago",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1314,6 +1396,7 @@
   {
     "role": "Quantitative Research Intern (BS/MS) - Summer 2027",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1330,6 +1413,7 @@
   {
     "role": "Quantitative Research Intern (PhD) - Summer 2027",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1346,6 +1430,7 @@
   {
     "role": "Quantitative Trader Intern - Summer 2027",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -1362,6 +1447,7 @@
   {
     "role": "Software Engineer Intern - Summer 2027",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1378,6 +1464,7 @@
   {
     "role": "Principal Research Scientist - Machine Learning",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1394,6 +1481,7 @@
   {
     "role": "Quantitative Developer",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1410,6 +1498,7 @@
   {
     "role": "Software Engineer",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1426,6 +1515,7 @@
   {
     "role": "Senior Software Engineer, C++",
     "company": "Flow Traders",
+    "company_type": "Market Maker",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1442,6 +1532,7 @@
   {
     "role": "Senior Software Engineer, C++",
     "company": "Flow Traders",
+    "company_type": "Market Maker",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1458,6 +1549,7 @@
   {
     "role": "Senior Software Engineer, C++",
     "company": "Flow Traders",
+    "company_type": "Market Maker",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1474,6 +1566,7 @@
   {
     "role": "Principal Software Engineer",
     "company": "Schonfeld",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1490,6 +1583,7 @@
   {
     "role": "Quantitative Trader, Trading Team",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -1506,6 +1600,7 @@
   {
     "role": "Software Engineer, C++",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1522,6 +1617,7 @@
   {
     "role": "Graduate Quant Researcher - Digital Assets",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1538,6 +1634,7 @@
   {
     "role": "Senior Software Engineer, C++",
     "company": "Flow Traders",
+    "company_type": "Market Maker",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1554,6 +1651,7 @@
   {
     "role": "Talent Sourcer \u2013 Machine Learning & Quantitative Research",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1570,6 +1668,7 @@
   {
     "role": "Software Engineer, Trading Systems (C++)",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1586,6 +1685,7 @@
   {
     "role": "Machine Learning Researcher",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1602,6 +1702,7 @@
   {
     "role": "Machine Learning Researcher",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1618,6 +1719,7 @@
   {
     "role": "Machine Learning Researcher",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1634,6 +1736,7 @@
   {
     "role": "Quantitative Researcher",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1650,6 +1753,7 @@
   {
     "role": "Quantitative Trader",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -1666,6 +1770,7 @@
   {
     "role": "Quantitative Developer - Python",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1682,6 +1787,7 @@
   {
     "role": "Software Engineer - Business Analytics",
     "company": "Schonfeld",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1698,6 +1804,7 @@
   {
     "role": "Quantitative Developer - Fundamental Equities",
     "company": "Schonfeld",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1714,6 +1821,7 @@
   {
     "role": "Software Engineer - Fundamental Equities",
     "company": "Schonfeld",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1730,6 +1838,7 @@
   {
     "role": "D\u00e9veloppeur de Logiciels / Software Developer",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1746,6 +1855,7 @@
   {
     "role": "MacOS Software Engineer",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1762,6 +1872,7 @@
   {
     "role": "2026 BSc/MSc/PhD Quantitative Research/Strat Internship",
     "company": "Schonfeld",
+    "company_type": "Hedge Fund",
     "type": "Internship",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1778,6 +1889,7 @@
   {
     "role": "Software Engineer | Trading Team",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1794,6 +1906,7 @@
   {
     "role": "Graduate Quant Developer",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1810,6 +1923,7 @@
   {
     "role": "Python Software Engineer",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1826,6 +1940,7 @@
   {
     "role": "Java Software Engineer",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1842,6 +1957,7 @@
   {
     "role": "Senior Software Engineer",
     "company": "Schonfeld",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1858,6 +1974,7 @@
   {
     "role": "Senior Software Engineer - Credit, Risk Technology",
     "company": "Schonfeld",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1874,6 +1991,7 @@
   {
     "role": "Junior Quantitative Researcher - Prediction Markets",
     "company": "Akuna Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1890,6 +2008,7 @@
   {
     "role": "Quantitative Researcher - Prediction Markets",
     "company": "Akuna Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1906,6 +2025,7 @@
   {
     "role": "Quantitative Researcher",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1922,6 +2042,7 @@
   {
     "role": "Hardware Machine Learning PhD Research Internship",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -1938,6 +2059,7 @@
   {
     "role": "Java Software Engineer (Power/Gas)",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1954,6 +2076,7 @@
   {
     "role": "Quantitative Developer | Trading Team",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1970,6 +2093,7 @@
   {
     "role": "Python Software Engineer",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -1986,6 +2110,7 @@
   {
     "role": "Graduate Quant Trader",
     "company": "Flow Traders",
+    "company_type": "Market Maker",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -2002,6 +2127,7 @@
   {
     "role": "Trading Systems Support Analyst",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2018,6 +2144,7 @@
   {
     "role": "Junior Quantitative Trader (Asian Market Hours)",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -2034,6 +2161,7 @@
   {
     "role": "C++ Software Engineer",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2050,6 +2178,7 @@
   {
     "role": "Quantitative Researcher (Experienced - Ph.D.)",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2066,6 +2195,7 @@
   {
     "role": "Senior Quant Researcher - CTA/Short-Term",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2082,6 +2212,7 @@
   {
     "role": "Senior Quant Researcher - Equity Mid/Low Frequency",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2098,6 +2229,7 @@
   {
     "role": "Senior Quant Researcher - Fixed Income",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2114,6 +2246,7 @@
   {
     "role": "Senior Quant Researcher - Intraday Statistical Arbitrage",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2130,6 +2263,7 @@
   {
     "role": "Quantitative Trader - Equities",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -2146,6 +2280,7 @@
   {
     "role": "Senior Software Engineer, Development Tools",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2162,6 +2297,7 @@
   {
     "role": "Software Engineer, Development Tools",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2178,6 +2314,7 @@
   {
     "role": "Senior Software Engineer, UI/UX",
     "company": "Schonfeld",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2194,6 +2331,7 @@
   {
     "role": "Quantitative Trader \u2013 Equities (Strategy Monetization)",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -2210,6 +2348,7 @@
   {
     "role": "Infrastructure Engineer",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2226,6 +2365,7 @@
   {
     "role": "Quantitative Researcher - HFT Commodity Futures",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2242,6 +2382,7 @@
   {
     "role": "Quantitative Trader \u2013 Equities (Live Trading)",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -2258,6 +2399,7 @@
   {
     "role": "Software Engineer",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2274,6 +2416,7 @@
   {
     "role": "Machine Learning Researcher - Modeller",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2290,6 +2433,7 @@
   {
     "role": "Quantitative Researcher - HFT",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2306,6 +2450,7 @@
   {
     "role": "Quantitative Researcher",
     "company": "Schonfeld",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2322,6 +2467,7 @@
   {
     "role": "Trading Strategy Software Engineer",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2338,6 +2484,7 @@
   {
     "role": "Quantitative Developer",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2354,6 +2501,7 @@
   {
     "role": "Campus Trading Team Software Engineer  (Intern)",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Internship",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2370,6 +2518,7 @@
   {
     "role": "Quantitative Researcher (Systematic Equities)",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2386,6 +2535,7 @@
   {
     "role": "Machine Learning Researcher",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2402,6 +2552,7 @@
   {
     "role": "Software Engineer",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2418,6 +2569,7 @@
   {
     "role": "Senior Software Engineer",
     "company": "Schonfeld",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2434,6 +2586,7 @@
   {
     "role": "C++ Software Engineer",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2450,6 +2603,7 @@
   {
     "role": "Quantitative Researcher",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2466,6 +2620,7 @@
   {
     "role": "Quantitative Trader",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -2482,6 +2637,7 @@
   {
     "role": "Quantitative Researcher - Equities/ Futures",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2498,6 +2654,7 @@
   {
     "role": "Quantitative Trading Associate",
     "company": "Schonfeld",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -2514,6 +2671,7 @@
   {
     "role": "Quantitative Researcher",
     "company": "Akuna Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2530,6 +2688,7 @@
   {
     "role": "Software Engineer - C++",
     "company": "Akuna Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2546,6 +2705,7 @@
   {
     "role": "Software Engineer - Data Engineering",
     "company": "Akuna Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2562,6 +2722,7 @@
   {
     "role": "Quantitative Researcher \u2013 Futures",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2578,6 +2739,7 @@
   {
     "role": "Machine Learning Researcher",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2594,6 +2756,7 @@
   {
     "role": "Systematic Portfolio Strategy and Risk Analyst (NYC or Miami)",
     "company": "Schonfeld",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Finance",
     "women_focused": "No",
@@ -2610,6 +2773,7 @@
   {
     "role": "Quantitative Trader / Researcher - US",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -2626,6 +2790,7 @@
   {
     "role": "Quantitative Researcher - Equities",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2642,6 +2807,7 @@
   {
     "role": "Experienced Quantitative Trader",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -2658,6 +2824,7 @@
   {
     "role": "Software Engineer \u2013 AI Powered Engineering",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2674,6 +2841,7 @@
   {
     "role": "Quantitative Researcher | Trading Team",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2690,6 +2858,7 @@
   {
     "role": "Python Software Engineer - Digital Assets",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2706,6 +2875,7 @@
   {
     "role": "C++ Software Engineer",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2722,6 +2892,7 @@
   {
     "role": "Software Engineer",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2738,6 +2909,7 @@
   {
     "role": "Graduate Software Engineer (2026)",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2754,6 +2926,7 @@
   {
     "role": "Graduate Software Engineer (2026)",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2770,6 +2943,7 @@
   {
     "role": "Quantitative Researcher - Data Curation",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2786,6 +2960,7 @@
   {
     "role": "Quantitative Research / Developer - Intern",
     "company": "Schonfeld",
+    "company_type": "Hedge Fund",
     "type": "Internship",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2802,6 +2977,7 @@
   {
     "role": "Quantitative Researcher",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2818,6 +2994,7 @@
   {
     "role": "Quantitative Developer - Derivatives",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2834,6 +3011,7 @@
   {
     "role": "Software Engineer",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2850,6 +3028,7 @@
   {
     "role": "Quantitative Researcher",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2866,6 +3045,7 @@
   {
     "role": "Quantitative Trader",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -2882,6 +3062,7 @@
   {
     "role": "Software Engineer",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2898,6 +3079,7 @@
   {
     "role": "Quantitative Developer",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2914,6 +3096,7 @@
   {
     "role": "Quant Developer CeFi - Digital Assets",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2930,6 +3113,7 @@
   {
     "role": "Quant Researcher - Digital Assets",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2946,6 +3130,7 @@
   {
     "role": "Quantitative Developer, C++ - Trading Teams EMEA",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2962,6 +3147,7 @@
   {
     "role": "Quantitative Developer, Python - Trading Teams EMEA",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -2978,6 +3164,7 @@
   {
     "role": "Quantitative Researcher",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -2994,6 +3181,7 @@
   {
     "role": "Quantitative Trader",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -3010,6 +3198,7 @@
   {
     "role": "Python Software Engineer",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3026,6 +3215,7 @@
   {
     "role": "Senior Software Engineer, C++",
     "company": "Flow Traders",
+    "company_type": "Market Maker",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3042,6 +3232,7 @@
   {
     "role": "Software Engineer, Early Career",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3058,6 +3249,7 @@
   {
     "role": "Quantitative Developer",
     "company": "Schonfeld",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3074,6 +3266,7 @@
   {
     "role": "Quantitative Researcher (Fixed Income)",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3090,6 +3283,7 @@
   {
     "role": "C++ Software Engineer",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3106,6 +3300,7 @@
   {
     "role": "Senior Quantitative Researcher",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3122,6 +3317,7 @@
   {
     "role": "Software Engineer, C++",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3138,6 +3334,7 @@
   {
     "role": "Quantitative Researcher",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3154,6 +3351,7 @@
   {
     "role": "Python Software Engineer",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3170,6 +3368,7 @@
   {
     "role": "Quantitative Trader",
     "company": "Akuna Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -3186,6 +3385,7 @@
   {
     "role": "Junior Quantitative Researcher (Ph.D.)",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3202,6 +3402,7 @@
   {
     "role": "Junior Quantitative Researcher",
     "company": "Flow Traders",
+    "company_type": "Market Maker",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3218,6 +3419,7 @@
   {
     "role": "Quantitative Developer, Python",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3234,6 +3436,7 @@
   {
     "role": "Quantitative Developer (C++)",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3250,6 +3453,7 @@
   {
     "role": "Software Developer - Risk Technology",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3266,6 +3470,7 @@
   {
     "role": "Quantitative Researcher (ETFs)",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3282,6 +3487,7 @@
   {
     "role": "Software Engineer / Writer",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3298,6 +3504,7 @@
   {
     "role": "Quantitative Developer | Trading Team",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3314,6 +3521,7 @@
   {
     "role": "Quantitative Researcher \u2013 Equities",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3330,6 +3538,7 @@
   {
     "role": "Quantitative Trader (Options)",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -3346,6 +3555,7 @@
   {
     "role": "Quantitative Developer | Trading team",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3362,6 +3572,7 @@
   {
     "role": "Quant Developer DeFi - Digital Assets",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3378,6 +3589,7 @@
   {
     "role": "Research Scientist/Research Engineer | Deep Learning",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3394,6 +3606,7 @@
   {
     "role": "Quantitative Researcher | Trading Team",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3410,6 +3623,7 @@
   {
     "role": "Junior Quant Researcher - ML Alpha Research",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3426,6 +3640,7 @@
   {
     "role": "Quantitative Researcher",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3442,6 +3657,7 @@
   {
     "role": "Junior Software Developer (C++)",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3458,6 +3674,7 @@
   {
     "role": "Junior Software Developer - Front-end",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3474,6 +3691,7 @@
   {
     "role": "Junior Software Developer (KDB+/Q)",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3490,6 +3708,7 @@
   {
     "role": "Graduate Software Developer",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3506,6 +3725,7 @@
   {
     "role": "Junior Quant Developer",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3522,6 +3742,7 @@
   {
     "role": "Junior Software Developer (Python)",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3538,6 +3759,7 @@
   {
     "role": "Software Developer - Internal Compute Frameworks (Rust)",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3554,6 +3776,7 @@
   {
     "role": "Machine Learning Researcher",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3570,6 +3793,7 @@
   {
     "role": "Quantitative Researcher | Trading Team",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3586,6 +3810,7 @@
   {
     "role": "AI Research Scientist | Research & Development",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3602,6 +3827,7 @@
   {
     "role": "Quantitative Developer",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3618,6 +3844,7 @@
   {
     "role": "Machine Learning Researcher",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3634,6 +3861,7 @@
   {
     "role": "C++ Software Engineer",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3650,6 +3878,7 @@
   {
     "role": "Quantitative Researcher - Options",
     "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3666,6 +3895,7 @@
   {
     "role": "Software Developer - Order Gateway",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3682,6 +3912,7 @@
   {
     "role": "Software Developer - Internal Compute Frameworks (Python)",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3698,6 +3929,7 @@
   {
     "role": "Quantitative Researcher - Hong Kong",
     "company": "Schonfeld",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3714,6 +3946,7 @@
   {
     "role": "Software Developer - Risk Reliability",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3730,6 +3963,7 @@
   {
     "role": "Senior Options Quantitative Researcher",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3746,6 +3980,7 @@
   {
     "role": "Quantitative Trader / Researcher - APAC",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -3762,6 +3997,7 @@
   {
     "role": "Quantitative Trader / Researcher - EMEA",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -3778,6 +4014,7 @@
   {
     "role": "C++ Software Engineer",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3794,6 +4031,7 @@
   {
     "role": "C++ Software Engineer",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3810,6 +4048,7 @@
   {
     "role": "Software Developer - Data Infrastructure",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3826,6 +4065,7 @@
   {
     "role": "Python Software Engineer",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3842,6 +4082,7 @@
   {
     "role": "Quantitative Researcher",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3858,6 +4099,7 @@
   {
     "role": "Front End Software Engineer",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3874,6 +4116,7 @@
   {
     "role": "Front End Software Engineer",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3890,6 +4133,7 @@
   {
     "role": "Software Developer - Data Products and Services",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3906,6 +4150,7 @@
   {
     "role": "Quantitative Trader",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -3922,6 +4167,7 @@
   {
     "role": "Experienced Quantitative Researcher",
     "company": "Flow Traders",
+    "company_type": "Market Maker",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -3938,6 +4184,7 @@
   {
     "role": "Ing\u00e9nieur de logiciels chevronn\u00e9 (C++) / Experienced Software Developer (C++)",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3954,6 +4201,7 @@
   {
     "role": "Software Developer - Data Pipelines (Python)",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3970,6 +4218,7 @@
   {
     "role": "Software Engineer",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -3986,6 +4235,7 @@
   {
     "role": "Quantitative Researcher",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -4002,6 +4252,7 @@
   {
     "role": "Quant Developer (KDB)",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -4018,6 +4269,7 @@
   {
     "role": "Quantitative Researcher | Trading Team",
     "company": "Jump Trading",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -4034,6 +4286,7 @@
   {
     "role": "Quantitative Trader",
     "company": "Old Mission",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -4050,6 +4303,7 @@
   {
     "role": "Desk Quant Analyst",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Finance",
     "women_focused": "No",
@@ -4066,6 +4320,7 @@
   {
     "role": "Quantitative Trader",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -4082,6 +4337,7 @@
   {
     "role": "Quantitative Researcher",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -4098,6 +4354,7 @@
   {
     "role": "Quantitative Trader",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -4114,6 +4371,7 @@
   {
     "role": "Software Engineer",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -4130,6 +4388,7 @@
   {
     "role": "Quant Developer (Python)",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -4146,6 +4405,7 @@
   {
     "role": "Software Developer",
     "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -4162,6 +4422,7 @@
   {
     "role": "Senior Quant Researcher - Volatility",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -4178,6 +4439,7 @@
   {
     "role": "Software Engineer",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -4194,6 +4456,7 @@
   {
     "role": "Machine Learning Researcher",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -4210,6 +4473,7 @@
   {
     "role": "Quantitative Trader",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Trading",
     "women_focused": "No",
@@ -4226,6 +4490,7 @@
   {
     "role": "Software Engineer",
     "company": "Jane Street",
+    "company_type": "Proprietary Trading Firm",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",
@@ -4242,6 +4507,7 @@
   {
     "role": "Junior Quant Researcher",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Research",
     "women_focused": "No",
@@ -4258,6 +4524,7 @@
   {
     "role": "Software Developer - Risk Data Pipelines",
     "company": "Squarepoint Capital",
+    "company_type": "Hedge Fund",
     "type": "Full-Time",
     "category": "Quantitative Development",
     "women_focused": "No",

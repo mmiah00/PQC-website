@@ -30,6 +30,8 @@ import requests
 
 from sources import (
     CATEGORY_KEYWORDS,
+    COMPANY_TYPES,
+    DEFAULT_COMPANY_TYPE,
     DESCRIPTION_HEADINGS,
     EXCLUDE_TITLE_KEYWORDS,
     GREENHOUSE_BOARDS,
@@ -45,8 +47,8 @@ USER_AGENT = (
 )
 REQUEST_TIMEOUT = 15
 CSV_FIELDS = [
-    "role", "company", "type", "category", "women_focused", "pay",
-    "location", "description", "requirements", "source_url",
+    "role", "company", "company_type", "type", "category", "women_focused",
+    "pay", "location", "description", "requirements", "source_url",
     "date_posted", "date_scraped",
 ]
 MAX_FIELD_CHARS = 8000  # safety cap only -- real postings run ~1500-5500 chars;
@@ -284,6 +286,7 @@ def build_row(role, company, job_type, category, women_focused, pay, location,
     return {
         "role": role,
         "company": company,
+        "company_type": COMPANY_TYPES.get(company, DEFAULT_COMPANY_TYPE),
         "type": job_type,
         "category": category,
         "women_focused": "Yes" if women_focused else "No",

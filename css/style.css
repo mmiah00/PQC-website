@@ -547,6 +547,70 @@ img { max-width: 100%; display: block; }
   color: var(--cream);
 }
 
+.job-filters {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid var(--cream-line);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+
+.job-filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1 1 180px;
+  min-width: 160px;
+}
+
+.job-filter-field label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+
+.job-filter-field input,
+.job-filter-field select {
+  padding: 10px 12px;
+  border: 1px solid var(--cream-line);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  background: var(--cream);
+  color: var(--ink);
+}
+
+.job-filter-field input:focus,
+.job-filter-field select:focus {
+  outline: 2px solid var(--maroon-light);
+  outline-offset: 1px;
+}
+
+.job-filters-clear {
+  flex: 0 0 auto;
+  padding: 10px 20px;
+  font-size: 0.85rem;
+}
+
+.job-filters-count {
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  margin-bottom: 24px;
+}
+
+.job-tag-muted {
+  background: var(--cream-dim);
+  color: var(--ink-soft);
+}
+
 .job-list {
   display: flex;
   flex-direction: column;

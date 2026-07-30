@@ -52,12 +52,48 @@
         <button class="filter-btn" data-filter="part-time">Part-Time</button>
       </div>
 
+      <div class="job-filters">
+        <div class="job-filter-field">
+          <label for="filter-location">Location</label>
+          <input type="text" id="filter-location" placeholder="e.g. New York">
+        </div>
+        <div class="job-filter-field">
+          <label for="filter-title">Job Title</label>
+          <input type="text" id="filter-title" placeholder="e.g. Quant Trader">
+        </div>
+        <div class="job-filter-field">
+          <label for="filter-posted">Posted Within</label>
+          <select id="filter-posted">
+            <option value="any">Any Time</option>
+            <option value="1">Past 24 Hours</option>
+            <option value="7">Past Week</option>
+            <option value="30">Past Month</option>
+          </select>
+        </div>
+        <div class="job-filter-field">
+          <label for="filter-company-type">Company Type</label>
+          <select id="filter-company-type">
+            <option value="all">All Types</option>
+            <option value="proprietary-trading-firm">Proprietary Trading Firm</option>
+            <option value="hedge-fund">Hedge Fund</option>
+            <option value="market-maker">Market Maker</option>
+            <option value="bank">Bank</option>
+            <option value="asset-manager">Asset Manager</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <button type="button" class="btn btn-outline job-filters-clear" id="filter-clear">Clear Filters</button>
+      </div>
+
+      <p class="job-filters-count" id="job-filters-count"></p>
+
       <div class="job-list">
 <!-- JOBS:AUTO-GENERATED:START -->
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york" data-company-type="market-maker" data-posted="2026-07-29">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Market Maker</span>
             <h3>Graduate Quantitative Trader</h3>
             <p class="job-meta">
               <span>Flow Traders</span>
@@ -74,9 +110,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="singapore" data-company-type="proprietary-trading-firm" data-posted="2026-07-28">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Junior Quantitative Trader / Researcher</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -93,9 +130,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="gurgaon" data-company-type="proprietary-trading-firm" data-posted="2026-07-28">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer II</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -112,9 +150,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, montreal, singapore" data-company-type="hedge-fund" data-posted="2026-07-28">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Software Developer - Data Platform</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -131,9 +170,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="singapore, bangalore, london, warsaw, montreal" data-company-type="hedge-fund" data-posted="2026-07-28">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Software Developer - Data Reliability</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -150,9 +190,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york" data-company-type="hedge-fund" data-posted="2026-07-27">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Quantitative Researcher - Data Science</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -169,9 +210,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york" data-company-type="hedge-fund" data-posted="2026-07-27">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Quantitative Researcher - Volatility</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -188,9 +230,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, chicago" data-company-type="proprietary-trading-firm" data-posted="2026-07-24">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -207,9 +250,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, montreal" data-company-type="hedge-fund" data-posted="2026-07-23">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Software Developer - Market Data Integration</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -226,9 +270,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="london, paris, new york, singapore, hong kong" data-company-type="hedge-fund" data-posted="2023-07-06">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Intern Quant Researcher</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -245,9 +290,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="singapore, hong kong, montreal, london" data-company-type="hedge-fund" data-posted="2020-11-30">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Software Developer - Core Data</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -264,9 +310,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="sydney, australia" data-company-type="proprietary-trading-firm" data-posted="2026-07-22">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer - Machine Learning Frameworks</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -283,9 +330,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2026-07-22">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer - Tooling</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -302,9 +350,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2026-07-21">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -321,9 +370,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2026-07-21">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -340,9 +390,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="singapore" data-company-type="proprietary-trading-firm" data-posted="2026-07-21">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -359,9 +410,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york" data-company-type="proprietary-trading-firm" data-posted="2026-07-21">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -378,9 +430,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="gurgaon" data-company-type="proprietary-trading-firm" data-posted="2026-07-20">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer III</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -397,9 +450,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="aarhus, central denmark region, denmark" data-company-type="proprietary-trading-firm" data-posted="2026-07-20">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>C++ Software Engineer</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -416,9 +470,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="zug, switzerland" data-company-type="proprietary-trading-firm" data-posted="2026-07-20">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Graduate Software Engineer - Digital Assets</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -435,9 +490,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, united kingdom" data-company-type="proprietary-trading-firm" data-posted="2026-07-20">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Lead Alpha Researcher, Systematic Equities</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -454,9 +510,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-17">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer - Risk Technology</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -473,9 +530,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, united kingdom" data-company-type="proprietary-trading-firm" data-posted="2026-07-17">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Trading Strategy Software Engineer</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -492,9 +550,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago" data-company-type="proprietary-trading-firm" data-posted="2026-07-16">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer | Market Data Systems</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -511,9 +570,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago" data-company-type="proprietary-trading-firm" data-posted="2026-07-15">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer | GUI</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -530,9 +590,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="chicago, il, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-15">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer – 2027 Internship Program (June Start)</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -549,9 +610,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london; amsterdam" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Campus Quantitative Researcher (Full-Time)</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -568,9 +630,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="london; amsterdam" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Campus Quantitative Researcher (Intern)</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -587,9 +650,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="london; paris" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Campus Quantitative Researcher (M1/M2 Intern)</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -606,9 +670,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london; amsterdam" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Campus Quantitative Trader (Full-Time)</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -625,9 +690,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="london; amsterdam" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Campus Quantitative Trader (Intern)</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -644,9 +710,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="london" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Campus Software Engineer (Intern)</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -663,9 +730,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="london" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Campus UI Software Engineer (Intern)</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -682,9 +750,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Trading Services Specialist | Client Market Making</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -701,9 +770,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Junior Quantitative Developer &amp; Strategist</h3>
             <p class="job-meta">
               <span>Akuna Capital</span>
@@ -720,9 +790,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Junior Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Akuna Capital</span>
@@ -739,9 +810,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="chicago, il" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Research Intern, Summer 2027</h3>
             <p class="job-meta">
               <span>Akuna Capital</span>
@@ -758,9 +830,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer (Entry-Level) - C++</h3>
             <p class="job-meta">
               <span>Akuna Capital</span>
@@ -777,9 +850,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer (Entry-Level) - Python</h3>
             <p class="job-meta">
               <span>Akuna Capital</span>
@@ -796,9 +870,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="chicago, il" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer Intern - C# .NET Desktop, Summer 2027</h3>
             <p class="job-meta">
               <span>Akuna Capital</span>
@@ -815,9 +890,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="chicago, il" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer Intern - C++, Summer 2027</h3>
             <p class="job-meta">
               <span>Akuna Capital</span>
@@ -834,9 +910,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="chicago, il" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer Intern - Full Stack Web, Summer 2027</h3>
             <p class="job-meta">
               <span>Akuna Capital</span>
@@ -853,9 +930,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="chicago, il" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer Intern - Python, Summer 2027</h3>
             <p class="job-meta">
               <span>Akuna Capital</span>
@@ -872,9 +950,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il or new york, ny" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader – 2027 Graduate Program (August Start)</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -891,9 +970,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader – 2027 Graduate Program (August Start)</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -910,9 +990,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il or new york, ny" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader – 2027 Graduate Program (February Start)</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -929,9 +1010,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-13">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer – 2027 Graduate Program (August Start)</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -948,9 +1030,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2026-07-09">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -967,9 +1050,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york" data-company-type="market-maker" data-posted="2026-07-09">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Market Maker</span>
             <h3>Senior Software Engineer, C++</h3>
             <p class="job-meta">
               <span>Flow Traders</span>
@@ -986,9 +1070,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago" data-company-type="market-maker" data-posted="2026-07-09">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Market Maker</span>
             <h3>Senior Software Engineer, C++</h3>
             <p class="job-meta">
               <span>Flow Traders</span>
@@ -1005,9 +1090,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago" data-company-type="market-maker" data-posted="2026-07-09">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Market Maker</span>
             <h3>Senior Software Engineer, C++ (Market Data)</h3>
             <p class="job-meta">
               <span>Flow Traders</span>
@@ -1024,9 +1110,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york" data-company-type="market-maker" data-posted="2026-07-09">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Market Maker</span>
             <h3>Senior Software Engineer, C++ (Market Data)</h3>
             <p class="job-meta">
               <span>Flow Traders</span>
@@ -1043,9 +1130,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="chicago; new york" data-company-type="proprietary-trading-firm" data-posted="2026-07-08">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Campus Quantitative Researcher, PhD (Intern)</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -1062,9 +1150,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago; new york" data-company-type="proprietary-trading-firm" data-posted="2026-07-08">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Campus Quantitative Researcher, UG/MS (Full-Time)</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -1081,9 +1170,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="chicago; new york" data-company-type="proprietary-trading-firm" data-posted="2026-07-08">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Campus Quantitative Researcher, UG/MS (Intern)</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -1100,9 +1190,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago; new york" data-company-type="proprietary-trading-firm" data-posted="2026-07-08">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Campus Quantitative Trader (Full-Time)</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -1119,9 +1210,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="chicago; new york" data-company-type="proprietary-trading-firm" data-posted="2026-07-08">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Campus Quantitative Trader (Intern)</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -1138,9 +1230,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago" data-company-type="proprietary-trading-firm" data-posted="2026-07-08">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Campus Software Engineer (Full-Time)</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -1157,9 +1250,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="chicago" data-company-type="proprietary-trading-firm" data-posted="2026-07-08">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Campus Software Engineer (Intern)</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -1176,9 +1270,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="chicago" data-company-type="proprietary-trading-firm" data-posted="2026-07-08">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Campus UI Software Engineer (Intern)</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -1195,9 +1290,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="new york" data-company-type="market-maker" data-posted="2026-07-08">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Market Maker</span>
             <h3>Quantitative Trading Intern Summer 2027</h3>
             <p class="job-meta">
               <span>Flow Traders</span>
@@ -1214,9 +1310,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-06">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Machine Learning Researcher</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -1233,9 +1330,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-06">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -1252,9 +1350,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-06">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -1271,9 +1370,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-06">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -1290,9 +1390,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-06">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -1309,9 +1410,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-06">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -1328,9 +1430,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago" data-company-type="proprietary-trading-firm" data-posted="2026-07-06">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Junior Quantitative Risk Analyst</h3>
             <p class="job-meta">
               <span>Akuna Capital</span>
@@ -1347,9 +1450,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, montreal, singapore, warsaw, zug" data-company-type="hedge-fund" data-posted="2026-07-06">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Quant Developer (C++)</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -1366,9 +1470,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="mumbai, india" data-company-type="proprietary-trading-firm" data-posted="2026-07-06">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>2027 - Software Engineering Intern - BITS Pilani</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -1385,9 +1490,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, united kingdom" data-company-type="proprietary-trading-firm" data-posted="2026-07-06">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Graduate Machine Learning Researcher - London</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -1404,9 +1510,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="amsterdam, netherlands" data-company-type="proprietary-trading-firm" data-posted="2026-07-06">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Machine Learning Research Intern - Summer 2027 - Amsterdam</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -1423,9 +1530,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="new york, chicago" data-company-type="proprietary-trading-firm" data-posted="2026-07-05">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Developer Intern - Summer 2027</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -1442,9 +1550,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, chicago" data-company-type="proprietary-trading-firm" data-posted="2026-07-05">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader - 2027</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -1461,9 +1570,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="new york" data-company-type="proprietary-trading-firm" data-posted="2026-07-05">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader Intern, PhD</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -1480,9 +1590,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="new york, chicago" data-company-type="proprietary-trading-firm" data-posted="2026-07-05">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader Intern - Summer 2027</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -1499,9 +1610,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-01">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Graduate Machine Learning Researcher - Chicago</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -1518,9 +1630,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-01">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Graduate Quantitative Researcher (BS/MS)</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -1537,9 +1650,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-01">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Graduate Quantitative Researcher (PhD)</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -1556,9 +1670,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-01">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Graduate Quantitative Trader</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -1575,9 +1690,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-01">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Graduate Software Engineer</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -1594,9 +1710,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-01">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Machine Learning Research Intern - Summer 2027 - Chicago</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -1613,9 +1730,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-01">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Research Intern (BS/MS) - Summer 2027</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -1632,9 +1750,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-01">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Research Intern (PhD) - Summer 2027</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -1651,9 +1770,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-01">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader Intern - Summer 2027</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -1670,9 +1790,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2026-07-01">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer Intern - Summer 2027</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -1689,9 +1810,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, united kingdom" data-company-type="proprietary-trading-firm" data-posted="2026-06-26">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Principal Research Scientist - Machine Learning</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -1708,9 +1830,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong" data-company-type="proprietary-trading-firm" data-posted="2026-06-25">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Developer</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -1727,9 +1850,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="sydney" data-company-type="proprietary-trading-firm" data-posted="2026-06-25">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -1746,9 +1870,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london" data-company-type="market-maker" data-posted="2026-06-25">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Market Maker</span>
             <h3>Senior Software Engineer, C++</h3>
             <p class="job-meta">
               <span>Flow Traders</span>
@@ -1765,9 +1890,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london" data-company-type="market-maker" data-posted="2026-06-25">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Market Maker</span>
             <h3>Senior Software Engineer, C++</h3>
             <p class="job-meta">
               <span>Flow Traders</span>
@@ -1784,9 +1910,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="amsterdam" data-company-type="market-maker" data-posted="2026-06-24">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Market Maker</span>
             <h3>Senior Software Engineer, C++</h3>
             <p class="job-meta">
               <span>Flow Traders</span>
@@ -1803,9 +1930,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="hedge-fund" data-posted="2026-06-22">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Principal Software Engineer</h3>
             <p class="job-meta">
               <span>Schonfeld</span>
@@ -1822,9 +1950,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="singapore" data-company-type="proprietary-trading-firm" data-posted="2026-06-17">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader, Trading Team</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -1841,9 +1970,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london" data-company-type="proprietary-trading-firm" data-posted="2026-06-17">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer, C++</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -1860,9 +1990,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="zug, switzerland" data-company-type="proprietary-trading-firm" data-posted="2026-06-12">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Graduate Quant Researcher - Digital Assets</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -1879,9 +2010,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="amsterdam" data-company-type="market-maker" data-posted="2026-06-12">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Market Maker</span>
             <h3>Senior Software Engineer, C++</h3>
             <p class="job-meta">
               <span>Flow Traders</span>
@@ -1898,9 +2030,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2026-06-08">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Talent Sourcer – Machine Learning &amp; Quantitative Research</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -1917,9 +2050,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york" data-company-type="proprietary-trading-firm" data-posted="2026-06-05">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer, Trading Systems (C++)</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -1936,9 +2070,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, england, united kingdom" data-company-type="proprietary-trading-firm" data-posted="2026-06-04">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Machine Learning Researcher</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -1955,9 +2090,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2026-06-04">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Machine Learning Researcher</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -1974,9 +2110,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="proprietary-trading-firm" data-posted="2026-06-03">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Machine Learning Researcher</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -1993,9 +2130,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="proprietary-trading-firm" data-posted="2026-06-02">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -2012,9 +2150,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="proprietary-trading-firm" data-posted="2026-06-01">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -2031,9 +2170,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2026-05-29">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Developer - Python</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -2050,9 +2190,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="hedge-fund" data-posted="2026-05-29">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Software Engineer - Business Analytics</h3>
             <p class="job-meta">
               <span>Schonfeld</span>
@@ -2069,9 +2210,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, england, united kingdom" data-company-type="hedge-fund" data-posted="2026-05-26">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Quantitative Developer - Fundamental Equities</h3>
             <p class="job-meta">
               <span>Schonfeld</span>
@@ -2088,9 +2230,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="hedge-fund" data-posted="2026-05-26">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Software Engineer - Fundamental Equities</h3>
             <p class="job-meta">
               <span>Schonfeld</span>
@@ -2107,9 +2250,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="montreal" data-company-type="proprietary-trading-firm" data-posted="2026-05-25">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Développeur de Logiciels / Software Developer</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -2126,9 +2270,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="proprietary-trading-firm" data-posted="2026-05-22">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>MacOS Software Engineer</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -2145,9 +2290,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="são paulo, brazil" data-company-type="hedge-fund" data-posted="2026-05-21">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>2026 BSc/MSc/PhD Quantitative Research/Strat Internship</h3>
             <p class="job-meta">
               <span>Schonfeld</span>
@@ -2164,9 +2310,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="shanghai" data-company-type="proprietary-trading-firm" data-posted="2026-05-15">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer | Trading Team</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -2183,9 +2330,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, montreal, singapore" data-company-type="hedge-fund" data-posted="2026-05-12">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Graduate Quant Developer</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -2202,9 +2350,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, ny, united states" data-company-type="proprietary-trading-firm" data-posted="2026-05-05">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Python Software Engineer</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -2221,9 +2370,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="sydney, australia" data-company-type="proprietary-trading-firm" data-posted="2026-05-04">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Java Software Engineer</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -2240,9 +2390,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="hedge-fund" data-posted="2026-04-30">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Senior Software Engineer</h3>
             <p class="job-meta">
               <span>Schonfeld</span>
@@ -2259,9 +2410,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="hedge-fund" data-posted="2026-04-29">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Senior Software Engineer - Credit, Risk Technology</h3>
             <p class="job-meta">
               <span>Schonfeld</span>
@@ -2278,9 +2430,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il" data-company-type="proprietary-trading-firm" data-posted="2026-04-28">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Junior Quantitative Researcher - Prediction Markets</h3>
             <p class="job-meta">
               <span>Akuna Capital</span>
@@ -2297,9 +2450,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il" data-company-type="proprietary-trading-firm" data-posted="2026-04-28">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher - Prediction Markets</h3>
             <p class="job-meta">
               <span>Akuna Capital</span>
@@ -2316,9 +2470,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="mumbai, india" data-company-type="proprietary-trading-firm" data-posted="2026-04-22">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -2335,9 +2490,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2026-04-16">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Hardware Machine Learning PhD Research Internship</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -2354,9 +2510,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="aarhus, central denmark region, denmark" data-company-type="proprietary-trading-firm" data-posted="2026-04-02">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Java Software Engineer (Power/Gas)</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -2373,9 +2530,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york city or chicago" data-company-type="proprietary-trading-firm" data-posted="2026-03-30">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Developer | Trading Team</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -2392,9 +2550,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london" data-company-type="proprietary-trading-firm" data-posted="2026-03-30">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Python Software Engineer</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -2411,9 +2570,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong" data-company-type="market-maker" data-posted="2026-03-30">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Market Maker</span>
             <h3>Graduate Quant Trader</h3>
             <p class="job-meta">
               <span>Flow Traders</span>
@@ -2430,9 +2590,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london" data-company-type="proprietary-trading-firm" data-posted="2026-03-24">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Trading Systems Support Analyst</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -2449,9 +2610,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il, united states" data-company-type="proprietary-trading-firm" data-posted="2026-03-19">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Junior Quantitative Trader (Asian Market Hours)</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -2468,9 +2630,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="amsterdam, netherlands" data-company-type="proprietary-trading-firm" data-posted="2026-03-18">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>C++ Software Engineer</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -2487,9 +2650,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il, united states" data-company-type="proprietary-trading-firm" data-posted="2026-03-16">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher (Experienced - Ph.D.)</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -2506,9 +2670,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="houston, london, madrid, montreal, new york, paris, singapore, zug, bangalore, dubai, geneva, hong kong, boston" data-company-type="hedge-fund" data-posted="2026-03-10">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Senior Quant Researcher - CTA/Short-Term</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -2525,9 +2690,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="bangalore, dubai, geneva, hong kong, houston, london, madrid, montreal, new york, paris, singapore, zug, boston" data-company-type="hedge-fund" data-posted="2026-03-10">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Senior Quant Researcher - Equity Mid/Low Frequency</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -2544,9 +2710,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="houston, london, madrid, montreal, new york, paris, singapore, zug, bangalore, dubai, geneva, hong kong, boston" data-company-type="hedge-fund" data-posted="2026-03-10">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Senior Quant Researcher - Fixed Income</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -2563,9 +2730,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="bangalore, dubai, geneva, hong kong, houston, london, madrid, montreal, new york, paris, singapore, zug, boston" data-company-type="hedge-fund" data-posted="2026-03-10">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Senior Quant Researcher - Intraday Statistical Arbitrage</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -2582,9 +2750,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="seoul, south korea" data-company-type="proprietary-trading-firm" data-posted="2026-03-10">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader - Equities</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -2601,9 +2770,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london" data-company-type="proprietary-trading-firm" data-posted="2026-03-05">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Senior Software Engineer, Development Tools</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -2620,9 +2790,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york" data-company-type="proprietary-trading-firm" data-posted="2026-02-25">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer, Development Tools</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -2639,9 +2810,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="hedge-fund" data-posted="2026-02-25">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Senior Software Engineer, UI/UX</h3>
             <p class="job-meta">
               <span>Schonfeld</span>
@@ -2658,9 +2830,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong; sydney, australia" data-company-type="proprietary-trading-firm" data-posted="2026-02-23">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader – Equities (Strategy Monetization)</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -2677,9 +2850,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="mumbai" data-company-type="proprietary-trading-firm" data-posted="2026-02-20">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Infrastructure Engineer</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -2696,9 +2870,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong; sydney, australia" data-company-type="proprietary-trading-firm" data-posted="2026-02-20">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher - HFT Commodity Futures</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -2715,9 +2890,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2026-02-20">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader – Equities (Live Trading)</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -2734,9 +2910,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="singapore" data-company-type="proprietary-trading-firm" data-posted="2026-02-19">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -2753,9 +2930,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong; sydney, australia" data-company-type="proprietary-trading-firm" data-posted="2026-02-18">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Machine Learning Researcher - Modeller</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -2772,9 +2950,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong; sydney, australia" data-company-type="proprietary-trading-firm" data-posted="2026-02-18">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher - HFT</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -2791,9 +2970,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="hedge-fund" data-posted="2026-02-17">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Schonfeld</span>
@@ -2810,9 +2990,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="amsterdam, netherlands" data-company-type="proprietary-trading-firm" data-posted="2026-02-10">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Trading Strategy Software Engineer</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -2829,9 +3010,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, united states" data-company-type="proprietary-trading-firm" data-posted="2026-02-09">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Developer</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -2848,9 +3030,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="hong kong" data-company-type="proprietary-trading-firm" data-posted="2026-02-05">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Campus Trading Team Software Engineer  (Intern)</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -2867,9 +3050,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, ny, united states" data-company-type="proprietary-trading-firm" data-posted="2026-01-28">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher (Systematic Equities)</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -2886,9 +3070,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2026-01-22">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Machine Learning Researcher</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -2905,9 +3090,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2026-01-20">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -2924,9 +3110,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="hedge-fund" data-posted="2026-01-19">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Senior Software Engineer</h3>
             <p class="job-meta">
               <span>Schonfeld</span>
@@ -2943,9 +3130,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="sydney, australia" data-company-type="proprietary-trading-firm" data-posted="2026-01-18">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>C++ Software Engineer</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -2962,9 +3150,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2026-01-16">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -2981,9 +3170,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2026-01-16">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -3000,9 +3190,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2026-01-14">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher - Equities/ Futures</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -3019,9 +3210,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="hedge-fund" data-posted="2026-01-06">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Quantitative Trading Associate</h3>
             <p class="job-meta">
               <span>Schonfeld</span>
@@ -3038,9 +3230,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il" data-company-type="proprietary-trading-firm" data-posted="2026-01-02">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Akuna Capital</span>
@@ -3057,9 +3250,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il" data-company-type="proprietary-trading-firm" data-posted="2026-01-02">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer - C++</h3>
             <p class="job-meta">
               <span>Akuna Capital</span>
@@ -3076,9 +3270,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il" data-company-type="proprietary-trading-firm" data-posted="2026-01-02">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer - Data Engineering</h3>
             <p class="job-meta">
               <span>Akuna Capital</span>
@@ -3095,9 +3290,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, united states; new york, united states" data-company-type="proprietary-trading-firm" data-posted="2025-12-18">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher – Futures</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -3114,9 +3310,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, united states; new york, united states" data-company-type="proprietary-trading-firm" data-posted="2025-11-28">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Machine Learning Researcher</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -3133,9 +3330,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="miami, florida, united states; new york, new york, united states" data-company-type="hedge-fund" data-posted="2025-11-21">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Systematic Portfolio Strategy and Risk Analyst (NYC or Miami)</h3>
             <p class="job-meta">
               <span>Schonfeld</span>
@@ -3152,9 +3350,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, chicago, charleston, las vegas, miami" data-company-type="proprietary-trading-firm" data-posted="2025-11-04">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader / Researcher - US</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -3171,9 +3370,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, united kingdom" data-company-type="proprietary-trading-firm" data-posted="2025-10-28">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher - Equities</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -3190,9 +3390,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="multiple locations" data-company-type="proprietary-trading-firm" data-posted="2025-10-13">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Experienced Quantitative Trader</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -3209,9 +3410,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2025-09-26">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer – AI Powered Engineering</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -3228,9 +3430,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="singapore" data-company-type="proprietary-trading-firm" data-posted="2025-09-24">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher | Trading Team</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -3247,9 +3450,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="zug, switzerland" data-company-type="proprietary-trading-firm" data-posted="2025-09-16">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Python Software Engineer - Digital Assets</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -3266,9 +3470,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, united states; new york, united states" data-company-type="proprietary-trading-firm" data-posted="2025-09-12">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>C++ Software Engineer</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -3285,9 +3490,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2025-09-04">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -3304,9 +3510,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="amsterdam, netherlands" data-company-type="proprietary-trading-firm" data-posted="2025-08-27">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Graduate Software Engineer (2026)</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -3323,9 +3530,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="aarhus, central denmark region, denmark" data-company-type="proprietary-trading-firm" data-posted="2025-08-27">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Graduate Software Engineer (2026)</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -3342,9 +3550,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2025-08-22">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher - Data Curation</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -3361,9 +3570,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="internship">
+        <div class="job-card" data-category="internship" data-location="hong kong, hong kong" data-company-type="hedge-fund" data-posted="2025-08-22">
           <div class="job-main">
             <span class="job-tag">Internship</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Quantitative Research / Developer - Intern</h3>
             <p class="job-meta">
               <span>Schonfeld</span>
@@ -3380,9 +3590,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="shanghai" data-company-type="proprietary-trading-firm" data-posted="2025-08-19">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -3399,9 +3610,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2025-08-18">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Developer - Derivatives</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -3418,9 +3630,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="singapore" data-company-type="proprietary-trading-firm" data-posted="2025-08-13">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -3437,9 +3650,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, england, united kingdom" data-company-type="proprietary-trading-firm" data-posted="2025-08-04">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -3456,9 +3670,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, england, united kingdom" data-company-type="proprietary-trading-firm" data-posted="2025-08-04">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -3475,9 +3690,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, england, united kingdom" data-company-type="proprietary-trading-firm" data-posted="2025-08-04">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -3494,9 +3710,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="gurgaon" data-company-type="proprietary-trading-firm" data-posted="2025-08-04">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Developer</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -3513,9 +3730,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="zug, switzerland" data-company-type="proprietary-trading-firm" data-posted="2025-07-29">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quant Developer CeFi - Digital Assets</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -3532,9 +3750,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="zug, switzerland" data-company-type="proprietary-trading-firm" data-posted="2025-07-25">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quant Researcher - Digital Assets</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -3551,9 +3770,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london" data-company-type="proprietary-trading-firm" data-posted="2025-07-22">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Developer, C++ - Trading Teams EMEA</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -3570,9 +3790,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london" data-company-type="proprietary-trading-firm" data-posted="2025-07-22">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Developer, Python - Trading Teams EMEA</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -3589,9 +3810,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2025-07-18">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -3608,9 +3830,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2025-07-18">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -3627,9 +3850,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="amsterdam, netherlands" data-company-type="proprietary-trading-firm" data-posted="2025-07-09">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Python Software Engineer</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -3646,9 +3870,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong" data-company-type="market-maker" data-posted="2025-06-26">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Market Maker</span>
             <h3>Senior Software Engineer, C++</h3>
             <p class="job-meta">
               <span>Flow Traders</span>
@@ -3665,9 +3890,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2025-04-17">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer, Early Career</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -3684,9 +3910,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="hedge-fund" data-posted="2025-04-03">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Quantitative Developer</h3>
             <p class="job-meta">
               <span>Schonfeld</span>
@@ -3703,9 +3930,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il, united states" data-company-type="proprietary-trading-firm" data-posted="2025-03-24">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher (Fixed Income)</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -3722,9 +3950,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london" data-company-type="proprietary-trading-firm" data-posted="2025-03-20">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>C++ Software Engineer</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -3741,9 +3970,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, ny, united states" data-company-type="proprietary-trading-firm" data-posted="2025-03-05">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Senior Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -3760,9 +3990,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="singapore, hong kong, shanghai" data-company-type="proprietary-trading-firm" data-posted="2025-03-05">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer, C++</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -3779,9 +4010,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong" data-company-type="proprietary-trading-firm" data-posted="2025-03-04">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -3798,9 +4030,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="sydney, australia" data-company-type="proprietary-trading-firm" data-posted="2025-02-27">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Python Software Engineer</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -3817,9 +4050,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="singapore" data-company-type="proprietary-trading-firm" data-posted="2025-01-13">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader</h3>
             <p class="job-meta">
               <span>Akuna Capital</span>
@@ -3836,9 +4070,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il, united states" data-company-type="proprietary-trading-firm" data-posted="2024-12-24">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Junior Quantitative Researcher (Ph.D.)</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -3855,9 +4090,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="amsterdam" data-company-type="market-maker" data-posted="2024-12-24">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Market Maker</span>
             <h3>Junior Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Flow Traders</span>
@@ -3874,9 +4110,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york" data-company-type="proprietary-trading-firm" data-posted="2024-11-08">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Developer, Python</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -3893,9 +4130,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, shanghai" data-company-type="proprietary-trading-firm" data-posted="2024-10-02">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Developer (C++)</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -3912,9 +4150,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, montreal, bangalore &amp; warsaw" data-company-type="hedge-fund" data-posted="2024-09-30">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Software Developer - Risk Technology</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -3931,9 +4170,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il, united states" data-company-type="proprietary-trading-firm" data-posted="2024-09-25">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher (ETFs)</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -3950,9 +4190,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="proprietary-trading-firm" data-posted="2024-09-05">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer / Writer</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -3969,9 +4210,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="shanghai" data-company-type="proprietary-trading-firm" data-posted="2024-08-23">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Developer | Trading Team</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -3988,9 +4230,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, united states" data-company-type="proprietary-trading-firm" data-posted="2024-08-21">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher – Equities</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -4007,9 +4250,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il, united states" data-company-type="proprietary-trading-firm" data-posted="2024-08-14">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader (Options)</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -4026,9 +4270,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong" data-company-type="proprietary-trading-firm" data-posted="2024-08-13">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Developer | Trading team</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -4045,9 +4290,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="zug, switzerland" data-company-type="proprietary-trading-firm" data-posted="2024-07-24">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quant Developer DeFi - Digital Assets</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -4064,9 +4310,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, new york, london" data-company-type="proprietary-trading-firm" data-posted="2024-07-23">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Research Scientist/Research Engineer | Deep Learning</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -4083,9 +4330,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong" data-company-type="proprietary-trading-firm" data-posted="2024-07-22">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher | Trading Team</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -4102,9 +4350,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, new york, singapore, boston, paris, zug, geneva, hong kong, bangalore" data-company-type="hedge-fund" data-posted="2024-07-11">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Junior Quant Researcher - ML Alpha Research</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -4121,9 +4370,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2024-07-01">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -4140,9 +4390,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, montreal, singapore" data-company-type="hedge-fund" data-posted="2024-06-21">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Junior Software Developer (C++)</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -4159,9 +4410,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, montreal" data-company-type="hedge-fund" data-posted="2024-06-21">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Junior Software Developer - Front-end</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -4178,9 +4430,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, montreal, singapore" data-company-type="hedge-fund" data-posted="2024-06-21">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Junior Software Developer (KDB+/Q)</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -4197,9 +4450,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, montreal, singapore" data-company-type="hedge-fund" data-posted="2024-06-14">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Graduate Software Developer</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -4216,9 +4470,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, montreal, singapore" data-company-type="hedge-fund" data-posted="2024-06-14">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Junior Quant Developer</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -4235,9 +4490,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, montreal, singapore" data-company-type="hedge-fund" data-posted="2024-06-14">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Junior Software Developer (Python)</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -4254,9 +4510,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, montreal, singapore, warsaw" data-company-type="hedge-fund" data-posted="2024-05-28">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Software Developer - Internal Compute Frameworks (Rust)</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -4273,9 +4530,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2024-04-15">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Machine Learning Researcher</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -4292,9 +4550,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="amsterdam" data-company-type="proprietary-trading-firm" data-posted="2024-03-19">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher | Trading Team</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -4311,9 +4570,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, london, singapore" data-company-type="proprietary-trading-firm" data-posted="2024-03-04">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>AI Research Scientist | Research &amp; Development</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -4330,9 +4590,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="singapore" data-company-type="proprietary-trading-firm" data-posted="2024-02-22">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Developer</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -4349,9 +4610,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, england, united kingdom" data-company-type="proprietary-trading-firm" data-posted="2024-02-16">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Machine Learning Researcher</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -4368,9 +4630,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="mumbai, india" data-company-type="proprietary-trading-firm" data-posted="2024-02-07">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>C++ Software Engineer</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -4387,9 +4650,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, united states" data-company-type="proprietary-trading-firm" data-posted="2024-02-06">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher - Options</h3>
             <p class="job-meta">
               <span>IMC Trading</span>
@@ -4406,9 +4670,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="montreal , london , warsaw" data-company-type="hedge-fund" data-posted="2024-02-05">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Software Developer - Order Gateway</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -4425,9 +4690,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, montreal, singapore, warsaw" data-company-type="hedge-fund" data-posted="2023-12-15">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Software Developer - Internal Compute Frameworks (Python)</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -4444,9 +4710,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="hedge-fund" data-posted="2023-10-24">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Quantitative Researcher - Hong Kong</h3>
             <p class="job-meta">
               <span>Schonfeld</span>
@@ -4463,9 +4730,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="singapore, montreal , london" data-company-type="hedge-fund" data-posted="2023-09-25">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Software Developer - Risk Reliability</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -4482,9 +4750,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, chicago" data-company-type="proprietary-trading-firm" data-posted="2023-09-19">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Senior Options Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -4501,9 +4770,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, shanghai, singapore, sydney" data-company-type="proprietary-trading-firm" data-posted="2023-05-24">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader / Researcher - APAC</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -4520,9 +4790,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, paris, amsterdam" data-company-type="proprietary-trading-firm" data-posted="2023-05-11">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader / Researcher - EMEA</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -4539,9 +4810,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, ny, united states" data-company-type="proprietary-trading-firm" data-posted="2023-05-08">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>C++ Software Engineer</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -4558,9 +4830,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il, united states" data-company-type="proprietary-trading-firm" data-posted="2023-05-08">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>C++ Software Engineer</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -4577,9 +4850,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, montreal, singapore" data-company-type="hedge-fund" data-posted="2023-05-02">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Software Developer - Data Infrastructure</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -4596,9 +4870,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="chicago, il, united states" data-company-type="proprietary-trading-firm" data-posted="2023-04-25">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Python Software Engineer</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -4615,9 +4890,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="proprietary-trading-firm" data-posted="2022-08-01">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -4634,9 +4910,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, england, united kingdom" data-company-type="proprietary-trading-firm" data-posted="2022-06-27">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Front End Software Engineer</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -4653,9 +4930,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="proprietary-trading-firm" data-posted="2022-06-24">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Front End Software Engineer</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -4672,9 +4950,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="montreal, london, singapore, bangalore" data-company-type="hedge-fund" data-posted="2022-06-23">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Software Developer - Data Products and Services</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -4691,9 +4970,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, ny, united states" data-company-type="proprietary-trading-firm" data-posted="2022-03-14">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -4710,9 +4990,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong" data-company-type="market-maker" data-posted="2022-03-04">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Market Maker</span>
             <h3>Experienced Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Flow Traders</span>
@@ -4729,9 +5010,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="montréal" data-company-type="proprietary-trading-firm" data-posted="2022-01-28">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Ingénieur de logiciels chevronné (C++) / Experienced Software Developer (C++)</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -4748,9 +5030,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, montreal, madrid, bangalore" data-company-type="hedge-fund" data-posted="2022-01-25">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Software Developer - Data Pipelines (Python)</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -4767,9 +5050,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="singapore" data-company-type="proprietary-trading-firm" data-posted="2021-12-29">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -4786,9 +5070,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, ny, united states" data-company-type="proprietary-trading-firm" data-posted="2021-11-01">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -4805,9 +5090,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, montreal, singapore, honk kong" data-company-type="hedge-fund" data-posted="2021-07-06">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Quant Developer (KDB)</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -4824,9 +5110,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london" data-company-type="proprietary-trading-firm" data-posted="2021-06-01">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher | Trading Team</h3>
             <p class="job-meta">
               <span>Jump Trading</span>
@@ -4843,9 +5130,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london" data-company-type="proprietary-trading-firm" data-posted="2021-05-04">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader</h3>
             <p class="job-meta">
               <span>Old Mission</span>
@@ -4862,9 +5150,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, madrid, montreal, bangalore, singapore, hong kong, warsaw" data-company-type="hedge-fund" data-posted="2020-12-21">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Desk Quant Analyst</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -4881,9 +5170,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2020-09-03">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -4900,9 +5190,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, england, united kingdom" data-company-type="proprietary-trading-firm" data-posted="2020-07-29">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Researcher</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -4919,9 +5210,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="proprietary-trading-firm" data-posted="2020-07-15">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -4938,9 +5230,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="hong kong, hong kong" data-company-type="proprietary-trading-firm" data-posted="2020-06-08">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -4957,9 +5250,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, montreal, warsaw, hong kong, singapore, madrid, houston, bangalore" data-company-type="hedge-fund" data-posted="2019-10-23">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Quant Developer (Python)</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -4976,9 +5270,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="singapore" data-company-type="proprietary-trading-firm" data-posted="2019-10-16">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Developer</h3>
             <p class="job-meta">
               <span>Tower Research Capital</span>
@@ -4995,9 +5290,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="bangalore, dubai, geneva, hong kong, houston, london, madrid, montreal, new york, paris, singapore, zug, boston" data-company-type="hedge-fund" data-posted="2019-05-28">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Senior Quant Researcher - Volatility</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -5014,9 +5310,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="proprietary-trading-firm" data-posted="2019-05-06">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -5033,9 +5330,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="new york, new york, united states" data-company-type="proprietary-trading-firm" data-posted="2019-05-02">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Machine Learning Researcher</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -5052,9 +5350,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, england, united kingdom" data-company-type="proprietary-trading-firm" data-posted="2019-05-02">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Quantitative Trader</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -5071,9 +5370,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, england, united kingdom" data-company-type="proprietary-trading-firm" data-posted="2019-05-02">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Proprietary Trading Firm</span>
             <h3>Software Engineer</h3>
             <p class="job-meta">
               <span>Jane Street</span>
@@ -5090,9 +5390,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="london, new york, singapore, boston, paris, zug, geneva, hong kong, bangalore" data-company-type="hedge-fund" data-posted="2019-04-03">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Junior Quant Researcher</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>
@@ -5109,9 +5410,10 @@
           </div>
         </div>
 
-        <div class="job-card" data-category="full-time">
+        <div class="job-card" data-category="full-time" data-location="bangalore, montreal, warsaw" data-company-type="hedge-fund" data-posted="2019-04-01">
           <div class="job-main">
             <span class="job-tag">Full-Time</span>
+            <span class="job-tag job-tag-muted">Hedge Fund</span>
             <h3>Software Developer - Risk Data Pipelines</h3>
             <p class="job-meta">
               <span>Squarepoint Capital</span>

@@ -96,13 +96,20 @@ def description_paragraphs(text):
 
 # --------------------------------------------------------------- job card
 
+def slugify(text):
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+
 def render_job_card(job):
     category_slug = CATEGORY_SLUGS.get(job["type"], "full-time")
     role = html.escape(job["role"])
     company = html.escape(job["company"])
     location = html.escape(job["location"])
     job_type = html.escape(job["type"])
-    posted = format_posted(job.get("date_posted", ""))
+    company_type = job.get("company_type") or "Other"
+    company_type_slug = slugify(company_type)
+    posted_date = job.get("date_posted", "")
+    posted = format_posted(posted_date)
     apply_url = html.escape(job["source_url"] or "#", quote=True)
     detail_url = f"jobs/{job['slug']}.html"
 
@@ -112,9 +119,10 @@ def render_job_card(job):
     if location:
         meta_spans += f"\n              <span>{location}</span>"
 
-    return f"""        <div class="job-card" data-category="{category_slug}">
+    return f"""        <div class="job-card" data-category="{category_slug}" data-location="{location.lower()}" data-company-type="{company_type_slug}" data-posted="{posted_date}">
           <div class="job-main">
             <span class="job-tag">{job_type}</span>
+            <span class="job-tag job-tag-muted">{html.escape(company_type)}</span>
             <h3>{role}</h3>
             <p class="job-meta">
               {meta_spans}

@@ -55,19 +55,83 @@ document.querySelectorAll(".flip-trigger").forEach((btn) => {
   });
 });
 
-// Opportunities filter (opportunities.html)
-const filterButtons = document.querySelectorAll(".filter-btn");
+// Opportunities filters (opportunities.html) -- type buttons + location,
+// title, posted-within, and company-type all stack together (AND logic):
+// a card only shows if it passes every active filter at once.
 const jobCards = document.querySelectorAll(".job-card");
 
-filterButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    filterButtons.forEach((b) => b.classList.remove("active"));
-    btn.classList.add("active");
+if (jobCards.length) {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const locationInput = document.getElementById("filter-location");
+  const titleInput = document.getElementById("filter-title");
+  const postedSelect = document.getElementById("filter-posted");
+  const companyTypeSelect = document.getElementById("filter-company-type");
+  const clearButton = document.getElementById("filter-clear");
+  const countLabel = document.getElementById("job-filters-count");
 
-    const filter = btn.dataset.filter;
+  let activeType = "all";
+
+  const daysSince = (isoDate) => {
+    if (!isoDate) return Infinity;
+    const posted = new Date(isoDate + "T00:00:00");
+    if (Number.isNaN(posted.getTime())) return Infinity;
+    const msPerDay = 24 * 60 * 60 * 1000;
+    return Math.floor((Date.now() - posted.getTime()) / msPerDay);
+  };
+
+  const applyFilters = () => {
+    const locationQuery = locationInput.value.trim().toLowerCase();
+    const titleQuery = titleInput.value.trim().toLowerCase();
+    const postedLimit = postedSelect.value;
+    const companyType = companyTypeSelect.value;
+
+    let visibleCount = 0;
+
     jobCards.forEach((card) => {
-      const show = filter === "all" || card.dataset.category === filter;
+      const matchesType = activeType === "all" || card.dataset.category === activeType;
+      const matchesLocation = !locationQuery || card.dataset.location.includes(locationQuery);
+      const matchesTitle = !titleQuery || card.querySelector("h3").textContent.toLowerCase().includes(titleQuery);
+      const matchesPosted = postedLimit === "any" || daysSince(card.dataset.posted) <= Number(postedLimit);
+      const matchesCompanyType = companyType === "all" || card.dataset.companyType === companyType;
+
+      const show = matchesType && matchesLocation && matchesTitle && matchesPosted && matchesCompanyType;
       card.style.display = show ? "" : "none";
+      if (show) visibleCount += 1;
+    });
+
+    if (countLabel) {
+      countLabel.textContent = `Showing ${visibleCount} of ${jobCards.length} opportunities`;
+    }
+  };
+
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filterButtons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      activeType = btn.dataset.filter;
+      applyFilters();
     });
   });
-});
+
+  [locationInput, titleInput].forEach((input) => {
+    input.addEventListener("input", applyFilters);
+  });
+  [postedSelect, companyTypeSelect].forEach((select) => {
+    select.addEventListener("change", applyFilters);
+  });
+
+  if (clearButton) {
+    clearButton.addEventListener("click", () => {
+      locationInput.value = "";
+      titleInput.value = "";
+      postedSelect.value = "any";
+      companyTypeSelect.value = "all";
+      filterButtons.forEach((b) => b.classList.remove("active"));
+      document.querySelector('.filter-btn[data-filter="all"]').classList.add("active");
+      activeType = "all";
+      applyFilters();
+    });
+  }
+
+  applyFilters();
+}

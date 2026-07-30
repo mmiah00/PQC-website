@@ -41,6 +41,24 @@ LEVER_BOARDS = [
     # ("Company Name", "company-token"),
 ]
 
+# Fixed taxonomy for the "Company Type" filter on the Opportunities page.
+# Keep this list short and stable -- it's mirrored as the <select> options
+# in opportunities.html, so adding a new *value* here means updating that
+# markup too. Adding a new *company* just means adding a line below.
+COMPANY_TYPES = {
+    "Jane Street": "Proprietary Trading Firm",
+    "Jump Trading": "Proprietary Trading Firm",
+    "Akuna Capital": "Proprietary Trading Firm",
+    "Tower Research Capital": "Proprietary Trading Firm",
+    "Old Mission": "Proprietary Trading Firm",
+    "IMC Trading": "Proprietary Trading Firm",
+    "Flow Traders": "Market Maker",
+    "Squarepoint Capital": "Hedge Fund",
+    "Schonfeld": "Hedge Fund",
+    "ExodusPoint": "Hedge Fund",
+}
+DEFAULT_COMPANY_TYPE = "Other"
+
 # Static organization pages providing women-in-finance programs,
 # fellowships, and events. These are scraped generically (title + meta
 # description) since each org's site structure differs -- treat rows
