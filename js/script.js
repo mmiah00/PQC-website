@@ -88,7 +88,11 @@ if (jobCards.length) {
     let visibleCount = 0;
 
     jobCards.forEach((card) => {
-      const matchesType = activeType === "all" || card.dataset.category === activeType;
+      const matchesType =
+        activeType === "all" ||
+        (activeType === "women-focused"
+          ? card.dataset.womenFocused === "true"
+          : card.dataset.category === activeType);
       const matchesLocation = !locationQuery || card.dataset.location.includes(locationQuery);
       const matchesTitle = !titleQuery || card.querySelector("h3").textContent.toLowerCase().includes(titleQuery);
       const matchesPosted = postedLimit === "any" || daysSince(card.dataset.posted) <= Number(postedLimit);

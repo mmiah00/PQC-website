@@ -33,6 +33,7 @@ from sources import (
     COMPANY_TYPES,
     DEFAULT_COMPANY_TYPE,
     DESCRIPTION_HEADINGS,
+    EVENT_TITLE_KEYWORDS,
     EXCLUDE_TITLE_KEYWORDS,
     GREENHOUSE_BOARDS,
     LEVER_BOARDS,
@@ -255,6 +256,11 @@ def is_excluded_title(title):
     return any(kw in lower for kw in EXCLUDE_TITLE_KEYWORDS)
 
 
+def is_event_title(title):
+    lower = title.lower()
+    return any(kw in lower for kw in EVENT_TITLE_KEYWORDS)
+
+
 def classify_category(title, body_text=""):
     # Classify from the title alone. Matching against the full description
     # too was tried and rejected: firms mention "software engineer" or
@@ -305,8 +311,9 @@ def process_greenhouse_job(company, job):
     if is_excluded_title(title):
         return None
 
+    is_event = is_event_title(title)
     category = classify_category(title)
-    if category is None:
+    if category is None and not is_event:
         return None
 
     blocks = html_to_blocks(job.get("content", ""))
@@ -317,8 +324,8 @@ def process_greenhouse_job(company, job):
     return build_row(
         role=title,
         company=company,
-        job_type=classify_type(title),
-        category=category,
+        job_type="Event" if is_event else classify_type(title),
+        category=category or "Quant Event",
         women_focused=is_women_focused(title, plain_text),
         pay=extract_pay(plain_text),
         location=location,
@@ -339,8 +346,9 @@ def process_lever_job(company, job):
     if is_excluded_title(title):
         return None
 
+    is_event = is_event_title(title)
     category = classify_category(title)
-    if category is None:
+    if category is None and not is_event:
         return None
 
     desc_html = job.get("descriptionPlain") or job.get("description", "") or ""
@@ -365,8 +373,8 @@ def process_lever_job(company, job):
     return build_row(
         role=title,
         company=company,
-        job_type=classify_type(title),
-        category=category,
+        job_type="Event" if is_event else classify_type(title),
+        category=category or "Quant Event",
         women_focused=is_women_focused(title, plain_text),
         pay=extract_pay(plain_text),
         location=location,
@@ -399,7 +407,7 @@ def scrape_program_page(name, url):
     return build_row(
         role=page_title,
         company=name,
-        job_type="Program/Event",
+        job_type="Event",
         category="Women in Quant Finance",
         women_focused=True,
         pay="",

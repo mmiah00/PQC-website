@@ -626,6 +626,15 @@ img { max-width: 100%; display: block; }
   color: var(--ink-soft);
 }
 
+.job-tag-women {
+  background: var(--maroon);
+  color: var(--cream);
+}
+
+.filter-btn-women {
+  border-color: var(--maroon);
+}
+
 .job-list {
   display: flex;
   flex-direction: column;

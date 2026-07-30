@@ -117,8 +117,19 @@ WOMEN_KEYWORDS = [
 # or "trading" happens to appear in their title or body text.
 EXCLUDE_TITLE_KEYWORDS = [
     "recruiter", "recruiting", "talent acquisition", "general submission",
-    "networking event", "sneak peek", "expression of interest", "open house",
-    "info session", "information session", "campus ambassador",
+    "campus ambassador",
+]
+
+# Titles containing any of these are pulled out as an "Event" listing
+# (networking events, recruiting/info sessions, sneak peeks, diversity
+# programs, etc.) instead of being scraped as a job or dropped. These
+# show up mixed into the same Greenhouse/Lever boards as real job reqs.
+EVENT_TITLE_KEYWORDS = [
+    "networking event", "sneak peek", "expression of interest",
+    "info session", "information session", "open house", "coffee chat",
+    "meet the firm", "insight day", "insight week", "insight programme",
+    "insight program", "diversity weekend", "diversity event", "spring week",
+    "summer insight", "discovery day", "explorer program", "explorer day",
 ]
 
 # Heading phrases (substring match) used to split each job's HTML

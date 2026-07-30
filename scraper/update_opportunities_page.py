@@ -46,6 +46,7 @@ MARKER_END = "<!-- JOBS:AUTO-GENERATED:END -->"
 CATEGORY_SLUGS = {
     "Internship": "internship",
     "Full-Time": "full-time",
+    "Event": "event",
 }
 
 PREVIEW_WORD_LIMIT = 400
@@ -108,9 +109,11 @@ def render_job_card(job):
     job_type = html.escape(job["type"])
     company_type = job.get("company_type") or "Other"
     company_type_slug = slugify(company_type)
+    women_focused = job.get("women_focused") == "Yes"
     posted_date = job.get("date_posted", "")
     posted = format_posted(posted_date)
     apply_url = html.escape(job["source_url"] or "#", quote=True)
+    apply_label = "Register" if job["type"] == "Event" else "Apply"
     detail_url = f"jobs/{job['slug']}.html"
 
     preview_description = html.escape(truncate_words(job["description"], PREVIEW_WORD_LIMIT))
@@ -119,10 +122,14 @@ def render_job_card(job):
     if location:
         meta_spans += f"\n              <span>{location}</span>"
 
-    return f"""        <div class="job-card" data-category="{category_slug}" data-location="{location.lower()}" data-company-type="{company_type_slug}" data-posted="{posted_date}">
+    women_tag = ""
+    if women_focused:
+        women_tag = '\n            <span class="job-tag job-tag-women">Women+</span>'
+
+    return f"""        <div class="job-card" data-category="{category_slug}" data-location="{location.lower()}" data-company-type="{company_type_slug}" data-posted="{posted_date}" data-women-focused="{"true" if women_focused else "false"}">
           <div class="job-main">
             <span class="job-tag">{job_type}</span>
-            <span class="job-tag job-tag-muted">{html.escape(company_type)}</span>
+            <span class="job-tag job-tag-muted">{html.escape(company_type)}</span>{women_tag}
             <h3>{role}</h3>
             <p class="job-meta">
               {meta_spans}
@@ -134,7 +141,7 @@ def render_job_card(job):
             <p class="job-posted">Posted {posted}</p>
           </div>
           <div class="job-action">
-            <a href="{apply_url}" class="btn btn-primary" target="_blank" rel="noopener">Apply</a>
+            <a href="{apply_url}" class="btn btn-primary" target="_blank" rel="noopener">{apply_label}</a>
           </div>
         </div>"""
 
@@ -206,7 +213,7 @@ DETAIL_PAGE_TEMPLATE = """<!DOCTYPE html>
 
       <div class="card job-detail-card" style="margin-top:24px;">
 {description_html}{requirements_html}
-        <a href="{apply_url}" class="btn btn-primary" target="_blank" rel="noopener">Apply on {company}'s site</a>
+        <a href="{apply_url}" class="btn btn-primary" target="_blank" rel="noopener">{apply_label} on {company}'s site</a>
       </div>
     </div>
   </section>
@@ -266,6 +273,7 @@ def render_job_detail_page(job):
     category = html.escape(job["category"])
     posted = format_posted(job.get("date_posted", ""))
     apply_url = html.escape(job["source_url"] or "#", quote=True)
+    apply_label = "Register" if job["type"] == "Event" else "Apply"
 
     meta_parts = [company]
     if location:
@@ -294,6 +302,7 @@ def render_job_detail_page(job):
         description_html=description_html,
         requirements_html=requirements_html,
         apply_url=apply_url,
+        apply_label=apply_label,
     )
 
 
@@ -315,7 +324,7 @@ def remove_stale_detail_pages(kept_slugs):
 # ------------------------------------------------------------------ update
 
 def update(dry_run=False, delay=0.4):
-    fresh_rows = collect_jobs(include_programs=False, delay=delay)
+    fresh_rows = collect_jobs(include_programs=True, delay=delay)
     fresh_by_url = {row["source_url"]: row for row in fresh_rows if row["source_url"]}
 
     existing = load_state()
