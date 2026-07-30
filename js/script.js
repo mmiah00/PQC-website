@@ -68,6 +68,16 @@ if (jobCards.length) {
   const companyTypeSelect = document.getElementById("filter-company-type");
   const clearButton = document.getElementById("filter-clear");
   const countLabel = document.getElementById("job-filters-count");
+  const filterToggle = document.getElementById("filter-toggle");
+  const filterPanel = document.getElementById("job-filters-panel");
+
+  if (filterToggle && filterPanel) {
+    filterToggle.addEventListener("click", () => {
+      const isOpen = !filterPanel.hidden;
+      filterPanel.hidden = isOpen;
+      filterToggle.setAttribute("aria-expanded", String(!isOpen));
+    });
+  }
 
   let activeType = "all";
 

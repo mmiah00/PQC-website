@@ -547,17 +547,42 @@ img { max-width: 100%; display: block; }
   color: var(--cream);
 }
 
+.filter-apply-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--maroon-dark);
+  border: 2px solid var(--maroon-dark);
+  color: var(--cream);
+  padding: 8px 20px 8px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.filter-apply-btn:hover,
+.filter-apply-btn[aria-expanded="true"] {
+  background: var(--maroon-darker);
+  border-color: var(--maroon-darker);
+}
+
 .job-filters {
   display: flex;
   gap: 16px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   align-items: flex-end;
-  justify-content: center;
-  background: #fff;
-  border: 1px solid var(--cream-line);
+  background: var(--maroon);
   border-radius: var(--radius);
   padding: 20px 24px;
   margin-bottom: 20px;
+}
+
+.job-filters[hidden] {
+  display: none;
 }
 
 .job-filter-field {
@@ -573,13 +598,13 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: var(--ink-soft);
+  color: var(--cream-dim);
 }
 
 .job-filter-field input,
 .job-filter-field select {
   padding: 10px 12px;
-  border: 1px solid var(--cream-line);
+  border: 1px solid transparent;
   border-radius: 8px;
   font-family: var(--font-body);
   font-size: 0.92rem;
@@ -587,9 +612,13 @@ img { max-width: 100%; display: block; }
   color: var(--ink);
 }
 
+.job-filter-field input::placeholder {
+  color: var(--ink-soft);
+}
+
 .job-filter-field input:focus,
 .job-filter-field select:focus {
-  outline: 2px solid var(--maroon-light);
+  outline: 2px solid var(--cream);
   outline-offset: 1px;
 }
 
@@ -597,6 +626,15 @@ img { max-width: 100%; display: block; }
   flex: 0 0 auto;
   padding: 10px 20px;
   font-size: 0.85rem;
+  background: transparent;
+  border-color: var(--cream);
+  color: var(--cream);
+  white-space: nowrap;
+}
+
+.job-filters-clear:hover {
+  background: var(--cream);
+  color: var(--maroon-dark);
 }
 
 .job-filters-count {
