@@ -50,50 +50,27 @@
         <button class="filter-btn" data-filter="internship">Internships</button>
         <button class="filter-btn" data-filter="full-time">Full-Time</button>
         <button class="filter-btn" data-filter="part-time">Part-Time</button>
-        <button type="button" class="filter-apply-btn" id="filter-toggle" aria-expanded="false" aria-controls="job-filters-panel">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-            <rect x="2" y="4" width="20" height="2.4" rx="1.2"/>
-            <circle cx="15" cy="5.2" r="3"/>
-            <rect x="2" y="10.8" width="20" height="2.4" rx="1.2"/>
-            <circle cx="9" cy="12" r="3"/>
-            <rect x="2" y="17.6" width="20" height="2.4" rx="1.2"/>
-            <circle cx="15" cy="18.8" r="3"/>
-          </svg>
-          Apply Filters
-        </button>
       </div>
 
-      <div class="job-filters" id="job-filters-panel" hidden>
-        <div class="job-filter-field">
-          <label for="filter-location">Location</label>
-          <input type="text" id="filter-location" placeholder="e.g. New York">
-        </div>
-        <div class="job-filter-field">
-          <label for="filter-title">Job Title</label>
-          <input type="text" id="filter-title" placeholder="e.g. Quant Trader">
-        </div>
-        <div class="job-filter-field">
-          <label for="filter-posted">Posted Within</label>
-          <select id="filter-posted">
-            <option value="any">Any Time</option>
-            <option value="1">Past 24 Hours</option>
-            <option value="7">Past Week</option>
-            <option value="30">Past Month</option>
-          </select>
-        </div>
-        <div class="job-filter-field">
-          <label for="filter-company-type">Company Type</label>
-          <select id="filter-company-type">
-            <option value="all">All Types</option>
-            <option value="proprietary-trading-firm">Proprietary Trading Firm</option>
-            <option value="hedge-fund">Hedge Fund</option>
-            <option value="market-maker">Market Maker</option>
-            <option value="bank">Bank</option>
-            <option value="asset-manager">Asset Manager</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-        <button type="button" class="btn btn-outline job-filters-clear" id="filter-clear">Clear Filters</button>
+      <div class="job-filter-bar">
+        <input type="text" id="filter-title" class="job-filter-input" placeholder="Keywords / Job Title">
+        <input type="text" id="filter-location" class="job-filter-input" placeholder="City / State">
+        <select id="filter-posted" class="job-filter-select">
+          <option value="any">Posted: Any Time</option>
+          <option value="1">Past 24 Hours</option>
+          <option value="7">Past Week</option>
+          <option value="30">Past Month</option>
+        </select>
+        <select id="filter-company-type" class="job-filter-select">
+          <option value="all">Company Type: All</option>
+          <option value="proprietary-trading-firm">Proprietary Trading Firm</option>
+          <option value="hedge-fund">Hedge Fund</option>
+          <option value="market-maker">Market Maker</option>
+          <option value="bank">Bank</option>
+          <option value="asset-manager">Asset Manager</option>
+          <option value="other">Other</option>
+        </select>
+        <button type="button" class="job-filter-clear" id="filter-clear">Clear</button>
       </div>
 
       <p class="job-filters-count" id="job-filters-count"></p>

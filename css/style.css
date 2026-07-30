@@ -547,94 +547,71 @@ img { max-width: 100%; display: block; }
   color: var(--cream);
 }
 
-.filter-apply-btn {
-  display: inline-flex;
+.job-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   align-items: center;
-  gap: 8px;
-  background: var(--maroon-dark);
-  border: 2px solid var(--maroon-dark);
-  color: var(--cream);
-  padding: 8px 20px 8px 16px;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  font-family: var(--font-body);
-  cursor: pointer;
-  transition: background 0.15s ease;
-}
-
-.filter-apply-btn:hover,
-.filter-apply-btn[aria-expanded="true"] {
   background: var(--maroon-darker);
-  border-color: var(--maroon-darker);
+  border-radius: 999px;
+  padding: 14px 20px;
+  margin-bottom: 16px;
 }
 
-.job-filters {
-  display: flex;
-  gap: 16px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  align-items: flex-end;
-  background: var(--maroon);
-  border-radius: var(--radius);
-  padding: 20px 24px;
-  margin-bottom: 20px;
-}
-
-.job-filters[hidden] {
-  display: none;
-}
-
-.job-filter-field {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  flex: 1 1 180px;
-  min-width: 160px;
-}
-
-.job-filter-field label {
-  font-size: 0.78rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--cream-dim);
-}
-
-.job-filter-field input,
-.job-filter-field select {
-  padding: 10px 12px;
-  border: 1px solid transparent;
-  border-radius: 8px;
-  font-family: var(--font-body);
-  font-size: 0.92rem;
-  background: var(--cream);
-  color: var(--ink);
-}
-
-.job-filter-field input::placeholder {
-  color: var(--ink-soft);
-}
-
-.job-filter-field input:focus,
-.job-filter-field select:focus {
-  outline: 2px solid var(--cream);
-  outline-offset: 1px;
-}
-
-.job-filters-clear {
-  flex: 0 0 auto;
-  padding: 10px 20px;
-  font-size: 0.85rem;
-  background: transparent;
-  border-color: var(--cream);
+.job-filter-input,
+.job-filter-select {
+  flex: 1 1 170px;
+  min-width: 150px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(254, 245, 226, 0.25);
+  background: rgba(254, 245, 226, 0.08);
   color: var(--cream);
-  white-space: nowrap;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
 }
 
-.job-filters-clear:hover {
+.job-filter-input::placeholder {
+  color: rgba(254, 245, 226, 0.6);
+}
+
+.job-filter-input:focus,
+.job-filter-select:focus {
+  outline: none;
+  border-color: var(--cream);
+  background: rgba(254, 245, 226, 0.14);
+}
+
+.job-filter-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fef5e2' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 12px;
+  padding-right: 36px;
+  cursor: pointer;
+}
+
+.job-filter-select option {
+  color: var(--ink);
   background: var(--cream);
-  color: var(--maroon-dark);
+}
+
+.job-filter-clear {
+  flex: 0 0 auto;
+  background: transparent;
+  border: none;
+  color: var(--cream-dim);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 8px 10px;
+}
+
+.job-filter-clear:hover {
+  color: var(--cream);
 }
 
 .job-filters-count {
