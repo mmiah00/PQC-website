@@ -204,14 +204,15 @@ CATEGORY_KEYWORDS = {
         "exchange product developer", "market data architect",
         "cloud infrastructure quant", "quant platform engineer",
         "backtesting platform", "execution algos developer", "quant qa engineer",
+        "quantitative software engineer", "quantitative software engineering",
     ],
     "Quantitative Finance": [
         "quantitative analyst", "quant analyst", "quantitative finance",
         "portfolio analyst", "risk analyst", "quantitative associate",
         "quantitative intern", "financial engineer", "risk quant", "desk quant",
-        "model validation analyst", "portfolio manager", "credit risk quant",
+        "model validation", "portfolio manager", "credit risk quant",
         "market risk analyst", "derivatives pricer", "systematic portfolio manager",
-        "quantitative risk manager", "model risk auditor", "fixed income quant",
+        "quantitative risk", "model risk auditor", "fixed income quant",
         "equity quant analyst", "commodity quant", "structured products analyst",
         "counterparty credit risk", "stress testing quantitative", "xva quant",
         "treasury quant analyst", "portfolio construction analyst",
@@ -226,6 +227,8 @@ CATEGORY_KEYWORDS = {
         "structured credit pricer", "securitization analyst", "mbs quant",
         "abs portfolio manager", "derivatives risk engineer",
         "clearinghouse risk manager", "junior quantitative analyst",
+        "quant track", "graduate trainee", "graduate scheme",
+        "equity derivatives", "mathematical finance",
     ],
 }
 
@@ -290,7 +293,8 @@ EVENT_TITLE_KEYWORDS = [
 # their own type, or senior/experienced titles).
 NEW_GRAD_KEYWORDS = [
     "campus", "graduate", "new grad", "entry level", "entry-level",
-    "junior", "rotational program", "associate program",
+    "junior", "rotational program", "associate program", "associate",
+    "assistant", "quant track", "trainee",
 ]
 
 # Heading phrases (substring match) used to split each job's HTML
