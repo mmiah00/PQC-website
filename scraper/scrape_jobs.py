@@ -35,9 +35,12 @@ from sources import (
     DESCRIPTION_HEADINGS,
     EVENT_TITLE_KEYWORDS,
     EXCLUDE_TITLE_KEYWORDS,
+    GENERIC_DEV_KEYWORDS,
     GREENHOUSE_BOARDS,
     LEVER_BOARDS,
+    NEW_GRAD_KEYWORDS,
     REQUIREMENT_HEADINGS,
+    SWE_TRUSTED_COMPANY_TYPES,
     WOMEN_KEYWORDS,
     WOMEN_PROGRAM_SOURCES,
 )
@@ -49,8 +52,8 @@ USER_AGENT = (
 REQUEST_TIMEOUT = 15
 CSV_FIELDS = [
     "role", "company", "company_type", "type", "category", "women_focused",
-    "pay", "location", "description", "requirements", "source_url",
-    "date_posted", "date_scraped",
+    "new_grad", "pay", "location", "description", "requirements",
+    "source_url", "date_posted", "date_scraped",
 ]
 MAX_FIELD_CHARS = 8000  # safety cap only -- real postings run ~1500-5500 chars;
                         # this stores the full text, the site does its own
@@ -261,7 +264,12 @@ def is_event_title(title):
     return any(kw in lower for kw in EVENT_TITLE_KEYWORDS)
 
 
-def classify_category(title, body_text=""):
+def is_new_grad_title(title):
+    lower = title.lower()
+    return any(kw in lower for kw in NEW_GRAD_KEYWORDS)
+
+
+def classify_category(title, body_text="", company_type=None):
     # Classify from the title alone. Matching against the full description
     # too was tried and rejected: firms mention "software engineer" or
     # "quantitative research" in the body text of unrelated postings
@@ -271,6 +279,8 @@ def classify_category(title, body_text=""):
     for category, keywords in CATEGORY_KEYWORDS.items():
         if any(kw in haystack for kw in keywords):
             return category
+    if company_type in SWE_TRUSTED_COMPANY_TYPES and any(kw in haystack for kw in GENERIC_DEV_KEYWORDS):
+        return "Quantitative Development"
     return None
 
 
@@ -296,6 +306,7 @@ def build_row(role, company, job_type, category, women_focused, pay, location,
         "type": job_type,
         "category": category,
         "women_focused": "Yes" if women_focused else "No",
+        "new_grad": "Yes" if (job_type == "Full-Time" and is_new_grad_title(role)) else "No",
         "pay": pay,
         "location": location,
         "description": trim(description),
@@ -312,7 +323,8 @@ def process_greenhouse_job(company, job):
         return None
 
     is_event = is_event_title(title)
-    category = classify_category(title)
+    company_type = COMPANY_TYPES.get(company, DEFAULT_COMPANY_TYPE)
+    category = classify_category(title, company_type=company_type)
     if category is None and not is_event:
         return None
 
@@ -347,7 +359,8 @@ def process_lever_job(company, job):
         return None
 
     is_event = is_event_title(title)
-    category = classify_category(title)
+    company_type = COMPANY_TYPES.get(company, DEFAULT_COMPANY_TYPE)
+    category = classify_category(title, company_type=company_type)
     if category is None and not is_event:
         return None
 

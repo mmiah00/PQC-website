@@ -33,31 +33,124 @@ GREENHOUSE_BOARDS = [
     ("Flow Traders", "flowtraders"),
     ("Schonfeld", "schonfeld"),
     ("ExodusPoint", "exoduspoint"),
+    ("Optiver", "optiver"),
+    ("Simplex Trading", "simplextrading"),
+    ("Virtu Financial", "virtu"),
+    ("Point72", "point72"),
+    ("Man Group", "mangroup"),
+    ("Winton", "winton"),
+    ("AQR Capital Management", "aqr"),
+    ("PDT Partners", "pdtpartners"),
+    ("WorldQuant", "worldquant"),
+    ("Marshall Wace", "marshallwace"),
+    ("CFM (Capital Fund Management)", "cfm"),
+    ("William Blair", "williamblair"),
+    ("Numerix", "numerix"),
+    ("Symphony", "symphony"),
+    ("Jump Crypto", "jumpcrypto"),
+    ("Coinbase", "coinbase"),
+    ("B2C2", "b2c2"),
+    ("Paradigm", "paradigm"),
+    ("Oscar Health", "oscar"),
 ]
 
 # (display name, lever board token)
 LEVER_BOARDS = [
-    # Add confirmed Lever-hosted boards here, e.g.:
-    # ("Company Name", "company-token"),
+    ("The Voleon Group", "voleon"),
+    ("Belvedere Trading", "belvederetrading"),
+    ("ION Group", "ion"),
+    ("Amber Group", "ambergroup"),
+    ("Kraken", "kraken"),
+    ("Oliver Wyman", "oliverwyman"),
+    ("MetLife", "metlife"),
+    ("Compass Lexecon", "compasslexecon"),
 ]
 
 # Fixed taxonomy for the "Company Type" filter on the Opportunities page.
 # Keep this list short and stable -- it's mirrored as the <select> options
 # in opportunities.html, so adding a new *value* here means updating that
 # markup too. Adding a new *company* just means adding a line below.
+#
+# Coverage note: Investment Banks, Asset Management Firms, Commodity
+# Trading Houses, Financial Data Providers, Sovereign Wealth Funds,
+# Pension Funds, and Exchanges/Clearinghouses are under-represented here
+# (William Blair and MetLife are the only entries touching those
+# categories) because the giants in those spaces -- Goldman Sachs,
+# BlackRock, CME Group, sovereign/pension funds, etc. -- run on Workday,
+# SuccessFactors, or fully custom ATS platforms rather than the public
+# Greenhouse/Lever job-board APIs this scraper reads. Supporting those
+# would mean a per-company Workday tenant/site integration, which is a
+# separate, heavier piece of work than adding a line here.
 COMPANY_TYPES = {
-    "Jane Street": "Proprietary Trading Firm",
-    "Jump Trading": "Proprietary Trading Firm",
-    "Akuna Capital": "Proprietary Trading Firm",
-    "Tower Research Capital": "Proprietary Trading Firm",
-    "Old Mission": "Proprietary Trading Firm",
-    "IMC Trading": "Proprietary Trading Firm",
-    "Flow Traders": "Market Maker",
-    "Squarepoint Capital": "Hedge Fund",
-    "Schonfeld": "Hedge Fund",
-    "ExodusPoint": "Hedge Fund",
+    # Quantitative Hedge Funds
+    "Squarepoint Capital": "Quantitative Hedge Funds",
+    "Schonfeld": "Quantitative Hedge Funds",
+    "ExodusPoint": "Quantitative Hedge Funds",
+    "Point72": "Quantitative Hedge Funds",
+    "Man Group": "Quantitative Hedge Funds",
+    "Winton": "Quantitative Hedge Funds",
+    "AQR Capital Management": "Quantitative Hedge Funds",
+    "PDT Partners": "Quantitative Hedge Funds",
+    "WorldQuant": "Quantitative Hedge Funds",
+    "Marshall Wace": "Quantitative Hedge Funds",
+    "CFM (Capital Fund Management)": "Quantitative Hedge Funds",
+    "The Voleon Group": "Quantitative Hedge Funds",
+    # Proprietary Trading Firms
+    "Jane Street": "Proprietary Trading Firms",
+    "Jump Trading": "Proprietary Trading Firms",
+    "Akuna Capital": "Proprietary Trading Firms",
+    "Tower Research Capital": "Proprietary Trading Firms",
+    "Old Mission": "Proprietary Trading Firms",
+    "IMC Trading": "Proprietary Trading Firms",
+    "Optiver": "Proprietary Trading Firms",
+    "Simplex Trading": "Proprietary Trading Firms",
+    "Belvedere Trading": "Proprietary Trading Firms",
+    # Market Makers
+    "Flow Traders": "Market Makers",
+    "Virtu Financial": "Market Makers",
+    # Investment Banks
+    "William Blair": "Investment Banks",
+    # Financial Technology Companies
+    "Numerix": "Financial Technology Companies",
+    "Symphony": "Financial Technology Companies",
+    "ION Group": "Financial Technology Companies",
+    # Crypto Trading Firms
+    "Jump Crypto": "Crypto Trading Firms",
+    "Coinbase": "Crypto Trading Firms",
+    "B2C2": "Crypto Trading Firms",
+    "Paradigm": "Crypto Trading Firms",
+    "Amber Group": "Crypto Trading Firms",
+    "Kraken": "Crypto Trading Firms",
+    # Risk Management Consultancies
+    "Oliver Wyman": "Risk Management Consultancies",
+    # Insurance Companies
+    "MetLife": "Insurance Companies",
+    "Oscar Health": "Insurance Companies",
+    # Economic Consulting Firms
+    "Compass Lexecon": "Economic Consulting Firms",
 }
 DEFAULT_COMPANY_TYPE = "Other"
+
+# The full taxonomy, including categories with no live source yet -- kept
+# here (rather than just inferred from COMPANY_TYPES.values()) so the
+# Opportunities page filter can list every category up front.
+COMPANY_TYPE_CATEGORIES = [
+    "Quantitative Hedge Funds",
+    "Proprietary Trading Firms",
+    "Market Makers",
+    "Investment Banks",
+    "Asset Management Firms",
+    "Financial Technology Companies",
+    "Crypto Trading Firms",
+    "Commodity Trading Houses",
+    "Risk Management Consultancies",
+    "Financial Data Providers",
+    "Sovereign Wealth Funds",
+    "Pension Funds",
+    "Insurance Companies",
+    "Exchanges and Clearinghouses",
+    "Economic Consulting Firms",
+]
 
 # Static organization pages providing women-in-finance programs,
 # fellowships, and events. These are scraped generically (title + meta
@@ -88,18 +181,33 @@ CATEGORY_KEYWORDS = {
     ],
     "Quantitative Research": [
         "quantitative researcher", "quant researcher", "research scientist",
-        "quantitative research", "research intern", "machine learning researcher",
-        "alpha research",
+        "quantitative research", "quant research", "research intern",
+        "machine learning researcher", "alpha research",
     ],
     "Quantitative Development": [
         "quantitative developer", "quant developer", "quant dev",
-        "software engineer", "software developer", "sde", "trading systems",
-        "infrastructure engineer",
+        "trading systems",
     ],
     "Quantitative Finance": [
         "quantitative analyst", "quant analyst", "quantitative finance",
         "portfolio analyst", "risk analyst", "quantitative associate",
     ],
+}
+
+# "Software Engineer" / "Software Developer" / "SDE" / "Infrastructure
+# Engineer" are the kind of generic titles that mean "quant-adjacent" at a
+# firm whose whole business is trading, but mean nothing of the sort at a
+# 250-person insurance company or a consultancy -- a plain "Senior Software
+# Engineer, Backend" at Oscar Health has nothing to do with quant finance.
+# So these only count as a Quantitative Development match when the company
+# itself is one of the trading-native types below; everywhere else they're
+# ignored (the firm's other, more specific listings can still match).
+GENERIC_DEV_KEYWORDS = ["software engineer", "software developer", "sde", "infrastructure engineer"]
+SWE_TRUSTED_COMPANY_TYPES = {
+    "Proprietary Trading Firms",
+    "Market Makers",
+    "Quantitative Hedge Funds",
+    "Crypto Trading Firms",
 }
 
 # Any of these appearing in the title/description tags a row as
@@ -130,6 +238,15 @@ EVENT_TITLE_KEYWORDS = [
     "meet the firm", "insight day", "insight week", "insight programme",
     "insight program", "diversity weekend", "diversity event", "spring week",
     "summer insight", "discovery day", "explorer program", "explorer day",
+]
+
+# Titles containing any of these, on a Full-Time posting, get tagged as
+# "New Grad" -- entry-level roles for people who just graduated or have
+# roughly 1-3 years of experience (as opposed to internships, which are
+# their own type, or senior/experienced titles).
+NEW_GRAD_KEYWORDS = [
+    "campus", "graduate", "new grad", "entry level", "entry-level",
+    "junior", "rotational program", "associate program",
 ]
 
 # Heading phrases (substring match) used to split each job's HTML

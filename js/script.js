@@ -87,11 +87,19 @@ if (jobCards.length) {
 
     let visibleCount = 0;
 
+    // "women-focused" and "new-grad" are cross-cutting tags (a card can be
+    // e.g. both Full-Time and New Grad), so they filter on their own data
+    // attribute instead of the normal type/data-category match.
+    const crossCuttingFilters = {
+      "women-focused": (card) => card.dataset.womenFocused === "true",
+      "new-grad": (card) => card.dataset.newGrad === "true",
+    };
+
     jobCards.forEach((card) => {
       const matchesType =
         activeType === "all" ||
-        (activeType === "women-focused"
-          ? card.dataset.womenFocused === "true"
+        (crossCuttingFilters[activeType]
+          ? crossCuttingFilters[activeType](card)
           : card.dataset.category === activeType);
       const matchesLocation = !locationQuery || card.dataset.location.includes(locationQuery);
       const matchesTitle = !titleQuery || card.querySelector("h3").textContent.toLowerCase().includes(titleQuery);

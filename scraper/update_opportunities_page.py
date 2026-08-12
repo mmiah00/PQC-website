@@ -110,6 +110,7 @@ def render_job_card(job):
     company_type = job.get("company_type") or "Other"
     company_type_slug = slugify(company_type)
     women_focused = job.get("women_focused") == "Yes"
+    new_grad = job.get("new_grad") == "Yes"
     posted_date = job.get("date_posted", "")
     posted = format_posted(posted_date)
     apply_url = html.escape(job["source_url"] or "#", quote=True)
@@ -126,10 +127,14 @@ def render_job_card(job):
     if women_focused:
         women_tag = '\n            <span class="job-tag job-tag-women">Women+</span>'
 
-    return f"""        <div class="job-card" data-category="{category_slug}" data-location="{location.lower()}" data-company-type="{company_type_slug}" data-posted="{posted_date}" data-women-focused="{"true" if women_focused else "false"}">
+    new_grad_tag = ""
+    if new_grad:
+        new_grad_tag = '\n            <span class="job-tag job-tag-new-grad">New Grad</span>'
+
+    return f"""        <div class="job-card" data-category="{category_slug}" data-location="{location.lower()}" data-company-type="{company_type_slug}" data-posted="{posted_date}" data-women-focused="{"true" if women_focused else "false"}" data-new-grad="{"true" if new_grad else "false"}">
           <div class="job-main">
             <span class="job-tag">{job_type}</span>
-            <span class="job-tag job-tag-muted">{html.escape(company_type)}</span>{women_tag}
+            <span class="job-tag job-tag-muted">{html.escape(company_type)}</span>{women_tag}{new_grad_tag}
             <h3>{role}</h3>
             <p class="job-meta">
               {meta_spans}
