@@ -631,6 +631,13 @@ img { max-width: 100%; display: block; }
   color: var(--cream);
 }
 
+.job-tag-new-grad {
+  background: transparent;
+  color: var(--maroon);
+  border: 1px solid var(--maroon);
+  padding: 3px 9px;
+}
+
 .filter-btn-women {
   border-color: var(--maroon);
 }
