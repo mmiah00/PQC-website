@@ -177,32 +177,76 @@ CATEGORY_KEYWORDS = {
     "Quantitative Trading": [
         "quantitative trader", "quant trader", "trading intern",
         "execution trader", "trading associate", "systematic trader",
-        "market maker", "market making",
+        "market maker", "market making", "algorithmic trader",
+        "high-frequency trader", "high frequency trader", "volatility trader",
+        "execution quantitative researcher", "crypto quant trader",
+        "algorithmic execution", "order routing optimization",
+        "liquidity provider trader", "options market maker",
+        "etf arbitrage", "index arbitrage", "convertible bond arbitrage",
+        "dark pool", "statistical arbitrage",
     ],
     "Quantitative Research": [
         "quantitative researcher", "quant researcher", "research scientist",
         "quantitative research", "quant research", "research intern",
-        "machine learning researcher", "alpha research",
+        "machine learning researcher", "alpha research", "machine learning quant",
+        "quantitative strategist", "macro quant strategist",
+        "fx quantitative researcher", "factor investing", "smart beta",
+        "deep learning research scientist", "natural language processing",
+        "alternative data analyst", "financial econometrician",
+        "time series analyst", "microstructure researcher",
+        "event-driven quant", "trend following strategist",
+        "high-frequency strategy researcher",
     ],
     "Quantitative Development": [
         "quantitative developer", "quant developer", "quant dev",
-        "trading systems",
+        "trading systems", "high-frequency developer", "high frequency developer",
+        "low-latency engineer", "low latency engineer", "quantitative risk developer",
+        "exchange product developer", "market data architect",
+        "cloud infrastructure quant", "quant platform engineer",
+        "backtesting platform", "execution algos developer", "quant qa engineer",
     ],
     "Quantitative Finance": [
         "quantitative analyst", "quant analyst", "quantitative finance",
         "portfolio analyst", "risk analyst", "quantitative associate",
+        "quantitative intern", "financial engineer", "risk quant", "desk quant",
+        "model validation analyst", "portfolio manager", "credit risk quant",
+        "market risk analyst", "derivatives pricer", "systematic portfolio manager",
+        "quantitative risk manager", "model risk auditor", "fixed income quant",
+        "equity quant analyst", "commodity quant", "structured products analyst",
+        "counterparty credit risk", "stress testing quantitative", "xva quant",
+        "treasury quant analyst", "portfolio construction analyst",
+        "asset allocation quant", "quantitative product manager",
+        "quantitative compliance analyst", "surveillance analyst",
+        "operations quant", "business intelligence quant", "cta portfolio manager",
+        "quantitative consultant", "financial risk modeler", "credit scoring analyst",
+        "actuarial quant", "insurance risk modeler", "catastrophe modeler",
+        "climate risk quant", "esg quantitative analyst",
+        "sovereign wealth fund quant", "pension fund quant", "private equity quant",
+        "real estate quant", "high-yield bond quant", "municipal bond quant",
+        "structured credit pricer", "securitization analyst", "mbs quant",
+        "abs portfolio manager", "derivatives risk engineer",
+        "clearinghouse risk manager", "junior quantitative analyst",
     ],
 }
 
-# "Software Engineer" / "Software Developer" / "SDE" / "Infrastructure
-# Engineer" are the kind of generic titles that mean "quant-adjacent" at a
-# firm whose whole business is trading, but mean nothing of the sort at a
-# 250-person insurance company or a consultancy -- a plain "Senior Software
-# Engineer, Backend" at Oscar Health has nothing to do with quant finance.
-# So these only count as a Quantitative Development match when the company
-# itself is one of the trading-native types below; everywhere else they're
-# ignored (the firm's other, more specific listings can still match).
-GENERIC_DEV_KEYWORDS = ["software engineer", "software developer", "sde", "infrastructure engineer"]
+# Generic, industry-wide titles that mean "quant-adjacent" at a firm whose
+# whole business is trading, but mean nothing of the sort at a 250-person
+# insurance company or a consultancy -- a plain "Senior Software Engineer,
+# Backend" at Oscar Health, or a "Data Scientist" at a random fintech, has
+# nothing to do with quant finance. So these only count as a match when the
+# company itself is one of the trading-native types below; everywhere else
+# they're ignored (the firm's other, more specific listings can still match
+# via CATEGORY_KEYWORDS above).
+GENERIC_CATEGORY_KEYWORDS = {
+    "Quantitative Development": [
+        "software engineer", "software developer", "sde", "infrastructure engineer",
+        "data engineer", "machine learning engineer", "distributed systems engineer",
+        "devops engineer",
+    ],
+    "Quantitative Research": [
+        "data scientist",
+    ],
+}
 SWE_TRUSTED_COMPANY_TYPES = {
     "Proprietary Trading Firms",
     "Market Makers",

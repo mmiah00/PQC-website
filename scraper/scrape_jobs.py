@@ -35,7 +35,7 @@ from sources import (
     DESCRIPTION_HEADINGS,
     EVENT_TITLE_KEYWORDS,
     EXCLUDE_TITLE_KEYWORDS,
-    GENERIC_DEV_KEYWORDS,
+    GENERIC_CATEGORY_KEYWORDS,
     GREENHOUSE_BOARDS,
     LEVER_BOARDS,
     NEW_GRAD_KEYWORDS,
@@ -279,8 +279,10 @@ def classify_category(title, body_text="", company_type=None):
     for category, keywords in CATEGORY_KEYWORDS.items():
         if any(kw in haystack for kw in keywords):
             return category
-    if company_type in SWE_TRUSTED_COMPANY_TYPES and any(kw in haystack for kw in GENERIC_DEV_KEYWORDS):
-        return "Quantitative Development"
+    if company_type in SWE_TRUSTED_COMPANY_TYPES:
+        for category, keywords in GENERIC_CATEGORY_KEYWORDS.items():
+            if any(kw in haystack for kw in keywords):
+                return category
     return None
 
 
