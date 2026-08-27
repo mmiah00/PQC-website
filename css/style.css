@@ -801,41 +801,6 @@ img { max-width: 100%; display: block; }
   color: var(--ink-soft);
 }
 
-/* ---------- Marquee (Upcoming Events auto-scroll) ---------- */
-
-.marquee {
-  overflow: hidden;
-  width: 100%;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
-}
-
-.marquee-track {
-  display: flex;
-  width: max-content;
-  gap: 24px;
-  animation: marquee-scroll 28s linear infinite;
-}
-
-.marquee:hover .marquee-track {
-  animation-play-state: paused;
-}
-
-.marquee-track .card {
-  flex: 0 0 320px;
-}
-
-@keyframes marquee-scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .marquee-track {
-    animation: none;
-  }
-}
-
 /* ---------- Timeline (Events / History) ---------- */
 
 .timeline {
