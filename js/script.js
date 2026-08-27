@@ -48,12 +48,12 @@ teamTabButtons.forEach((btn) => {
   });
 });
 
-// Team member flip cards (team.html)
-document.querySelectorAll(".flip-trigger").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    btn.closest(".flip-card").classList.toggle("flipped");
-  });
-});
+// Team member flip cards (team.html) -- disabled, flip button removed from cards
+// document.querySelectorAll(".flip-trigger").forEach((btn) => {
+//   btn.addEventListener("click", () => {
+//     btn.closest(".flip-card").classList.toggle("flipped");
+//   });
+// });
 
 // Opportunities filters (opportunities.html) -- type buttons + location,
 // title, posted-within, and company-type all stack together (AND logic):
