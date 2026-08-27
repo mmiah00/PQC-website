@@ -48,6 +48,11 @@
 
         <div>
           <h2>Contact Information</h2>
+          <!--
+          Email and Location commented out -- PQC doesn't have a club email
+          or dedicated space right now, so Instagram/LinkedIn DMs are the
+          real contact channel. Re-enable these if that changes.
+
           <div class="contact-info-item">
             <div class="card-icon">@</div>
             <div>
@@ -62,6 +67,7 @@
               <p>[Placeholder Address]<br>[Room / Suite Number]<br>University of Chicago</p>
             </div>
           </div>
+          -->
           <div class="contact-info-item">
             <div class="card-icon">T</div>
             <div>
@@ -70,15 +76,18 @@
             </div>
           </div>
           <h3 style="margin-top:32px;">Follow Us</h3>
-          <div class="social-row">
-            <a href="https://www.instagram.com/phoenixquantcollective/" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
-            <a href="https://www.linkedin.com/company/phoenix-quant-collective/" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+          <div class="btn-row">
+            <a href="https://www.instagram.com/phoenixquantcollective/" class="btn btn-outline" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.linkedin.com/company/phoenix-quant-collective/" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
           </div>
+          <p style="margin-top:12px;">Follow us on Instagram and LinkedIn, and feel free to leave a message &mdash; that's the fastest way to reach us.</p>
         </div>
 
         <div>
           <h2>Send Us A Message</h2>
-          <form class="contact-form" action="#" method="post">
+          <form class="contact-form" action="https://formsubmit.co/mmiah@uchicago.edu" method="POST">
+            <input type="hidden" name="_subject" value="New message from PQC website contact form">
+            <input type="hidden" name="_captcha" value="false">
             <div>
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your full name" required>
