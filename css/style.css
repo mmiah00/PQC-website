@@ -327,6 +327,13 @@ img { max-width: 100%; display: block; }
   margin-bottom: 16px;
 }
 
+.card-icon-glyph {
+  display: block;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
 /* ---------- Placeholder media ---------- */
 
 .placeholder-photo {
