@@ -1,0 +1,43 @@
+name: Update job opportunities
+
+"on":
+  schedule:
+    # Every 6 hours. Cron is UTC. Adjust as you like -- job boards don't
+    # update fast enough to need much more frequent than this.
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {} # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install scraper dependencies
+        run: pip install -r scraper/requirements.txt
+
+      - name: Scrape jobs and regenerate the site
+        run: |
+          cd scraper
+          python3 update_opportunities_page.py --delay 0.3
+
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "pqc-job-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add opportunities.html jobs/ scraper/site_jobs_state.json
+          if git diff --staged --quiet; then
+            echo "No job changes -- nothing to commit."
+          else
+            git commit -m "Auto-update job opportunities"
+            git push
+          fi
