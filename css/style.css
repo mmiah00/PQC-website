@@ -14,6 +14,9 @@
   --maroon-tint: #f1dede;
   --ink: #2a1210;
   --ink-soft: #5a3a38;
+  --grey: #8d8d8d;
+  --grey-light: #eeecec;
+  --grey-dark: #4a4747;
   --font-head: "Playfair Display", Georgia, "Times New Roman", serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --max-width: 1120px;
@@ -995,6 +998,131 @@ form.contact-form {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+/* ---------- Firm & Role Directory ---------- */
+
+.directory-jump-nav {
+  background: var(--grey-light);
+  border: 1px solid var(--grey);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  margin: 8px 0 56px;
+}
+
+.directory-jump-label {
+  display: block;
+  font-family: var(--font-head);
+  font-weight: 600;
+  color: var(--maroon-dark);
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.directory-jump-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.directory-jump-links .btn {
+  padding: 9.6px 22.4px;
+  font-size: 0.76rem;
+}
+
+.directory-category {
+  scroll-margin-top: 96px;
+  margin-bottom: 48px;
+}
+
+.directory-category:last-child {
+  margin-bottom: 0;
+}
+
+.directory-category-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--maroon);
+}
+
+.directory-category-head h2 {
+  color: var(--maroon-dark);
+  font-size: 1.3rem;
+}
+
+.directory-category-head span {
+  color: var(--grey);
+  font-size: 0.85rem;
+}
+
+.directory-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--grey-light);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.directory-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 0.92rem;
+}
+
+.directory-table th {
+  background: var(--maroon-dark);
+  color: var(--cream);
+  text-align: left;
+  padding: 14px 20px;
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.directory-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--grey-light);
+  color: var(--ink);
+  vertical-align: top;
+}
+
+.directory-table tbody tr:nth-child(even) {
+  background: var(--cream-dim);
+}
+
+.directory-table tbody tr:hover {
+  background: var(--maroon-tint);
+}
+
+.directory-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.directory-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 0 4px 4px 0;
+  border-radius: 999px;
+  border: 1px solid var(--grey);
+  color: var(--grey-dark);
+  font-size: 0.78rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.directory-note {
+  background: var(--grey-light);
+  border-left: 3px solid var(--maroon);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 16px 20px;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  margin-bottom: 40px;
 }
 
 /* ---------- Page header (interior pages) ---------- */
