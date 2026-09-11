@@ -1,5 +1,23 @@
 [
   {
+    "role": "Quant Researcher",
+    "company": "Man Group",
+    "company_type": "Quantitative Hedge Funds",
+    "type": "Full-Time",
+    "category": "Quantitative Research",
+    "women_focused": "No",
+    "new_grad": "No",
+    "pay": "$253.6",
+    "location": "Boston; New York",
+    "description": "Develop and improve quantitative investment strategies in equity markets within the Strategic Alpha Research team (SAR). Work across the full research lifecycle \u2013 from idea generation and data sourcing, through signal construction and testing, to portfolio construction and trade execution \u2013 supporting both new and existing strategies. The responsibilities include: Identifying new investment ideas or innovative data sources; Sourcing, gathering and refining complex data for modeling; Coding and performing statistical/ML analysis to build, test and refine predictive models; Interpreting, presenting, and implementing the results; Conducting research on various implementation aspects of investment strategies such as trading cost models, risk models, optimization, and portfolio construction. Contributing to the firm\u2019s broader research agenda by collaborating with adjacent research teams, such as fixed income and macro, to share techniques, data and insights.",
+    "requirements": "",
+    "source_url": "https://job-boards.eu.greenhouse.io/mangroup/jobs/4960826101",
+    "date_posted": "2026-09-11",
+    "date_scraped": "2026-09-11",
+    "first_seen": "2026-09-11",
+    "slug": "man-group-quant-researcher-77a667e4"
+  },
+  {
     "role": "Data Engineer",
     "company": "Tower Research Capital",
     "company_type": "Proprietary Trading Firms",
