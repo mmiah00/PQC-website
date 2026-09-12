@@ -54,24 +54,6 @@
     "slug": "worldquant-junior-execution-trader-7e501b81"
   },
   {
-    "role": "Senior Software Engineer, Backend (Institutional -",
-    "company": "Coinbase",
-    "company_type": "Crypto Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$218,025",
-    "location": "Remote - USA",
-    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. You'll join the Client Lifecycle pillar within Institutional Foundations, the team that takes institutional clients from application to first trade and keeps them operating independently once they're live. You'll own core backend services spanning onboarding, provisioning, client data, and access controls, directly shaping how every institutional client gets onto Coinbase Prime. Own backend services that move institutional clients from application to first trade, including Unified Business Onboarding, KYC Refresh, and provisioning. Drive onboarding automation including automated screening, risk scoring, and auto-provisioning so low-risk clients complete onboarding without an ops ticket. Lead design and implementation of Organizations Service as the source of truth for institutional client data, including data quality, entity uniqueness, and Salesforce decoupling. Partner with Product, Compliance, Onboarding Ops, Identity, and Prime product teams to ship onboarding and access controls for new products including FCM, Hudson derivatives, and Prime Custody. Shape the access-control stack (roles, permissions, policies, and consensus) so complex institutions can operate on Prime without opening a ticket. Mentor engineers and raise the technical bar through design reviews, incident response, and operational excellence.",
-    "requirements": "5+ years of experience building and maintaining production backend services in a service-oriented architecture. | Production experience with Go (or similar), gRPC/Protobuf, relational data stores, and observability tooling. | Demonstrated practice of writing well-tested, production-grade code with high test coverage and structured code review habits. | Comfort working in regulated, high-integrity domains such as identity, access control, KYC/AML, or financial onboarding. | Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality.",
-    "source_url": "https://www.coinbase.com/careers/positions/8193862?gh_jid=8193862",
-    "date_posted": "2026-09-10",
-    "date_scraped": "2026-09-12",
-    "first_seen": "2026-09-11",
-    "slug": "coinbase-senior-software-engineer-backend-institutional-b1fb7843"
-  },
-  {
     "role": "Senior Software Engineer - Data Platform",
     "company": "Coinbase",
     "company_type": "Crypto Trading Firms",
