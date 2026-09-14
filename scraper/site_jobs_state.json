@@ -1,5 +1,23 @@
 [
   {
+    "role": "Junior Execution Trader - Equity",
+    "company": "Squarepoint Capital",
+    "company_type": "Quantitative Hedge Funds",
+    "type": "Full-Time",
+    "category": "Quantitative Trading",
+    "women_focused": "No",
+    "new_grad": "Yes",
+    "pay": "",
+    "location": "Singapore",
+    "description": "We are seeking a junior Execution Trader to support the trading procedures across equities, futures, and FX markets. The primary responsibility of this role is the accurate and timely execution of trading instructions while adhering to established processes, controls, and risk guidelines. Execute trades across stocks, futures, and FX products in accordance with trading instructions and established procedures. Monitor orders and execution outcomes to ensure accuracy and completeness. Follow operational workflows, risk controls, and compliance requirements with a high degree of diligence. Maintain accurate records and assist with post-trade processes when required. Continuously seek to improve execution quality and operational efficiency while adhering to existing standards and controls.",
+    "requirements": "",
+    "source_url": "https://www.squarepoint-capital.com/open-opportunities?id=8143287&gh_jid=8143287",
+    "date_posted": "2026-09-14",
+    "date_scraped": "2026-09-14",
+    "first_seen": "2026-09-14",
+    "slug": "squarepoint-capital-junior-execution-trader-equity-1cbfc8b0"
+  },
+  {
     "role": "Quant Researcher",
     "company": "Man Group",
     "company_type": "Quantitative Hedge Funds",
@@ -4300,24 +4318,6 @@
     "date_scraped": "2026-09-14",
     "first_seen": "2026-08-11",
     "slug": "virtu-financial-2027-internship-software-engineer-d063128b"
-  },
-  {
-    "role": "Senior Software Engineer, Consumer",
-    "company": "Coinbase",
-    "company_type": "Crypto Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$191,100",
-    "location": "Remote - Singapore",
-    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. As a Senior Software Engineer on the Onboarding team, you'll build the systems that power user onboarding and KYC across every Coinbase product and market. This team enables Coinbase to launch in new countries and ship new products quickly while meeting compliance and regulatory requirements. You'll own backend services that drive onboarding conversion at global scale and shape the architecture that makes rapid expansion possible. Own the design, development, and scaling of backend services in Golang that power onboarding and KYC workflows across multiple products and geographies. Build scalable, service-oriented systems using modern cloud infrastructure and industry best practices to solve novel platform challenges. Drive improvements to onboarding and MTU conversion funnels by identifying bottlenecks and shipping data-informed solutions. Partner with engineers, product managers, designers, and senior leadership to translate product and technical vision into quarterly execution roadmaps. Lead cross-cutting design reviews within your product area, ensuring security, operational integrity, and architectural clarity across all features shipped.",
-    "requirements": "5+ years of professional software engineering experience building, scaling, and maintaining production backend services in a service-oriented architecture. | Proven track record designing distributed systems that operate reliably at scale, including experience with cloud-native tooling (e.g., Docker, Kubernetes, AWS/GCP). | Proficiency in Golang or a similar statically-typed language, with demonstrated ability to write well-tested, production-grade code. | Experience owning end-to-end delivery of platform capabilities, from technical design through deployment, monitoring, and iteration. | Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality.",
-    "source_url": "https://www.coinbase.com/careers/positions/8067033?gh_jid=8067033",
-    "date_posted": "2026-07-15",
-    "date_scraped": "2026-09-14",
-    "first_seen": "2026-08-11",
-    "slug": "coinbase-senior-software-engineer-consumer-2ce8b400"
   },
   {
     "role": "2027 Internship - Quantitative Researcher (Master or PhD)",
