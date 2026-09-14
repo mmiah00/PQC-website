@@ -4896,24 +4896,6 @@
     "slug": "coinbase-software-engineer-60acdd37"
   },
   {
-    "role": "Senior Software Engineer, Compute Platform",
-    "company": "Coinbase",
-    "company_type": "Crypto Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$186,065",
-    "location": "Remote - USA",
-    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. As a Senior Software Engineer on the Compute Platform team within the Platform group, you'll own the primary compute orchestration infrastructure that every service at Coinbase runs on. Built largely on CNCF technologies including Kubernetes and Istio, this platform underpins the scalability, reliability, and efficiency of our entire product suite. You'll design and ship tooling, automation, and net-new capabilities that make it easy for hundreds of engineers to deploy and operate critical services, while partnering closely with Security, Reliability, and Observability teams to raise the bar across the stack. Own the design, build, and operation of Kubernetes cluster management tooling and automation that keeps our compute platform reliable and self-healing at scale. Build developer-facing tooling and workflows that improve how engineers across Coinbase interact with Kubernetes, with a heavy emphasis on integrating AI-driven processes and support. Deliver net-new compute capabilities for service owners, such as one-off jobs, cron scheduling, deployment strategies, EFS support, and automated right-sizing. Drive operational excellence by automating toil, reducing on-call burden, and continuously improving platform observability and incident response. Partner with Security, Reliability, and Observability teams to ensure the compute platform meets Coinbase's standards for security, uptime, and performance.",
-    "requirements": "5+ years of software engineering experience, including 3+ years building and operating Kubernetes or similar compute orchestration systems (e.g., Mesos, Nomad, ECS). | Proficiency in one or more programming languages (e.g., Go, Python, Java) with experience building and shipping production-grade infrastructure services | Hands-on experience with AWS and/or GCP infrastructure services (e.g., EC2, EKS, IAM, VPC, networking) in a production environment at scale. | Demonstrated ability to design, implement, and operate distributed infrastructure systems, including diagnosing complex failures and driving them to root-cause resolution. | Hands-on experience with the CNCF ecosystem (e.g., Helm, Prometheus, ArgoCD, Envoy) and a track record of applying these tools to solve real infrastructure problems. | Proven ability to apply AI tooling to infrastructure workflows, improving automation, developer productivity, or operational efficiency. | Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality. | Pay Transparency Notice: Base salary varies by location (see range below). Total compensation may also include equity and bonus eligibility, and benefits (medical, dental, vision, 401(k)).",
-    "source_url": "https://www.coinbase.com/careers/positions/7701645?gh_jid=7701645",
-    "date_posted": "2026-06-15",
-    "date_scraped": "2026-09-14",
-    "first_seen": "2026-08-11",
-    "slug": "coinbase-senior-software-engineer-compute-platform-069a4d41"
-  },
-  {
     "role": "Senior Risk Analyst",
     "company": "William Blair",
     "company_type": "Investment Banks",
