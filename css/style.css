@@ -848,6 +848,135 @@ img { max-width: 100%; display: block; }
   color: var(--ink-soft);
 }
 
+/* ---------- Interactive calendar (Events page) ---------- */
+
+.event-calendar {
+  max-width: 640px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid var(--cream-line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px 28px 28px;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.calendar-header h3 {
+  font-size: 1.15rem;
+  color: var(--maroon-dark);
+}
+
+.calendar-nav {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--cream-line);
+  background: var(--cream);
+  color: var(--maroon);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.12s ease;
+}
+
+.calendar-nav:hover {
+  background: var(--maroon-tint);
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 6px;
+}
+
+.calendar-weekdays span {
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--grey-dark);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.calendar-day {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: var(--ink);
+  background: transparent;
+  border: none;
+  cursor: default;
+  position: relative;
+  font-family: var(--font-body);
+}
+
+.calendar-day.is-empty {
+  visibility: hidden;
+}
+
+.calendar-day.has-event {
+  cursor: pointer;
+  background: var(--maroon-tint);
+  font-weight: 700;
+  color: var(--maroon-dark);
+  transition: background 0.12s ease, transform 0.12s ease;
+}
+
+.calendar-day.has-event:hover {
+  background: var(--maroon-light);
+  color: var(--cream);
+  transform: scale(1.06);
+}
+
+.calendar-day.has-event.selected {
+  background: var(--maroon);
+  color: var(--cream);
+}
+
+.calendar-day-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+  margin-top: 2px;
+}
+
+.calendar-details {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--cream-line);
+}
+
+.calendar-details-empty {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.calendar-details h4 {
+  color: var(--maroon-dark);
+  margin-bottom: 4px;
+}
+
+.calendar-details .job-meta {
+  margin-bottom: 10px;
+}
+
 /* ---------- Timeline (Events / History) ---------- */
 
 .timeline {

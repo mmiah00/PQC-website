@@ -39,7 +39,9 @@
     <div class="container">
       <p class="eyebrow">Events</p>
       <h1>Club Events</h1>
-      <p>PQC's programming centers on a few high-impact activities &mdash; office visits, alumni panels, coffee chats, and career development events. Placeholder calendar below; details will be added as our Fall 2026 launch approaches.</p>
+      <p>PQC’s programming is centered around meaningful opportunities to learn, connect, and build a career in quantitative finance. Our events include industry office visits, alumni panels, coffee chats, career development sessions, and community gatherings.</p>
+      <p>Our Fall 2026 calendar is coming soon, with event details and registration information to be added as we approach our official launch.</p>
+      <!-- <p>PQC's programming centers on a few high-impact activities &mdash; office visits, alumni panels, coffee chats, and career development events. Placeholder calendar below; details will be added as our Fall 2026 launch approaches.</p> -->
     </div>
   </section>
 
@@ -68,19 +70,44 @@
       </div>
       <div class="card-grid">
         <div class="card">
-          <p class="eyebrow">[Month Day]</p>
+          <p class="eyebrow">TBD</p>
           <h3>Alumni Panel &amp; Coffee Chat</h3>
           <p>Hear from alumni and industry professionals working in quantitative finance, followed by informal coffee chats.</p>
         </div>
         <div class="card">
-          <p class="eyebrow">[Month Day]</p>
+          <p class="eyebrow">TBD</p>
           <h3>Chicago Firm Office Visit</h3>
           <p>An on-site visit to a Chicago-based quantitative finance firm, giving members a first-hand look at the industry.</p>
         </div>
         <div class="card">
-          <p class="eyebrow">[Month Day]</p>
+          <p class="eyebrow">TBD</p>
           <h3>Career Development Workshop</h3>
           <p>A recruiting-focused session covering applications, interviews, and how to make the most of PQC's resources.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive calendar -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Calendar</p>
+        <h2>Add It To Your Calendar</h2>
+        <p>Browse month to month, and click a highlighted date for event details.</p>
+      </div>
+      <div class="event-calendar">
+        <div class="calendar-header">
+          <button type="button" class="calendar-nav" id="cal-prev" aria-label="Previous month">&larr;</button>
+          <h3 id="cal-month-label"></h3>
+          <button type="button" class="calendar-nav" id="cal-next" aria-label="Next month">&rarr;</button>
+        </div>
+        <div class="calendar-weekdays">
+          <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+        </div>
+        <div class="calendar-grid" id="cal-grid"></div>
+        <div class="calendar-details" id="cal-details">
+          <p class="calendar-details-empty">Click a highlighted date to see event details.</p>
         </div>
       </div>
     </div>

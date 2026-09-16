@@ -182,3 +182,105 @@ if (tooltipTargets.length) {
     });
   });
 }
+
+// Interactive events calendar (events.html) -- month-view grid built from a
+// small events map; click a highlighted date to see its details below.
+const calGrid = document.getElementById("cal-grid");
+
+if (calGrid) {
+  const calMonthLabel = document.getElementById("cal-month-label");
+  const calDetails = document.getElementById("cal-details");
+  const calPrevBtn = document.getElementById("cal-prev");
+  const calNextBtn = document.getElementById("cal-next");
+
+  // Keyed by "YYYY-MM-DD" (month is 1-indexed here for readability).
+  const calendarEvents = {
+    "2026-10-09": {
+      title: "Welcome Picnic",
+      date: "October 9, 2026",
+      location: "Promontory Point",
+      time: "Time TBD",
+      description: "Kick off the year with a laid-back picnic at Promontory Point -- snacks, soft drinks, and a chance to get to know fellow members before the semester's programming gets going.",
+    },
+  };
+
+  const monthNames = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+  ];
+
+  let calYear = 2026;
+  let calMonth = 9; // 0-indexed: October
+
+  const dateKey = (year, month, day) => {
+    const mm = String(month + 1).padStart(2, "0");
+    const dd = String(day).padStart(2, "0");
+    return `${year}-${mm}-${dd}`;
+  };
+
+  const showEventDetails = (key) => {
+    const event = calendarEvents[key];
+    if (!event) return;
+    calDetails.innerHTML = `
+      <h4>${event.title}</h4>
+      <p class="job-meta"><span>${event.date}</span><span>${event.location}</span><span>${event.time}</span></p>
+      <p>${event.description}</p>
+    `;
+  };
+
+  const renderCalendar = (year, month) => {
+    calMonthLabel.textContent = `${monthNames[month]} ${year}`;
+    calGrid.innerHTML = "";
+
+    const firstWeekday = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    for (let i = 0; i < firstWeekday; i += 1) {
+      const filler = document.createElement("div");
+      filler.className = "calendar-day is-empty";
+      calGrid.appendChild(filler);
+    }
+
+    for (let day = 1; day <= daysInMonth; day += 1) {
+      const key = dateKey(year, month, day);
+      const cell = document.createElement("button");
+      cell.type = "button";
+      cell.className = "calendar-day";
+      cell.textContent = day;
+
+      if (calendarEvents[key]) {
+        cell.classList.add("has-event");
+        cell.setAttribute("aria-label", `${monthNames[month]} ${day}: ${calendarEvents[key].title}`);
+        cell.addEventListener("click", () => {
+          calGrid.querySelectorAll(".calendar-day.selected").forEach((el) => el.classList.remove("selected"));
+          cell.classList.add("selected");
+          showEventDetails(key);
+        });
+      } else {
+        cell.disabled = true;
+      }
+
+      calGrid.appendChild(cell);
+    }
+  };
+
+  calPrevBtn.addEventListener("click", () => {
+    calMonth -= 1;
+    if (calMonth < 0) {
+      calMonth = 11;
+      calYear -= 1;
+    }
+    renderCalendar(calYear, calMonth);
+  });
+
+  calNextBtn.addEventListener("click", () => {
+    calMonth += 1;
+    if (calMonth > 11) {
+      calMonth = 0;
+      calYear += 1;
+    }
+    renderCalendar(calYear, calMonth);
+  });
+
+  renderCalendar(calYear, calMonth);
+}
