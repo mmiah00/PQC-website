@@ -1173,7 +1173,7 @@ form.contact-form {
 
 .stat-tile-hero .stat-value {
   font-family: var(--font-head);
-  font-size: 3.2rem;
+  font-size: 4.16rem;
   font-weight: 700;
   color: var(--maroon);
   line-height: 1;
@@ -1182,7 +1182,7 @@ form.contact-form {
 .stat-tile-hero .stat-label {
   margin-top: 8px;
   color: var(--ink-soft);
-  font-size: 0.95rem;
+  font-size: 1.235rem;
   max-width: 220px;
 }
 
@@ -1192,13 +1192,13 @@ form.contact-form {
 
 .stat-tile .stat-label {
   color: var(--ink-soft);
-  font-size: 0.82rem;
+  font-size: 1.066rem;
   margin-bottom: 4px;
 }
 
 .stat-tile .stat-value {
   font-family: var(--font-head);
-  font-size: 1.7rem;
+  font-size: 2.21rem;
   font-weight: 700;
   color: var(--ink);
 }
