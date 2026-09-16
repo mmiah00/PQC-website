@@ -1,5 +1,23 @@
 [
   {
+    "role": "2027 DMFI Quant Developer Intern",
+    "company": "Schonfeld",
+    "company_type": "Quantitative Hedge Funds",
+    "type": "Internship",
+    "category": "Quantitative Development",
+    "women_focused": "No",
+    "new_grad": "No",
+    "pay": "",
+    "location": "London, England, United Kingdom",
+    "description": "We are seeking an exceptional intern to join our Discretionary Macro Fixed Income (DMFI) Quant team in London where you will have an opportunity to meaningfully contribute to building and enhancing our derivatives pricing and risk infrastructure, delivering solutions that directly impact our trading operations across multiple asset classes.",
+    "requirements": "Currently pursuing an undergraduate degree in Computer Science, Software Engineering, Financial Engineering, Mathematics, or a related field | Working knowledge of C++ and/or Python (coursework or project experience is fine) | Basic understanding of APIs, databases, or distributed systems (coursework or projects count!) | Interest in fixed income markets, financial data, or quantitative finance is highly encouraged | Curiosity, willingness to learn, and comfort asking questions | The ability to communicate software design and development ideas clearly and succinctly | Creative problem-solving skills and experience working with real-world datasets | Strong attention to detail",
+    "source_url": "https://job-boards.greenhouse.io/schonfeld/jobs/8207942",
+    "date_posted": "2026-09-16",
+    "date_scraped": "2026-09-16",
+    "first_seen": "2026-09-16",
+    "slug": "schonfeld-2027-dmfi-quant-developer-intern-465201b2"
+  },
+  {
     "role": "Software Engineer - Java",
     "company": "IMC Trading",
     "company_type": "Proprietary Trading Firms",
