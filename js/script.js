@@ -200,7 +200,7 @@ if (calGrid) {
       date: "October 9, 2026",
       location: "Promontory Point",
       time: "Time TBD",
-      description: "Kick off the year with a laid-back picnic at Promontory Point -- snacks, soft drinks, and a chance to get to know fellow members before the semester's programming gets going.",
+      description: "Kick off the year with a relaxed picnic at Promontory Point. Enjoy snacks, soft drinks, and a chance to meet fellow PQC members, connect with new faces, and get to know the community before the semester's programming gets underway.",
     },
   };
 
