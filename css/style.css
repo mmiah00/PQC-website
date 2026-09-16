@@ -75,10 +75,6 @@ img { max-width: 100%; display: block; }
   padding: 72px 0;
 }
 
-.history-photo-bg {
-  background: url("../assets/trading-aestetic3.jpg") center / cover no-repeat;
-}
-
 .section-dim {
   background: var(--cream-dim);
 }
