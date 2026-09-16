@@ -1863,6 +1863,14 @@ body.members-theme .page-hero p {
   color: var(--ink);
 }
 
+/* The rest of the site's footer uses a dark maroon marble image with
+   light text; on the inverted members page that pairing goes dark-on-dark
+   and disappears, so swap in a light marble to go with the (already
+   inverted-dark) footer text. */
+body.members-theme .site-footer {
+  background: #f5f0eb url("../assets/white-marble.jpg") center / cover no-repeat;
+}
+
 .members-logout {
   position: fixed;
   bottom: 24px;
