@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PQC | Member's Page</title>
+<link rel="icon" href="assets/pqc-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("members.html");
+  }
+</script>
+</head>
+<body class="members-theme">
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <img src="assets/pqc-logo-transparent.png" alt="PQC logo">
+      <span>PQC<span class="brand-sub">Phoenix Quant Collective</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="why-it-matters.html">Why It Matters</a></li>
+      <li><a href="team.html">Our Team</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="opportunities.html">Opportunities</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="members-home.html" class="active nav-link-members">Member's Page</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Member's Page</p>
+      <h1>Welcome, Member!</h1>
+      <p>You now have access to member-exclusive resources. Browse the tabs below to get started.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="team-tabs">
+        <button class="team-tab-btn active" data-target="panel-question-bank">Interview Question Bank</button>
+        <button class="team-tab-btn" data-target="panel-submit-question">Submit A Question</button>
+        <button class="team-tab-btn" data-target="panel-readings">Suggested Readings</button>
+        <button class="team-tab-btn" data-target="panel-linkedin">LinkedIn Contacts</button>
+      </div>
+
+      <div class="team-panel active" id="panel-question-bank">
+        <div class="card" style="max-width:760px;margin:0 auto;text-align:center;">
+          <h3>Interview Question Bank</h3>
+          <p>A member-crowdsourced collection of real interview questions from quant recruiting, organized by firm and role. Coming soon, check back as members start contributing.</p>
+        </div>
+      </div>
+
+      <div class="team-panel" id="panel-submit-question">
+        <div class="card" style="max-width:760px;margin:0 auto;text-align:center;">
+          <h3>Submit A Question</h3>
+          <p>Had an interview recently? Help build the question bank for other members by submitting what you were asked. A submission form will go here.</p>
+          <a href="contact.html" class="btn btn-outline">Submit A Question (Coming Soon)</a>
+        </div>
+      </div>
+
+      <div class="team-panel" id="panel-readings">
+        <div class="card" style="max-width:760px;margin:0 auto;text-align:center;">
+          <h3>Suggested Readings</h3>
+          <p>Books, papers, and articles recommended by alumni and board members for learning more about quantitative finance. Placeholder list, coming soon.</p>
+        </div>
+      </div>
+
+      <div class="team-panel" id="panel-linkedin">
+        <div class="card" style="max-width:760px;margin:0 auto;text-align:center;">
+          <h3>LinkedIn Contacts</h3>
+          <p>A directory of PQC alumni and industry contacts who have agreed to connect with current members on LinkedIn. Placeholder list, coming soon.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/pqc-logo.png" alt="PQC logo">
+          <span>PQC</span>
+        </div>
+        <p>Phoenix Quant Collective (PQC) is a student-led community supporting and advancing women in quantitative finance. We aim to build a community of confident women and prepare them for successful careers in the field.</p>
+        <!--
+        <div class="social-row">
+          <a href="https://www.instagram.com/phoenixquantcollective/" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+          <a href="https://www.linkedin.com/company/phoenix-quant-collective/" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+        </div>
+        -->
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="opportunities.html">Opportunities</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <div class="social-row">
+          <a href="https://www.instagram.com/phoenixquantcollective/" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+          <a href="https://www.linkedin.com/company/phoenix-quant-collective/" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+          <a href="mailto:phoenixquantcollective@gmail.com" aria-label="Email">@</a>
+        </div>
+        <!--
+        <ul>
+          <li><a href="mailto:club@example.edu">club@example.edu</a></li>
+          <li>[Placeholder Address, Room XXX]</li>
+          <li>University of Chicago</li>
+        </ul>
+        -->
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 PQC. All rights reserved.</span>
+      <!-- <span>Site by PQC E-Board</span> -->
+    </div>
+  </div>
+</footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>

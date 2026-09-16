@@ -310,3 +310,78 @@ if (navGuideScroll && navGuideTrack && window.Lenis) {
   };
   requestAnimationFrame(rafNavGuide);
 }
+
+// Members-only password gate (members.html) -- client-side only, so this
+// is a placeholder gate, not real security: the password lives in this
+// file, which anyone can read. Good enough to keep casual visitors out of
+// a placeholder members page, not for anything sensitive.
+const passwordGateForm = document.getElementById("password-gate-form");
+
+if (passwordGateForm) {
+  const MEMBERS_PASSWORD = "p@ssw0rd";
+  const MAX_ATTEMPTS = 5;
+
+  const passwordInput = document.getElementById("password-gate-input");
+  const errorEl = document.getElementById("password-gate-error");
+  const attemptsEl = document.getElementById("password-gate-attempts");
+
+  let attemptsUsed = parseInt(sessionStorage.getItem("pqcMemberAttempts") || "0", 10);
+
+  const updateAttemptsDisplay = () => {
+    const remaining = MAX_ATTEMPTS - attemptsUsed;
+    if (remaining > 0) {
+      attemptsEl.textContent = `${remaining} attempt${remaining === 1 ? "" : "s"} remaining.`;
+    }
+  };
+
+  const lockOut = () => {
+    errorEl.textContent = "Too many incorrect attempts. Please reach out to the E-board for help.";
+    attemptsEl.textContent = "";
+    passwordInput.disabled = true;
+    passwordGateForm.querySelector("button[type=submit]").disabled = true;
+  };
+
+  if (attemptsUsed >= MAX_ATTEMPTS) {
+    lockOut();
+  } else {
+    updateAttemptsDisplay();
+  }
+
+  passwordGateForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (attemptsUsed >= MAX_ATTEMPTS) {
+      lockOut();
+      return;
+    }
+
+    if (passwordInput.value === MEMBERS_PASSWORD) {
+      sessionStorage.setItem("pqcMemberAuth", "true");
+      sessionStorage.removeItem("pqcMemberAttempts");
+      window.location.href = "members-home.html";
+      return;
+    }
+
+    attemptsUsed += 1;
+    sessionStorage.setItem("pqcMemberAttempts", String(attemptsUsed));
+    passwordInput.value = "";
+    passwordInput.focus();
+
+    if (attemptsUsed >= MAX_ATTEMPTS) {
+      lockOut();
+    } else {
+      errorEl.textContent = "Incorrect password. Please try again.";
+      updateAttemptsDisplay();
+    }
+  });
+}
+
+// Log out of the members page (members-home.html) -- clears the session
+// flag and sends the visitor back to the password gate.
+const membersLogoutBtn = document.getElementById("members-logout");
+
+if (membersLogoutBtn) {
+  membersLogoutBtn.addEventListener("click", () => {
+    sessionStorage.removeItem("pqcMemberAuth");
+    window.location.href = "members.html";
+  });
+}
