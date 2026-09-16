@@ -1,5 +1,23 @@
 [
   {
+    "role": "Software Engineer - Java",
+    "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firms",
+    "type": "Full-Time",
+    "category": "Quantitative Development",
+    "women_focused": "No",
+    "new_grad": "No",
+    "pay": "",
+    "location": "Mumbai, India",
+    "description": "We are seeking a driven Java engineer to join our global research platform team in Mumbai. The team builds and operates the compute and data platform that powers all of IMC's quantitative research: a large-scale Kubernetes-based research cluster, a distributed job scheduling platform used by every trading and research team, and the market-data and dataset services that feed research on it. Mumbai runs one of the platform's regional production deployments, and you'll collaborate closely with platform colleagues in Amsterdam, Chicago and Sydney. Design, build and operate the Java backend of our distributed job scheduling platform: the job controller and state machine, scheduling integrations, resource and cost tracking, and the failure-recovery machinery that keeps research workloads running at scale Develop gRPC/protobuf APIs consumed by Python, Java and C++ clients across the firm Build event-driven services on Kafka for job lifecycle tracking, data lineage, and dataset orchestration Work hands-on with Kubernetes at scale: pod scheduling, fair-share queueing, preemption and multi-cluster placement Instrument, monitor and firefight production systems, and drive root-cause analysis of performance bottlenecks Support and consult research users in the India office",
+    "requirements": "3+ years of professional Java development experience (Java 17+, Maven/Gradle, strong grasp of concurrency and JVM performance) | 2+ year of hands-on experience with Kubernetes and Docker (building on the K8s API is a strong plus) | Comfortable developing in Python; our client libraries and research users are Python-first, and you'll work on both sides of the API | Solid understanding of distributed systems fundamentals: state machines, retries/idempotency, event-driven architectures, consistency trade-offs | Experience with workload scheduling or batch/compute orchestration systems (e.g. Kubernetes schedulers, Slurm, YARN, Kueue, Ray, Airflow) | Experience with messaging/streaming systems such as Kafka | Working knowledge of NoSQL and time-series/SQL databases (e.g. MongoDB, PostgreSQL) | Experience with gRPC/protobuf or similar RPC frameworks is a plus | Strong Linux fundamentals and scripting (bash, Python) | Experience with monitoring stacks (Prometheus, Grafana, alerting) and comfort operating what you build | Demonstrated ability to troubleshoot across the stack from application code through Kubernetes to network and storage | Exposure to object storage (S3) or high-performance data formats (Parquet, Iceberg)",
+    "source_url": "https://job-boards.eu.greenhouse.io/imc/jobs/4976994101",
+    "date_posted": "2026-09-16",
+    "date_scraped": "2026-09-16",
+    "first_seen": "2026-09-16",
+    "slug": "imc-trading-software-engineer-java-01d57614"
+  },
+  {
     "role": "Digital Assets Quantitative Researcher",
     "company": "Flow Traders",
     "company_type": "Market Makers",
@@ -6794,7 +6812,7 @@
     "women_focused": "No",
     "new_grad": "No",
     "pay": "",
-    "location": "Dubai, London, Paris, Hong Kong, Sydney, Toronto",
+    "location": "Dubai, London, Paris, Hong Kong, Sydney, Toronto, Tokyo",
     "description": "Conduct original quantitative alpha signal research Follow, digest and analyze the latest academic research Manage all aspects of the research process, including idea generation, data analysis, hypothesis development and testing, alpha discovery, trading strategy generation, backtesting and portfolio analysis Build analytical tools to supplement our shared research framework",
     "requirements": "",
     "source_url": "https://boards.greenhouse.io/point72/jobs/7045936002?gh_jid=7045936002",
