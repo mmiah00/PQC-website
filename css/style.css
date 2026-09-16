@@ -303,27 +303,27 @@ img { max-width: 100%; display: block; }
   justify-content: center;
 }
 
-.nav-guide-grid {
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 40px;
+.nav-guide-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 8px;
+  cursor: grab;
+  scrollbar-width: thin;
+  scrollbar-color: var(--maroon-light) var(--cream-dim);
 }
 
-.nav-guide-grid .card {
-  position: relative;
+.nav-guide-scroll:active {
+  cursor: grabbing;
 }
 
-.nav-guide-grid .card:nth-child(2)::before,
-.nav-guide-grid .card:nth-child(3)::before,
-.nav-guide-grid .card:nth-child(5)::before,
-.nav-guide-grid .card:nth-child(6)::before {
-  content: "";
-  position: absolute;
-  left: -25px;
-  top: 51px;
-  width: 26px;
-  height: 16px;
-  background: url('../assets/right-arrow.png') center / contain no-repeat;
-  opacity: 0.3;
+.nav-guide-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+}
+
+.nav-guide-track .card {
+  flex: 0 0 260px;
 }
 
 .card {
@@ -1745,10 +1745,6 @@ form.contact-form {
   .two-col { grid-template-columns: 1fr; }
 
   .eboard-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
-
-  .nav-guide-grid { grid-template-columns: 1fr; }
-
-  .nav-guide-grid .card::before { display: none; }
 
   .hbar-row {
     grid-template-columns: 1fr;

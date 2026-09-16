@@ -284,3 +284,29 @@ if (calGrid) {
 
   renderCalendar(calYear, calMonth);
 }
+
+// Fluid horizontal scroll for the nav guide cards (get-involved.html) --
+// wheel, trackpad, and drag input all glide the card strip left to right
+// via Lenis instead of the browser's default (jumpy) horizontal scroll.
+const navGuideScroll = document.getElementById("nav-guide-scroll");
+const navGuideTrack = document.getElementById("nav-guide-track");
+
+if (navGuideScroll && navGuideTrack && window.Lenis) {
+  const navGuideLenis = new window.Lenis({
+    wrapper: navGuideScroll,
+    content: navGuideTrack,
+    orientation: "horizontal",
+    gestureOrientation: "both",
+    smoothWheel: true,
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    wheelMultiplier: 1,
+    touchMultiplier: 1.5,
+  });
+
+  const rafNavGuide = (time) => {
+    navGuideLenis.raf(time);
+    requestAnimationFrame(rafNavGuide);
+  };
+  requestAnimationFrame(rafNavGuide);
+}
