@@ -193,6 +193,7 @@ DETAIL_PAGE_TEMPLATE = """<!DOCTYPE html>
     <ul class="nav-links">
       <li><a href="../index.html">Home</a></li>
       <li><a href="../about.html">About</a></li>
+      <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
       <li><a href="../opportunities.html" class="active">Opportunities</a></li>

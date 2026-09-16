@@ -147,3 +147,38 @@ if (jobCards.length) {
 
   applyFilters();
 }
+
+// Interactive chart tooltips (why-it-matters.html) -- any element with a
+// data-tooltip attribute (bar rows, SVG points, donut arcs, heatmap cells)
+// gets a shared floating tooltip that follows the cursor.
+const tooltipTargets = document.querySelectorAll("[data-tooltip]");
+
+if (tooltipTargets.length) {
+  const tooltip = document.createElement("div");
+  tooltip.className = "viz-tooltip";
+  document.body.appendChild(tooltip);
+
+  tooltipTargets.forEach((el) => {
+    el.addEventListener("mouseenter", () => {
+      tooltip.textContent = el.dataset.tooltip;
+      tooltip.classList.add("visible");
+    });
+    el.addEventListener("mousemove", (e) => {
+      tooltip.style.left = `${e.clientX + 16}px`;
+      tooltip.style.top = `${e.clientY + 16}px`;
+    });
+    el.addEventListener("mouseleave", () => {
+      tooltip.classList.remove("visible");
+    });
+    el.addEventListener("focus", () => {
+      const rect = el.getBoundingClientRect();
+      tooltip.textContent = el.dataset.tooltip;
+      tooltip.style.left = `${rect.left}px`;
+      tooltip.style.top = `${rect.bottom + 8}px`;
+      tooltip.classList.add("visible");
+    });
+    el.addEventListener("blur", () => {
+      tooltip.classList.remove("visible");
+    });
+  });
+}

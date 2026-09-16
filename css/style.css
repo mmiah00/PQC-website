@@ -1291,6 +1291,218 @@ form.contact-form {
   font-variant-numeric: tabular-nums;
 }
 
+.hbar-row {
+  border-radius: 6px;
+  padding: 4px 6px;
+  margin-left: -6px;
+  margin-right: -6px;
+  cursor: default;
+  transition: background 0.12s ease;
+}
+
+.hbar-row:hover {
+  background: var(--maroon-tint);
+}
+
+.hbar-row:hover .hbar-row-label {
+  color: var(--maroon-dark);
+  font-weight: 600;
+}
+
+/* ---------- Interactive tooltip (why-it-matters.html) ---------- */
+
+.viz-tooltip {
+  position: fixed;
+  pointer-events: none;
+  background: var(--ink);
+  color: var(--cream);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.12s ease, transform 0.12s ease;
+  max-width: 240px;
+}
+
+.viz-tooltip.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Line charts ---------- */
+
+.viz-chart-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.line-chart {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.viz-axis-line {
+  stroke: var(--grey-light);
+  stroke-width: 1;
+}
+
+.viz-line {
+  fill: none;
+  stroke: var(--maroon);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.viz-point {
+  fill: var(--maroon);
+  stroke: var(--cream);
+  stroke-width: 2;
+  cursor: pointer;
+  transition: r 0.12s ease;
+}
+
+.viz-point:hover {
+  r: 8;
+  fill: var(--maroon-dark);
+}
+
+.viz-point-label {
+  fill: var(--ink);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.viz-axis-label {
+  fill: var(--ink-soft);
+  font-family: var(--font-body);
+  font-size: 11px;
+}
+
+/* ---------- Donut charts ---------- */
+
+.donut-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 56px;
+}
+
+.donut-card {
+  text-align: center;
+}
+
+.donut-chart {
+  width: 140px;
+  height: 140px;
+}
+
+.donut-track,
+.donut-arc {
+  fill: none;
+  stroke-width: 16;
+  cursor: pointer;
+}
+
+.donut-track.male {
+  stroke: var(--chart-gold);
+}
+
+.donut-arc.female {
+  stroke: var(--maroon-light);
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 70px 70px;
+  transition: stroke-width 0.12s ease;
+}
+
+.donut-arc.female:hover,
+.donut-track.male:hover {
+  stroke-width: 19;
+}
+
+.donut-center-label {
+  fill: var(--ink);
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.donut-caption {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+/* ---------- Heatmap ---------- */
+
+.heatmap-row {
+  display: flex;
+  gap: 4px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.heatmap-cell {
+  flex: 1;
+  aspect-ratio: 1.6 / 1;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+
+.heatmap-cell:hover {
+  transform: scale(1.04);
+}
+
+.heatmap-cell .heatmap-value {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.heatmap-cell-dark .heatmap-value {
+  color: var(--cream);
+}
+
+.heatmap-labels {
+  display: flex;
+  gap: 4px;
+  max-width: 640px;
+  margin: 10px auto 0;
+}
+
+.heatmap-labels span {
+  flex: 1;
+  text-align: center;
+  font-size: 0.76rem;
+  color: var(--ink-soft);
+}
+
+.heatmap-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+  font-size: 0.8rem;
+  color: var(--grey-dark);
+}
+
+.heatmap-gradient {
+  width: 120px;
+  height: 10px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #f6e2e2, #76090f);
+}
+
 .vbar-chart {
   display: flex;
   align-items: flex-end;
@@ -1310,23 +1522,38 @@ form.contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  width: 100%;
+  max-width: 52px;
   height: 160px;
 }
 
-.vbar-value {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--ink);
-  margin-bottom: 6px;
-  font-variant-numeric: tabular-nums;
+.vbar-gap {
+  width: 100%;
+  height: 2px;
+  background: var(--cream-dim);
 }
 
 .vbar-fill {
   width: 100%;
-  max-width: 52px;
-  background: var(--maroon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vbar-fill.male {
+  background: var(--chart-gold);
   border-radius: 4px 4px 0 0;
+}
+
+.vbar-fill.female {
+  background: var(--maroon-light);
+}
+
+.vbar-seg-label {
+  color: var(--cream);
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
 }
 
 .vbar-year {

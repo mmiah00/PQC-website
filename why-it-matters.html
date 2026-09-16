@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PQC | Why It Matters</title>
+<link rel="icon" href="assets/pqc-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <img src="assets/pqc-logo-transparent.png" alt="PQC logo">
+      <span>PQC<span class="brand-sub">Phoenix Quant Collective</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="why-it-matters.html" class="active">Why It Matters</a></li>
+      <li><a href="team.html">Our Team</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="opportunities.html">Opportunities</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">The Data</p>
+      <h1>Why It Matters</h1>
+      <p>An interactive look at where women stand in quantitative finance today, and why PQC exists. Hover over any chart to see the exact numbers.</p>
+    </div>
+  </section>
+
+  <!-- Stat tiles -->
+  <section class="section">
+    <div class="container">
+      <div class="stat-tiles" style="justify-content:center;">
+        <div class="stat-tile-hero">
+          <div class="stat-value">2.1%</div>
+          <div class="stat-label">of S&amp;P 500 CEOs are women</div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-label">College workforce</div>
+          <div class="stat-value">50%</div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-label">Quant finance</div>
+          <div class="stat-value">~20%</div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-label">Women of color, finance C-suite</div>
+          <div class="stat-value">~7%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career ladder line chart -->
+  <section class="section section-dim">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">The Leaky Pipeline</p>
+        <h2>Representation Drops At Every Rung</h2>
+        <p>Share of women in financial services roles, from entry level to the very top. Hover over a point for the exact figure.</p>
+      </div>
+      <div class="viz-chart-wrap">
+        <svg viewBox="0 0 600 250" class="line-chart" role="img" aria-label="Line chart showing the share of women declining from 48% at entry level to 2.1% at CEO level">
+          <line x1="60" y1="200" x2="560" y2="200" class="viz-axis-line"></line>
+          <line x1="60" y1="20" x2="60" y2="200" class="viz-axis-line"></line>
+          <path d="M60,27.2 L226.7,95.6 L393.3,95.6 L560,192.4" class="viz-line"></path>
+          <circle cx="60" cy="27.2" r="6" class="viz-point" data-tooltip="Entry level: 48% women"></circle>
+          <circle cx="226.7" cy="95.6" r="6" class="viz-point" data-tooltip="C-suite: 29% women"></circle>
+          <circle cx="393.3" cy="95.6" r="6" class="viz-point" data-tooltip="S&amp;P 500 executive officers: 29% women"></circle>
+          <circle cx="560" cy="192.4" r="6" class="viz-point" data-tooltip="S&amp;P 500 CEOs: 2.1% women"></circle>
+          <text x="60" y="14" class="viz-point-label" text-anchor="middle">48%</text>
+          <text x="226.7" y="82.6" class="viz-point-label" text-anchor="middle">29%</text>
+          <text x="393.3" y="82.6" class="viz-point-label" text-anchor="middle">29%</text>
+          <text x="560" y="179.4" class="viz-point-label" text-anchor="middle">2.1%</text>
+          <text x="60" y="222" class="viz-axis-label" text-anchor="middle">Entry Level</text>
+          <text x="226.7" y="222" class="viz-axis-label" text-anchor="middle">C-Suite</text>
+          <text x="393.3" y="222" class="viz-axis-label" text-anchor="middle">Exec Officers</text>
+          <text x="560" y="222" class="viz-axis-label" text-anchor="middle">CEOs</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donut charts -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">By The Numbers</p>
+        <h2>Two Snapshots</h2>
+        <p>Hover over either ring to see both sides of the split.</p>
+      </div>
+      <div class="donut-row">
+        <div class="donut-card">
+          <svg viewBox="0 0 140 140" class="donut-chart" role="img" aria-label="Donut chart: approximately 20 percent of the quantitative finance workforce is women">
+            <circle cx="70" cy="70" r="55" class="donut-track male" data-tooltip="Men: ~80% of the quant finance workforce"></circle>
+            <circle cx="70" cy="70" r="55" class="donut-arc female" stroke-dasharray="69.1 276.5" data-tooltip="Women: ~20% of the quant finance workforce"></circle>
+            <text x="70" y="75" class="donut-center-label" text-anchor="middle">~20%</text>
+          </svg>
+          <p class="donut-caption">Women In Quant Finance</p>
+        </div>
+        <div class="donut-card">
+          <svg viewBox="0 0 140 140" class="donut-chart" role="img" aria-label="Donut chart: 2.1 percent of S and P 500 CEOs are women">
+            <circle cx="70" cy="70" r="55" class="donut-track male" data-tooltip="Men: 97.9% of S&amp;P 500 CEOs"></circle>
+            <circle cx="70" cy="70" r="55" class="donut-arc female" stroke-dasharray="7.3 338.3" data-tooltip="Women: 2.1% of S&amp;P 500 CEOs"></circle>
+            <text x="70" y="75" class="donut-center-label" text-anchor="middle">2.1%</text>
+          </svg>
+          <p class="donut-caption">Women As S&amp;P 500 CEOs</p>
+        </div>
+      </div>
+      <div class="chart-legend" style="justify-content:center;margin-top:8px;">
+        <span class="chart-legend-item"><span class="chart-legend-swatch" style="background:var(--maroon-light);"></span>Women</span>
+        <span class="chart-legend-item"><span class="chart-legend-swatch" style="background:var(--chart-gold);"></span>Men</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Heatmap -->
+  <section class="section section-dim">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Intersectionality</p>
+        <h2>The Gap Is Wider For Women Of Color</h2>
+        <p>Share of the U.S. science &amp; engineering workforce, and finance C-suite, held by women of color. Darker means a larger share. Hover for exact figures.</p>
+      </div>
+      <div class="heatmap-row">
+        <div class="heatmap-cell" style="background:#f6e2e2;" data-tooltip="Indigenous women: 0.07% of the science and engineering workforce">
+          <span class="heatmap-value">0.07%</span>
+        </div>
+        <div class="heatmap-cell" style="background:#e8b7ba;" data-tooltip="Latina and Hispanic women: 2.3% of the science and engineering workforce">
+          <span class="heatmap-value">2.3%</span>
+        </div>
+        <div class="heatmap-cell" style="background:#c96f75;" data-tooltip="Black women: 2.5% of the science and engineering workforce">
+          <span class="heatmap-value">2.5%</span>
+        </div>
+        <div class="heatmap-cell heatmap-cell-dark" style="background:#76090f;" data-tooltip="Women of color in finance C-suite roles: approximately 7%">
+          <span class="heatmap-value">~7%</span>
+        </div>
+      </div>
+      <div class="heatmap-labels">
+        <span>Indigenous women</span>
+        <span>Latina &amp; Hispanic women</span>
+        <span>Black women</span>
+        <span>Women of color, finance C-suite</span>
+      </div>
+      <div class="heatmap-legend">
+        <span>Less represented</span>
+        <div class="heatmap-gradient"></div>
+        <span>More represented</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bar chart (moved from About) -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">The Full Breakdown</p>
+        <h2>Every Stage, Side By Side</h2>
+        <p>Every bar below is measured against a full 50% share: a track filled edge to edge means women hold half of that role or category. Maroon marks general or entry-level shares, and gold marks senior and leadership tiers. Hover any bar for the exact figure.</p>
+      </div>
+
+      <div class="chart-legend">
+        <span class="chart-legend-item"><span class="chart-legend-swatch women"></span>Share of women (general / entry-level)</span>
+        <span class="chart-legend-item"><span class="chart-legend-swatch senior"></span>Senior or leadership tier</span>
+        <span class="chart-legend-note">Full track = 50% parity</span>
+      </div>
+
+      <div class="hbar-group">
+        <p class="hbar-group-title">From Education To Quant Roles</p>
+        <div class="hbar-row" data-tooltip="College-educated workforce: 50% women">
+          <span class="hbar-row-label">College-educated workforce</span>
+          <div class="hbar-track"><div class="hbar-fill women" style="width:100%;"></div></div>
+          <span class="hbar-value">50%</span>
+        </div>
+        <div class="hbar-row" data-tooltip="Science &amp; engineering workforce: 34% women">
+          <span class="hbar-row-label">Science &amp; engineering workforce</span>
+          <div class="hbar-track"><div class="hbar-fill women" style="width:68%;"></div></div>
+          <span class="hbar-value">34%</span>
+        </div>
+        <div class="hbar-row" data-tooltip="Math &amp; computer science workforce: 26% women">
+          <span class="hbar-row-label">Math &amp; computer science workforce</span>
+          <div class="hbar-track"><div class="hbar-fill women" style="width:52%;"></div></div>
+          <span class="hbar-value">26%</span>
+        </div>
+        <div class="hbar-row" data-tooltip="Quantitative finance: approximately 20% women">
+          <span class="hbar-row-label">Quantitative finance</span>
+          <div class="hbar-track"><div class="hbar-fill senior" style="width:40%;"></div></div>
+          <span class="hbar-value">~20%</span>
+        </div>
+      </div>
+
+      <div class="hbar-group">
+        <p class="hbar-group-title">Academic Pipeline</p>
+        <div class="hbar-row" data-tooltip="Math &amp; statistics degrees: 42.4% women">
+          <span class="hbar-row-label">Math &amp; statistics degrees</span>
+          <div class="hbar-track"><div class="hbar-fill women" style="width:84.8%;"></div></div>
+          <span class="hbar-value">42.4%</span>
+        </div>
+        <div class="hbar-row" data-tooltip="Computer science degrees: 18.7% women">
+          <span class="hbar-row-label">Computer science degrees</span>
+          <div class="hbar-track"><div class="hbar-fill women" style="width:37.4%;"></div></div>
+          <span class="hbar-value">18.7%</span>
+        </div>
+        <div class="hbar-row" data-tooltip="Finance faculty worldwide: 20% women">
+          <span class="hbar-row-label">Finance faculty (global)</span>
+          <div class="hbar-track"><div class="hbar-fill women" style="width:40%;"></div></div>
+          <span class="hbar-value">20%</span>
+        </div>
+      </div>
+
+      <div class="hbar-group">
+        <p class="hbar-group-title">Hedge Funds &amp; Alternatives</p>
+        <div class="hbar-row" data-tooltip="Hedge fund junior staff: 29% women">
+          <span class="hbar-row-label">Hedge fund junior staff</span>
+          <div class="hbar-track"><div class="hbar-fill women" style="width:58%;"></div></div>
+          <span class="hbar-value">29%</span>
+        </div>
+        <div class="hbar-row" data-tooltip="Hedge fund senior staff: 11% women">
+          <span class="hbar-row-label">Hedge fund senior staff</span>
+          <div class="hbar-track"><div class="hbar-fill senior" style="width:22%;"></div></div>
+          <span class="hbar-value">11%</span>
+        </div>
+        <div class="hbar-row" data-tooltip="Funds with female leadership: 10%">
+          <span class="hbar-row-label">Funds with female leadership</span>
+          <div class="hbar-track"><div class="hbar-fill senior" style="width:20%;"></div></div>
+          <span class="hbar-value">10%</span>
+        </div>
+        <div class="hbar-row" data-tooltip="VC &amp; PE decision-makers: 15% women">
+          <span class="hbar-row-label">VC &amp; PE decision-makers</span>
+          <div class="hbar-track"><div class="hbar-fill senior" style="width:30%;"></div></div>
+          <span class="hbar-value">15%</span>
+        </div>
+      </div>
+
+      <div class="hbar-group">
+        <p class="hbar-group-title">Financial Services Career Ladder</p>
+        <div class="hbar-row" data-tooltip="Entry level: 48% women">
+          <span class="hbar-row-label">Entry level</span>
+          <div class="hbar-track"><div class="hbar-fill women" style="width:96%;"></div></div>
+          <span class="hbar-value">48%</span>
+        </div>
+        <div class="hbar-row" data-tooltip="C-suite: 29% women">
+          <span class="hbar-row-label">C-suite</span>
+          <div class="hbar-track"><div class="hbar-fill senior" style="width:58%;"></div></div>
+          <span class="hbar-value">29%</span>
+        </div>
+        <div class="hbar-row" data-tooltip="S&amp;P 500 executive officers: 29% women">
+          <span class="hbar-row-label">S&amp;P 500 executive officers</span>
+          <div class="hbar-track"><div class="hbar-fill senior" style="width:58%;"></div></div>
+          <span class="hbar-value">29%</span>
+        </div>
+        <div class="hbar-row" data-tooltip="S&amp;P 500 CEOs: 2.1% women">
+          <span class="hbar-row-label">S&amp;P 500 CEOs</span>
+          <div class="hbar-track"><div class="hbar-fill senior" style="width:4.2%;"></div></div>
+          <span class="hbar-value">2.1%</span>
+        </div>
+      </div>
+
+      <div class="hbar-group">
+        <p class="hbar-group-title">Intersectional Share Of The S&amp;E Workforce</p>
+        <div class="hbar-row" data-tooltip="Black women: 2.5% of the science and engineering workforce">
+          <span class="hbar-row-label">Black women</span>
+          <div class="hbar-track"><div class="hbar-fill women" style="width:5%;"></div></div>
+          <span class="hbar-value">2.5%</span>
+        </div>
+        <div class="hbar-row" data-tooltip="Latina &amp; Hispanic women: 2.3% of the science and engineering workforce">
+          <span class="hbar-row-label">Latina &amp; Hispanic women</span>
+          <div class="hbar-track"><div class="hbar-fill women" style="width:4.6%;"></div></div>
+          <span class="hbar-value">2.3%</span>
+        </div>
+        <div class="hbar-row" data-tooltip="Indigenous women: 0.07% of the science and engineering workforce">
+          <span class="hbar-row-label">Indigenous women</span>
+          <div class="hbar-track"><div class="hbar-fill women" style="width:0.14%;"></div></div>
+          <span class="hbar-value">0.07%</span>
+        </div>
+        <div class="hbar-row" data-tooltip="Women of color in finance C-suite roles: approximately 7%">
+          <span class="hbar-row-label">Women of color, finance C-suite</span>
+          <div class="hbar-track"><div class="hbar-fill senior" style="width:14%;"></div></div>
+          <span class="hbar-value">~7%</span>
+        </div>
+      </div>
+
+      <p class="chart-legend-note" style="margin-top:20px;">A few figures above are estimates rather than precise counts, including the ~20% for quantitative finance and ~7% for women of color in the C-suite. Figures are drawn from public industry and workforce research; sources available on request.</p>
+    </div>
+  </section>
+
+  <!-- UChicago cohort trend line chart -->
+  <section class="section section-dim">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Closer To Home</p>
+        <h2>Women In UChicago's FinMath Cohort</h2>
+        <p>Share of women in each incoming Financial Mathematics cohort at UChicago. Hover over a point for the exact figure.</p>
+      </div>
+      <div class="viz-chart-wrap">
+        <svg viewBox="0 0 600 250" class="line-chart" role="img" aria-label="Line chart showing the share of women in the UChicago FinMath cohort from 27% in 2020 to 21% in 2025, peaking at 35% in 2022 and dipping to 18% in 2024">
+          <line x1="60" y1="200" x2="560" y2="200" class="viz-axis-line"></line>
+          <line x1="60" y1="20" x2="60" y2="200" class="viz-axis-line"></line>
+          <path d="M60,78.5 L160,47 L260,42.5 L360,56 L460,119 L560,105.5" class="viz-line"></path>
+          <circle cx="60" cy="78.5" r="6" class="viz-point" data-tooltip="Fall 2020: 27% women"></circle>
+          <circle cx="160" cy="47" r="6" class="viz-point" data-tooltip="Fall 2021: 34% women"></circle>
+          <circle cx="260" cy="42.5" r="6" class="viz-point" data-tooltip="Fall 2022: 35% women"></circle>
+          <circle cx="360" cy="56" r="6" class="viz-point" data-tooltip="Fall 2023: 32% women"></circle>
+          <circle cx="460" cy="119" r="6" class="viz-point" data-tooltip="Fall 2024: 18% women"></circle>
+          <circle cx="560" cy="105.5" r="6" class="viz-point" data-tooltip="Fall 2025: 21% women"></circle>
+          <text x="60" y="65.5" class="viz-point-label" text-anchor="middle">27%</text>
+          <text x="160" y="34" class="viz-point-label" text-anchor="middle">34%</text>
+          <text x="260" y="29.5" class="viz-point-label" text-anchor="middle">35%</text>
+          <text x="360" y="43" class="viz-point-label" text-anchor="middle">32%</text>
+          <text x="460" y="106" class="viz-point-label" text-anchor="middle">18%</text>
+          <text x="560" y="92.5" class="viz-point-label" text-anchor="middle">21%</text>
+          <text x="60" y="222" class="viz-axis-label" text-anchor="middle">2020</text>
+          <text x="160" y="222" class="viz-axis-label" text-anchor="middle">2021</text>
+          <text x="260" y="222" class="viz-axis-label" text-anchor="middle">2022</text>
+          <text x="360" y="222" class="viz-axis-label" text-anchor="middle">2023</text>
+          <text x="460" y="222" class="viz-axis-label" text-anchor="middle">2024</text>
+          <text x="560" y="222" class="viz-axis-label" text-anchor="middle">2025</text>
+        </svg>
+      </div>
+      <p class="text-center" style="margin-top:8px;font-size:0.85rem;color:var(--ink-soft);">Source: <a href="https://finmath.uchicago.edu/admissions/class-profile/" target="_blank" rel="noopener">UChicago Financial Mathematics Class Profile</a>, where you can see the full data for yourself.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Help Us Close The Gap</h2>
+      <span class="bullet-link"><a href="get-involved.html" style="color:inherit;">Get Involved</a></span>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/pqc-logo.png" alt="PQC logo">
+          <span>PQC</span>
+        </div>
+        <p>Phoenix Quant Collective (PQC) is a student-led community supporting and advancing women in quantitative finance. We aim to build a community of confident women and prepare them for successful careers in the field.</p>
+        <!--
+        <div class="social-row">
+          <a href="https://www.instagram.com/phoenixquantcollective/" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+          <a href="https://www.linkedin.com/company/phoenix-quant-collective/" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+        </div>
+        -->
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="opportunities.html">Opportunities</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <div class="social-row">
+          <a href="https://www.instagram.com/phoenixquantcollective/" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+          <a href="https://www.linkedin.com/company/phoenix-quant-collective/" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+          <a href="mailto:phoenixquantcollective@gmail.com" aria-label="Email">@</a>
+        </div>
+        <!--
+        <ul>
+          <li><a href="mailto:club@example.edu">club@example.edu</a></li>
+          <li>[Placeholder Address, Room XXX]</li>
+          <li>University of Chicago</li>
+        </ul>
+        -->
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 PQC. All rights reserved.</span>
+      <!-- <span>Site by PQC E-Board</span> -->
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
