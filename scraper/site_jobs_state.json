@@ -1,5 +1,23 @@
 [
   {
+    "role": "Trade Surveillance Analyst",
+    "company": "Schonfeld",
+    "company_type": "Quantitative Hedge Funds",
+    "type": "Full-Time",
+    "category": "Quantitative Finance",
+    "women_focused": "No",
+    "new_grad": "No",
+    "pay": "",
+    "location": "London, England, United Kingdom",
+    "description": "We are seeking to hire an exceptional individual to join our compliance team based out of London. The role sits within Market Controls & Reporting and combines day-to-day operation of the trade surveillance programme with the oversight and design of the same programme. This role involves safeguarding the firm against reputational and financial risks by conducting comprehensive surveillance across various markets and financial products. The ideal candidate will be highly self-motivated, organized, and attentive to detail. You should be capable of managing a diverse workload and prioritizing tasks in a fast-paced, ever-evolving corporate environment.",
+    "requirements": "Bachelor's degree in Finance, Economics, Computer Science, or related field | 3+ years of trade surveillance experience covering market abuse typologies across at multiple asset classes, preferably at a multi-manager platform, hedge fund or quantitative asset manager | Strong knowledge of global financial regulations and compliance requirements | Understanding of various financial products including Equities, Equity Derivatives and Fixed Income | Demonstrable ownership of work beyond alert triage: for example a threshold calibration exercise, a coverage review, or a surveillance change you specified and saw delivered | Proficiency with an established trade surveillance platform, and the ability to explain how surveillance data reaches an alert and how alerts are configured. | Strong knowledge of Excel and ability to manage large datasets. | Meticulous attention to detail, particularly regarding the preparation of written materials | Strong interpersonal skills as well as strong verbal and written communication skills | Ability to work well independently and collaboratively in a fast-paced environments. | Willingness to work flexible hours to cover global markets. | Strong problem-solving skills, with the ability to diagnose issues and propose practical, workable fixes independently.",
+    "source_url": "https://job-boards.greenhouse.io/schonfeld/jobs/8207672",
+    "date_posted": "2026-09-17",
+    "date_scraped": "2026-09-18",
+    "first_seen": "2026-09-18",
+    "slug": "schonfeld-trade-surveillance-analyst-d73dcba4"
+  },
+  {
     "role": "Trading Systems Engineers",
     "company": "Flow Traders",
     "company_type": "Market Makers",
