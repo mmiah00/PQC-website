@@ -1,5 +1,23 @@
 [
   {
+    "role": "Trading Systems Engineers",
+    "company": "Flow Traders",
+    "company_type": "Market Makers",
+    "type": "Full-Time",
+    "category": "Quantitative Development",
+    "women_focused": "No",
+    "new_grad": "No",
+    "pay": "",
+    "location": "Amsterdam",
+    "description": "Trading Systems runs the infrastructure Flow Traders trades on: the global Linux fleet \u2014 trading servers, workstations and VDIs \u2014 and the multi-cloud and distributed-systems estate that sits alongside it. We also build and run the self-service infrastructure platform the rest of Technology depends on. We are hiring two engineers into this team. This is a hands-on engineering role: most of your time goes on writing Terraform, building CI workflows and guardrails, automating toil out of the Linux fleet, and operating what you build. A lot of the shared tooling does not exist yet, and building it is the job rather than a side effect of it. The environment is trading-critical and runs across both on-premise infrastructure and public cloud, and you will work on both sides of that line rather than specialising in one. To be clear about the shape of the seat: this is build-and-operate rather than architecture, strategy or management. There is architecture in it, but the bulk of the work is hands-on and there are no direct reports. A solid Linux foundation is essential across the whole role \u2014 it underpins both sides of the estate, and the cloud, container and Kubernetes work rests on it just as much as the on-premise fleet does.",
+    "requirements": "",
+    "source_url": "https://job-boards.greenhouse.io/flowtraders/jobs/8195974",
+    "date_posted": "2026-09-18",
+    "date_scraped": "2026-09-18",
+    "first_seen": "2026-09-18",
+    "slug": "flow-traders-trading-systems-engineers-83ea957a"
+  },
+  {
     "role": "Junior Quantitative Researcher",
     "company": "Flow Traders",
     "company_type": "Market Makers",
@@ -11142,24 +11160,6 @@
     "slug": "tower-research-capital-quantitative-developer-86b097e2"
   },
   {
-    "role": "C++ Software Engineer",
-    "company": "IMC Trading",
-    "company_type": "Proprietary Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "Mumbai, India",
-    "description": "IMC\u2019s Mumbai based C++ Execution development teams work on software that sits directly in the latency-critical loop of our technology stack and touches every part of our organization. From ensuring our connectivity to the market and handling massive amounts of data, to implementing complex trading algorithms and integrating advanced hardware solutions. As a software engineer, you\u2019ll work in multidisciplinary teams alongside other engineers as well as traders, researchers, and quants to deliver challenging projects, while taking ownership for end-to-end product development \u2013 from requirements gathering to production. You\u2019ll write reliable, high-performance software while balancing time to production with quality and testability. Advanced automated testing and daily deployments will allow you to achieve agile and incremental benefits. Within a complex landscape of varying systems and technologies, you\u2019ll be constantly challenged to consider trade-offs between latency, throughput, simplicity, scalability and maintainability. These are just some of the technologies our C++ software engineers are currently working with: C++ 20, Linux, Docker, Kubernetes, Apache Kafka, Apache Spark, Impala, Hadoop, Python and FPGAs.",
-    "requirements": "Strong academic background in Computer Science (B. Tech/B.E), with 4-8 years of work experience in C++ | Natural problem-solvers, who enjoy tackling fresh challenges each day | Team players: to succeed, SWEs must be able to build strong relationships with those around them | Excellent written and verbal communication skills; fluency in English",
-    "source_url": "https://job-boards.eu.greenhouse.io/imc/jobs/4282973101",
-    "date_posted": "2024-02-07",
-    "date_scraped": "2026-09-18",
-    "first_seen": "2026-07-22",
-    "slug": "imc-trading-c-software-engineer-5332ad8e"
-  },
-  {
     "role": "Quantitative Researcher - Options",
     "company": "IMC Trading",
     "company_type": "Proprietary Trading Firms",
@@ -11430,7 +11430,7 @@
     "slug": "flow-traders-experienced-quantitative-researcher-8dbe1605"
   },
   {
-    "role": "Ing\u00e9nieur de logiciels chevronn\u00e9 (C++) / Experienced Software Developer (C++)",
+    "role": "D\u00e9veloppeur de logiciels chevronn\u00e9 (C++) / Experienced Software Developer (C++)",
     "company": "Tower Research Capital",
     "company_type": "Proprietary Trading Firms",
     "type": "Full-Time",
