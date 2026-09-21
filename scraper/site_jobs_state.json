@@ -1,21 +1,21 @@
 [
   {
-    "role": "2026 Chess Academy Australia & New Zealand - Expression of Interest",
-    "company": "IMC Trading",
-    "company_type": "Proprietary Trading Firms",
-    "type": "Event",
-    "category": "Quant Event",
+    "role": "Quantitative Researcher - IPM (India)",
+    "company": "WorldQuant",
+    "company_type": "Quantitative Hedge Funds",
+    "type": "Full-Time",
+    "category": "Quantitative Research",
     "women_focused": "No",
     "new_grad": "No",
     "pay": "",
-    "location": "APAC",
-    "description": "Presented by IMC and Team Liquid What if your next chess move took you to Sydney to to face the world champion? The Chess Academy Australia and New Zealand is a one-of-a-kind program open to all students across Australia and New Zealand colleges and universities, whether you're a seasoned competitor or just love the game. In partnership with Team Liquid, IMC is bringing together the brightest student chess players in the country for a chance to compete at the highest level and play face-to-face with World Chess Champion Magnus Carlsen. This is more than a chess tournament. It's an opportunity to step inside one of the world's leading trading firms, connect with IMC's traders, researchers and technologists, and experience what it's like to think fast, compete hard, and perform under pressure \u2014 skills that define both great chess players and the people who thrive at the world's top trading firms. Compete at the highest level: Qualify through an online Swiss-format tournament on Chess.com and, if you advance, travel to IMC's Sydney's office to compete in the championship finals against the best student players in the country. Face the greatest: Finalist competitors will take part in a showmatch experience with World Chess Champion Magnus Carlsen, one of the most exceptional competitive opportunities available to any student chess player. Go behind the scenes at IMC: Tour IMC's Sydney's office and get a firsthand look at the environment where some of the world's fastest and most sophisticated trading takes place. Build your network: Connect directly with IMC traders, researchers, technologists, and recruiters. Whether or not a career in trading is on your radar, this is a rare chance to meet and learn from world-class professionals.",
-    "requirements": "Currently enrolled as a full-time undergraduate or postgraduate student at a Australian or New Zealand college or university | 18 years of age or older | A valid Chess.com account | Available to compete in the virtual qualifiers during the week of the 9th, 10th or 11th November 2026 (date assigned and cannot be changed once confirmed) | Available to travel to Sydney for the finals on 9th December 2026 | Open to all majors and academic backgrounds \u2014 all skill levels welcome",
-    "source_url": "https://job-boards.eu.greenhouse.io/imc/jobs/4979079101",
-    "date_posted": "2026-09-17",
+    "location": "Mumbai",
+    "description": "WorldQuant develops and deploys systematic financial strategies across a broad range of asset classes and global markets. We seek to produce high-quality predictive signals (alphas) through our proprietary research platform to employ financial strategies focused on market inefficiencies. Our teams work collaboratively to drive the production of alphas and financial strategies \u2013 the foundation of a balanced, global investment platform. WorldQuant is built on a culture that pairs academic sensibility with accountability for results. Employees are encouraged to think openly about problems, balancing intellectualism and practicality. Excellent ideas come from anyone, anywhere. Employees are encouraged to challenge conventional thinking and possess an attitude of continuous improvement. Our goal is to hire the best and the brightest. We value intellectual horsepower first and foremost, and people who demonstrate an outstanding talent. There is no roadmap to future success, so we need people who can help us build it. THE ROLE: Research is at the core of WorldQuant. Through rigorous exploration and unconstrained thinking about how to apply data to the financial markets, our researchers are in constant search of new Alphas. We strive to understand data in ways our competitors don\u2019t believe is possible. Researchers at WorldQuant employ tested processes seeking to identify high-quality predictive signals that we believe are undiscovered by the wider market. These signals are mathematical expressions of data that are used as inputs in our quantitative models.WorldQuant is seeking an exceptional individual to join the firm as a Quantitative Researcher. The person must have a strong understanding of the investment research process to create computer-based models that seek to predict movements of global financial markets. While prior finance experience is not required, a successful candidate must possess a strong interest in learning about finance and global markets. Candidates will have aresearch scientist mind-set; be a self-starter, a creative and persevering deep thinker who is motivated by unsolved challenges. ITS IMPACT: As we pursue our goal of creating new Alphas, we need researchers who will lead us there. WorldQuant\u2019s unique investment platform is a leader amongst its peers and the methodology we employ is cutting edge. We desire people who will help us in our relentless pursuit to succeed. WHAT YOU\u2019LL BRING: Ph.D. or M.S. degree from a leading university in a quantitative or highly analytical field (e.g. \u2013 Electrical Engineering, Physics, Computer Science, Mathematics, Financial Engineering) Ranked in the top 10% of bachelor\u2019s degree class Demonstrated ability to program in Python and C/C++ on a Unix/Linux platform Excellent problem solving abilities and judgment with a strong attention to detail Mature, thoughtful, with the ability to operate in a collaborative, team-oriented culture Strong English language skills; ability to communicate complex concepts in simple terms Open for all department with GPA score above 8.5 is required By submitting this application, you acknowledge and consent to terms of the WorldQuant Privacy Policy. The privacy policy offers an explanation of how and why your data will be collected, how it will be used and disclosed, how it will be retained and secured, and what legal rights are associated with that data (including the rights of access, correction, and deletion). The policy also describes legal and contractual limitations on these rights. The specific rights and obligations of individuals living and working in different areas may vary by jurisdiction. Copyright \u00a9 2025 WorldQuant, LLC. All Rights Reserved.WorldQuant is an equal opportunity employer and does not discriminate in hiring on the basis of race, color, creed, religion, sex, sexual orientation or preference, age, marital status, citizenship, national origin, disability, military status, genetic predisposition or carrier status, or any other protected characteristic as established by applicable law.",
+    "requirements": "",
+    "source_url": "https://job-boards.greenhouse.io/worldquant/jobs/4715001006",
+    "date_posted": "2026-09-21",
     "date_scraped": "2026-09-21",
     "first_seen": "2026-09-21",
-    "slug": "imc-trading-2026-chess-academy-australia-new-zealand-expression-of-int-de999d75"
+    "slug": "worldquant-quantitative-researcher-ipm-india-1d2f3039"
   },
   {
     "role": "C++ Software Engineer - Research Infrastructure",
@@ -72,7 +72,7 @@
     "slug": "flow-traders-trading-systems-engineers-83ea957a"
   },
   {
-    "role": "Junior Quantitative Researcher",
+    "role": "PhD Graduate Quantitative Researcher",
     "company": "Flow Traders",
     "company_type": "Market Makers",
     "type": "Full-Time",
@@ -81,7 +81,7 @@
     "new_grad": "Yes",
     "pay": "",
     "location": "Hong Kong",
-    "description": "Flow Traders is looking for a Junior Quantitative Researcher to join the quantitative trading team at our Hong Kong office. This is a unique opportunity to join a leading proprietary trading firm, working alongside some of the brightest minds in the industry. As a firm, we are committed to leveraging advances in computer science, statistics, and machine learning to generate value in the financial markets. A successful Quantitative Researcher is an expert in mathematics and statistics, passionate about translating challenging quantitative problems into equations and models, and skilled at optimizing them using cutting-edge computational techniques. If you're at the top of your quantitative, modeling, and coding game, and excited to test these skills in competitive live markets, this opportunity is for you.",
+    "description": "Flow Traders is looking for a PhD Graduate Quantitative Researcher to join the quantitative trading team at our Hong Kong office. This is a unique opportunity to join a leading proprietary trading firm, working alongside some of the brightest minds in the industry. As a firm, we are committed to leveraging advances in computer science, statistics, and machine learning to generate value in the financial markets. A successful Quantitative Researcher is an expert in mathematics and statistics, passionate about translating challenging quantitative problems into equations and models, and skilled at optimizing them using cutting-edge computational techniques. If you're at the top of your quantitative, modeling, and coding game, and excited to test these skills in competitive live markets, this opportunity is for you.",
     "requirements": "A PhD degree in Mathematics, Physics, Computer Science or a related quantitative field. | Strong statistical and linear algebra knowledge. | Proficiency in implementing models and algorithms in programming languages such as Python or C++. | Experience in Deep Learning is a plus. | Strong analytical and problem-solving skills, with the ability to work independently on open-ended, ambiguous problems. | Ownership and entrepreneurship. | Flow Traders does not accept unsolicited resumes from any professional staffing or search firms. All resumes, and any other information identifying potential candidates, submitted to any employee at Flow Traders via-email, the Internet or directly without a valid and signed search agreement will be deemed free to contact by Flow Traders without any restrictions and no placement fee of any kind will be paid in the event the candidate is hired by Flow Traders.",
     "source_url": "https://job-boards.greenhouse.io/flowtraders/jobs/8213037",
     "date_posted": "2026-09-18",
@@ -118,7 +118,7 @@
     "pay": "",
     "location": "Hong Kong",
     "description": "Flow Traders Hong Kong is looking for a Senior C++ Software Engineer to lead the next-generation architecture of the market data and execution platforms that power our fully systematic trading. We don't treat market data as plumbing - for us it's a source of alpha, where feed handling, order book construction, and a deep understanding of exchange microstructure are themselves a competitive edge. We're looking for a senior individual contributor who has lived this philosophy in a proprietary or systematic trading environment and can squeeze every nanosecond out of the path from wire to strategy. As a senior individual contributor, you'll be working on the Core Platform that underpins quantitative research, pricing, strategy development, and execution across hundreds of venues. You'll work in a tight, iterative loop with quants and technical traders, applying deep expertise in modern C++, OS internals, CPU and memory architecture, lock-free concurrency, and low-latency networking to push our systems toward state-of-the-art performance, robustness, and observability.",
-    "requirements": "BSc, MSc, or PhD in Computer Science, Mathematics, or a related field. | 5+ years of post\u2011graduation professional C++ software development experience. | Experience building low\u2011latency market data ingestion, order execution, and algorithmic trading systems (proprietary trading industry preferred). | Strong knowledge in one or more APAC markets. | Strong knowledge of algorithms and data structures. | Experience in parallel, asynchronous, and multithreaded programming. | Demonstrated ability to write clean, reliable, and highly scalable C++ code. | Interest in extracting maximum performance from available hardware and software (CPU caches, memory layout, networking, etc.). | Ability to communicate effectively with both technical and non\u2011technical colleagues.",
+    "requirements": "BSc, MSc, or PhD in Computer Science, Mathematics, or a related field. | 5+ years of post\u2011graduation professional C++ software development experience. | Experience building low\u2011latency market data ingestion, order execution, and algorithmic trading systems (proprietary trading industry preferred). | Strong knowledge in one or more APAC markets. | Strong knowledge of algorithms and data structures. | Experience in parallel, asynchronous, and multithreaded programming. | Demonstrated ability to write clean, reliable, and highly scalable C++ code. | Interest in extracting maximum performance from available hardware and software (CPU caches, memory layout, networking, etc.). | Ability to communicate effectively with both technical and non\u2011technical colleagues. | Flow Traders does not accept unsolicited resumes from any professional staffing or search firms. All resumes, and any other information identifying potential candidates, submitted to any employee at Flow Traders via-email, the Internet or directly without a valid and signed search agreement will be deemed free to contact by Flow Traders without any restrictions and no placement fee of any kind will be paid in the event the candidate is hired by Flow Traders.",
     "source_url": "https://job-boards.greenhouse.io/flowtraders/jobs/8212740",
     "date_posted": "2026-09-17",
     "date_scraped": "2026-09-21",
@@ -1638,7 +1638,7 @@
     "slug": "jump-trading-campus-quantitative-researcher-off-cycle-winter-spring-20-741df651"
   },
   {
-    "role": "Junior Quantitative Researcher",
+    "role": "PhD Graduate Quantitative Researcher",
     "company": "Flow Traders",
     "company_type": "Market Makers",
     "type": "Full-Time",
@@ -1647,7 +1647,7 @@
     "new_grad": "Yes",
     "pay": "$175,000",
     "location": "New York",
-    "description": "Flow Traders is looking for a Junior Quantitative Researcher to join the quantitative trading team in our New York office. This is a unique opportunity to join a leading proprietary trading firm, working alongside some of the brightest minds in the industry. As a firm, we are committed to leveraging advances in computer science, statistics, and machine learning to generate value in the financial markets. A successful Quantitative Researcher is an expert in mathematics and statistics, passionate about translating challenging quantitative problems into equations and models, and skilled at optimizing them using cutting-edge computational techniques. If you're at the top of your quantitative, modeling, and coding game, and excited to test these skills in competitive live markets, this opportunity is for you.",
+    "description": "Flow Traders is looking for a PhD Graduate Quantitative Researcher to join the quantitative trading team in our New York office. This is a unique opportunity to join a leading proprietary trading firm, working alongside some of the brightest minds in the industry. As a firm, we are committed to leveraging advances in computer science, statistics, and machine learning to generate value in the financial markets. A successful Quantitative Researcher is an expert in mathematics and statistics, passionate about translating challenging quantitative problems into equations and models, and skilled at optimizing them using cutting-edge computational techniques. If you're at the top of your quantitative, modeling, and coding game, and excited to test these skills in competitive live markets, this opportunity is for you.",
     "requirements": "A PhD degree in Mathematics, Physics, Computer Science or a related quantitative field. | Strong statistical and linear algebra knowledge. | Proficiency in implementing models and algorithms in programming languages such as Python or C++. | Experience in Deep Learning is a plus. | Strong analytical and problem-solving skills, with the ability to work independently on open-ended, ambiguous problems. | Ownership and entrepreneurship. | At Flow Traders, we acknowledge the importance of open and transparent communication whether it be with our employees, our stakeholders, or our local and global communities. When it comes to salary, Flow Traders uses reliable market research to create base ranges. Where candidates will fall within the range depends on a few different factors including but not limited to level of experience, location, and specific skill set. We also consider ourselves one global team, and to demonstrate that, all employees are eligible to share in the company\u2019s success through an annual discretionary variable remuneration allocated based on company, group and individual performance and contribution. | Per NYC salary transparency law, the total compensation for this role includes a base salary of $175,000 plus annual discretionary variable remuneration. | Flow Traders does not accept unsolicited resumes from any professional staffing or search firms. All resumes, and any other information identifying potential candidates, submitted to any employee at Flow Traders via-email, the Internet or directly without a valid and signed search agreement will be deemed free to contact by Flow Traders without any restrictions and no placement fee of any kind will be paid in the event the candidate is hired by Flow Traders.",
     "source_url": "https://job-boards.greenhouse.io/flowtraders/jobs/8156203",
     "date_posted": "2026-08-25",
@@ -6786,24 +6786,6 @@
     "slug": "worldquant-senior-c-software-engineer-7253a599"
   },
   {
-    "role": "Quantitative Research Intern (LLMs & AI Agents)",
-    "company": "WorldQuant",
-    "company_type": "Quantitative Hedge Funds",
-    "type": "Internship",
-    "category": "Quantitative Research",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "Hanoi or Ho Chi Minh City",
-    "description": "WorldQuant develops and deploys systematic financial strategies across a broad range of asset classes and global markets. We seek to produce high-quality predictive signals (alphas) through our proprietary research platform to employ financial strategies focused on market inefficiencies. Our teams work collaboratively to drive the production of alphas and financial strategies \u2013 the foundation of a balanced, global investment platform. WorldQuant is built on a culture that pairs academic sensibility with accountability for results. Employees are encouraged to think openly about problems, balancing intellectualism and practicality. Excellent ideas come from anyone, anywhere. Employees are encouraged to challenge conventional thinking and possess an attitude of continuous improvement. Our goal is to hire the best and the brightest. We value intellectual horsepower first and foremost, and people who demonstrate an outstanding talent. There is no roadmap to future success, so we need people who can help us build it. The Role: Research is at the core of WorldQuant. Through rigorous exploration and unconstrained thinking about how to apply data to the financial markets, our researchers are in constant search of new alphas. Researchers at WorldQuant employ tested processes seeking to identify high-quality predictive signals that we believe are undiscovered by the wider market. These signals are mathematical expressions of data that are used as inputs in our quantitative models. WorldQuant is seeking an exceptional individual to join the firm as a Quantitative Research Intern. The person must have a good understanding of the investment research process to create computer-based models that seek to predict movements of global financial markets. This position is responsible for assisting with daily research and analysis tasks \u2013 which includes scripting for monitoring and alpha signal analysis. Candidates need not have prior knowledge of financial markets, but must have a strong interest in learning about stock markets and other capital markets. Successful candidates will self-starters, have a research scientist mind-set, and be creative and persevering deep thinkers who are motivated by unsolved challenges. Our highly accomplished senior staff will provide the interns with mentoring and guidance to help them succeed.",
-    "requirements": "",
-    "source_url": "https://job-boards.greenhouse.io/worldquant/jobs/4434997006",
-    "date_posted": "2025-01-21",
-    "date_scraped": "2026-09-21",
-    "first_seen": "2026-08-11",
-    "slug": "worldquant-quantitative-research-intern-llms-ai-agents-b1244f72"
-  },
-  {
     "role": "Quantitative Developer",
     "company": "WorldQuant",
     "company_type": "Quantitative Hedge Funds",
@@ -10800,7 +10782,7 @@
     "slug": "old-mission-junior-quantitative-researcher-ph-d-877e3cc4"
   },
   {
-    "role": "Junior Quantitative Researcher",
+    "role": "PhD Graduate Quantitative Researcher",
     "company": "Flow Traders",
     "company_type": "Market Makers",
     "type": "Full-Time",
@@ -10809,7 +10791,7 @@
     "new_grad": "Yes",
     "pay": "",
     "location": "Amsterdam",
-    "description": "Flow Traders is looking for a Junior Quantitative Researcher to join the quantitative trading team at our Amsterdam office. This is a unique opportunity to join a leading proprietary trading firm, working alongside some of the brightest minds in the industry. As a firm, we are committed to leveraging advances in computer science, statistics, and machine learning to generate value in the financial markets. A successful Quantitative Researcher is an expert in mathematics and statistics, passionate about translating challenging quantitative problems into equations and models, and skilled at optimizing them using cutting-edge computational techniques. If you're at the top of your quantitative, modeling, and coding game, and excited to test these skills in competitive live markets, this opportunity is for you.",
+    "description": "Flow Traders is looking for a PhD Graduate Quantitative Researcher to join the quantitative trading team at our Amsterdam office. This is a unique opportunity to join a leading proprietary trading firm, working alongside some of the brightest minds in the industry. As a firm, we are committed to leveraging advances in computer science, statistics, and machine learning to generate value in the financial markets. A successful Quantitative Researcher is an expert in mathematics and statistics, passionate about translating challenging quantitative problems into equations and models, and skilled at optimizing them using cutting-edge computational techniques. If you're at the top of your quantitative, modeling, and coding game, and excited to test these skills in competitive live markets, this opportunity is for you.",
     "requirements": "A PhD degree in Mathematics, Physics, Computer Science or a related quantitative field. | Strong statistical and linear algebra knowledge. | Proficiency in implementing models and algorithms in programming languages such as Python or C++. | Experience in Deep Learning is a plus. | Strong analytical and problem-solving skills, with the ability to work independently on open-ended, ambiguous problems. | Ownership and entrepreneurship.",
     "source_url": "https://job-boards.greenhouse.io/flowtraders/jobs/6492219",
     "date_posted": "2024-12-24",
