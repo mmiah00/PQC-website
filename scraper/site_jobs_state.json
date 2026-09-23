@@ -3060,24 +3060,6 @@
     "slug": "coinbase-staff-machine-learning-engineer-platform-identity-56f20caf"
   },
   {
-    "role": "Volatility Trader",
-    "company": "Simplex Trading",
-    "company_type": "Proprietary Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Trading",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$150,000",
-    "location": "Chicago",
-    "description": "Our employees are our greatest asset. We have spent years building a team of talented, dedicated technologists, data-driven traders, and expert leaders with an emphasis on our core pillars: People, Process, Trading Edge, and Technology. Simplex is an in-office organization, helping to foster a collaborative and communicative culture. As a Volatility Trader at Simplex, you will take an analytical approach to identifying market opportunities with favorable risk-reward profiles with the goal of generating trade ideas and enhancing our core market making pricing systems. We expect that you have experience thinking about volatility valuation through a variety of lenses, including analysis of implied-vs-realized, term structure and event pricing, skew surface dynamics, and relative value or cross-asset relationships. You will manage discretionary positions and work closely with our existing market making team to create systematic pricing overlays and improve hedging, risk management, and edge capture. Conduct research to identify market dislocations, mispricings, or other trading opportunities in the volatility space. Monitor and manage live positions with a focus on order flow dynamics and counterparty behavior. Work closely with Simplex's core market making team to develop systematic approaches to volatility valuation or pricing overlays. Continuously improve the firm's toolset for volatility research, risk management, and P&L attribution. Clearly communicate and document research methodology and trading decisions for collaboration and review.",
-    "requirements": "Minimum 3\u20135 years of professional experience in a volatility trading/research or portfolio management role. | Demonstrated track record of generating and executing profitable trading ideas. | Strong practical foundation in options theory and Bayesian statistics/probability. | Strong analytical judgment under uncertainty; able to operate decisively under constraints. | Precise technical communication skills; able to concisely present conclusions and articulate associated inputs, assumptions, and process. | Sufficient technical skills to independently interface with data and prototype research ideas. | Annual base salary ranges from $150,000 to $200,000, and is influenced by a number of factors, including qualifications and experience. This role is also eligible for an annual discretionary bonus, of which can be a significant portion of total compensation. This full time role is also eligible for other forms of compensation and benefits including health/dental/vision insurance, and 401(k) contributions.",
-    "source_url": "https://job-boards.greenhouse.io/simplextrading/jobs/5239085008",
-    "date_posted": "2026-06-02",
-    "date_scraped": "2026-09-23",
-    "first_seen": "2026-08-11",
-    "slug": "simplex-trading-volatility-trader-1dc98f89"
-  },
-  {
     "role": "Senior Data Engineer",
     "company": "Belvedere Trading",
     "company_type": "Proprietary Trading Firms",
@@ -3526,24 +3508,6 @@
     "date_scraped": "2026-09-23",
     "first_seen": "2026-08-11",
     "slug": "point72-senior-data-engineer-proprietary-research-262df12f"
-  },
-  {
-    "role": "Algorithmic Trader",
-    "company": "Simplex Trading",
-    "company_type": "Proprietary Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Trading",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$150,000",
-    "location": "Chicago",
-    "description": "Our employees are our greatest asset. We have spent years building a team of talented, dedicated technologists, data-driven traders, and expert leaders with an emphasis on our core pillars: People, Process, Trading Edge, and Technology. Simplex is an in-office organization, helping to foster a collaborative and communicative culture.",
-    "requirements": "At least one year professional experience in algorithmic trading, ideally equity or futures options | A track record of solving challenging analytical problems and implementing robust solutions | Firm understanding of statistics and probability, linear algebra, and calculus | Proficiency with Python and/or R for research, data analysis, and statistical modeling | Experience working with large datasets using relational databases, ideally SQL/MySQL | Exposure to Linux/Unix beneficial | Annual base salary ranges from $150,000 to $200,000, and is influenced by a number of factors, including qualifications and experience. This role is also eligible for an annual discretionary bonus, of which can be a significant portion of total compensation. This full time role is also eligible for other forms of compensation and benefits including health/dental/vision insurance, and 401(k) contributions.",
-    "source_url": "https://job-boards.greenhouse.io/simplextrading/jobs/4181846008",
-    "date_posted": "2024-11-20",
-    "date_scraped": "2026-09-23",
-    "first_seen": "2026-08-11",
-    "slug": "simplex-trading-algorithmic-trader-9045edc6"
   },
   {
     "role": "Data Scientist, Proprietary Research",
@@ -5994,24 +5958,6 @@
     "slug": "worldquant-quantitative-researcher-fe03b736"
   },
   {
-    "role": "Infrastructure Engineer",
-    "company": "Simplex Trading",
-    "company_type": "Proprietary Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$125,000",
-    "location": "Chicago",
-    "description": "Our employees are our greatest asset. We have spent years building a team of talented, dedicated technologists, data-driven traders, and expert leaders with an emphasis on our core pillars: People, Process, Trading Edge, and Technology. Simplex is an in-office organization, helping to foster a collaborative and communicative culture.",
-    "requirements": "3+ years of experience as a System Administrator, Linux Administrator, or similar | Thorough understanding of Linux (kernel, modules, filesystems) with special emphasis on the network stack, especially multicast, and OpenOnload | Experience working with Linux and standard tools (bash, grep, sed, awk) and scripting languages (Python, Perl, bash) | Understanding of Linux concepts (kernel, modules, memory allocation, filesystems) | Familiarity with common server technologies (IPMI, SNMP), or software (Nagios, Ansible, dnf/rpm, git) | Experience troubleshooting complex performance issues | Ability to lift and move heavy equipment (40-50 lb regularly) | Annual base salary ranges from $125,000 to $200,000, and is influenced by a number of factors, including qualifications and experience. This role is also eligible for an annual discretionary bonus, of which can be a significant portion of total compensation. This full time role is also eligible for other forms of compensation and benefits including health/dental/vision insurance, and 401(k) contributions.",
-    "source_url": "https://job-boards.greenhouse.io/simplextrading/jobs/5185304008",
-    "date_posted": "2026-04-10",
-    "date_scraped": "2026-09-23",
-    "first_seen": "2026-08-11",
-    "slug": "simplex-trading-infrastructure-engineer-38b532ea"
-  },
-  {
     "role": "Senior Software Engineer",
     "company": "WorldQuant",
     "company_type": "Quantitative Hedge Funds",
@@ -6928,24 +6874,6 @@
     "date_scraped": "2026-09-23",
     "first_seen": "2026-08-11",
     "slug": "point72-quantitative-researcher-0a5a07d4"
-  },
-  {
-    "role": "Software Engineer",
-    "company": "Simplex Trading",
-    "company_type": "Proprietary Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$125,000",
-    "location": "Chicago",
-    "description": "Our employees are our greatest asset. We have spent years building a team of talented, dedicated technologists, data-driven traders, and expert leaders with an emphasis on our core pillars: People, Process, Trading Edge, and Technology. Simplex is an in-office organization, helping to foster a collaborative and communicative culture.",
-    "requirements": "4+ years experience working with a high level language (ex C++, Java, C#) | Some C++ experience is a plus | Linux/Unix exposure | Previous financial industry experience is a plus | Computer science or engineering degree or real world experience | Annual base salary ranges from $125,000 to $200,000, and is influenced by a number of factors, including qualifications and experience. This role is also eligible for an annual discretionary bonus, of which can be a significant portion of total compensation. This full time role is also eligible for other forms of compensation and benefits including health/dental/vision insurance, and 401(k) contributions.",
-    "source_url": "https://job-boards.greenhouse.io/simplextrading/jobs/4409005008",
-    "date_posted": "2024-11-20",
-    "date_scraped": "2026-09-23",
-    "first_seen": "2026-08-11",
-    "slug": "simplex-trading-software-engineer-64c3f3d9"
   },
   {
     "role": "Cubist Quantitative Developer",
