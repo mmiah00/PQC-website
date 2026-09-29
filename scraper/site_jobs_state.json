@@ -1,5 +1,23 @@
 [
   {
+    "role": "Senior Software Engineer, Backend - Overseer (Platform)",
+    "company": "Coinbase",
+    "company_type": "Crypto Trading Firms",
+    "type": "Full-Time",
+    "category": "Quantitative Development",
+    "women_focused": "No",
+    "new_grad": "No",
+    "pay": "$186,065",
+    "location": "Remote - USA",
+    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. As a Senior Software Engineer on the Overseer team within FinHub in the Platform group, you'll build and scale the real-time integrity layer that enforces financial correctness across every Coinbase fund flow. Overseer makes the rules that must always hold between systems explicit, detects violations in seconds rather than quarterly reconciliations, and works with every team at Coinbase that moves money. You'll own workstreams end-to-end, from designing correctness models with partner teams to operating detection systems in production, contributing directly to the platform that keeps billions of transactions accurate and trustworthy. Build and scale real-time invariant enforcement systems across Coinbase's fund flows, contributing to the core detection engine, invariant framework, and onboarding tooling that partner teams rely on Own workstreams end-to-end, from designing correctness models with partner teams through production operation, ensuring new fund flows are covered by Overseer's integrity guarantees Develop AI-powered guardrails including predictive consistency models that flag deviations at initiation and proactive invariant discovery that surfaces coverage gaps before incidents occur Partner with teams across FinHub, Payments, and Trading to design and implement correctness contracts for new and existing fund flows, translating financial rules into enforceable system invariants Mentor junior engineers on distributed systems design, correctness thinking, and production operational practices",
+    "requirements": "5+ years building and operating large-scale distributed systems in production, with experience in financial systems, payments, reconciliation, or high-reliability transactional infrastructure | Proficiency in backend programming (e.g., Go, Ruby, Python) with experience building platform-level infrastructure consumed by multiple teams, including APIs, frameworks, or detection systems | Demonstrated ability to own workstreams end-to-end in ambiguous environments, designing correctness models and operating them through production with high standards for system-level behavior | Experience with streaming data infrastructure (Kafka, Flink, Spark, or similar) and distributed data stores (Postgres, DynamoDB, or equivalent) in real-time or near-real-time processing contexts | Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality | Pay Transparency Notice: Base salary varies by location (see range below). Total compensation may also include equity and bonus eligibility, and benefits (medical, dental, vision, 401(k)).",
+    "source_url": "https://www.coinbase.com/careers/positions/8238630?gh_jid=8238630",
+    "date_posted": "2026-09-28",
+    "date_scraped": "2026-09-29",
+    "first_seen": "2026-09-29",
+    "slug": "coinbase-senior-software-engineer-backend-overseer-platform-028825fd"
+  },
+  {
     "role": "2027 Quantitative Research Intern",
     "company": "Schonfeld",
     "company_type": "Quantitative Hedge Funds",
@@ -520,24 +538,6 @@
     "date_scraped": "2026-09-29",
     "first_seen": "2026-09-29",
     "slug": "coinbase-staff-software-engineer-compute-platform-routing-a63fd894"
-  },
-  {
-    "role": "Staff Software Engineer, Backend - Platform (Core AI Automation)",
-    "company": "Coinbase",
-    "company_type": "Crypto Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$218,025",
-    "location": "Remote - USA",
-    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. As a Staff Software Engineer on the Core Automation team within the Platform group, you'll architect and build the Agentic AI systems that are transforming how Coinbase operates. This team is reimagining customer support and compliance processes for a fully AI-driven world, designing intelligent agents, orchestration frameworks, and measurement systems that deliver delightful customer experiences at scale. You'll own the technical direction for production AI systems, working across cross-functional teams to bring this vision to reality while building primitives that scale automation across the company. Architect and build Agentic AI systems that power Coinbase's compliance automation and other Operations, from intelligent agents through orchestration and guardrails Design foundational APIs and measurement frameworks that ensure AI agents are grounded, relevant, and reliably deliver customer delight with minimal hallucination Lead technical direction for distributed systems underpinning AI automation, defining architecture patterns and strategic roadmaps in partnership with engineering leadership Build reusable primitives and orchestration solutions that enable AI-powered automation to scale across multiple domains beyond the initial customer support and compliance focus Mentor engineers on AI system design techniques, coding standards, and production-readiness practices for LLM-based applications",
-    "requirements": "8+ years in software engineering with demonstrated experience architecting distributed systems and shipping production AI/ML applications | Experience working with LLM-based applications, familiarity with - measuring and improving grounding, reducing hallucinations, and building guardrails for reliability | Deep expertise designing APIs, orchestration layers, and evaluation frameworks for agentic AI systems at scale | Pay Transparency Notice: Base salary varies by location (see range below). Total compensation may also include equity and bonus eligibility, and benefits (medical, dental, vision, 401(k)).",
-    "source_url": "https://www.coinbase.com/careers/positions/8154983?gh_jid=8154983",
-    "date_posted": "2026-08-24",
-    "date_scraped": "2026-09-29",
-    "first_seen": "2026-09-29",
-    "slug": "coinbase-staff-software-engineer-backend-platform-core-ai-automation-2c51f162"
   },
   {
     "role": "Senior Data Scientist",
