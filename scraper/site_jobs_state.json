@@ -1,5 +1,23 @@
 [
   {
+    "role": "Software Engineer, C++ - Graduate Opportunity",
+    "company": "Tower Research Capital",
+    "company_type": "Proprietary Trading Firms",
+    "type": "Full-Time",
+    "category": "Quantitative Development",
+    "women_focused": "No",
+    "new_grad": "Yes",
+    "pay": "",
+    "location": "Hong Kong, Singapore",
+    "description": "Tower Research Capital is a leading quantitative trading firm founded in 1998. Tower has built its business on a high-performance platform and independent trading teams. We have a 25+ year track record of innovation and a reputation for discovering unique market opportunities. Tower is home to some of the world\u2019s best systematic trading and engineering talent. We empower portfolio managers to build their teams and strategies independently while providing the economies of scale that come from a large, global organization. Engineers thrive at Tower while developing electronic trading infrastructure at a world class level. Our engineers solve challenging problems in the realms of low-latency programming, FPGA technology, hardware acceleration and machine learning. Our ongoing investment in top engineering talent and technology ensures our platform remains unmatched in terms of functionality, scalability and performance. At Tower, every employee plays a role in our success. Our Business Support teams are essential to building and maintaining the platform that powers everything we do \u2014 combining market access, data, compute, and research infrastructure with risk management, compliance, and a full suite of business services. Our Business Support teams enable our trading and engineering teams to perform at their best. At Tower, employees will find a stimulating, results-oriented environment where highly intelligent and motivated colleagues inspire each other to reach their greatest potential. Designing and implementing a high-frequency trading platform, including collecting quotes and trades from and disseminating orders to exchanges around the world Optimizing our platform using network and systems programming, as well as other advanced techniques to minimize latency Developing systems that provide optimal access to live market data, historical market data, and trading simulations Creating tools to analyze data for patterns Building risk-management and performance-tracking tools",
+    "requirements": "A bachelor\u2019s degree in computer science or a related field | Prior internship experience with C++ development, preferably in a trading environment | A strong background in data structures, algorithms, and object-oriented programming in C++ | Knowledge of high-throughput systems | Brilliant problem-solving abilities | The ability to manage multiple tasks in a fast-paced environment | Excellent written and verbal English communication skills | Good understanding of Linux operating system and Networking (TCP/IP and UDP) is a plus | Knowledge of Python and shell scripting is a plus",
+    "source_url": "https://www.tower-research.com/open-positions/?gh_jid=8245433",
+    "date_posted": "2026-10-01",
+    "date_scraped": "2026-10-01",
+    "first_seen": "2026-10-01",
+    "slug": "tower-research-capital-software-engineer-c-graduate-opportunity-6b877e1c"
+  },
+  {
     "role": "Software Engineer, Early Career",
     "company": "IMC Trading",
     "company_type": "Proprietary Trading Firms",
@@ -2680,24 +2698,6 @@
     "date_scraped": "2026-10-01",
     "first_seen": "2026-09-09",
     "slug": "point72-software-engineer-back-office-systems-5cf9d029"
-  },
-  {
-    "role": "Quant Researcher Internship",
-    "company": "Man Group",
-    "company_type": "Quantitative Hedge Funds",
-    "type": "Internship",
-    "category": "Quantitative Research",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$253.6",
-    "location": "London",
-    "description": "Research, develop and implement trading strategies. Contribute to AHL's overall research effort by collaborating with teams across AHL. Follow industry/academic literature for innovations and suggest how AHL can profit from this. Apply quantitative techniques and market intuition to large, often novel or unconventional, datasets and cultivate areas of expertise along the way. Contribute to the business' overall research effort by interacting with and collaborating with other research teams.",
-    "requirements": "PhD, Masters or Bachelor\u2019s Degree in a quantitative subject | Desire to learn and understand the structure and drivers of returns in financial markets | A demonstrable interest in algorithmic trading, financial derivatives, and markets in general | Independent research experience | Practical coding experience in a scripting language such as Python is preferred, though not essential | Aware of what statistical and mathematical tools and techniques are available and able to independently decide what is appropriate to use in which circumstances | Strong written and verbal communication skills | Entrepreneurial team player, able to push and discuss views with the rest of the team and contribute to our wider research agenda",
-    "source_url": "https://job-boards.eu.greenhouse.io/mangroup/jobs/4969142101",
-    "date_posted": "2026-09-04",
-    "date_scraped": "2026-10-01",
-    "first_seen": "2026-09-09",
-    "slug": "man-group-quant-researcher-internship-7fcee872"
   },
   {
     "role": "Campus C++ Software Engineer (Intern)",
@@ -7956,7 +7956,7 @@
     "slug": "girls-who-invest-girls-who-invest-transforming-the-investment-manageme-ee6d4e32"
   },
   {
-    "role": "100 Women In Finance -",
+    "role": "Home - 100 Women In Finance",
     "company": "100 Women in Finance",
     "company_type": "Other",
     "type": "Event",
