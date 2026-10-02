@@ -195,12 +195,12 @@ if (calGrid) {
 
   // Keyed by "YYYY-MM-DD" (month is 1-indexed here for readability).
   const calendarEvents = {
-    "2026-10-09": {
+    "2026-10-08": {
       title: "Welcome Picnic",
-      date: "October 9, 2026",
-      location: "Promontory Point",
-      time: "Time TBD",
-      description: "Kick off the year with a relaxed picnic at Promontory Point. Enjoy snacks, soft drinks, and a chance to meet fellow PQC members, connect with new faces, and get to know the community before the semester's programming gets underway.",
+      date: "Thursday, October 8, 2026",
+      location: "The Quad near Eckhart Hall",
+      time: "3-5 PM",
+      description: "Kick off the year with a relaxed picnic at The Quad near Eckhart Hall. Enjoy snacks, soft drinks, and a chance to meet fellow PQC members, connect with new faces, and get to know the community before the semester's programming gets underway.",
     },
   };
 
