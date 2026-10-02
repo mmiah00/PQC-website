@@ -1,5 +1,23 @@
 [
   {
+    "role": "Senior Software Engineer, Backend - Platform (Core AI Automation)",
+    "company": "Coinbase",
+    "company_type": "Crypto Trading Firms",
+    "type": "Full-Time",
+    "category": "Quantitative Development",
+    "women_focused": "No",
+    "new_grad": "No",
+    "pay": "$186,065",
+    "location": "Remote - USA",
+    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. As a Senior Software Engineer on the Platform Core Automation team, you'll build the AI infrastructure and agentic systems that automate customer support and compliance operations at Coinbase. This team is reimagining what these processes look like when AI handles them end-to-end, replacing manual workflows with intelligent agents that resolve customer issues and execute compliance tasks autonomously. You'll own the design and delivery of LLM-powered systems, grounding techniques, and integration pipelines that directly reduce resolution times, cut costs, and improve accuracy across millions of customer interactions.",
+    "requirements": "5+ years of experience in software engineering, with proven expertise in designing, building, and maintaining production services using a microservices architecture. | Hands-on experience building LLM-based applications or AI/ML systems in production, including prompt engineering, retrieval-augmented generation (RAG), or agentic AI frameworks. | Proficiency in Python and Golang (or comparable backend languages), with experience integrating third-party AI models and APIs into production workflows. | Track record of delivering end-to-end projects with measurable business impact in ambiguous problem spaces. | Experience building data pipelines, integrating with external vendors, or working with large-scale unstructured data sources (e.g., blockchain data, customer interaction logs). | Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality.",
+    "source_url": "https://www.coinbase.com/careers/positions/8211452?gh_jid=8211452",
+    "date_posted": "2026-09-17",
+    "date_scraped": "2026-10-02",
+    "first_seen": "2026-10-02",
+    "slug": "coinbase-senior-software-engineer-backend-platform-core-ai-automation-f47d4a40"
+  },
+  {
     "role": "Senior Software Engineer, Backend - Payments Platform",
     "company": "Coinbase",
     "company_type": "Crypto Trading Firms",
@@ -3564,24 +3582,6 @@
     "slug": "tower-research-capital-quantitative-developer-intern-2f89032a"
   },
   {
-    "role": "Software Engineer (Java)",
-    "company": "Virtu Financial",
-    "company_type": "Market Makers",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "London, United Kingdom",
-    "description": "Virtu is a leading financial firm that leverages cutting edge technology to deliver liquidity to the global markets and innovative, transparent trading solutions to our clients. As a market maker, Virtu provides deep liquidity that helps to create more efficient markets around the world. Our market structure expertise, broad diversification, and execution technology enables us to provide competitive bids and offers in over 19,000 securities, at over 235 venues, in 36 countries worldwide Design, build, and maintain our proprietary, low-latency trading systems, and infrastructures. Produce powerful trading tools which leverage all aspects of our high-performance system Improve the scalability, performance, of our trading infrastructure. Understand the future needs of the business and design technical solutions to meet these demands Ability to handle a wide variety of projects, from frontend facing projects to backend infrastructure, each in different programming languages",
-    "requirements": "",
-    "source_url": "https://job-boards.greenhouse.io/virtu/jobs/6120518002",
-    "date_posted": "2022-05-06",
-    "date_scraped": "2026-10-02",
-    "first_seen": "2026-09-09",
-    "slug": "virtu-financial-software-engineer-java-aaaaf61b"
-  },
-  {
     "role": "Software Engineer - Frontend Trading Application (C#/.NET)",
     "company": "Virtu Financial",
     "company_type": "Market Makers",
@@ -6012,7 +6012,7 @@
     "slug": "point72-machine-learning-infrastructure-engineer-genai-technology-e08d2948"
   },
   {
-    "role": "Quantitative Developer - AHL",
+    "role": "Quantitative Developer - Systematic",
     "company": "Man Group",
     "company_type": "Quantitative Hedge Funds",
     "type": "Full-Time",
@@ -10098,24 +10098,6 @@
     "slug": "imc-trading-quantitative-researcher-data-curation-7271e38e"
   },
   {
-    "role": "Quantitative Research / Developer - Intern",
-    "company": "Schonfeld",
-    "company_type": "Quantitative Hedge Funds",
-    "type": "Internship",
-    "category": "Quantitative Research",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "Hong Kong, Hong Kong",
-    "description": "We are looking for a hands-on STRAT / forward-deployed engineer to embed with our multi strategy business. The candidate will sit on the trading floor, shipping full-stack tools that power research, risk, and execution across strategies such as index rebalance, delta-1 andlong/short equities. The role will be based in our Hong Kong office.",
-    "requirements": "",
-    "source_url": "https://job-boards.greenhouse.io/schonfeld/jobs/7185553",
-    "date_posted": "2025-08-22",
-    "date_scraped": "2026-10-02",
-    "first_seen": "2026-07-22",
-    "slug": "schonfeld-quantitative-research-developer-intern-2fb1b2e4"
-  },
-  {
     "role": "Quantitative Developer",
     "company": "Tower Research Capital",
     "company_type": "Proprietary Trading Firms",
@@ -10132,42 +10114,6 @@
     "date_scraped": "2026-10-02",
     "first_seen": "2026-07-22",
     "slug": "tower-research-capital-quantitative-developer-c4e13165"
-  },
-  {
-    "role": "Quant Developer CeFi - Digital Assets",
-    "company": "IMC Trading",
-    "company_type": "Proprietary Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "Zug, Switzerland",
-    "description": "IMC has a strong presence in traditional Finance and has been expanding into crypto and DeFi over the last years. Through its overseas affiliates, IMC provides liquidity and trades on many cryptocurrency exchanges and DeFi protocols. IMC Zug is currently looking to expand its CeFi team, which builds the algorithms that support IMC's trading activities. As a member of the CeFi team, you will get the opportunity to work on many different projects and shape your role to your talents. Your work will vary from improving existing trading strategies and algorithms to working on completely new solutions from scratch. All, while closely collaborating with team members. Collaborate on developing our highly competitive trading algorithm and platform Design and implement state-of-the-art, industry-leading trade execution and connectivity solutions Research and analysis of exchange microstructure Stay on top of updates to the exchange landscape",
-    "requirements": "Hard skill requirements: | Proficiency in applied mathematics, statistics, numerical modeling | Knowledge of cryptocurrency | Comfortable in a Linux R&D environment, incl. git and related tools | Ability to research independently | Proficiency in English | Nice to haves | Experience in blockchain analytics | In-depth knowledge of concrete blockchains on conceptual and/or programming level | Hands-on programming experience in a quantitative trading environment",
-    "source_url": "https://job-boards.eu.greenhouse.io/imc/jobs/4637268101",
-    "date_posted": "2025-07-29",
-    "date_scraped": "2026-10-02",
-    "first_seen": "2026-07-22",
-    "slug": "imc-trading-quant-developer-cefi-digital-assets-b396085c"
-  },
-  {
-    "role": "Quantitative Researcher - Digital Assets",
-    "company": "IMC Trading",
-    "company_type": "Proprietary Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Research",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "Zug, Switzerland",
-    "description": "IMC has a strong presence in traditional Finance and has been expanding into Crypto over the last years. Through its overseas affiliates, IMC provides liquidity and trades on many cryptocurrency exchanges and DeFi protocols. IMC Zug is currently looking to expand its Research team, which builds the algorithms that support IMC's trading activities. You can expect a dynamic, fast-paced environment that delivers a steady stream of challenges and opportunities, with one of the most exciting aspects of the job being our quick feedback loop in the research, development and deployment of strategies. Research within a team of highly experienced Researchers in the low latency, PnL-focused trading space. Work with a cutting-edge data and software stack. Work with our high performance computing platform. Extensive flexibility in exploring PnL-generating opportunities within your research area",
-    "requirements": "Experience in researching and developing fully-automated low latency crypto trading strategies. Candidates without experience in fully-automated trading strategies shall not be considered for this role. | Background in Statistics, Mathematics, Physics, Computer Science or a related technical field. | Team player. | Strong development skills in Python. Familiarity with C++ is a plus. | Outstanding analytical skills with the ability to learn quickly.",
-    "source_url": "https://job-boards.eu.greenhouse.io/imc/jobs/4637523101",
-    "date_posted": "2025-07-25",
-    "date_scraped": "2026-10-02",
-    "first_seen": "2026-07-22",
-    "slug": "imc-trading-quant-researcher-digital-assets-5a2c724d"
   },
   {
     "role": "Quantitative Developer, C++ - Trading Teams EMEA",
