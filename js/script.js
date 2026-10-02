@@ -193,7 +193,9 @@ if (calGrid) {
   const calPrevBtn = document.getElementById("cal-prev");
   const calNextBtn = document.getElementById("cal-next");
 
-  // Keyed by "YYYY-MM-DD" (month is 1-indexed here for readability).
+  // Keyed by "YYYY-MM-DD" (month is 1-indexed here for readability). A
+  // multi-day event (like the interview window) is just the same entry
+  // repeated under each date in the range, so every day in it lights up.
   const calendarEvents = {
     "2026-10-08": {
       title: "Welcome Picnic",
@@ -201,6 +203,69 @@ if (calGrid) {
       location: "The Quad near Eckhart Hall",
       time: "3-5 PM",
       description: "Kick off the year with a relaxed picnic at The Quad near Eckhart Hall. Enjoy snacks, soft drinks, and a chance to meet fellow PQC members, connect with new faces, and get to know the community before the semester's programming gets underway.",
+    },
+    "2026-10-16": {
+      title: "E-Board Applications Due",
+      date: "Friday, October 16, 2026",
+      location: "Submitted online",
+      time: "11:59 PM CT",
+      description: "Deadline to submit your application for an executive board position. Be sure to submit before 11:59 PM CT.",
+    },
+    "2026-10-21": {
+      title: "E-Board Interviews",
+      date: "October 21-28, 2026",
+      location: "Location TBD",
+      time: "Time TBD",
+      description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
+    },
+    "2026-10-22": {
+      title: "E-Board Interviews",
+      date: "October 21-28, 2026",
+      location: "Location TBD",
+      time: "Time TBD",
+      description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
+    },
+    "2026-10-23": {
+      title: "E-Board Interviews",
+      date: "October 21-28, 2026",
+      location: "Location TBD",
+      time: "Time TBD",
+      description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
+    },
+    "2026-10-24": {
+      title: "E-Board Interviews",
+      date: "October 21-28, 2026",
+      location: "Location TBD",
+      time: "Time TBD",
+      description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
+    },
+    "2026-10-25": {
+      title: "E-Board Interviews",
+      date: "October 21-28, 2026",
+      location: "Location TBD",
+      time: "Time TBD",
+      description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
+    },
+    "2026-10-26": {
+      title: "E-Board Interviews",
+      date: "October 21-28, 2026",
+      location: "Location TBD",
+      time: "Time TBD",
+      description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
+    },
+    "2026-10-27": {
+      title: "E-Board Interviews",
+      date: "October 21-28, 2026",
+      location: "Location TBD",
+      time: "Time TBD",
+      description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
+    },
+    "2026-10-28": {
+      title: "E-Board Interviews",
+      date: "October 21-28, 2026",
+      location: "Location TBD",
+      time: "Time TBD",
+      description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
     },
   };
 
