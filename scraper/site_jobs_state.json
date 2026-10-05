@@ -6012,24 +6012,6 @@
     "slug": "point72-software-engineer-technology-d08bfbca"
   },
   {
-    "role": "Machine Learning Infrastructure Engineer, GenAI Technology",
-    "company": "Point72",
-    "company_type": "Quantitative Hedge Funds",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$180,000-$300,000",
-    "location": "New York, NY",
-    "description": "A Career with Point72's Technology Team As Point72 reimagines the future of investing, our Technology team is constantly evolving our firm\u2019s IT infrastructure and engineering capabilities, positioning us at the forefront of a rapidly evolving technology landscape. We\u2019re a team of experts who experiment and work to discover new ways to harness open-source solutions, modern cloud architectures, and sophisticated Artificial Intelligence (AI) solutions, while embracing enterprise agile methodologies. Our commitment to building and innovating in the AI space provides the framework intended to drive smarter decision making and enhance how we build and operate our platforms and applications. As a member of Point72\u2019s Technology team, we encourage and support your professional development from day one\u2014helping you advance your technical skills, contribute innovative ideas, and satisfy your own intellectual curiosity\u2014all while delivering real business impact for our multi-billion-dollar global business. Design and implement high-performance infrastructure to support large-scale generative AI and machine learning workloads, enabling faster model iteration and real business impact Design and operate distributed systems for model training, hyperparameter tuning, inference, and data preprocessing pipelines to deliver reliable end-to-end machine learning (ML) workflows Collaborate with ML researchers and engineers to produce models, optimizing compute utilization, training throughput, and inference latency Develop and automate deployment, orchestration, and CI/CD pipelines for models and data workflows using container orchestration and infrastructure-as-code (IaC) Implement observability, monitoring, and cost-management strategies for GPU and accelerator compute environments to maintain predictable performance and spend Evaluate, integrate, and benchmark emerging hardware and software technologies across cloud and on-prem environments to improve scalability and throughput Drive security, compliance, and operational runbooks for GenAI infrastructure including access controls, secrets management, and incident response procedures Troubleshoot, profile, and optimize performance across GPU and CPU compute stacks to remove bottlenecks and increase reliability Document architecture, operational practices, and mentor engineers to expand team capability and accelerate adoption of production-ready GenAI infrastructure",
-    "requirements": "",
-    "source_url": "https://boards.greenhouse.io/point72/jobs/8472280002?gh_jid=8472280002",
-    "date_posted": "2026-04-20",
-    "date_scraped": "2026-10-05",
-    "first_seen": "2026-08-11",
-    "slug": "point72-machine-learning-infrastructure-engineer-genai-technology-e08d2948"
-  },
-  {
     "role": "Quantitative Developer - Systematic",
     "company": "Man Group",
     "company_type": "Quantitative Hedge Funds",
@@ -10690,24 +10672,6 @@
     "date_scraped": "2026-10-05",
     "first_seen": "2026-07-22",
     "slug": "jump-trading-quantitative-researcher-trading-team-722a4736"
-  },
-  {
-    "role": "AI Research Scientist | Research & Development",
-    "company": "Jump Trading",
-    "company_type": "Proprietary Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Research",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$200,000",
-    "location": "New York, London, Singapore",
-    "description": "Jump Trading Group is committed to world class research. We empower exceptional talents in Mathematics, Physics, and Computer Science to seek scientific boundaries, push through them, and apply cutting edge research to global financial markets. Our culture is unique. Constant innovation requires fearlessness, creativity, intellectual honesty, and a relentless competitive streak. We believe in winning together and unlocking unique individual talent by incenting collaboration and mutual respect. At Jump, research outcomes drive more than superior risk adjusted returns. We design, develop, and deploy technologies that change our world, fund start-ups across industries, and partner with leading global research organizations and universities to solve problems.Our AI team is an R&D group of quantitative researchers, engineers, and ML experts leading LLM research and applications at Jump. Our mission is to combine emerging techniques and original research to generate signals from unstructured data and to put frontier AI capabilities into the hands of the people doing the most demanding quantitative work in the world. Our remit is broad and growing, spanning model research, agentic systems, and the platforms that bring them into daily use, and we want our researchers and traders to experience these capabilities as a seamless and dependable extension of how they already work.",
-    "requirements": "5+ year track record of creating ML systems with real metrics & impact in industry and/or academia | Strong general ML background with some exposure to language modeling architectures (e.g. transformers, SSMs) | Solid development skills in Python and/or C++ | Familiarity with ML libraries/frameworks such as PyTorch (preferred), TensorFlow, and/or JAX | Intellectual curiosity, versatility, and originality combined with a pragmatic outlook | Ability to reason through quantitative problems and communicate effectively with trading researchers | PhD, or Master's degree in Computer Science, Mathematics, (or related subject) | Strong publications record at ICML, ICLR, AAAI, NeurIPS, UAI, KDD, or equivalent | Reliable and predictable availability",
-    "source_url": "https://www.jumptrading.com/hr/job?gh_jid=4982814",
-    "date_posted": "2024-03-04",
-    "date_scraped": "2026-10-05",
-    "first_seen": "2026-07-22",
-    "slug": "jump-trading-ai-research-scientist-research-development-cc215a18"
   },
   {
     "role": "Quantitative Developer",
