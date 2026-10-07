@@ -1719,7 +1719,7 @@
     "new_grad": "No",
     "pay": "",
     "location": "Mumbai, India",
-    "description": "IMC is currently looking for a Risk Analyst to join our growing team in Mumbai. This person will be responsible for identifying and assessing risks, determining adequate controls, and developing risk metrics and tools to monitor market, credit, liquidity, and operational risks. Monitor intraday and overnight market risk exposure of our trading activities and work closely with trading desks to adjust strategies accordingly Analyse market trends, stay informed on events in the macro calendar and conduct stress tests to assess impacts and potential risks to the trading book Maintain an open line of communication with trading desks and implement risk mitigation strategies that hedge against adverse events Utilize Python-based tools and libraries for stress testing, and scenario analysis as well as generally designing and contributing to local risk management tooling Engage key stakeholders through operational incident management process to help structurally improve infrastructure, processes or governance Partner with software development, data engineering, and trading support to implement solutions into IMC\u2019s proprietary global risk management system Collaborate with global risk, trading, and technology teams to design and employ/deploy risk controls in IMC\u2019s proprietary trading system Generate key risk management reports and present findings to senior management Ensure compliance with regulatory requirements and internal risk management policies Provide training and support to traders on risk tools, methodologies, and best practices",
+    "description": "IMC is currently looking for a Risk Manager to join our growing team in Mumbai. This person will be responsible for identifying and assessing risks, determining adequate controls, and developing risk metrics and tools to monitor market, credit, liquidity, and operational risks. Monitor intraday and overnight market risk exposure of our trading activities and work closely with trading desks to adjust strategies accordingly Analyse market trends, stay informed on events in the macro calendar and conduct stress tests to assess impacts and potential risks to the trading book Maintain an open line of communication with trading desks and implement risk mitigation strategies that hedge against adverse events Utilize Python-based tools and libraries for stress testing, and scenario analysis as well as generally designing and contributing to local risk management tooling Engage key stakeholders through operational incident management process to help structurally improve infrastructure, processes or governance Partner with software development, data engineering, and trading support to implement solutions into IMC\u2019s proprietary global risk management system Collaborate with global risk, trading, and technology teams to design and employ/deploy risk controls in IMC\u2019s proprietary trading system Generate key risk management reports and present findings to senior management Ensure compliance with regulatory requirements and internal risk management policies Provide training and support to traders on risk tools, methodologies, and best practices",
     "requirements": "3+ years of relevant professional work experience with a capital markets company required | Bachelor\u2019s or Master\u2019s degree in a quantitative field of study with strong academic performance | Proficiency in Python programming language with demonstrated experience in conducting data analysis, scripting, dashboard and tool development required | Experience with Python (e.g., Pandas, Standard Library, and any visualisation library) and SQL required | Strong analytical skills and proficiency with quantitative analysis and modelling required | Financial Risk Management (FRM) or NISM Series VII preferred but not required | Familiarity with financial markets, derivatives, stress testing, risk management tools and frameworks preferred but not required | Experience with analysing and managing risks associated with a portfolio of equities, futures, and options preferred but not required | Excellent verbal and written communication skills | Proactive attitude and out-of-the-box thinker who excels in a fast-paced, high-pressured environment",
     "source_url": "https://job-boards.eu.greenhouse.io/imc/jobs/4986772101",
     "date_posted": "2026-09-25",
@@ -1834,24 +1834,6 @@
     "date_scraped": "2026-10-07",
     "first_seen": "2026-09-24",
     "slug": "imc-trading-hardware-machine-learning-phd-research-internship-e5cf3d7e"
-  },
-  {
-    "role": "2026 Chess Academy Australia & New Zealand - Expression of Interest",
-    "company": "IMC Trading",
-    "company_type": "Proprietary Trading Firms",
-    "type": "Event",
-    "category": "Quant Event",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "APAC",
-    "description": "Presented by IMC and Team Liquid What if your next chess move took you to Sydney to play the world champion? The Chess Academy Australia and New Zealand is a one-of-a-kind program open to all students across Australia and New Zealand colleges and universities, whether you're a seasoned competitor or just love the game. In partnership with Team Liquid, IMC is bringing together the brightest student chess players in the country for a chance to qualify through an online Swiss-format tournament on Chess.com and, if you advance, travel to Sydney to compete in the championship finals against the best student players in the country. This is more than a chess tournament. It's an opportunity to step inside one of the world's leading trading firms, connect with IMC's traders, researchers and technologists, and experience what it's like to think fast, compete hard, and perform under pressure \u2014 skills that define both great chess players and the people who thrive at the world's top trading firms. Compete at the highest level: Compete in an online Swiss-format qualifying tournament on Chess.com and play for one of the sports that advance to the championship finals in Sydney. Play Magnus Carlsen: All finalists take part in a showmatch experience with the World Chess Champion, a once-in-a-lifetime opportunity to sit across the board from one of the greatest players in history Learn from the best: Finalists will take part in an exclusive masterclass led by Magnus and Grandmaster Robert Hess, an opportunity to hear how two of the world's elite players think about the game Go behind the scenes at IMC: Tour IMC's Sydney office and get a firsthand look at the environment where some of the world's fastest and most sophisticated trading takes place. Build your network: Connect directly with IMC traders, researchers, technologists, and recruiters. Whether or not a career in trading is on your radar, this is a rare chance to meet and learn from world-class professions",
-    "requirements": "Currently enrolled as a full-time undergraduate or postgraduate student at an Australian or New Zealand college or university | Participants enrolled at a university in New Zealand must also hold New Zealand citizenship | 18 years of age or older | A valid Chess.com account | Available to compete in the virtual qualifiers during the week of the 9, 10 or 11th November 2026 | Available to travel to Sydney for the finals on 9th December 2026 | Open to all majors and academic backgrounds \u2014 all skill levels welcome",
-    "source_url": "https://job-boards.eu.greenhouse.io/imc/jobs/4979079101",
-    "date_posted": "2026-09-17",
-    "date_scraped": "2026-10-07",
-    "first_seen": "2026-09-24",
-    "slug": "imc-trading-2026-chess-academy-australia-new-zealand-expression-of-int-de999d75"
   },
   {
     "role": "Volatility Trader",
@@ -2230,24 +2212,6 @@
     "date_scraped": "2026-10-07",
     "first_seen": "2026-09-18",
     "slug": "schonfeld-trade-surveillance-analyst-d73dcba4"
-  },
-  {
-    "role": "Trading Systems Engineers",
-    "company": "Flow Traders",
-    "company_type": "Market Makers",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "Amsterdam",
-    "description": "Trading Systems runs the infrastructure Flow Traders trades on: the global Linux fleet \u2014 trading servers, workstations and VDIs \u2014 and the multi-cloud and distributed-systems estate that sits alongside it. We also build and run the self-service infrastructure platform the rest of Technology depends on. We are hiring two engineers into this team. This is a hands-on engineering role: most of your time goes on writing Terraform, building CI workflows and guardrails, automating toil out of the Linux fleet, and operating what you build. A lot of the shared tooling does not exist yet, and building it is the job rather than a side effect of it. The environment is trading-critical and runs across both on-premise infrastructure and public cloud, and you will work on both sides of that line rather than specialising in one. To be clear about the shape of the seat: this is build-and-operate rather than architecture, strategy or management. There is architecture in it, but the bulk of the work is hands-on and there are no direct reports. A solid Linux foundation is essential across the whole role \u2014 it underpins both sides of the estate, and the cloud, container and Kubernetes work rests on it just as much as the on-premise fleet does.",
-    "requirements": "",
-    "source_url": "https://job-boards.greenhouse.io/flowtraders/jobs/8195974",
-    "date_posted": "2026-09-18",
-    "date_scraped": "2026-10-07",
-    "first_seen": "2026-09-18",
-    "slug": "flow-traders-trading-systems-engineers-83ea957a"
   },
   {
     "role": "PhD Graduate Quantitative Researcher",
