@@ -216,24 +216,6 @@
     "slug": "point72-software-engineer-controllers-technology-c8abc377"
   },
   {
-    "role": "Campus Software Engineer (Intern)",
-    "company": "Jump Trading",
-    "company_type": "Proprietary Trading Firms",
-    "type": "Internship",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "London",
-    "description": "Jump Trading Group is committed to world class research. We empower exceptional talents in Mathematics, Physics, and Computer Science to seek scientific boundaries, push through them, and apply cutting edge research to global financial markets. Our culture is unique. Constant innovation requires fearlessness, creativity, intellectual honesty, and a relentless competitive streak. We believe in winning together and unlocking unique individual talent by incenting collaboration and mutual respect. At Jump, research outcomes drive more than superior risk adjusted returns. We design, develop, and deploy technologies that change our world, fund start-ups across industries, and partner with leading global research organizations and universities to solve problems. Core Development is a global team of technologists who architect, build and maintain our world-class trading platform. From optimizing our core trading engine to building custom hardware, we leverage software & hardware engineering, data science and research, to deliver the infrastructure and tools that drive our trading and business needs. Software Engineering Internship (London) *NOTE - We accept students needing placements or otherwise extended internships. We also allow internships to take place during a non-summer term (for example - the winter, spring, or fall months) if preferable when it makes sense.",
-    "requirements": "Experience with C++ programming on Linux | Experience with command line on Linux | Experience with Git/version control | Experience with Python programming on Linux | Strong understanding of data structures and threading models | Ability to work with a team in a fast-paced environment, deploying new software daily | Passion for solving complex problems using both novel and state of the art commercial solutions | Interest in using knowledge from several areas -- such as hardware, networking, operating systems -- to produce extremely high-performance software | Reliable and predictable availability | * No finance or economics study or work experience required",
-    "source_url": "https://www.jumptrading.com/hr/job?gh_jid=7975026",
-    "date_posted": "2026-07-13",
-    "date_scraped": "2026-10-12",
-    "first_seen": "2026-10-08",
-    "slug": "jump-trading-campus-software-engineer-intern-e6e04bdc"
-  },
-  {
     "role": "Data Engineer",
     "company": "Man Group",
     "company_type": "Quantitative Hedge Funds",
@@ -2358,7 +2340,7 @@
     "slug": "imc-trading-2027-eu-chess-academy-expression-of-interest-75bd1de0"
   },
   {
-    "role": "Quant Risk Analyst",
+    "role": "Quantitative Risk Analyst",
     "company": "Schonfeld",
     "company_type": "Quantitative Hedge Funds",
     "type": "Full-Time",
@@ -4112,7 +4094,7 @@
     "women_focused": "No",
     "new_grad": "No",
     "pay": "",
-    "location": "Shanghai",
+    "location": "Hong Kong",
     "description": "Jump Trading Group is committed to world-class research. We empower exceptional talent in Mathematics, Physics, and Computer Science to seek scientific boundaries, push through them, and apply cutting-edge research to global financial markets. Our culture is unique. Constant innovation requires fearlessness, creativity, intellectual honesty, and a relentless competitive streak. We believe in winning together and unlocking unique individual talent by fostering collaboration and mutual respect. At Jump, research outcomes drive more than superior risk-adjusted returns. We design, develop, and deploy technologies that change our world, fund start-ups across industries, and partner with leading global research organizations and universities to solve complex problems.Jump Trading's Post-Trade Analytics (PTA) Team is the firm's central source of truth for understanding how we trade. We measure, analyze, and optimize every dimension of our trading activity across all global markets. Our team builds the foundational analyses that traders and quantitative researchers rely on daily to make critical decisions. Operating across highly diverse datasets, our core infrastructure collects, organizes, and stores billions of data points every day, powering the analytics behind a wide array of trading strategies.As a Data Engineer on the PTA team, you will own the critical datasets and pipelines upon which our trading decisions are built, all while developing in-depth technical and financial business expertise. Partner directly with traders and quantitative researchers to turn complex questions into data products that shape how we trade across global markets. Build, operate, and scale the robust datasets and pipelines that power our post-trade analytics and research. Directly influence business priorities, trading strategies, and execution quality through high-impact data engineering. Guarantee trust in the numbers by building robust data validation frameworks, monitoring, alerting, data lineage, and executing rapid incident response. Drive performance by optimizing data processing and workflows for speed, cost, and resilience, while diagnosing and resolving the most complex pipeline and production issues. Develop and optimize the tools, documentation, and foundational infrastructure that empower the broader research and trading teams. Other duties as needed",
     "requirements": "3+ years of experience as a Data Engineer or Software Engineer working extensively with large-scale data. | Proficiency in Python or C++ (Strong skills in at least one, with a willingness to work across both). | Proven expertise in building, operating, and scaling ETL/ELT pipelines, including orchestration, scheduling, and dependency management. | Strong command of SQL and the broader data analytics ecosystem, including familiarity with libraries such as Pandas and NumPy. | Sharp analytical and problem-solving abilities, paired with a strong curiosity to understand the financial business logic behind the data. | Comfort and proficiency working within Linux environments. | Reliable and predictable availability",
     "source_url": "https://www.jumptrading.com/hr/job?gh_jid=7495806",
@@ -4130,7 +4112,7 @@
     "women_focused": "No",
     "new_grad": "No",
     "pay": "",
-    "location": "Shanghai",
+    "location": "Hong Kong",
     "description": "Jump Trading Group is committed to world-class research. We empower exceptional talent in Mathematics, Physics, and Computer Science to seek scientific boundaries, push through them, and apply cutting-edge research to global financial markets. Our culture is unique. Constant innovation requires fearlessness, creativity, intellectual honesty, and a relentless competitive streak. We believe in winning together and unlocking unique individual talent by fostering collaboration and mutual respect. At Jump, research outcomes drive more than superior risk-adjusted returns. We design, develop, and deploy technologies that change our world, fund start-ups across industries, and partner with leading global research organizations and universities to solve complex problems.Jump Trading's Post-Trade Analytics (PTA) Team is the firm's central source of truth for understanding how we trade. We measure, analyze, and optimize every dimension of our trading activity across all global markets. Our team builds the foundational analyses that traders and quantitative researchers rely on daily to make critical decisions. Operating across highly diverse datasets, our core infrastructure collects, organizes, and stores billions of data points every day, powering the analytics behind a wide array of trading strategies. The primary role of the PTA team Data Scientist is to undertake cutting edge analysis on this data to uncover competitive edges. The role offers the opportunity to develop both business and technical expertise, while significantly contributing to Jump's business through the mining and enrichment of data. Identify relationships between business metrics and changes on the infrastructure technology Partner with trading teams to perform post trade statistical analysis on trading performance Conduct research for the purpose of modeling exchange performance Develop mathematical methodology to quantify the impact that specific internal applications have on general performance Design innovative anomaly detection algorithms to detect performance degradation Develop and improve quantitative research frameworks using Python, C++, and other software systems Other duties as assigned or needed",
     "requirements": "The ideal candidate will have the ability to work closely with and collaborate across trading and trading infrastructure teams. We are looking for an individual who is instinctively curious, self-driven, keen to dive into the complex world of HFT, and has demonstrated an ability to independently drive tasks and projects to completion in a team environment | At least 3+ years of programming experience in Python with a data science and analytics focus | Strong data intuition combined with a healthy skepticism for easy conclusions | Excellent problem solving abilities | Experience in documenting and communicating analysis to both technical and business audiences. | Background in statistics | Experience with C++ is a plus. | Experience with SQL is a plus. | Practical experience with Machine Learning technics is a plus. | Understanding of network protocols (IP, UDP, TCP, Ethernet) is a plus. | Reliable and predictable availability",
     "source_url": "https://www.jumptrading.com/hr/job?gh_jid=7483202",
