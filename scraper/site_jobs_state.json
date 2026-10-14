@@ -1,5 +1,41 @@
 [
   {
+    "role": "Software Engineer (Java) - Research Data Platform",
+    "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firms",
+    "type": "Full-Time",
+    "category": "Quantitative Development",
+    "women_focused": "No",
+    "new_grad": "No",
+    "pay": "",
+    "location": "Mumbai, India",
+    "description": "Researchers and traders rely on high-quality research data to evaluate and improve our trading strategies. The mission of our research data team is to maintain a platform and pipelines to provide globally aligned and curated options data. It brings together market data, data from external vendors, and IMC internal data. The team will own the generation of datasets, the quality of the data, and the daily operations for research or trading critical data. You will be at the cutting edge of development in IMC, and globally align with other teams on new initiatives to enable systematic research. Working closely with researchers and traders, you will prioritize local demands and shape platform improvements. Work closely with researchers and traders to understand their strategies and data needs, and translate them into reliable research data solutions. Develop, test, deploy and maintain applications and pipelines that ingest, curate and expose options research data. Improve data quality and operational reliability through validation, monitoring, troubleshooting and efficient access to large datasets. Collaborate with research data and platform teams across regions to onboard datasets, improve shared systems and support systematic research.",
+    "requirements": "At least 3 years of experience as a Software Engineer, with strong programming skills in Java and practical experience with Python. | Solid understanding of computer science fundamentals, including algorithms, data structures, complexity analysis, memory management and concurrency. | Experience developing and operating production software, with strong troubleshooting skills across application code, infrastructure and data. | Strong analytical and problem-solving skills, with an interest in understanding how data is generated, validating its correctness and assessing its suitability for research. | Ability to work independently, understand research requirements, communicate with stakeholders and take ownership of the solutions you build. | Experience building data pipelines, distributed systems or large-scale data processing applications. | Familiarity with Linux, containers and Kubernetes; experience with data lake technologies such as Apache Iceberg and Parquet is a plus. | Adaptability and solid engineering judgement in an environment where requirements evolve. | A degree in Computer Science or a related field, or equivalent practical experience. | Prior experience in trading, quantitative research or financial data is a plus. Curiosity about options pricing and a willingness to learn are essential.",
+    "source_url": "https://job-boards.eu.greenhouse.io/imc/jobs/4988565101",
+    "date_posted": "2026-10-14",
+    "date_scraped": "2026-10-14",
+    "first_seen": "2026-10-14",
+    "slug": "imc-trading-software-engineer-java-research-data-platform-06625c5c"
+  },
+  {
+    "role": "Summer Trading Internship",
+    "company": "Flow Traders",
+    "company_type": "Market Makers",
+    "type": "Internship",
+    "category": "Quantitative Trading",
+    "women_focused": "No",
+    "new_grad": "No",
+    "pay": "",
+    "location": "Amsterdam",
+    "description": "Flow Traders is looking for entrepreneurial, competitive and analytical talent to join our Trading department as an Intern. What better way to find out if a career in (Quantitative) Trading is something for you, than by experiencing it yourself as a Trading Intern? You will get a 360-degree view of our role in the financial markets, how our Traders seize arbitrage opportunities, and how they work together as a team to optimize and improve their desk. The internship starts 1st of July 2027 and will last for 8 weeks. Housing will be provided! This Trading internship is about immersing yourself in financial markets and experience trading from up close. You do not need to have a financial background; we will teach you all you need to know. Experience with a scientific programming language or excel is an advantage though. Working closely with Traders and Quantitative Researchers, you will add value by working on real trading projects. You will solve problems, create new tools and/or design new strategies. You will test your project in a trading simulation.",
+    "requirements": "Graduating in 2028 with a BSc./MSc, Degree, preferably in Mathematics, Econometrics, Engineering, Physics or related | Experience with a scientific programming language ( e.g. Python / MATLAB / R or similar) | Competitive, innovative & creative personality with excellent mental arithmetic skills | Capability to reason logically and deliver under pressure | Ability to spot opportunities and the assertiveness to seize them",
+    "source_url": "https://job-boards.greenhouse.io/flowtraders/jobs/8260920",
+    "date_posted": "2026-10-07",
+    "date_scraped": "2026-10-14",
+    "first_seen": "2026-10-14",
+    "slug": "flow-traders-summer-trading-internship-763b172e"
+  },
+  {
     "role": "Home - 100 Women In Finance",
     "company": "100 Women in Finance",
     "company_type": "Other",
@@ -1368,7 +1404,7 @@
     "slug": "coinbase-senior-data-scientist-43191b62"
   },
   {
-    "role": "Senior Software Engineer (Platform - Access & Authorization)",
+    "role": "Senior Software Engineer - Access & Authorization (Platform)",
     "company": "Coinbase",
     "company_type": "Crypto Trading Firms",
     "type": "Full-Time",
@@ -1377,7 +1413,7 @@
     "new_grad": "No",
     "pay": "$186,065",
     "location": "Remote - USA",
-    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. Senior Software Engineer, Access & Authorization As a Senior Software Engineer on the Access & Authorization team within the Platform group, you'll help shape the systems customers use to securely access Coinbase. This team builds and operates distributed services at the intersection of security, identity, developer infrastructure, and customer experience. You'll design foundational authentication and authorization capabilities that balance strong security with a simple experience, creating leverage across every Coinbase product and partner integration. Own end-to-end design, implementation, and operation of capabilities across authentication, OAuth, sessions, tokens, 2FA, account recovery, and edge authorization. Build secure, low-latency Go and gRPC services used across Coinbase's web, mobile, API, and partner experiences, with strong observability, failure testing, and measurable SLOs. Lead technical designs for complex initiatives such as signed authorization tokens, passkeys, biometric recovery, device-aware authentication, and mobile OAuth. Partner with product, security, fraud, and infrastructure teams to balance customer conversion, account protection, regulatory requirements, and engineering constraints. Simplify integration patterns and build self-service tooling that enables product teams to adopt access and authorization capabilities safely at scale. Mentor engineers and raise the technical bar through design reviews, pairing, code reviews, and on-call participation.",
+    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. As a Senior Software Engineer on the Access & Authorization team within the Platform group, you'll help shape the systems customers use to securely access Coinbase. This team builds and operates distributed services at the intersection of security, identity, developer infrastructure, and customer experience. You'll design foundational authentication and authorization capabilities that balance strong security with a simple experience, creating leverage across every Coinbase product and partner integration. Own end-to-end design, implementation, and operation of capabilities across authentication, OAuth, sessions, tokens, 2FA, account recovery, and edge authorization. Build secure, low-latency Go and gRPC services used across Coinbase's web, mobile, API, and partner experiences, with strong observability, failure testing, and measurable SLOs. Lead technical designs for complex initiatives such as signed authorization tokens, passkeys, biometric recovery, device-aware authentication, and mobile OAuth. Partner with product, security, fraud, and infrastructure teams to balance customer conversion, account protection, regulatory requirements, and engineering constraints. Simplify integration patterns and build self-service tooling that enables product teams to adopt access and authorization capabilities safely at scale. Mentor engineers and raise the technical bar through design reviews, pairing, code reviews, and on-call participation.",
     "requirements": "5+ years of backend software engineering experience with strong proficiency in Go or a comparable systems-oriented language, including building and operating reliable, high-throughput distributed services in production. | Demonstrated experience designing secure APIs and reasoning about authentication, authorization, session management, trust boundaries, and token handling (OAuth 2.0, OpenID Connect, JWTs, PKCE, or related standards). | Proficiency with gRPC, Protocol Buffers, and data stores such as Redis or DynamoDB, with strong operational instincts using metrics, logs, traces, alerts, and SLOs to run critical services. | Track record of delivering complex, cross-functional projects from technical design through production rollout, with clear written and verbal communication that aligns engineering, security, product, and infrastructure partners. | Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality. | Pay Transparency Notice: Base salary varies by location (see range below). Total compensation may also include equity and bonus eligibility, and benefits (medical, dental, vision, 401(k)).",
     "source_url": "https://www.coinbase.com/careers/positions/8146039?gh_jid=8146039",
     "date_posted": "2026-08-21",
@@ -2700,7 +2736,7 @@
     "slug": "schonfeld-2027-dmfi-quant-developer-intern-465201b2"
   },
   {
-    "role": "Software Engineer - Java",
+    "role": "Software Engineer (Java) - Global Research Platform",
     "company": "IMC Trading",
     "company_type": "Proprietary Trading Firms",
     "type": "Full-Time",
