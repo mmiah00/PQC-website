@@ -1830,6 +1830,21 @@ form.contact-form {
   margin-top: 16px;
 }
 
+.discount-code {
+  display: inline-block;
+  margin: 12px 0;
+  padding: 10px 32px;
+  font-family: var(--font-body);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 6px;
+  color: var(--ink);
+  background: var(--maroon-tint);
+  border: 2px dashed var(--chart-gold);
+  border-radius: var(--radius);
+  user-select: all;
+}
+
 /* Inverted theme applied to the gated members-only page. Because nearly
    every component below is built on these custom properties, redefining
    them here re-themes the whole page (header, buttons, cards) without
