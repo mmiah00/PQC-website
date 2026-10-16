@@ -1188,24 +1188,6 @@
     "slug": "coinbase-senior-data-scientist-product-7605696f"
   },
   {
-    "role": "Software Engineer",
-    "company": "Coinbase",
-    "company_type": "Crypto Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$247,737",
-    "location": "Remote - Canada",
-    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. As a Frontend Software Engineer on the Financial Services & Loyalty team within the Consumer & Business group, you'll build and ship the user-facing experiences that power Coinbase's card, payments, and loyalty products for millions of customers. This team owns the end-to-end frontend for products like the Coinbase One credit card, crypto-back rewards, and consumer payment flows. You'll own features from technical design through production release, working closely with product, design, and backend engineering to deliver fast, reliable, and intuitive experiences that drive activation and retention. Own end-to-end frontend development across web and mobile for financial services products using React and React Native, including card onboarding, rewards, transactions, and payment flows. Build new features that expand the value proposition of Coinbase's loyalty and card products, shipping high-quality code that directly impacts customer engagement and revenue. Drive experimentation and funnel optimization efforts that measurably improve conversion, activation, and retention across key user journeys. Partner cross-functionally with product, design, and backend engineering to translate requirements into polished, performant frontend experiences. Identify and resolve frontend performance bottlenecks, contributing to measurable improvements in CUJ latency and availability SLOs.",
-    "requirements": "3+ years of software engineering experience, with a strong focus on frontend development using React and React Native. | Demonstrated track record of owning features end to end, from technical design through implementation, testing, and production release. | Experience with experimentation frameworks and funnel optimization, with the ability to instrument, measure, and iterate on user-facing flows. | Proven ability to collaborate cross-functionally with product, design, and backend engineering teams to deliver features on time and at high quality. | Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality. | Pay Transparency Notice: The target annual base salary for this position can range as detailed below. Total compensation may also include equity and bonus eligibility and benefits (including medical, dental, and vision).",
-    "source_url": "https://www.coinbase.com/careers/positions/8207374?gh_jid=8207374",
-    "date_posted": "2026-09-16",
-    "date_scraped": "2026-10-16",
-    "first_seen": "2026-09-29",
-    "slug": "coinbase-software-engineer-f9a5b53c"
-  },
-  {
     "role": "Senior Software Engineer, Developer Infrastructure",
     "company": "Coinbase",
     "company_type": "Crypto Trading Firms",
@@ -10700,7 +10682,7 @@
     "women_focused": "No",
     "new_grad": "Yes",
     "pay": "",
-    "location": "London, Montreal",
+    "location": "London, Montreal, Singapore",
     "description": "Please only apply to the one job you feel best fits your skillset and experience. If our team feels you are better suited for another role, we will reach out about the alternate opportunity. Front-end developers at Squarepoint are instrumental in enhancing user experience on our sophisticated research and trading platforms. You will use React and Typescript to develop fully-fledged applications facilitating real-time data access, and support the exploration of large volumes of data integral to our trading workflows and operations. Your contributions will drive rapid decision-making and uphold our competitive edge in a high-stakes trading environment.",
     "requirements": "Degree in Computer Science, Computer Engineering, or other degree with a heavy emphasis on software development, | Up to 4 years experience in a relevant role such as software development, | Experience in web development using a modern React stack with TypeScript, | Excellent written and verbal communication skills, | Willingness to pick up and learn new technologies and frameworks, | Ability to work well in a fast-paced environment.",
     "source_url": "https://www.squarepoint-capital.com/open-opportunities?id=6034447&gh_jid=6034447",
