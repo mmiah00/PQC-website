@@ -855,10 +855,13 @@ img { max-width: 100%; display: block; }
   margin-bottom: 16px;
 }
 
+/* Intentionally hardcoded (not theme variables): these cards always stay
+   light cream with dark maroon text, regardless of the surrounding
+   members-theme dark inversion. */
 .flashcard {
   position: relative;
-  background: var(--cream-dim);
-  border: 1px solid var(--cream-line);
+  background: #fef5e2;
+  border: 1px solid #e7d6b3;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   min-height: 320px;
@@ -873,7 +876,7 @@ img { max-width: 100%; display: block; }
   user-select: none;
 }
 
-.flashcard:hover { border-color: var(--maroon-light); }
+.flashcard:hover { border-color: #a3383d; }
 .flashcard[hidden] { display: none; }
 
 .flashcard-meta {
@@ -882,18 +885,18 @@ img { max-width: 100%; display: block; }
   top: 20px;
   left: 0;
   right: 0;
-  font-size: 0.8rem;
+  font-size: 0.64rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--ink-soft);
+  color: #5a3a38;
 }
 
 .flashcard-question {
   font-family: var(--font-head);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 1.4;
-  color: var(--ink);
+  color: #500509;
   margin: 0;
   max-width: 540px;
 }
@@ -904,8 +907,8 @@ img { max-width: 100%; display: block; }
   left: 0;
   right: 0;
   margin: 0;
-  font-size: 0.78rem;
-  color: var(--ink-soft);
+  font-size: 0.62rem;
+  color: #5a3a38;
 }
 
 /* ---------- FAQ / accordion ---------- */
