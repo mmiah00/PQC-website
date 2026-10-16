@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 Pipeline that scrapes live quant job postings and regenerates:
-  - the job cards on ../members-opportunities.html (a member-gated page)
+  - the job cards in the Opportunities tab of ../members-home.html (a
+    member-gated page)
   - one standalone detail page per job under ../jobs/<slug>.html, also
     member-gated, with the full description, requirements, and pay --
     linked from each card's "See More" button.
@@ -37,7 +38,7 @@ from scrape_jobs import collect_jobs, log
 SCRAPER_DIR = Path(__file__).resolve().parent
 SITE_DIR = SCRAPER_DIR.parent
 STATE_PATH = SCRAPER_DIR / "site_jobs_state.json"
-OPPORTUNITIES_PATH = SITE_DIR / "members-opportunities.html"
+OPPORTUNITIES_PATH = SITE_DIR / "members-home.html"
 JOBS_DIR = SITE_DIR / "jobs"
 
 MARKER_START = "<!-- JOBS:AUTO-GENERATED:START -->"
@@ -224,7 +225,7 @@ DETAIL_PAGE_TEMPLATE = """<!DOCTYPE html>
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-home.html#panel-opportunities">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
 {description_html}{requirements_html}

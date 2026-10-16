@@ -35,18 +35,30 @@ document.querySelectorAll(".accordion-item").forEach((item) => {
   });
 });
 
-// Team tabs (team.html)
+// Team tabs (team.html, members-home.html)
 const teamTabButtons = document.querySelectorAll(".team-tab-btn");
-teamTabButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    teamTabButtons.forEach((b) => b.classList.remove("active"));
-    document.querySelectorAll(".team-panel").forEach((panel) => panel.classList.remove("active"));
 
-    btn.classList.add("active");
-    const target = document.getElementById(btn.dataset.target);
-    if (target) target.classList.add("active");
-  });
+function activateTeamTab(btn) {
+  teamTabButtons.forEach((b) => b.classList.remove("active"));
+  document.querySelectorAll(".team-panel").forEach((panel) => panel.classList.remove("active"));
+
+  btn.classList.add("active");
+  const target = document.getElementById(btn.dataset.target);
+  if (target) target.classList.add("active");
+}
+
+teamTabButtons.forEach((btn) => {
+  btn.addEventListener("click", () => activateTeamTab(btn));
 });
+
+// Deep-link support: a link to e.g. members-home.html#panel-opportunities
+// (used by "Back to Opportunities" on job detail pages) opens straight to
+// that tab instead of the page's default panel.
+if (teamTabButtons.length && window.location.hash) {
+  const targetId = window.location.hash.slice(1);
+  const linkedTab = document.querySelector('.team-tab-btn[data-target="' + targetId + '"]');
+  if (linkedTab) activateTeamTab(linkedTab);
+}
 
 // Team member flip cards (team.html) -- disabled, flip button removed from cards
 // document.querySelectorAll(".flip-trigger").forEach((btn) => {
