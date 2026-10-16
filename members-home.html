@@ -12705,9 +12705,31 @@
       </div>
 
       <div class="team-panel" id="panel-question-bank">
-        <div class="card" style="max-width:760px;margin:0 auto;text-align:center;">
-          <h3>Interview Question Bank</h3>
-          <p>A member-crowdsourced collection of real interview questions from quant recruiting, organized by firm and role. Coming soon, check back as members start contributing.</p>
+        <div style="max-width:640px;margin:0 auto;">
+          <h3 style="text-align:center;">Interview Question Bank</h3>
+          <p style="text-align:center;">A member-crowdsourced collection of real interview questions from quant recruiting. Click a card to see the next question.</p>
+
+          <div class="flashcard-controls">
+            <label for="flashcard-role-filter">Filter by role</label>
+            <select id="flashcard-role-filter">
+              <option value="all">All Roles</option>
+              <option value="Quant Researcher Intern">Quant Researcher Intern</option>
+              <option value="Quant Researcher (Full-Time)">Quant Researcher (Full-Time)</option>
+              <option value="Quant Trader Intern">Quant Trader Intern</option>
+              <option value="Quant Trader (Full-Time)">Quant Trader (Full-Time)</option>
+              <option value="Quant Developer Intern">Quant Developer Intern</option>
+              <option value="Quant Developer (Full-Time)">Quant Developer (Full-Time)</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div id="flashcard-status" class="flashcard-status"></div>
+
+          <div id="flashcard" class="flashcard" tabindex="0" role="button" aria-label="Click for the next question" hidden>
+            <p class="flashcard-meta"><span id="flashcard-company"></span> &middot; <span id="flashcard-role"></span></p>
+            <p class="flashcard-question" id="flashcard-question"></p>
+            <p class="flashcard-hint">Click for the next question &rarr;</p>
+          </div>
         </div>
       </div>
 
@@ -12723,7 +12745,16 @@
             </div>
             <div>
               <label for="q-role">Role</label>
-              <input type="text" id="q-role" name="role" placeholder="e.g. Quantitative Trading Intern" required>
+              <select id="q-role" name="role" required>
+                <option value="" disabled selected>Select role</option>
+                <option value="Quant Researcher Intern">Quant Researcher Intern</option>
+                <option value="Quant Researcher (Full-Time)">Quant Researcher (Full-Time)</option>
+                <option value="Quant Trader Intern">Quant Trader Intern</option>
+                <option value="Quant Trader (Full-Time)">Quant Trader (Full-Time)</option>
+                <option value="Quant Developer Intern">Quant Developer Intern</option>
+                <option value="Quant Developer (Full-Time)">Quant Developer (Full-Time)</option>
+                <option value="Other">Other</option>
+              </select>
             </div>
             <div>
               <label for="q-interview-type">Interview Type</label>

@@ -1,9 +1,14 @@
-// PQC "Submit A Question" intake.
+// PQC "Submit A Question" intake, and the Interview Question Bank's read
+// endpoint.
 //
-// Appends one row per submission to a "Responses" sheet and saves any
-// uploaded images to a Drive folder, linking back to them from the row.
-// The site's form (members-home.html, Submit A Question tab) posts JSON
-// here; see js/script.js's QUESTION_FORM_ENDPOINT.
+// doPost appends one row per submission to a "Responses" sheet and saves
+// any uploaded images to a Drive folder, linking back to them from the
+// row. The site's form (members-home.html, Submit A Question tab) posts
+// JSON here; see js/script.js's QUESTION_FORM_ENDPOINT.
+//
+// doGet returns all submitted questions as JSON (company, role, question,
+// etc., no image links), which members-home.html's Interview Question
+// Bank tab fetches to render as flashcards.
 //
 // Setup:
 //   1. Create (or open) the Google Sheet you want responses collected in.
@@ -86,6 +91,32 @@ function doPost(e) {
 
     return ContentService.createTextOutput(
       JSON.stringify({ ok: true })
+    ).setMimeType(ContentService.MimeType.JSON);
+  } catch (err) {
+    return ContentService.createTextOutput(
+      JSON.stringify({ ok: false, error: String(err) })
+    ).setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
+function doGet(e) {
+  try {
+    const rows = getSheet_().getDataRange().getValues().slice(1); // drop header row
+    const questions = rows
+      .filter(function (row) { return row[5]; }) // has a question
+      .map(function (row) {
+        return {
+          company: row[1],
+          role: row[2],
+          interviewType: row[3],
+          round: row[4],
+          question: row[5],
+          topics: row[6] ? String(row[6]).split(",").map(function (t) { return t.trim(); }) : [],
+        };
+      });
+
+    return ContentService.createTextOutput(
+      JSON.stringify({ ok: true, questions: questions })
     ).setMimeType(ContentService.MimeType.JSON);
   } catch (err) {
     return ContentService.createTextOutput(

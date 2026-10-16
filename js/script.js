@@ -132,6 +132,74 @@ if (questionSubmitForm) {
   });
 }
 
+// Interview Question Bank flashcards (members-home.html) -- fetches
+// submitted questions from the same Apps Script endpoint used for
+// submissions (GET instead of POST) and shows one at a time; clicking a
+// card advances to the next, looping back to the start.
+const flashcardEl = document.getElementById("flashcard");
+if (flashcardEl) {
+  const statusEl = document.getElementById("flashcard-status");
+  const roleFilter = document.getElementById("flashcard-role-filter");
+  const companyEl = document.getElementById("flashcard-company");
+  const roleEl = document.getElementById("flashcard-role");
+  const questionEl = document.getElementById("flashcard-question");
+
+  let allQuestions = [];
+  let filteredQuestions = [];
+  let currentIndex = 0;
+
+  function renderCard() {
+    if (!filteredQuestions.length) {
+      flashcardEl.hidden = true;
+      statusEl.textContent = allQuestions.length
+        ? "No questions yet for this role."
+        : "No questions submitted yet. Be the first with Submit A Question!";
+      return;
+    }
+    flashcardEl.hidden = false;
+    const card = filteredQuestions[currentIndex];
+    companyEl.textContent = card.company || "Unknown Company";
+    roleEl.textContent = card.role || "Unknown Role";
+    questionEl.textContent = card.question;
+    statusEl.textContent = `Card ${currentIndex + 1} of ${filteredQuestions.length}`;
+  }
+
+  function applyRoleFilter() {
+    const value = roleFilter.value;
+    filteredQuestions =
+      value === "all" ? allQuestions : allQuestions.filter((q) => q.role === value);
+    currentIndex = 0;
+    renderCard();
+  }
+
+  function showNextCard() {
+    if (!filteredQuestions.length) return;
+    currentIndex = (currentIndex + 1) % filteredQuestions.length;
+    renderCard();
+  }
+
+  flashcardEl.addEventListener("click", showNextCard);
+  flashcardEl.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      showNextCard();
+    }
+  });
+  roleFilter.addEventListener("change", applyRoleFilter);
+
+  statusEl.textContent = "Loading questions...";
+  fetch(QUESTION_FORM_ENDPOINT)
+    .then((res) => res.json())
+    .then((result) => {
+      if (!result.ok) throw new Error(result.error || "Unknown error");
+      allQuestions = result.questions || [];
+      applyRoleFilter();
+    })
+    .catch(() => {
+      statusEl.textContent = "Couldn't load questions right now. Please try again later.";
+    });
+}
+
 // Team member flip cards (team.html) -- disabled, flip button removed from cards
 // document.querySelectorAll(".flip-trigger").forEach((btn) => {
 //   btn.addEventListener("click", () => {
