@@ -12712,10 +12712,69 @@
       </div>
 
       <div class="team-panel" id="panel-submit-question">
-        <div class="card" style="max-width:760px;margin:0 auto;text-align:center;">
-          <h3>Submit A Question</h3>
-          <p>Had an interview recently? Help build the question bank for other members by submitting what you were asked.</p>
-          <a href="https://forms.gle/vU16fsnWJknEjkb1A" class="btn btn-outline" target="_blank" rel="noopener">Submit A Question</a>
+        <div class="card" style="max-width:640px;margin:0 auto;">
+          <h3 style="text-align:center;">Submit A Question</h3>
+          <p style="text-align:center;">Had an interview recently? Help build the question bank for other members by submitting what you were asked below.</p>
+
+          <form class="contact-form" id="question-submit-form">
+            <div>
+              <label for="q-company">Company</label>
+              <input type="text" id="q-company" name="company" placeholder="e.g. Jane Street" required>
+            </div>
+            <div>
+              <label for="q-role">Role</label>
+              <input type="text" id="q-role" name="role" placeholder="e.g. Quantitative Trading Intern" required>
+            </div>
+            <div>
+              <label for="q-interview-type">Interview Type</label>
+              <select id="q-interview-type" name="interview_type" required>
+                <option value="" disabled selected>Select interview type</option>
+                <option value="hr">HR Interview</option>
+                <option value="behavioral">Behavioral Interview</option>
+                <option value="technical">Technical Interview</option>
+              </select>
+            </div>
+            <div>
+              <label for="q-round">Round</label>
+              <select id="q-round" name="round" required>
+                <option value="" disabled selected>Select round</option>
+                <option value="initial-hr-call">Initial HR Call</option>
+                <option value="oa">OA (Online Assessment)</option>
+                <option value="first-round">1st Round</option>
+                <option value="second-round">2nd Round</option>
+                <option value="third-plus-round">3rd+ Round</option>
+                <option value="final-superday">Final Interview / Superday</option>
+              </select>
+            </div>
+            <div>
+              <label for="q-question">The Question</label>
+              <textarea id="q-question" name="question" placeholder="Write out the question as best you remember it..." required></textarea>
+            </div>
+            <div>
+              <label for="q-images">Screenshots / Images (optional)</label>
+              <input type="file" id="q-images" name="images" accept="image/*" multiple>
+            </div>
+            <div>
+              <label>Topics Covered</label>
+              <div class="checkbox-grid">
+                <label class="checkbox-option"><input type="checkbox" name="topics" value="mental-math"> Mental Math</label>
+                <label class="checkbox-option"><input type="checkbox" name="topics" value="probability"> Probability</label>
+                <label class="checkbox-option"><input type="checkbox" name="topics" value="statistics"> Statistics</label>
+                <label class="checkbox-option"><input type="checkbox" name="topics" value="dsa"> Data Structures &amp; Algorithms (DSA)</label>
+                <label class="checkbox-option"><input type="checkbox" name="topics" value="resume"> Resume</label>
+                <label class="checkbox-option"><input type="checkbox" name="topics" value="options"> Options</label>
+                <label class="checkbox-option"><input type="checkbox" name="topics" value="finance"> Finance</label>
+                <label class="checkbox-option"><input type="checkbox" name="topics" value="other"> Other</label>
+              </div>
+            </div>
+            <p class="form-note" id="question-submit-error" role="alert"></p>
+            <button type="submit" class="btn btn-primary">Submit Question</button>
+          </form>
+        </div>
+
+        <div class="card" id="question-submit-success" hidden style="max-width:640px;margin:16px auto 0;text-align:center;">
+          <h3>Thanks!</h3>
+          <p>Your question has been submitted.</p>
         </div>
       </div>
 

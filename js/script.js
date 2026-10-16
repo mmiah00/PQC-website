@@ -60,6 +60,78 @@ if (teamTabButtons.length && window.location.hash) {
   if (linkedTab) activateTeamTab(linkedTab);
 }
 
+// Submit A Question form (members-home.html) -- posts to a Google Apps
+// Script web app, which appends a row to a Google Sheet (and saves any
+// uploaded images to Drive). See apps-script/submit-question/Code.gs for
+// the server-side script and deploy steps. Responses can be downloaded as
+// an .xlsx at any time from that Sheet (File > Download > Microsoft Excel).
+const QUESTION_FORM_ENDPOINT =
+  "https://script.google.com/macros/s/AKfycby37z03PymmEX7ryS59LqwNKIlHe864RLBuv1mEgnNIHzJGD9u0KxaYlKOvbnfzZAmw/exec";
+
+const questionSubmitForm = document.getElementById("question-submit-form");
+if (questionSubmitForm) {
+  const fileToBase64 = (file) =>
+    new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result.split(",")[1]);
+      reader.onerror = () => reject(reader.error);
+      reader.readAsDataURL(file);
+    });
+
+  questionSubmitForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const submitBtn = questionSubmitForm.querySelector('button[type="submit"]');
+    const errorEl = document.getElementById("question-submit-error");
+    if (errorEl) errorEl.textContent = "";
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Submitting...";
+
+    try {
+      const formData = new FormData(questionSubmitForm);
+      const fileInput = document.getElementById("q-images");
+      const files = fileInput && fileInput.files ? Array.from(fileInput.files) : [];
+      const images = await Promise.all(
+        files.map(async (file) => ({
+          name: file.name,
+          mimeType: file.type,
+          data: await fileToBase64(file),
+        }))
+      );
+
+      const payload = {
+        company: formData.get("company"),
+        role: formData.get("role"),
+        interviewType: formData.get("interview_type"),
+        round: formData.get("round"),
+        question: formData.get("question"),
+        topics: formData.getAll("topics"),
+        images,
+      };
+
+      const response = await fetch(QUESTION_FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify(payload),
+      });
+      const result = await response.json();
+      if (!result.ok) throw new Error(result.error || "Unknown error");
+
+      questionSubmitForm.hidden = true;
+      const success = document.getElementById("question-submit-success");
+      if (success) success.hidden = false;
+    } catch (err) {
+      if (errorEl) {
+        errorEl.textContent =
+          "Something went wrong submitting your question. Please try again, or reach out to the board directly.";
+      }
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Submit Question";
+    }
+  });
+}
+
 // Team member flip cards (team.html) -- disabled, flip button removed from cards
 // document.querySelectorAll(".flip-trigger").forEach((btn) => {
 //   btn.addEventListener("click", () => {
