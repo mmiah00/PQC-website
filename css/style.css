@@ -826,10 +826,18 @@ img { max-width: 100%; display: block; }
 
 .flashcard-controls {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: center;
-  gap: 10px;
+  gap: 16px 24px;
   margin: 20px 0;
+}
+
+.flashcard-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
 }
 
 .flashcard-controls label {

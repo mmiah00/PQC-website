@@ -8,6 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
 <script>
   if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
     window.location.replace("members.html");
@@ -12730,17 +12733,39 @@
           <p style="text-align:center;">A member-crowdsourced collection of real interview questions from quant recruiting. Click a card to see the next question.</p>
 
           <div class="flashcard-controls">
-            <label for="flashcard-role-filter">Filter by role</label>
-            <select id="flashcard-role-filter">
-              <option value="all">All Roles</option>
-              <option value="Quant Researcher Intern">Quant Researcher Intern</option>
-              <option value="Quant Researcher (Full-Time)">Quant Researcher (Full-Time)</option>
-              <option value="Quant Trader Intern">Quant Trader Intern</option>
-              <option value="Quant Trader (Full-Time)">Quant Trader (Full-Time)</option>
-              <option value="Quant Developer Intern">Quant Developer Intern</option>
-              <option value="Quant Developer (Full-Time)">Quant Developer (Full-Time)</option>
-              <option value="Other">Other</option>
-            </select>
+            <div class="flashcard-filter-group">
+              <label for="flashcard-role-filter">Role</label>
+              <select id="flashcard-role-filter">
+                <option value="all">All Roles</option>
+                <option value="Quant Researcher Intern">Quant Researcher Intern</option>
+                <option value="Quant Researcher (Full-Time)">Quant Researcher (Full-Time)</option>
+                <option value="Quant Trader Intern">Quant Trader Intern</option>
+                <option value="Quant Trader (Full-Time)">Quant Trader (Full-Time)</option>
+                <option value="Quant Developer Intern">Quant Developer Intern</option>
+                <option value="Quant Developer (Full-Time)">Quant Developer (Full-Time)</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="flashcard-filter-group">
+              <label for="flashcard-topic-filter">Topic</label>
+              <select id="flashcard-topic-filter">
+                <option value="all">All Topics</option>
+                <option value="mental-math">Mental Math</option>
+                <option value="probability">Probability</option>
+                <option value="statistics">Statistics</option>
+                <option value="dsa">Data Structures &amp; Algorithms (DSA)</option>
+                <option value="resume">Resume</option>
+                <option value="options">Options</option>
+                <option value="finance">Finance</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="flashcard-filter-group">
+              <label for="flashcard-company-filter">Company</label>
+              <select id="flashcard-company-filter">
+                <option value="all">All Companies</option>
+              </select>
+            </div>
           </div>
 
           <div id="flashcard-status" class="flashcard-status"></div>
@@ -12799,7 +12824,8 @@
             </div>
             <div>
               <label for="q-question">The Question</label>
-              <textarea id="q-question" name="question" placeholder="Write out the question as best you remember it..." required></textarea>
+              <p class="form-note">If the question includes any equations, please write them in LaTeX (e.g. <code>$n \leq 200$</code>) so they display properly in the question bank.</p>
+              <textarea id="q-question" name="question" placeholder="Write out the question as best you remember it... Use LaTeX for any equations, e.g. $n \leq 200$" required></textarea>
             </div>
             <div>
               <label for="q-images">Screenshots / Images (optional)</label>

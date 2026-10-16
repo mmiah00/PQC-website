@@ -140,6 +140,8 @@ const flashcardEl = document.getElementById("flashcard");
 if (flashcardEl) {
   const statusEl = document.getElementById("flashcard-status");
   const roleFilter = document.getElementById("flashcard-role-filter");
+  const topicFilter = document.getElementById("flashcard-topic-filter");
+  const companyFilter = document.getElementById("flashcard-company-filter");
   const companyEl = document.getElementById("flashcard-company");
   const roleEl = document.getElementById("flashcard-role");
   const questionEl = document.getElementById("flashcard-question");
@@ -152,7 +154,7 @@ if (flashcardEl) {
     if (!filteredQuestions.length) {
       flashcardEl.hidden = true;
       statusEl.textContent = allQuestions.length
-        ? "No questions yet for this role."
+        ? "No questions match these filters."
         : "No questions submitted yet. Be the first with Submit A Question!";
       return;
     }
@@ -162,14 +164,48 @@ if (flashcardEl) {
     roleEl.textContent = card.role || "Unknown Role";
     questionEl.textContent = card.question;
     statusEl.textContent = `Card ${currentIndex + 1} of ${filteredQuestions.length}`;
+
+    // Questions can contain LaTeX (e.g. "$n \leq 200$"); render it as math
+    // instead of showing the raw source, if KaTeX's auto-render loaded.
+    if (window.renderMathInElement) {
+      renderMathInElement(questionEl, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false },
+        ],
+        throwOnError: false,
+      });
+    }
   }
 
-  function applyRoleFilter() {
-    const value = roleFilter.value;
-    filteredQuestions =
-      value === "all" ? allQuestions : allQuestions.filter((q) => q.role === value);
+  // Role, topic, and company filters all stack together (AND logic), same
+  // pattern as the Opportunities job filters.
+  function applyFilters() {
+    const role = roleFilter.value;
+    const topic = topicFilter.value;
+    const company = companyFilter.value;
+
+    filteredQuestions = allQuestions.filter((q) => {
+      const matchesRole = role === "all" || q.role === role;
+      const matchesTopic = topic === "all" || (q.topics || []).includes(topic);
+      const matchesCompany = company === "all" || q.company === company;
+      return matchesRole && matchesTopic && matchesCompany;
+    });
     currentIndex = 0;
     renderCard();
+  }
+
+  function populateCompanyFilter() {
+    const companies = Array.from(
+      new Set(allQuestions.map((q) => q.company).filter(Boolean))
+    ).sort((a, b) => a.localeCompare(b));
+
+    companies.forEach((company) => {
+      const option = document.createElement("option");
+      option.value = company;
+      option.textContent = company;
+      companyFilter.appendChild(option);
+    });
   }
 
   function showNextCard() {
@@ -185,7 +221,9 @@ if (flashcardEl) {
       showNextCard();
     }
   });
-  roleFilter.addEventListener("change", applyRoleFilter);
+  roleFilter.addEventListener("change", applyFilters);
+  topicFilter.addEventListener("change", applyFilters);
+  companyFilter.addEventListener("change", applyFilters);
 
   statusEl.textContent = "Loading questions...";
   fetch(QUESTION_FORM_ENDPOINT)
@@ -193,7 +231,8 @@ if (flashcardEl) {
     .then((result) => {
       if (!result.ok) throw new Error(result.error || "Unknown error");
       allQuestions = result.questions || [];
-      applyRoleFilter();
+      populateCompanyFilter();
+      applyFilters();
     })
     .catch(() => {
       statusEl.textContent = "Couldn't load questions right now. Please try again later.";
