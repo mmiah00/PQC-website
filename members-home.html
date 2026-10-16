@@ -12779,9 +12779,402 @@
       </div>
 
       <div class="team-panel" id="panel-readings">
-        <div class="card" style="max-width:760px;margin:0 auto;text-align:center;">
-          <h3>Suggested Readings</h3>
-          <p>Books, papers, and articles recommended by alumni and board members for learning more about quantitative finance. Placeholder list, coming soon.</p>
+        <div class="card" style="max-width:820px;margin:0 auto;text-align:left;">
+          <h3 style="text-align:center;">The Quant Reading List</h3>
+          <p style="text-align:center;">From interview prep to becoming a strong researcher.</p>
+          <p>If you want to pursue a career in quantitative finance, build your reading list around five goals: understanding markets, developing mathematical intuition, learning to conduct rigorous research, preparing for technical interviews, and staying informed about the industry.</p>
+          <p>Quant is a broad field, so the ideal reading list differs by role:</p>
+          <ul>
+            <li><strong>Quantitative Research (QR):</strong> probability, statistics, machine learning, time series, backtesting, and research methodology.</li>
+            <li><strong>Quantitative Trading:</strong> market microstructure, execution, game theory, decision-making, and rapid mental math.</li>
+            <li><strong>Quantitative Development (QD):</strong> algorithms, systems, C++, concurrency, and performance engineering.</li>
+            <li><strong>Quantitative Risk:</strong> stochastic calculus, derivatives, numerical methods, portfolio risk, and model validation.</li>
+          </ul>
+          <p>For quantitative research and trading specifically, prioritize the resources below rather than trying to read everything cover to cover. The goal is to develop the ability to turn a market observation into a hypothesis, test it statistically, and determine whether it can survive real trading costs.</p>
+
+          <div class="accordion" style="margin-top:24px;">
+
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span>1. News, Newsletters, and Blogs</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-panel">
+                <div class="accordion-panel-inner">
+                  <p>This should be a regular habit, not just something you do when interviewing. Strong quants understand what is moving markets, what information is already priced in, and how economic developments affect different assets.</p>
+                  <div class="reading-list">
+                    <div class="reading-item">
+                      <span class="job-tag">Start Here</span>
+                      <h4>Reuters, Markets and Economics</h4>
+                      <p>Best for: daily market awareness. Read the markets, central banks, macroeconomics, commodities, and global finance coverage. Try to understand the chain from a news event to interest rates, currencies, equities, or commodities.</p>
+                      <a href="https://www.reuters.com/markets/" target="_blank" rel="noopener">Markets</a> &middot; <a href="https://www.reuters.com/business/finance/" target="_blank" rel="noopener">Finance</a>
+                    </div>
+                    <div class="reading-item">
+                      <h4>Financial Times</h4>
+                      <p>Best for: macro, monetary policy, and global markets. Especially useful for understanding central banks, inflation, government debt, energy markets, and geopolitical developments. FT Alphaville is worth exploring for more analytical financial commentary.</p>
+                      <a href="https://www.ft.com/" target="_blank" rel="noopener">FT</a> &middot; <a href="https://www.ft.com/alphaville" target="_blank" rel="noopener">FT Alphaville</a>
+                    </div>
+                    <div class="reading-item">
+                      <h4>Bloomberg</h4>
+                      <p>Best for: real-time market context and macro. Follow rates, bonds, currencies, commodities, equity markets, and major economic releases. Particularly valuable for developing a feel for how different asset classes interact.</p>
+                      <a href="https://www.bloomberg.com/markets" target="_blank" rel="noopener">Bloomberg Markets</a>
+                    </div>
+                    <div class="reading-item">
+                      <h4>Money Stuff, Matt Levine</h4>
+                      <p>Best for: financial market mechanics and incentives. Explains financial instruments, market structure, derivatives, arbitrage, corporate finance, and the sometimes strange incentives behind financial institutions. Less about mathematical modeling, more about how markets actually function.</p>
+                      <a href="https://www.bloomberg.com/account/newsletters/money-stuff" target="_blank" rel="noopener">Read Money Stuff</a>
+                    </div>
+                    <div class="reading-item">
+                      <h4>FRED</h4>
+                      <p>Best for: quantitative macro research. A data resource rather than a news outlet. Use it to investigate inflation, unemployment, Treasury yields, credit spreads, money supply, and business cycles. Reading an article and then exploring the relevant time series is a great habit.</p>
+                      <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">Explore FRED</a>
+                    </div>
+                    <div class="reading-item">
+                      <h4>Quantocracy</h4>
+                      <p>Best for: discovering quantitative trading research. Aggregates articles about systematic trading, portfolio construction, trading strategies, and backtesting. Use it to find ideas to investigate, not strategies to assume will work in live markets.</p>
+                      <a href="https://quantocracy.com/" target="_blank" rel="noopener">Browse Quantocracy</a>
+                    </div>
+                    <div class="reading-item">
+                      <h4>QuantStart</h4>
+                      <p>Best for: practical quant education. Tutorials on algorithmic trading, backtesting, portfolio construction, statistical methods, and quant interview preparation. Helps bridge the gap between textbook material and coding an actual research strategy.</p>
+                      <a href="https://www.quantstart.com/" target="_blank" rel="noopener">Read QuantStart</a>
+                    </div>
+                  </div>
+                  <h4 style="margin-top:20px;">What should you read every day?</h4>
+                  <p>Don't try to consume everything. A sustainable 20-30 minute routine is better:</p>
+                  <ul>
+                    <li>10 minutes: Reuters or Bloomberg headlines.</li>
+                    <li>10 minutes: one deeper macro or market-structure article.</li>
+                    <li>5-10 minutes: examine a relevant data series, chart, or market reaction.</li>
+                  </ul>
+                  <p>A useful exercise is to write down one market hypothesis per day. For example: if inflation surprises to the upside, which parts of the yield curve might move, and why? Then compare your prior expectation to what actually happens.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span>2. Quant Interview Preparation Books</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-panel">
+                <div class="accordion-panel-inner">
+                  <p>These are the books to work through when preparing for interviews at quantitative hedge funds, proprietary trading firms, and electronic market makers.</p>
+                  <div class="reading-list">
+                    <div class="reading-item">
+                      <span class="job-tag">Essential</span>
+                      <h4>1. A Practical Guide to Quantitative Finance Interviews, Xinfeng Zhou</h4>
+                      <p>Covers probability, expected value, combinatorics, statistics, brainteasers, linear algebra, and financial mathematics.</p>
+                      <p><strong>How to use it:</strong> Work through the probability and expected-value questions first. Solve problems without looking at solutions, then explain your reasoning aloud. Revisit missed questions until you can solve them independently.</p>
+                    </div>
+                    <div class="reading-item">
+                      <h4>2. Heard on the Street, Timothy Falcon Crack</h4>
+                      <p>Broad interview practice covering probability, statistics, brainteasers, finance, and quantitative reasoning.</p>
+                      <p><strong>How to use it:</strong> Use it as a second question bank after establishing your fundamentals with the Green Book (A Practical Guide to Quantitative Finance Interviews).</p>
+                    </div>
+                    <div class="reading-item">
+                      <h4>3. 150 Most Frequently Asked Questions on Quant Interviews, Stefanica, Radoicic, and Wang</h4>
+                      <p>Useful additional practice for probability, stochastic calculus, and mathematical finance.</p>
+                      <p><strong>How to use it:</strong> Choose questions that match the mathematical depth of the jobs you're targeting.</p>
+                    </div>
+                    <div class="reading-item">
+                      <h4>4. Quant Job Interview Questions and Answers, Mark Joshi and Nick Denson</h4>
+                      <p>More technically demanding questions for quantitative finance, including mathematical models and derivatives.</p>
+                      <p><strong>How to use it:</strong> Prioritize this if you're targeting roles that emphasize options, stochastic calculus, or financial engineering.</p>
+                    </div>
+                    <div class="reading-item">
+                      <h4>5. Supplementary Reading</h4>
+                      <p>Rather than buying multiple overlapping interview guides, use free practice resources to fill specific gaps: probability exercises, coding problems, and mock interviews tailored to the actual role.</p>
+                      <a href="https://www.quantstart.com/articles/5-Top-Books-for-Acing-a-Quantitative-Analyst-Interview/" target="_blank" rel="noopener">QuantStart's interview-book guide</a>
+                    </div>
+                  </div>
+                  <h4 style="margin-top:20px;">Don't neglect coding and mental math</h4>
+                  <p>Books are only part of interview preparation.</p>
+                  <ul>
+                    <li><strong>Probability and statistics:</strong> conditional probability, Bayes' theorem, expectation, variance, distributions, order statistics, hypothesis testing.</li>
+                    <li><strong>Trading intuition:</strong> expected value, market making, inventory risk, bid-ask spreads, adverse selection.</li>
+                    <li><strong>Coding:</strong> arrays, hash maps, sorting, binary search, dynamic programming, data structures, time complexity.</li>
+                    <li><strong>Mental math:</strong> fractions, percentages, multiplication, approximations, and rapid probability calculations.</li>
+                  </ul>
+                  <p>For quant research interviews, also practice implementing models and explaining statistical assumptions. For trading interviews, practice making quick decisions under uncertainty.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span>3. Classic Books Every Aspiring Quant Should Know</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-panel">
+                <div class="accordion-panel-inner">
+                  <p>These books help you understand the markets you may eventually model, the risks you may eventually manage, and the limitations of quantitative models.</p>
+                  <div class="reading-list">
+                    <div class="reading-item">
+                      <span class="job-tag">Top Priority</span>
+                      <h4>Trading and Exchanges: Market Microstructure for Practitioners, Larry Harris</h4>
+                      <p>Arguably one of the most useful books for someone interested in electronic trading or HFT. Explains orders, liquidity, market makers, transaction costs, price discovery, and the incentives of market participants.</p>
+                      <p><strong>Why it matters:</strong> A statistically predictive signal can still lose money if execution costs, spreads, or adverse selection overwhelm its edge.</p>
+                    </div>
+                    <div class="reading-item">
+                      <h4>Inside the Black Box, Rishi K. Narang</h4>
+                      <p>An accessible explanation of how systematic hedge funds operate, from investment hypotheses and signals to portfolio construction, execution, and risk management.</p>
+                      <p><strong>Why it matters:</strong> Helps you understand how an individual model fits into a complete investment process.</p>
+                    </div>
+                    <div class="reading-item">
+                      <h4>Active Portfolio Management, Richard Grinold and Ronald Kahn</h4>
+                      <p>A foundational text on alpha, factor exposures, portfolio construction, risk budgets, and information ratios.</p>
+                      <p><strong>Why it matters:</strong> Finding a predictive signal is only one part of quantitative investing. You also need to understand how to allocate capital across signals while controlling risk.</p>
+                    </div>
+                    <div class="reading-item">
+                      <h4>Advances in Financial Machine Learning, Marcos L&oacute;pez de Prado</h4>
+                      <p>Discusses financial ML, labeling, cross-validation, backtest overfitting, feature importance, and portfolio construction.</p>
+                      <p><strong>Why it matters:</strong> Especially relevant when applying machine learning to financial time series, where leakage, nonstationarity, and repeated experimentation can produce misleading results.</p>
+                      <p><strong>Caution:</strong> Treat the proposed techniques critically. They are tools to evaluate, not universal solutions.</p>
+                    </div>
+                    <div class="reading-item">
+                      <h4>Algorithmic Trading, Ernest P. Chan</h4>
+                      <p>An applied introduction to researching and backtesting quantitative strategies, including statistical approaches and implementation considerations.</p>
+                      <p><strong>Why it matters:</strong> A useful bridge between reading about a strategy and building a research pipeline in Python.</p>
+                    </div>
+                    <div class="reading-item">
+                      <h4>Reminiscences of a Stock Operator, Edwin Lef&egrave;vre</h4>
+                      <p>A classic account of speculation, trading discipline, crowd behavior, and the emotional pressures of taking financial risk.</p>
+                      <p><strong>Why it matters:</strong> Not a technical quant manual, but an interesting counterweight to mathematical models and a reminder that market participants respond to incentives and psychology.</p>
+                    </div>
+                    <div class="reading-item">
+                      <h4>When Genius Failed, Roger Lowenstein</h4>
+                      <p>Chronicles the rise and collapse of Long-Term Capital Management.</p>
+                      <p><strong>Why it matters:</strong> Illustrates leverage, crowded trades, liquidity risk, model risk, and the danger of assuming that historical relationships will persist during a crisis.</p>
+                    </div>
+                    <div class="reading-item">
+                      <h4>Market Wizards, Jack D. Schwager</h4>
+                      <p>Interviews with traders who use very different methods and risk-management approaches.</p>
+                      <p><strong>Why it matters:</strong> Helps you think about research discipline, drawdowns, position sizing, and why there is no single universal trading style.</p>
+                    </div>
+                  </div>
+                  <p style="margin-top:16px;">Top three from this section: <strong>Trading and Exchanges</strong>, <strong>Inside the Black Box</strong>, and <strong>Active Portfolio Management</strong>. They provide complementary perspectives on market mechanics, systematic investment processes, and portfolio-level decision-making.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span>4. Mathematical and Statistical Foundations</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-panel">
+                <div class="accordion-panel-inner">
+                  <p>These are the books to study deeply if you want to become a researcher rather than simply pass interviews.</p>
+                  <div class="reading-table-wrap">
+                    <table class="reading-table">
+                      <thead>
+                        <tr><th>Book</th><th>Author</th><th>Main Purpose</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Introduction to Probability</td><td>Blitzstein &amp; Hwang</td><td>Probability, conditioning, expectation, and distributions</td></tr>
+                        <tr><td>All of Statistics</td><td>Larry Wasserman</td><td>Statistical inference, regression, Bayesian methods, and machine learning foundations</td></tr>
+                        <tr><td>The Elements of Statistical Learning</td><td>Hastie, Tibshirani &amp; Friedman</td><td>Statistical learning, regularization, classification, and model selection</td></tr>
+                        <tr><td>Time Series Analysis and Its Applications</td><td>Shumway &amp; Stoffer</td><td>Stationarity, ARIMA, state-space models, and forecasting</td></tr>
+                        <tr><td>Options, Futures, and Other Derivatives</td><td>John Hull</td><td>Derivatives, pricing, hedging, and risk</td></tr>
+                        <tr><td>Stochastic Calculus for Finance II</td><td>Steven Shreve</td><td>Continuous-time finance, martingales, and risk-neutral pricing</td></tr>
+                        <tr><td>Machine Learning for Asset Managers</td><td>Marcos L&oacute;pez de Prado</td><td>Applying ML to portfolio construction and investment management</td></tr>
+                        <tr><td>The Concepts and Practice of Mathematical Finance</td><td>Mark Joshi</td><td>Mathematical finance, stochastic processes, and pricing theory</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h4 style="margin-top:20px;">What to prioritize for quantitative research</h4>
+                  <p>Given the importance of statistical modeling and financial time series, study these in this order:</p>
+                  <ol>
+                    <li><strong>Probability:</strong> Blitzstein &amp; Hwang. Be able to derive expectations, conditional distributions, and probabilities rather than memorize formulas.</li>
+                    <li><strong>Statistics:</strong> Wasserman. Focus on estimation, regression, hypothesis testing, regularization, and inference.</li>
+                    <li><strong>Time series:</strong> Shumway &amp; Stoffer. Focus on stationarity, autocorrelation, forecasting, and state-space models.</li>
+                    <li><strong>Machine learning:</strong> The Elements of Statistical Learning. Understand bias-variance tradeoffs, regularization, cross-validation, and model selection.</li>
+                    <li><strong>Financial applications:</strong> L&oacute;pez de Prado and Chan. Apply the earlier concepts to backtesting and investment research.</li>
+                    <li><strong>Derivatives and stochastic calculus:</strong> Hull and Shreve, especially if your roles involve options, volatility, or derivatives pricing.</li>
+                  </ol>
+                  <p>You don't need to read every book cover to cover. Use them to develop deep understanding in areas relevant to your target roles.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span>5. Research Papers and Working Papers</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-panel">
+                <div class="accordion-panel-inner">
+                  <p>Books establish the foundation; papers help you see how researchers formulate questions, build models, and test claims.</p>
+                  <div class="reading-list">
+                    <div class="reading-item">
+                      <h4>1. The Cross-Section of Stock Returns</h4>
+                      <p>Fama and French (1992), "The Cross-Section of Expected Stock Returns." A foundational empirical asset-pricing paper. Study how firm characteristics relate to returns, how the authors formulate their hypotheses, and how they test competing explanations.</p>
+                      <p><strong>Useful for:</strong> equity research, factor investing, empirical finance.</p>
+                    </div>
+                    <div class="reading-item">
+                      <h4>2. Momentum and Trend-Following</h4>
+                      <p>Jegadeesh and Titman (1993), "Returns to Buying Winners and Selling Losers: Implications for Stock Market Efficiency." A classic paper on momentum. Think about the return horizon, formation period, holding period, transaction costs, and possible explanations for the observed pattern.</p>
+                      <p><strong>Useful for:</strong> systematic strategies, signal design, empirical research.</p>
+                    </div>
+                    <div class="reading-item">
+                      <h4>3. Limits to Arbitrage</h4>
+                      <p>Shleifer and Vishny (1997), "The Limits of Arbitrage." Explains why apparent mispricing can persist even when sophisticated investors recognize it. Particularly useful for thinking about funding constraints, drawdowns, and the difference between identifying an anomaly and monetizing it.</p>
+                      <p><strong>Useful for:</strong> hedge funds, portfolio construction, risk.</p>
+                    </div>
+                    <div class="reading-item">
+                      <h4>4. Backtest Overfitting</h4>
+                      <p>Bailey, Borwein, L&oacute;pez de Prado, and Zhu (2016), "The Probability of Backtest Overfitting." Examines the risk that selecting a strategy based on historical results produces overly optimistic performance estimates.</p>
+                      <p><strong>Useful for:</strong> quantitative research, model validation, backtesting.</p>
+                    </div>
+                    <div class="reading-item">
+                      <h4>5. The Efficient Markets Debate</h4>
+                      <p>Eugene Fama (1970), "Efficient Capital Markets: A Review of Theory and Empirical Work." A classic overview of the efficient market hypothesis. Read it alongside empirical studies of momentum, value, and other return patterns to think about what it means for a strategy to have an edge.</p>
+                      <p><strong>Useful for:</strong> asset pricing, systematic investing, research design.</p>
+                    </div>
+                  </div>
+                  <p style="margin-top:16px;">Find finance working papers through <a href="https://www.ssrn.com/" target="_blank" rel="noopener">SSRN</a> and academic publications through <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>.</p>
+                  <h4 style="margin-top:20px;">How to read a quant paper</h4>
+                  <p>Don't just read the abstract and conclusions. Ask yourself:</p>
+                  <ul>
+                    <li>What is the hypothesis, and why might it be true?</li>
+                    <li>What data did the researchers use? Does the sample introduce survivorship or look-ahead bias?</li>
+                    <li>How are features constructed, and when would they have been available?</li>
+                    <li>Is the result statistically significant and economically meaningful?</li>
+                    <li>Does the strategy survive transaction costs, turnover, and realistic execution?</li>
+                    <li>Would the result hold out of sample, across different regimes, and on independent data?</li>
+                  </ul>
+                  <p>A particularly valuable exercise is to reproduce a paper's central result yourself. Even a simplified replication teaches you more than reading ten papers passively.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span>6. Podcasts and Long-Form Interviews</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-panel">
+                <div class="accordion-panel-inner">
+                  <p>Useful for learning while commuting, exercising, or cooking. These complement rather than replace technical study.</p>
+                  <div class="reading-list">
+                    <div class="reading-item">
+                      <h4>Flirting with Models</h4>
+                      <p>Focuses on quantitative investing, factor research, portfolio construction, and empirical methods.</p>
+                      <a href="https://www.flirtingwithmodels.com/" target="_blank" rel="noopener">Listen and explore episodes</a>
+                    </div>
+                    <div class="reading-item">
+                      <h4>Chat With Traders</h4>
+                      <p>Interviews traders about their methods, risk management, and decision-making. Some episodes are discretionary rather than quantitative, but the discussions of process and risk are valuable.</p>
+                      <a href="https://chatwithtraders.com/" target="_blank" rel="noopener">Browse episodes</a>
+                    </div>
+                    <div class="reading-item">
+                      <h4>Odd Lots</h4>
+                      <p>Deep conversations about financial plumbing, commodities, credit markets, monetary policy, and market structure.</p>
+                      <a href="https://www.bloomberg.com/oddlots" target="_blank" rel="noopener">Listen to Odd Lots</a>
+                    </div>
+                    <div class="reading-item">
+                      <h4>Macro Voices</h4>
+                      <p>Covers macroeconomic regimes, interest rates, currencies, commodities, and global investment themes.</p>
+                      <a href="https://www.macrovoices.com/" target="_blank" rel="noopener">Browse episodes</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span>7. A Suggested Reading Order</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-panel">
+                <div class="accordion-panel-inner">
+                  <p>If you don't want to get overwhelmed, here is a suggested order that balances interview preparation with long-term technical development.</p>
+                  <div class="timeline" style="margin-top:20px;">
+                    <div class="timeline-item">
+                      <p class="timeline-date">Phase 1 &middot; Weeks 1-3</p>
+                      <h4>Interview Fundamentals</h4>
+                      <ul>
+                        <li>A Practical Guide to Quantitative Finance Interviews</li>
+                        <li>Introduction to Probability</li>
+                        <li>Daily mental math and coding practice</li>
+                      </ul>
+                      <p><strong>Goal:</strong> Solve probability and expected-value problems independently and explain your reasoning clearly.</p>
+                    </div>
+                    <div class="timeline-item">
+                      <p class="timeline-date">Phase 2 &middot; Weeks 4-6</p>
+                      <h4>Understand How Markets Work</h4>
+                      <ul>
+                        <li>Trading and Exchanges</li>
+                        <li>Inside the Black Box</li>
+                        <li>Reuters, Bloomberg, and FRED as ongoing resources</li>
+                      </ul>
+                      <p><strong>Goal:</strong> Understand order books, liquidity, transaction costs, and the architecture of a systematic trading strategy.</p>
+                    </div>
+                    <div class="timeline-item">
+                      <p class="timeline-date">Phase 3 &middot; Weeks 7-10</p>
+                      <h4>Build Research Depth</h4>
+                      <ul>
+                        <li>All of Statistics</li>
+                        <li>Time Series Analysis and Its Applications</li>
+                        <li>Algorithmic Trading</li>
+                        <li>One empirical finance paper</li>
+                      </ul>
+                      <p><strong>Goal:</strong> Form a hypothesis, construct features without leakage, design an honest backtest, and evaluate statistical and economic significance.</p>
+                    </div>
+                    <div class="timeline-item">
+                      <p class="timeline-date">Phase 4 &middot; Ongoing</p>
+                      <h4>Develop A Researcher's Mindset</h4>
+                      <ul>
+                        <li>Advances in Financial Machine Learning</li>
+                        <li>Active Portfolio Management</li>
+                        <li>Replicate a published strategy or research result</li>
+                        <li>Maintain a market and research journal</li>
+                      </ul>
+                      <p><strong>Goal:</strong> Move from solving known problems to generating, testing, and critically evaluating your own ideas.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span>8. Personal Shortlist: If You Only Read 10</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-panel">
+                <div class="accordion-panel-inner">
+                  <p>A practical core library for someone pursuing QR and trading roles, ranked by the combination of career relevance and breadth, not by difficulty.</p>
+                  <div class="reading-table-wrap">
+                    <table class="reading-table">
+                      <thead>
+                        <tr><th>Priority</th><th>Reading</th><th>Why It Earns A Spot</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>1</td><td>A Practical Guide to Quantitative Finance Interviews</td><td>Interview readiness</td></tr>
+                        <tr><td>2</td><td>Introduction to Probability</td><td>Mathematical intuition</td></tr>
+                        <tr><td>3</td><td>All of Statistics</td><td>Statistical foundations</td></tr>
+                        <tr><td>4</td><td>Trading and Exchanges</td><td>Market microstructure</td></tr>
+                        <tr><td>5</td><td>Inside the Black Box</td><td>Systematic investment process</td></tr>
+                        <tr><td>6</td><td>Active Portfolio Management</td><td>Alpha, risk, and allocation</td></tr>
+                        <tr><td>7</td><td>Time Series Analysis and Its Applications</td><td>Forecasting and temporal data</td></tr>
+                        <tr><td>8</td><td>Advances in Financial Machine Learning</td><td>Robust financial ML research</td></tr>
+                        <tr><td>9</td><td>Algorithmic Trading</td><td>Practical implementation</td></tr>
+                        <tr><td>10</td><td>When Genius Failed</td><td>Risk and model failure</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>The news sources, FRED, and research papers should be ongoing habits rather than items you finish once.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p style="margin-top:24px;">One final recommendation: for every hour you spend reading about quantitative research, spend time solving problems or implementing something. A small project that tests a momentum signal, models transaction costs, and documents why a backtest might be misleading can be more valuable than reading several additional books.</p>
+          <p>The best quants are not simply people who know the most formulas. They're people who can combine mathematics, coding, economic intuition, and skepticism to determine whether an idea is actually useful.</p>
         </div>
       </div>
 

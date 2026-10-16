@@ -869,6 +869,52 @@ img { max-width: 100%; display: block; }
   color: var(--ink-soft);
 }
 
+.reading-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 16px 0;
+}
+
+.reading-item {
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--cream-line);
+}
+
+.reading-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.reading-item h4 { margin-bottom: 6px; }
+.reading-item .job-tag { margin-bottom: 8px; }
+
+.reading-table-wrap {
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.reading-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.reading-table th,
+.reading-table td {
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--cream-line);
+  white-space: normal;
+}
+
+.reading-table th {
+  font-family: var(--font-head);
+  color: var(--maroon-dark);
+}
+
+.reading-table td { color: var(--ink-soft); }
+
 /* ---------- Interactive calendar (Events page) ---------- */
 
 .event-calendar {
