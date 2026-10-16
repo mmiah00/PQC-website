@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>Flow Traders is looking for entrepreneurial, competitive, and analytical students to join our Trading department as an Intern. What better way to find out if a career in Trading is something for you, than by experiencing it yourself as a Trading Intern! You will get a 360-degree view of our role in the financial markets, how our Traders seize opportunities, and how they work together as a team to optimize and improve their trading desk. This Trading internship is about immersing yourself in the financial markets and experiencing trading up close. You do not need to have a financial background; we will teach you all you need to know. Experience with a scientific programming language or excel is a definite advantage. Working closely with Traders and Quantitative Researchers, you will add value by working on real trading projects. You will solve problems, create new tools and/or design new strategies. You will test your project in a trading simulation.</p>
@@ -91,7 +95,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -117,6 +120,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

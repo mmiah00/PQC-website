@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>Jump Trading Group is committed to world class research. We empower exceptional talents in Mathematics, Physics, and Computer Science to seek scientific boundaries, push through them, and apply cutting edge research to global financial markets. Our culture is unique. Constant innovation requires fearlessness, creativity, intellectual honesty, and a relentless competitive streak. We believe in winning together and unlocking unique individual talent by incenting collaboration and mutual respect. At Jump, research outcomes drive more than superior risk adjusted returns. We design, develop, and deploy technologies that change our world, fund start-ups across industries, and partner with leading global research organizations and universities to solve problems. The quantitative trading teams at Jump Trading probe and examine the global markets, seeking to understand the complexities of various traded products and exchanges. They leverage their impeccable statistical analysis, machine learning and deep learning skills, using the results of their research to make forecasts and develop profitable predictive trading models.</p>
@@ -93,7 +97,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -119,6 +122,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

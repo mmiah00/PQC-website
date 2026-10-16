@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>We are seeking a talented and motivated Quantitative Researcher to join our dynamic systematic trading team. The ideal candidate will have a strong background in software development, a passion for technology, and a keen interest in the financial industry. You will work closely with our quantitative PMs, developers, and fellow researchers to develop and maintain high-performance trading systems and tools. 1. Engineer predictive features from high-frequency market data and unstructured alternative datasets for machine learning (ML) models. 2. Develop research pipelines on a distributed compute cluster for tree-based models, deep learning, NLP/LLM, and related ML models. 3. Design and prototype ML-driven alphas for cash equities, futures, and other liquid asset classes. 4. Collaborate with researchers and developers to deploy signals into production, and perform iterative improvements based on real performance. 5. Track academic and industry advances in machine learning and present actionable ideas to the team.</p>
@@ -85,7 +89,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -111,6 +114,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

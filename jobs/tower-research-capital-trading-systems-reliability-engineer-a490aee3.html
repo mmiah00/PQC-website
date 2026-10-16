@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>Tower Research Capital is a leading quantitative trading firm founded in 1998. Tower has built its business on a high-performance platform and independent trading teams. We have a 25+ year track record of innovation and a reputation for discovering unique market opportunities. Tower is home to some of the world’s best systematic trading and engineering talent. We empower portfolio managers to build their teams and strategies independently while providing the economies of scale that come from a large, global organization. Engineers thrive at Tower while developing electronic trading infrastructure at a world class level. Our engineers solve challenging problems in the realms of low-latency programming, FPGA technology, hardware acceleration and machine learning. Our ongoing investment in top engineering talent and technology ensures our platform remains unmatched in terms of functionality, scalability and performance. At Tower, every employee plays a role in our success. Our Business Support teams are essential to building and maintaining the platform that powers everything we do — combining market access, data, compute, and research infrastructure with risk management, compliance, and a full suite of business services. Our Business Support teams enable our trading and engineering teams to perform at their best. At Tower, employees will find a stimulating, results-oriented environment where highly intelligent and motivated colleagues inspire each other to reach their greatest potential. Providing Level 1 and Level 2 technical support while taking ownership of complex production incidents across a rich suite of in-house trading applications Systematically tracking repetitive support issues, designing automated workflows, and building custom tooling to transition manual operations into more automated and robust infrastructure Modernizing monitoring, alerting, and reporting systems to ensure seamless execution of daily scheduled jobs and immediate visibility into platform health Collaborating within the reliability team to serve as a key technical contact for the trading desk, directly partnering with traders, trade monitors, and core developers to address operational needs during market hours Overseeing automated deployments, configuration updates, and participating in an on-call rotation with occasional weekend support</p>
@@ -91,7 +95,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -117,6 +120,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

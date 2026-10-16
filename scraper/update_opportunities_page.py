@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
 Pipeline that scrapes live quant job postings and regenerates:
-  - the job cards on ../opportunities.html
-  - one standalone detail page per job under ../jobs/<slug>.html, with the
-    full description, requirements, and pay -- linked from each card's
-    "See More" button.
+  - the job cards on ../members-opportunities.html (a member-gated page)
+  - one standalone detail page per job under ../jobs/<slug>.html, also
+    member-gated, with the full description, requirements, and pay --
+    linked from each card's "See More" button.
 
 - Newly-seen postings (by source_url) are added to the TOP of the list.
 - Postings no longer live on the company's board are dropped (closed reqs)
@@ -37,7 +37,7 @@ from scrape_jobs import collect_jobs, log
 SCRAPER_DIR = Path(__file__).resolve().parent
 SITE_DIR = SCRAPER_DIR.parent
 STATE_PATH = SCRAPER_DIR / "site_jobs_state.json"
-OPPORTUNITIES_PATH = SITE_DIR / "opportunities.html"
+OPPORTUNITIES_PATH = SITE_DIR / "members-opportunities.html"
 JOBS_DIR = SITE_DIR / "jobs"
 
 MARKER_START = "<!-- JOBS:AUTO-GENERATED:START -->"
@@ -131,6 +131,10 @@ def render_job_card(job):
     if new_grad:
         new_grad_tag = '\n            <span class="job-tag job-tag-new-grad">New Grad</span>'
 
+    # job-preview-link uses rel="opener" (not "noopener"): it's an internal,
+    # same-origin link, and the detail page's auth gate relies on the new
+    # tab inheriting sessionStorage, which browsers only do when the opener
+    # relationship is explicitly preserved for target="_blank" links.
     return f"""        <div class="job-card" data-category="{category_slug}" data-location="{location.lower()}" data-company-type="{company_type_slug}" data-posted="{posted_date}" data-women-focused="{"true" if women_focused else "false"}" data-new-grad="{"true" if new_grad else "false"}">
           <div class="job-main">
             <span class="job-tag">{job_type}</span>
@@ -139,7 +143,7 @@ def render_job_card(job):
             <p class="job-meta">
               {meta_spans}
             </p>
-            <a href="{detail_url}" class="job-preview-link" target="_blank" rel="noopener">
+            <a href="{detail_url}" class="job-preview-link" target="_blank" rel="opener">
               <p>{preview_description}</p>
               <span class="job-learn-more">Learn More <span aria-hidden="true">&rarr;</span></span>
             </a>
@@ -178,8 +182,13 @@ DETAIL_PAGE_TEMPLATE = """<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {{
+    window.location.replace("../members.html");
+  }}
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -196,10 +205,9 @@ DETAIL_PAGE_TEMPLATE = """<!DOCTYPE html>
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -216,7 +224,7 @@ DETAIL_PAGE_TEMPLATE = """<!DOCTYPE html>
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
 {description_html}{requirements_html}
@@ -250,7 +258,6 @@ DETAIL_PAGE_TEMPLATE = """<!DOCTYPE html>
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -276,6 +283,8 @@ DETAIL_PAGE_TEMPLATE = """<!DOCTYPE html>
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

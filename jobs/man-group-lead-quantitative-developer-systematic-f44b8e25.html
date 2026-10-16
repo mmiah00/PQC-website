@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>We&#x27;re setting up a new engineering team in Shanghai, working hand-in-hand with Portfolio Managers to develop and deploy new systematic trading strategies. As a Lead Software Engineer in the Front-Office Engineering organization, your code will have a direct line of sight to live markets. Your work will span the full lifecycle of strategy development: onboarding new datasets, implementing trading signals, building portfolio optimization tools, developing data visualization frameworks, and enhancing our research platform. You&#x27;ll solve performance-critical problems using efficient numerical algorithms and cluster-computing solutions. This is a chance to get in early and do engineering work that visibly moves the needle.Our Technology Our systems are almost all running on Linux and most of our code is in Python, with the full scientific stack: NumPy, SciPy, Pandas, statsmodels, and scikit-learn to name a few of the libraries we use extensively. For storage, we rely heavily on MongoDB and MS SQL. We use Control-M and Airflow for workflow management, Kafka for data pipelines, Bitbucket for source control, Jenkins for continuous integration, Grafana + Prometheus for metrics collection, Docker for containerisation, Ansible for architecture automation, and Slack for internal communication. Our technology list is never static: we constantly evaluate new tools and libraries.Key Competencies</p>
@@ -80,7 +84,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -106,6 +109,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

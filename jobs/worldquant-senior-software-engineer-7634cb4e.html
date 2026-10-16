@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>WorldQuant develops and deploys systematic financial strategies across a broad range of asset classes and global markets. We seek to produce high-quality predictive signals (alphas) through our proprietary research platform to employ financial strategies focused on market inefficiencies. Our teams work collaboratively to drive the production of alphas and financial strategies – the foundation of a balanced, global investment platform. WorldQuant is built on a culture that pairs academic sensibility with accountability for results. Employees are encouraged to think openly about problems, balancing intellectualism and practicality. Excellent ideas come from anyone, anywhere. Employees are encouraged to challenge conventional thinking and possess an attitude of continuous improvement. Our goal is to hire the best and the brightest. We value intellectual horsepower first and foremost, and people who demonstrate an outstanding talent. There is no roadmap to future success, so we need people who can help us build it. Technologists at WorldQuant research, design, code, test and deploy firmwide platforms and tooling while working collaboratively with researchers. Our environment is relaxed yet intellectually driven. We seek people who think in code and are motivated by being around like-minded people. The Role: We&#x27;re seeking a senior developer to join our team. You will design, build, and operate large-scale data and ETL systems that power the firm&#x27;s research and investment workflows. This is a high-autonomy role - you&#x27;ll own critical systems end-to-end, make architectural decisions, and deliver solutions with minimal guidance. We need someone who is self-directed, able to lead themselves, take ownership of outcomes, and drive complex problems to resolution independently. You should be comfortable communicating across teams, articulating technical trade-offs to stakeholders, and mentoring others through code review and collaboration. Design, develop, and own backend services and data pipelines that process large volumes of data optimally and at scale Architect data storage and processing solutions, including schema design, query optimization, and data modeling Build and maintain APIs, messaging systems, and integration layers that connect data producers and consumers Drive technical decisions - evaluate trade-offs, choose the right tools, and define system boundaries Take ambiguous requirements and break them down into deliverable, well-engineered solutions Diagnose and resolve complex production issues - applying strong analytical and systems thinking Improve engineering practices: testing, CI/CD, observability, and documentation</p>
@@ -104,7 +108,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -130,6 +133,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

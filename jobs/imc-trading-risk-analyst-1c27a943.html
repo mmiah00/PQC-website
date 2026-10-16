@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>IMC is looking for a Quantitative Risk Manager to join our growing Risk team in Mumbai. You will identify and assess risks across our trading activities, design appropriate controls, and build the metrics and tools we use to monitor market and operational risk Monitor and measure the market risk exposure of our trading activities, partnering closely with trading desks to recommend strategy adjustments and risk mitigation ahead of adverse events Build independent backtesting models to challenge trading strategies, evaluating performance with risk-adjusted metrics such as Sharpe, Sortino and Calmar ratios Track market developments and the macro calendar, and run stress tests and scenario analyses to assess potential impacts on the trading book Utilize Python-based tools and libraries for stress testing, and scenario analysis as well as generally designing and contributing to local risk management tooling Work with global risk, trading, software development and data engineering teams to design and deploy risk controls within IMC’s proprietary global risk management and trading systems Drive the operational incident management process with key stakeholders to structurally improve infrastructure, processes and governance Ensure adherence to regulatory requirements and internal risk policies Train and support traders on risk tools, methodologies and best practices</p>
@@ -93,7 +97,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -119,6 +122,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

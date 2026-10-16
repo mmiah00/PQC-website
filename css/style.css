@@ -598,7 +598,7 @@ img { max-width: 100%; display: block; }
 }
 
 .filter-btn {
-  background: #fff;
+  background: var(--cream-dim);
   border: 1px solid var(--cream-line);
   color: var(--ink-soft);
   padding: 8px 18px;
@@ -1863,7 +1863,8 @@ body.members-theme {
 }
 
 body.members-theme .card,
-body.members-theme .member-card {
+body.members-theme .member-card,
+body.members-theme .job-card {
   background: var(--cream-dim);
 }
 

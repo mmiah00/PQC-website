@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>Our summer internship programme in Amsterdam is your chance to experience life as an engineer at IMC. As a Software Engineer Intern, you will go beyond writing code and designing technology: you’ll gain insight into algorithm complexity and data structures, get to know IMC’s unique business model, and build valuable connections with our trading and technology teams. Throughout the summer, you will work on a relevant project while receiving comprehensive support from dedicated internship trainers, and a one-on-one mentor to guide you in your work and professional development. You will benefit from a highly competitive compensation package, fully-furnished corporate accommodation, catered meals, and experience IMC’s collaborative culture as if you’re already a full-time employee. Where you go from here is up to you! Enhance your knowledge of algorithm complexity, data structures, and writing fluent code Support the development of our trading platform and software stack Gain experience across the entire software development lifecycle at IMC especially by collaborating with traders, researchers and hardware engineers Be an integral part of your team by helping to identify, implement and validate changes to IMC’s trading algorithm and system Enhance your coding skills by participating in individual and collaborative, competitive hackathons and technology challenges Attend workshops, presentations, trainings, and social activities alongside the full internship cohort</p>
@@ -93,7 +97,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -119,6 +122,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

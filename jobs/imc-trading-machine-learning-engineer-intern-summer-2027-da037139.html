@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>Our 10-week internship is your chance to experience life as a Machine Learning Engineer at IMC. You’ll have the support you need to succeed: educational trainings and a mentor who will oversee your work and professional development. We provide a highly competitive compensation package with accommodations included. The bar for talent at IMC is high and interns who meet our performance expectations will have the opportunity to secure a graduate position at the end of the program. Where you go from here is up to you! As a Machine Learning Engineer intern at IMC, you’ll play a pivotal role in building systems that drive the training and deployment of large-scale ML models across our global operations. You&#x27;ll collaborate with leading researchers, hardware experts, and software engineers to build robust solutions that maximize the potential of GPU acceleration, distributed computing, and the latest open-source tools. Your work will influence our trading strategies by accelerating experimentation cycles that foster continuous innovation and refinement. This is a unique opportunity to solve problems at the intersection of advanced machine learning and trading, where your contributions will shape the future of IMC&#x27;s technology and trading capabilities. Work on meaningful and challenging projects that have the potential to impact our business Participate in classroom-based training covering an overview of financial markets, IMC technology and coding fundamentals Build valuable connections with traders and technologists in an environment that rewards problem solving, innovation and teamwork Engage in professional development sessions aimed at helping you envision your future at IMC Attend a full schedule of events and social activities throughout the summer to get to know your cohort and IMCers</p>
@@ -94,7 +98,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -120,6 +123,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

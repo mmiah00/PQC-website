@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>As a Reliability Software Engineer on the Data team, you will be central to the infrastructure and operations that keep Squarepoint&#x27;s data ecosystem running at scale. Our mandate is broad by design: we own the pipelines, platforms, and automation that our technology and investment teams depend on. The team operates at the intersection of engineering and operations. We build the observability tooling that surfaces problems before they become incidents, the job orchestration platform that runs production workloads at scale, the self-serve systems that let teams move faster without creating risk, and the production pipelines that onboard new data from various vendors. When incidents arise, we lead the response: root cause, remediation, and the follow-through that prevents recurrence. You will work closely with quant researchers, traders, and engineers across our organization, as well as the external vendors who supply our data, building strong working relationships while developing deep expertise in the systems that underpin their work. We value ownership, sharp analytical thinking, and engineers who take pride in leaving things better than they found them. If you thrive in an environment where your work has direct, visible impact on the reliability of critical systems and where no two days look the same, then this role is for you. Observability: Keep Data Development infrastructure healthy, building the health monitoring platform with configurable monitors and custom checks that surfaces problems before they become incidents System Automation: Build and improve automation that streamlines operational tasks and workflows, including the job orchestration platform that runs production workloads at scale Self-Serve Request Automation: Build the Jira-driven platform that executes operational requests end to end, letting teams move faster without creating risk Data Pipelines: Onboard new datasets from various vendors, and build the pipelines and frameworks that make that work scalable Reliability Engineering: Own deployments, support users, plan for capacity and performance, and lead incident resolution end to end</p>
@@ -100,7 +104,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -126,6 +129,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

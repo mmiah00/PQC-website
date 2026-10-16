@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn&#x27;t a place for complacency, it’s a place to be pushed past your perceived limits. If you&#x27;re ready to build the future of finance alongside people who refuse to settle for &quot;good enough,&quot; you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called “surges.” learn more about working at Coinbase. As a Staff Software Engineer, Frontend on the Advanced Trading team within the Consumer &amp; Business group, you&#x27;ll lead the front-end technical strategy for Coinbase Advanced, our trading platform for experienced traders. You&#x27;ll own the performance, reliability, and scalability of our web and mobile trading clients, driving low-latency interfaces that serve traders across multiple instrument types. This is a high-impact role at the intersection of crypto, trading infrastructure, and consumer product, where your technical leadership will shape both the platform and the engineering team building it. Own the front-end technical roadmap for Coinbase Advanced, defining architecture decisions that enable a reliable, scalable trading platform across web and mobile Drive measurable performance improvements across rendering, network efficiency, and state management to deliver a low-latency trading experience Lead complex, multi-quarter technical initiatives end-to-end, setting and enforcing high standards for code quality, system design, and engineering rigor Strengthen the engineering team through hands-on mentorship of senior engineers, elevating technical decision-making and fostering growth across the subteam Partner with Product and Engineering leadership to translate business priorities into actionable technical plans and ship high-impact features Shape front-end engineering practices and patterns that scale with a growing team, establishing conventions that accelerate development velocity</p>
@@ -90,7 +94,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -116,6 +119,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

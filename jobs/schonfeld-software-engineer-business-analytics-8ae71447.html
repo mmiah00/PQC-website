@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>The Role We are seeking a highly qualified Software Engineer to join our Business Analytics team. The Business Analytics team at Schonfeld focuses on analytics, reporting and automation. As a Software Engineer, you will work on building key infrastructure to help compute performance-related fees for our PMs and other related projects. This is an excellent opportunity for a technically-minded person to be in a business-facing role. You will work directly with business partners across the firm — including COO teams, business development, accounting, and risk — to define requirements and translate their business needs into technical solutions.What you’ll do Take full ownership of an existing Python codebase, quickly become the subject-matter expert and plan the next-generation architecture. Develop a deep understanding of the firm&#x27;s complex business structures and translate that knowledge into clean, reliable code. Build tools and automation that enable Accounting teams to execute updates efficiently with minimal manual intervention. Design and implement a scalable reporting infrastructure to streamline the preparation and delivery of compensation reports. Work closely with business stakeholders to understand the nuances of individual deal structures and accurately implement their calculation logic in code.</p>
@@ -90,7 +94,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -116,6 +119,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

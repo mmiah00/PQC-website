@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>At IMC, Software Engineers don’t just write code and design technology. They are responsible for spotting new opportunities, developing new technologies, and solving problems. Every day, our software makes millions of trading decisions in some of the most competitive markets across the globe, and we win by making smarter and faster decisions than our competition. Our Software Engineers deliver results and make a difference. As a Software Engineer Intern at IMC, you will be supported by a mentor who will oversee your projects and professional development, while having access to pair programming and code reviews. During your internship, you will work on a real project, providing value to developers and traders. This year in Hong Kong, you will join our Software Engineering – Strategy team. This team builds and supports the systems that drive our trading strategies — developing and implementing the logic that calculates pricing and risk, and building the tools and infrastructure for analysing, modelling, and trading financial products. You will be working in Java and Python, collaborating closely with engineers and traders on problems that matter to the business. If your strongest language is C++, that’s not a barrier: as long as you’re a strong engineer who is comfortable working in Java or Python, we’d encourage you to apply.</p>
@@ -90,7 +94,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -116,6 +119,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

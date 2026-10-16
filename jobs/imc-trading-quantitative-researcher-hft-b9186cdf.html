@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>IMC is looking for experienced quant researchers to develop high frequency delta one trading strategies and predictive models for the APAC markets. If you’re excited about helping to push the boundaries of what we can do with Machine Learning in trading, unlocking the significant edges we have in execution, and collaborating to become the best trading firm worldwide, this may be the role for you. You will be responsible for performing large scale data analysis to derive statistically profitable predictions of market behaviour. These predictions are used to inform all of our trading, and improvements have a high and visible impact across the office. You will also help to shape the direction we take across research and tooling. We have longstanding and significant edges across market access, global reach, Options understanding and low latency. The rapid growth we’ve already seen in Machine Learning has unlocked these edges, and some of the most interesting and impactful problems are now being tackled. You will work as part of an established and growing research team, collaborating closely with traders, software and hardware developers to find improvements to our models and see them impact our production results. IMC competes and wins as a team, with open idea sharing and collaboration across disciplines, desks and offices. Combine creativity and experience to rapidly generate high quality, testable alpha signals Refine and leverage deep understanding of market microstructure and order book dynamics, to create powerful features Apply statistical and machine learning techniques with strong discipline around robustness and overfitting Collaborate closely with trading and engineering teams to translate research into production strategies</p>
@@ -89,7 +93,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -115,6 +118,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

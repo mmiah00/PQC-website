@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>Position Overview:The Order Gateway team develops and maintains Squarepoint’s order entry gateways, which are essential for routing orders and managing trade information across global exchanges and brokers for multiple asset classes. We are seeking a highly skilled senior developer who thrives on tackling technical challenges. This is an ideal opportunity for an ambitious developer seeking to accelerate their personal growth. You’ll gain exposure to technical leadership activities, such as mentoring, code review, architectural input, and project ownership. High performers in the role will have the opportunity to grow into leading small teams and taking on further responsibilities in project and people management. Take end-to-end ownership in designing, developing, testing, and optimizing high-performance order gateway solutions. Collaborate closely with stakeholders and cross-functional teams to understand business needs and translate them into robust technical solutions. Remain hands-on, directly driving technical delivery and ensuring software quality and reliability. Actively participate in architectural and design discussions, as well as code reviews, providing guidance and support to peers. Champion best practices throughout the development lifecycle, continuously enhancing performance, scalability, and reliability of our systems. Ensure effective test strategies and methodologies are embedded within the development process. Provide Level 2 support to technology operations for order gateway components. Share knowledge, mentor colleagues, and contribute to a culture of technical excellence and collaboration.</p>
@@ -92,7 +96,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -118,6 +121,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

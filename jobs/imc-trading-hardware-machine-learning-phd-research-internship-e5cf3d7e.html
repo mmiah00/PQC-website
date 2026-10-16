@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>We are deploying machine learning directly onto custom hardware – and we want you to help drive it forward. This PhD internship is an opportunity to work on research that has direct impact on IMC&#x27;s work tackling open problems at the frontier of low-latency ML inference and hardware acceleration. You&#x27;ll work alongside IMC engineers in one of the most demanding low-latency computing environments in the world. You&#x27;ll own a focused research project from start to finish, present your findings to the team, and leave behind a prototype or benchmark that we can build on. Architect and develop an ML focused research project based on real-world use cases Work hands-on with hardware engineers to implement, verify, and deploy ML inference solutions Track and evaluate emerging research in neural architecture search, machine learning systems and quantization methods, and determine what translates to measurable improvements in our systems Present your project to the team, deepening our collective understanding of an area of ML acceleration Gain hardware design fundamentals from skilled RTL developers and learn how they apply to our industry Build skills to evaluate research not only from an academic perspective, but through real-world performance constraints, engineering costs, and industry impact</p>
@@ -93,7 +97,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -119,6 +122,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

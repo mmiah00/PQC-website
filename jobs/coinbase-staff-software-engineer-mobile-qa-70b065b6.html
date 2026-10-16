@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn&#x27;t a place for complacency, it’s a place to be pushed past your perceived limits. If you&#x27;re ready to build the future of finance alongside people who refuse to settle for &quot;good enough,&quot; you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called “surges.” learn more about working at Coinbase. We&#x27;re hiring a Staff Software Engineer, Mobile QA to join the App Infra team within the Consumer &amp; Business group. The team is leading the greenfield native rewrite of Coinbase&#x27;s retail mobile app in Swift and Kotlin, replacing the existing React Native codebase to deliver a significantly faster experience for millions of customers. As we do so, we need to reinvent our mobile release process from the ground up to ensure each release passes rigorous quality gates before reaching customers. You&#x27;ll set Coinbase’s Frontend quality bar, translating org-level strategy into the test infrastructure and operational practices that ~30 product teams depend upon. Own the technical strategy for mobile QA infrastructure across the native rewrite, operating at depth across the team&#x27;s codebases and designing operational practices that lower maintenance and operational overhead while raising release quality. Build and scale automated test systems for recurring regression testing. Before asking for additional headcount, you set and refine what gets automated versus what stays human across regression, performance validation, and release readiness gating. Lead the QA readiness workstream for the phased rollout, driving clarity across success metrics, resourcing, and operations. Guide when to invest more testing resources and when to pull back as quality gains diminish. Partner cross-functionally with engineering leadership, product, and design to define SLOs and quality dashboards that provide the metric-driven controls for rollout speed decisions. Shape the QA onboarding playbook for product teams transitioning to native, setting the team&#x27;s hiring bar for QA contributors and mentoring L3-L5 engineers on test architecture, native debugging, and quality standards.</p>
@@ -90,7 +94,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -116,6 +119,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

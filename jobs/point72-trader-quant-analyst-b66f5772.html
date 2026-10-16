@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>SummaryWe are seeking a highly motivated and detail-oriented Trader/Quant Analyst with a strong background in trading and data analysis to join our investment team. The ideal candidate will have at least 3 years of experience in convertible securities (or equity/FX/rates derivatives), relative value trading strategies, and quant data analysis. The role will combine active trading and risk management and quantitative analysis to identify and execute profitable opportunities in the convertible space. Identify relative value opportunities between convertible bonds, the underlying equity, and credit derivatives. Execute trades in convertible securities, related equities, and hedges in alignment with investment theses and risk parameters. Manage existing positions proactively, assessing changes in valuation, liquidity, and market sentiment. Conduct in-depth quant data analysis on the convertible bond universe, including historical pricing and valuation. Model and evaluate convertible securities across multiple scenarios, analyzing risks related to credit, interest rates, volatility, and equity sensitivity. Build front-office tools to analyze convert universe data for idea generation, trade optimization, and risk management. Coordinate with the portfolio manager and risk team to size positions appropriately and adhere to pre-defined risk limits. Track and analyze P&amp;L drivers on a daily basis and provide attribution reports. Hedge exposures dynamically using equity, credit, and derivative instruments. Work closely with other analysts, traders, and portfolio managers across strategies to share insights and generate synergies. Maintain strong relationships with sell-side counterparties and market participants to source information and enhance trade execution.</p>
@@ -92,7 +96,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -118,6 +121,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

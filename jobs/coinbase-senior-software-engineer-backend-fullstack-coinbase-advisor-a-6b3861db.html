@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn&#x27;t a place for complacency, it’s a place to be pushed past your perceived limits. If you&#x27;re ready to build the future of finance alongside people who refuse to settle for &quot;good enough,&quot; you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called “surges.” learn more about working at Coinbase. Senior Software Engineer, Backend/Fullstack (Coinbase Advisor - Agentic Trading) We&#x27;re hiring a Senior Software Engineer to join the Coinbase Advisor team within the Consumer &amp; Business group. Coinbase Advisor is the world&#x27;s first RIA-licensed agentic trading system: an AI advisor living inside the Coinbase app that holds a natural conversation about a user&#x27;s portfolio, gives personalized financial advice, and executes trades on their behalf. This role is primarily backend on a full-stack team. You&#x27;ll own the services that make agentic trading feel fast, clear, and trustworthy for millions of customers. Own backend services powering Coinbase Advisor and Strategies, from technical design through launch and ongoing operation Build integrations with Coinbase&#x27;s trading APIs so agent recommendations and user-configured strategies translate into correct, auditable execution Develop our agentic harness, including tool calling, orchestration, persistent state, and recovery from failed or partially completed actions Shape agent behavior through prompt engineering, evals, and conversation analysis, partnering with our registered investment adviser on changes to financial advice Improve service reliability, latency, observability, and execution safety, including retry behavior and safeguards against duplicate actions Partner with frontend engineering, product, design, trading infrastructure, and legal/compliance to ship customer-facing capabilities within regulatory guardrails</p>
@@ -91,7 +95,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -117,6 +120,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

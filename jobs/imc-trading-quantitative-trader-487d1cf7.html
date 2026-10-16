@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>IMC is looking for an experienced Quantitative Trader to run and grow our Options trading book. If you have a strong track record managing an options book, a sharp instinct for real-time decision-making, and a disciplined approach to risk, this role could be a great fit. You will take ownership of trading decisions and performance of the Options book, using signals, models, and tools developed in collaboration with our research and engineering teams. You will be responsible for pricing, hedging, and managing risk in real time, operating in a fast-paced environment where trading outcomes are immediate and measurable. At IMC, trading performance is highly visible and directly tied to impact. You will play a key role in driving P&amp;L and shaping how we compete in options market making. You will work in a collaborative environment alongside traders, researchers, and engineers, with open idea sharing across teams, desks, and global offices. Own and manage the Options trading book, with direct responsibility for P&amp;L and risk Make real-time trading decisions based on market conditions, volatility, and order flow Dynamically adjust pricing, hedging, and positioning to optimise performance Use signals, models, and trading tools to inform execution and decision-making Provide feedback to researchers and engineers to improve model performance and execution quality Identify trading opportunities and respond quickly to changing market conditions Mentor junior traders and contribute to the development of the desk</p>
@@ -90,7 +94,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -116,6 +119,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

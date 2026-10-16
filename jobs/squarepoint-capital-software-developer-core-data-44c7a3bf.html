@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>The Core Data team models and owns the structured datasets that connect Squarepoint to the outside world, effectively representing the firm&#x27;s view of reality. We partner closely with portfolio managers and investment researchers to define robust data models and build reliable data pipelines that transform and consolidate diverse sources into high-quality, centrally managed datasets. These datasets are delivered through a service-oriented platform designed for scalability, reliability, and performance. Our technology supports every stage of the investment lifecycle, from research and backtesting to trading and portfolio management. We are looking for talented software engineers with strong Python and/or kdb+/q experience to join our team. You will be part of a collaborative, learning-oriented environment where excellence is recognized, diverse perspectives are valued, and innovative solutions are encouraged. Acquire a deep understanding of the data requirements provided by investment research teams and deliver solutions that create business impact Design, implement, test, optimize and troubleshoot data pipelines and services using Python and q Work with a range of database technologies, including PostgreSQL and kdb+ Analyze, onboard, and curate vendor datasets, becoming a subject matter expert in third-party data Take a leading role in production support and operational excellence during business hours</p>
@@ -90,7 +94,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -116,6 +119,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

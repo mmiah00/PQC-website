@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>A CAREER WITH POINT72’S TECHNOLOGY TEAMAs Point72 reimagines the future of investing, our Technology group is constantly improving our company’s IT infrastructure, positioning us at the forefront of a rapidly evolving technology landscape. We’re a team of experts experimenting, discovering new ways to harness the power of open source solutions, and embracing enterprise agile methodology. We encourage professional development to ensure you bring innovative ideas to our products while satisfying your own intellectual curiosity. WHAT YOU’LL DO• Build software used to support global trading across time zones• Work closely with business users to establish and refine requirements• Participate in identifying new technologies to continuously improve software systems• Implement DevOps practices within the team (GitHub/GitLab, Jenkins)• Provide production support to diagnose and resolve elevated application software production incidents and implement proactive remediation measures WHAT’S REQUIRED• Bachelor’s degree in computer science or another technical/scientific field• Minimum 8 years object-oriented programming experience with C#/.NET• Significant experience working with / understanding databases - primarily MS SQL Server• Must have experience in writing automated tests, unit tests, Test-Driven Development• Knowledge of design/architecture patterns, distributed systems, microservices, observability and monitoring, and containerization (Docker)• Willingness to work as part of a distributed Dev Team - 3 time zones (USA, Poland, India)• Strong problem solving and analytical skills• Exceptional verbal and written communication skills• Commitment to the highest ethical standards WE TAKE CARE OF OUR PEOPLEWe invest in our people, their careers, their health, and their well-being. When you work here, we provide:• Health care benefits• Maternity, Adoption &amp; related leave policies• Generous paternity and family care leave policies• Employee Assistance Program &amp; Mental wellness programs• Transportation support• Tuition assistance ABOUT POINT72Point72 is a leading global alternative investment firm led by Steven A. Cohen. Building on more than 30 years of investing experience, Point72 seeks to deliver superior returns for its investors through fundamental and systematic investing strategies across asset classes and geographies. We aim to attract and retain the industry’s brightest talent by cultivating an investor-led culture and committing to our people’s long-term growth. For more information, visit https://point72.com.</p>
@@ -80,7 +84,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -106,6 +109,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

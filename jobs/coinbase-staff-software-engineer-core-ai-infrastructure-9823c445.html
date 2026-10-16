@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn&#x27;t a place for complacency, it’s a place to be pushed past your perceived limits. If you&#x27;re ready to build the future of finance alongside people who refuse to settle for &quot;good enough,&quot; you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called “surges.” learn more about working at Coinbase. Staff Software Engineer, Core AI Infrastructure You&#x27;ll join a high-performing team of engineers driving AI transformation at Coinbase as a Senior Software Engineer on the IT Operations team within ESTO. This team builds custom products through full-stack engineering and scales the infrastructure powering Coinbase&#x27;s AI products, with direct exposure to senior leadership in a fast-paced, incubator-style environment. You&#x27;ll own the reliability and automation of critical AI infrastructure, ensuring our systems are resilient, observable, and secure at scale. Own end-to-end delivery of AI products by building production-grade distributed systems, including serving infrastructure, data pipelines, and deployment orchestration across the full stack throughout the SDLC. Drive platform adoption by designing clean APIs, abstractions, and developer-facing tooling that enable product teams to integrate AI capabilities without bespoke infrastructure requests. Partner with engineering and product leadership across Platform and other product groups to align infrastructure requirements, resolve cross-team technical dependencies, and define shared platform contracts. Shape engineering standards and technical culture by establishing architectural patterns, mentoring engineers, and raising the bar on code quality, observability, and operational excellence. Build full-stack applications that power internal AI products and infrastructure using Go or Python.</p>
@@ -90,7 +94,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -116,6 +119,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

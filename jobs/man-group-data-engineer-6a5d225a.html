@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>The Data Management team, part of the Data &amp; Machine Learning group within Man Technology, spans across London and Sofia. The team is responsible for the management and maintenance of Man&#x27;s security master content, and the onboarding of production data (e.g. reference, alternative, ESG, market data etc). The team strives to contribute towards building a robust data ingestion and management framework, including onboarding raw vendor data into a data lakehouse, performing data analysis, building data dashboards, and implementing an optimised on-going data management process. As a Data Engineer, you will use your technical and business skills to onboard and support data that is used across our investment management teams. On some projects you will act as a subject matter expert, providing support and delivering high quality data analysis and quality assurance. You will be working in a team that is responsible for investment data governance including data ingestion, financial and alternative data quality assurance, security master content and data lineage. The team is dedicated to creating a better data experience for our investment teams and entails learning the details of various vendor data sources we use. The role offers ample chances to create a distinctive mark in our ongoing efforts to improve Man&#x27;s investment data estate by building a state-of-the-art data platform and central data operation. You should have the enthusiasm for leveraging AI development tools to accelerate delivery and driving their adoption across the team. Provide first-level data support to portfolio managers, researchers, traders, engineers, and data scientists across the firm Lead the onboarding and integration of a broad range of financial and alternative datasets, while owning and enhancing security master content and identifier mapping tools to ensure accuracy and consistency across systems Design, build and support ETL pipelines using industry-standard and proprietary technologies; define and optimise data models, schemas, and infrastructure with engineering teams Proactively identify and resolve data quality issues before they impact downstream users, drive data quality management with engineering Curate and maintain a metadata catalogue and knowledge base, and identify opportunities to automate routine tasks and workflows Support broader Data Management responsibilities including market data operation, metadata management and AI governance as required</p>
@@ -80,7 +84,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -106,6 +109,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

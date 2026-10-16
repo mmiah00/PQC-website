@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn&#x27;t a place for complacency, it’s a place to be pushed past your perceived limits. If you&#x27;re ready to build the future of finance alongside people who refuse to settle for &quot;good enough,&quot; you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called “surges.” learn more about working at Coinbase. We&#x27;re hiring a Senior Software Engineer to join the Payments team within the Platform organization. The Payments team builds the infrastructure, workflows, and APIs that power fiat on- and off-ramps for millions of consumers and institutional customers globally, across payment rails, partner integrations, and funds-flow systems. We are turning that stack into an API-driven platform, a Stripe-like product for Coinbase&#x27;s own Retail, Institutional, and Developer teams, so a new payment method or rail can go live in a fraction of the time it takes today. Our north star is payment success rate: the share of attempted payments that move safely and reliably, end to end. You&#x27;ll design and build scalable backend systems that process high-volume payment traffic, working closely with Product, Engineering, and cross-functional partners to expand Coinbase&#x27;s payment capabilities into new markets and corridors. Design and build scalable, fault-tolerant backend services for payment processing using Go, ensuring high reliability and correctness for financial transactions at scale Own end-to-end delivery of payment features, from technical design through production deployment, monitoring, and iteration Build the platform primitives, extension points, and self-serve APIs that let other Coinbase teams add new payment methods and rails without deep changes to the core services Partner with engineers, product managers, and senior leadership to translate product vision and business requirements into technical plans each quarter Drive improvements to system reliability, observability, and performance across payment services, proactively identifying and resolving bottlenecks Contribute to engineering quality through thoughtful code reviews, design discussions, and advocacy for best practices in service-oriented architecture</p>
@@ -90,7 +94,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -116,6 +119,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

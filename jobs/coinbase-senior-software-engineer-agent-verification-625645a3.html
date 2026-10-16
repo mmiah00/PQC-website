@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn&#x27;t a place for complacency, it’s a place to be pushed past your perceived limits. If you&#x27;re ready to build the future of finance alongside people who refuse to settle for &quot;good enough,&quot; you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called “surges.” learn more about working at Coinbase. Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn&#x27;t a place for complacency, it’s a place to be pushed past your perceived limits. If you&#x27;re ready to build the future of finance alongside people who refuse to settle for &quot;good enough,&quot; you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called “surges.” learn more about working at Coinbase. Agent Verification builds systems that help Coinbase safely ship software in an AI-native development environment. The team develops automated code review, risk and policy evaluation, CI evidence, and merge controls that reduce routine manual work while preserving human judgment for higher-risk changes. As a Senior Software Engineer, you will design and build reliable backend services and integrations across source control, CI/CD, policy systems, and developer workflows. You will lead the adoption of a consistent and observable merge path, partner with Security, Compliance, Infrastructure, and product engineering teams, and improve how software changes are reviewed and shipped across Coinbase. We are looking for an experienced backend or platform engineer who has built distributed systems, developer infrastructure, CI/CD integrations, authorization or policy systems, or other high-reliability control planes. Experience with Go, GitHub integrations, AWS, Kubernetes, AI-assisted development, or policy-as-code is helpful. Lead the design and delivery of Coinbase’s Unified Merge Gate, the system that determines whether a change can merge and explains what remains before it can proceed. Integrate automated review findings, policy and risk assessments, CI results, identity and attestation evidence, and required human judgment into one merge decision. Build reliable backend services and integrations across GitHub, CI and other Coinbase’s policy systems. Migrate repositories from fragmented legacy controls to the Unified Merge Gate, with safe rollouts, observable decisions, and clear rollback paths. Partner with Security, Compliance, Infrastructure, Codeflow, ZTSC, and repository owners to turn control requirements into usable developer workflows. Measure the effect on human-review volume, time-to-merge, automated merge coverage, decision quality, and escaped defects.</p>
@@ -92,7 +96,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -118,6 +121,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

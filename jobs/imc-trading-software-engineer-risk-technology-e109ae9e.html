@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>We are seeking a Software Engineer to help build the technology and analytical frameworks used to understand, measure, and optimize risk across the firm&#x27;s trading businesses. Working directly with Risk Managers and software engineers globally, you will develop systems that help the firm analyze exposures, scenarios, capital, liquidity, and other risk factors across all asset classes. You will have significant autonomy to improve existing platforms, build new tools, and pursue opportunities that make the risk organization more effective. This role is ideal for someone who enjoys combining software engineering, data science, and financial markets to solve complex, high-impact problems. Design and build analytical tools that help Risk Managers understand portfolio exposures, stress scenarios, capital usage, and emerging risks Build high-end dashboards and visualization tools for stakeholders globally. Work with large data sets, data pipelines that support storage, retrieval, and analysis across the risk organization. Partner directly with Risk Managers to identify opportunities and rapidly translate ideas into production systems while collaborating within the firm&#x27;s global risk development organization. Collaborate with engineering, trading, quantitative research, operations, and data teams across the firm Take ownership of projects from concept through production deployment</p>
@@ -98,7 +102,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -124,6 +127,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

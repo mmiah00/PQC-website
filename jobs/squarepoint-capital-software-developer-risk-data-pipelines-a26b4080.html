@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>Risk Technology develops core services and systems required by Squarepoint’s systematic and quantitative trading strategies, such as real-time risk controls, position/inventory/P&amp;L monitoring, internal order routing, and various pre and post-trading services. Risk Data Pipelines develops software on top of the core Risk Technology platform to handle market or asset-class specific processing, including: Trade Data Ingress - Normalize and stream trade data to Squarepoint&#x27;s systems from trading platforms like Bloomberg, Fidessa and SpiderRock. Trade Data Egress - Feeds to 3rd party platforms to ensure trade booking correctness and regulatory compliance. Services and analytics used by investment and quant teams to understand Risk exposure, P&amp;L and to improve capital efficiency. Automation of trading operations to support the growth of the business, such as the management of options &amp; future expiry and automated trade, position and P&amp;L reconciliation. This role provides an opportunity to learn many aspects of the way hedge funds operate through close collaboration with trading and quantitative teams, and as a developer you will: Design, develop and deliver high quality and maintainable business critical software. Work closely with stakeholders and colleagues to capture requirements, define architecture and technologies, identify and resolve bottlenecks, and deliver functionality. Lead and contribute to design discussions and mentor other team members. Participate in level 2 support.</p>
@@ -89,7 +93,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -115,6 +118,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

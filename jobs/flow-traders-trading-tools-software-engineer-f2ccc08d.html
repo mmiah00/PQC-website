@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>Flow Traders is looking for experienced Software Engineers to join our growing Development team in Amsterdam. This is a unique opportunity to work at a leading proprietary trading firm where entrepreneurship, innovation, and technology are at the heart of everything we do. We value sharp, creative thinkers and give them the freedom and responsibility to make a real impact. As a Software Engineer at Flow Traders, you will build the systems that power our global trading business and help us compete on exchanges around the world. The work is varied and challenging, ranging from systems operating on or near the critical path, such as receiving market data and placing orders, to platforms that process vast amounts of data with exceptional reliability, performance, and traceability. You will play a key role in advancing our proprietary trading platform by developing efficient, high-performance software, designing innovative solutions, and strengthening existing systems with a focus on low latency and stability. Since markets never stand still, we work in small, business-aligned teams and use agile practices to respond quickly to change. You will work closely with Trading every day, creating fast feedback loops and a clear view of the value your work delivers. To support collaboration and encourage autonomy, we build and maintain shared libraries, promote code reuse, and continuously refine our approach to application architecture.</p>
@@ -91,7 +95,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -117,6 +120,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

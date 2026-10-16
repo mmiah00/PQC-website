@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>Old Mission is a global proprietary trading firm that leverages state-of-the-art technology and research to identify and execute profitable trading strategies across multiple asset classes around the world. Our offices in Chicago, New York, and London are all composed of naturally-curious individuals who thrive in a team environment and constantly strive for improvement. We are actively seeking a Quantitative Researcher (Ph.D.) to join our Chicago office. In this role, you will collaborate directly with our options trading group, contributing to the enhancement of existing pricing models, and spearheading the development of cutting-edge models and tools. The primary focus will be on efficiently pricing volatility-based derivatives across diverse asset classes. As a key member of the team, you will actively participate in the options research idea generation process and may also take the lead in expanding the capabilities of the quant team to further enhance the options desk. Conceptualize and implement cutting-edge derivative pricing models for single-asset derivatives, as well as pricing models for widely traded equity volatility products such as variance swaps, volatility swaps, and VIX options. Evaluate existing options pricing models, scrutinizing aspects such as calibration accuracy and Greeks stability to identify any anomalies. Investigate and propose enhancements to address identified issues. Develop more resilient and stable alternative options pricing models, including exploring and suggesting new parameterizations for the volatility surface and designing improved filtering rules for market data quotes during calibration. Develop options specific research infrastructure and libraries in Python. Analyze market data and microstructure to identify patterns, facilitating the exploration of trading ideas. Actively participate in the idea generation process for options research, contributing insights and innovations. Collaborate closely with traders, engaging in the analysis of data and jointly developing new tools and ideas to identify patterns in the market.</p>
@@ -91,7 +95,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -117,6 +120,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

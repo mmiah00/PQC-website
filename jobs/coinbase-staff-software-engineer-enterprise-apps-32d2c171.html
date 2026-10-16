@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn&#x27;t a place for complacency, it’s a place to be pushed past your perceived limits. If you&#x27;re ready to build the future of finance alongside people who refuse to settle for &quot;good enough,&quot; you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called “surges.” learn more about working at Coinbase. As a Staff Software Engineer on the Agent Engagement and Experience team within Coinbase&#x27;s Enterprise Applications and Architecture (EAA) org, you&#x27;ll build the customer experience platforms that power customer service and compliance processes for CX agents across the company. This team creates innovative services, tools, and applications that help resolve customer issues and compliance KYC processes faster and with greater accuracy. You&#x27;ll anchor new projects, set technical direction, and mentor engineers while architecting the distributed systems that directly improve customer satisfaction and compliance outcomes at scale. Architect and deliver distributed backend systems and foundational infrastructure components, including dynamic configuration, container orchestration, and secrets storage, using Golang, gRPC, TypeScript, and React Lead technical direction for the team by defining strategic roadmaps with engineering management and stakeholders, translating ambiguous problems into clear architectural plans with measurable outcomes Build and scale high-reliability services that streamline CX agent workflows and compliance processes, owning end-to-end delivery from design through production deployment Mentor engineers on design techniques, coding standards, testing practices, and operational best practices, raising the overall engineering quality bar across the team Partner cross-functionally with teams across multiple time zones to identify platform improvements, foresee potential issues, and communicate complex technical concepts clearly to both technical and non-technical leaders</p>
@@ -90,7 +94,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -116,6 +119,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

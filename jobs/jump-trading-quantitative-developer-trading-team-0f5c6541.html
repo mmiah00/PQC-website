@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>Jump Trading Group is committed to world class research. We empower exceptional talents in Mathematics, Physics, and Computer Science to seek scientific boundaries, push through them, and apply cutting edge research to global financial markets. Our culture is unique. Constant innovation requires fearlessness, creativity, intellectual honesty, and a relentless competitive streak. We believe in winning together and unlocking unique individual talent by incenting collaboration and mutual respect. At Jump, research outcomes drive more than superior risk adjusted returns. We design, develop, and deploy technologies that change our world, fund start-ups across industries, and partner with leading global research organizations and universities to solve problems. We are seeking a Quantitative Developer to help support one of our global research teams. In this role, you will collaborate closely with the team&#x27;s researchers to maintain the team&#x27;s infrastructure as they relate to live trading outcomes. This is a hybrid development and research and trading operations position. You&#x27;ll be responsible for ensuring the reliability of the team&#x27;s research pipeline—diagnosing idiosyncratic and fixing observed issues in research and trading systems, making jobs more stable, and stepping in when things go wrong. We are looking for a mature, self-directed engineer who can operate independently and handle high-stakes situations with confidence. The more efficiently you can automate and stabilize operations, the more time you&#x27;ll have to focus on performance-oriented development work. Manage and evolve the monitoring system: Act as the primary escalation point for error messages and failed jobs. Chase problems identified by the monitoring system to their source—identifying bugs, writing fixes, and resolving issues yourself rather than forwarding them on. Maintain a big-picture understanding of all processes overseen by the monitoring system. Improve pipeline efficiency and performance: Investigate recurring pipeline issues and solve them at a systemic level. Optimize performance-critical workloads—for example, making ML models and GPU jobs run faster and more efficiently. Engage in full-cycle development: Contribute across research, coding, testing, and deploying systems into production. Provide direct support to end users, troubleshoot issues, and manage system upgrades. Design and maintain robust testing, deployment, rollout, and rollback processes. Other duties and responsibilities assigned.</p>
@@ -92,7 +96,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -118,6 +121,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

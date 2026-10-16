@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>About Cubist: Cubist Systematic Strategies, an affiliate of Point72, deploys systematic, computer-driven trading strategies across multiple liquid asset classes, including equities, futures and foreign exchange. The core of our effort is rigorous research into a wide range of market anomalies, fueled by our unparalleled access to a wide range of publicly available data sources. The team is focused on systematic equity trading. It is established, yet still pre-trade, offering an exciting opportunity to join at an early stage and be involved in a broad range of development areas. The team members come from a mixture of quant analyst and development backgrounds, using the combination of skills to achieve a common goal. All team members are based in the London office five days a week to maximize communication and interaction. Role and Responsibilities:An ideal growth role to suit a developer looking for additional responsibilities and independence. Responsibilities may include: • Building components for all aspects of live trading and research environments.• Driving automation and robustness of our processes.• Developing robust data checking and handling procedures.• Monitoring and troubleshooting any issues that should arise.• Shared responsibility for timely and correct operation of trading systems. Requirements: • Bachelor’s degree or equivalent in computer science or other STEM discipline• 2+ years commercial experience with Python and its data science libraries on Linux.• Pragmatic balance between attention to detail and delivery focus.• Ability to work with ambiguous requirements.• Self-driven, owning problems while knowing when to seek advice.• Knowledge of finance and trading systems a plus.• Experience with a systems programming language (e.g. C++, Rust) a plus. • Commercial use of cloud compute and containers a plus. • Strong analytical skills and command of statistics a plus. • Be in the office five days a week. • Commitment to the highest ethical standards.</p>
@@ -80,7 +84,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -106,6 +109,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>

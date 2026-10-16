@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+<script>
+  if (sessionStorage.getItem("pqcMemberAuth") !== "true") {
+    window.location.replace("../members.html");
+  }
+</script>
 </head>
-<body>
+<body class="members-theme">
 
 <header class="site-header">
   <nav class="nav">
@@ -26,10 +31,9 @@
       <li><a href="../why-it-matters.html">Why It Matters</a></li>
       <li><a href="../team.html">Our Team</a></li>
       <li><a href="../events.html">Events</a></li>
-      <li><a href="../opportunities.html" class="active">Opportunities</a></li>
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li><a href="../members.html" class="nav-link-members">Member's Page</a></li>
+      <li><a href="../members-home.html" class="active nav-link-members">Member's Page</a></li>
     </ul>
   </nav>
 </header>
@@ -46,7 +50,7 @@
 
   <section class="section">
     <div class="container" style="max-width:760px;">
-      <p><a href="../opportunities.html">&larr; Back to Opportunities</a></p>
+      <p><a href="../members-opportunities.html">&larr; Back to Opportunities</a></p>
 
       <div class="card job-detail-card" style="margin-top:24px;">
         <p>The BP&amp;A Team sits at the heart of our operations, partnering closely with finance, trading, and middle office teams. We serve as the business intelligence and analysis function for IMC to turn complex data into insights that drive real decisions. This role also connects you with colleagues across Chicago, Amsterdam, and Sydney, all part of a truly global team reporting into a Global Lead. We&#x27;re looking for a Software Engineer who loves back-end development and wants to help build the tools and systems that power our business - front-end or UI/UX experience is a bonus. Own meaningful pieces of system development, maintenance, process improvement, and automation, plus dig into database and front-end work along the way Team up with BI developers to shape best practices, and partner directly with finance, operations, and trading teams to keep the BP&amp;A ecosystem running smoothly, reporting to the local lead Build tools that make things faster and smarter - boosting efficiency, streamlining data processing, and cutting load times Build high-end dashboards and visualization tools for stakeholders globally Work with large data sets and data pipelines that support storage, retrieval, and analysis across the finance organization</p>
@@ -96,7 +100,6 @@
           <li><a href="../why-it-matters.html">Why It Matters</a></li>
           <li><a href="../team.html">Our Team</a></li>
           <li><a href="../events.html">Events</a></li>
-          <li><a href="../opportunities.html">Opportunities</a></li>
           <li><a href="../members.html">Member's Page</a></li>
         </ul>
       </div>
@@ -122,6 +125,8 @@
     </div>
   </div>
 </footer>
+
+<button type="button" class="btn btn-outline members-logout" id="members-logout">Log Out</button>
 
 <script src="../js/script.js"></script>
 </body>
