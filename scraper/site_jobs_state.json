@@ -1,5 +1,23 @@
 [
   {
+    "role": "Quantitative Developer Intern",
+    "company": "Point72",
+    "company_type": "Quantitative Hedge Funds",
+    "type": "Internship",
+    "category": "Quantitative Development",
+    "women_focused": "No",
+    "new_grad": "No",
+    "pay": "",
+    "location": "New York",
+    "description": "A highly collaborative, fast-growing team, Point72 Internal Alpha Capture (IAC) is developing scalable quantitative equity trading signals that leverage rigorous research, state-of-the-art machine learning methods, a broad range of public and proprietary data sources, and unparalleled computing power. We are looking for exceptional students to join us as quantitative developer interns for Summer 2027. Our interns will work closely with our team, receive comprehensive, in-depth training, and help develop novel signals that may have a real impact.",
+    "requirements": "",
+    "source_url": "https://boards.greenhouse.io/point72/jobs/7609197002?gh_jid=7609197002",
+    "date_posted": "2024-08-23",
+    "date_scraped": "2026-10-19",
+    "first_seen": "2026-10-19",
+    "slug": "point72-quantitative-developer-intern-503f8cd1"
+  },
+  {
     "role": "Software Engineer, C++ - 6 Month Internship Opportunity",
     "company": "Tower Research Capital",
     "company_type": "Proprietary Trading Firms",
@@ -3094,24 +3112,6 @@
     "date_scraped": "2026-10-19",
     "first_seen": "2026-09-09",
     "slug": "schonfeld-2027-phd-quantitative-research-intern-94155573"
-  },
-  {
-    "role": "Software Engineer, Back Office Systems",
-    "company": "Point72",
-    "company_type": "Quantitative Hedge Funds",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$170,000-$225,000",
-    "location": "New York, NY",
-    "description": "A Career with Point72\u2019s Technology Team As Point72 reimagines the future of investing, our Technology team is constantly evolving our firm\u2019s IT infrastructure and engineering capabilities, positioning us at the forefront of a rapidly evolving technology landscape. We\u2019re a team of experts who experiment and work to discover new ways to harness open-source solutions, modern cloud architectures, and sophisticated Artificial Intelligence (AI) solutions, while embracing enterprise agile methodologies. Our commitment to building and innovating in the AI space provides the framework intended to drive smarter decision making and enhance how we build and operate our platforms and applications. As a member of Point72\u2019s Technology team, we encourage and support your professional development from day one\u2014helping you advance your technical skills, contribute innovative ideas, and satisfy your own intellectual curiosity\u2014all while delivering real business impact for our multi-billion-dollar global business.",
-    "requirements": "",
-    "source_url": "https://boards.greenhouse.io/point72/jobs/8773519002?gh_jid=8773519002",
-    "date_posted": "2026-09-04",
-    "date_scraped": "2026-10-19",
-    "first_seen": "2026-09-09",
-    "slug": "point72-software-engineer-back-office-systems-5cf9d029"
   },
   {
     "role": "Campus C++ Software Engineer (Intern)",
