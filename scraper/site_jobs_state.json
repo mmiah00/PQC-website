@@ -1,5 +1,23 @@
 [
   {
+    "role": "Core Data Engineer",
+    "company": "Flow Traders",
+    "company_type": "Market Makers",
+    "type": "Full-Time",
+    "category": "Quantitative Development",
+    "women_focused": "No",
+    "new_grad": "No",
+    "pay": "$165,000",
+    "location": "New York",
+    "description": "Flow Traders is looking for a Core Data Engineer to own the end-to-end lifecycle of our most fundamental data products, including our Security Master; our reconciled ETF Compositions; high-resolution historical market data; and records of our trades, orders, quotes, and inquiries. High-quality data is the cornerstone of Flow Traders' strategic direction - beyond reducing complexity and BAU for stakeholders across the organization, quality data is a key requirement for our growth of quantitative trading styles.\u200b Specifically, you will craft and execute the blueprint for these products, leveraging our Data Platform to build and monitor automated pipelines which ensure that users across the organization have reliable data at their fingertips when they need it. Further, you will become an expert in these data sets, leveraging that knowledge to optimize our use of the data we have and explore new sources for additional value. Finally, you will constantly collaborate with teams across the organization to ensure that our in-house systems are designed with data in mind, streamline additional data-related workflows, and work with stakeholders to maximize the value they extract from our data.\u200b As the architect and guardian of our most valuable data, you will have a unique opportunity to make your mark on Flow Traders. You will be accountable for delivering these data products at an exceptional level of quality, ensuring that they are not only timely and pristine, but powerful enough to drive Flow Traders' future growth. Ultimately, your work will not only provide highly visible benefits that every division feels every day, but it will also deliver one of the most important building blocks to the firm's strategic growth for the years to come.\u200b",
+    "requirements": "",
+    "source_url": "https://job-boards.greenhouse.io/flowtraders/jobs/8304623",
+    "date_posted": "2026-10-22",
+    "date_scraped": "2026-10-22",
+    "first_seen": "2026-10-22",
+    "slug": "flow-traders-core-data-engineer-bbd1816e"
+  },
+  {
     "role": "2027 Index Rebalancing Quantitative Research Intern",
     "company": "Schonfeld",
     "company_type": "Quantitative Hedge Funds",
@@ -1314,24 +1332,6 @@
     "slug": "coinbase-staff-software-engineer-platform-financial-engineering-839ea97a"
   },
   {
-    "role": "Senior Software Engineer- Blockchain Platform (Wallets, Liquidity & Bridging)",
-    "company": "Coinbase",
-    "company_type": "Crypto Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$186,065",
-    "location": "Remote - USA",
-    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. We're hiring a Senior Software Engineer to join the Wallets, Liquidity & Bridging team within the Platform organization. This team builds and operates the wallet systems, liquidity orchestration, and bridging infrastructure that power how Coinbase moves crypto assets across 55+ blockchain protocols for millions of users. You'll design and build the distributed backend systems that construct, sign, broadcast, and reconcile on-chain transactions, helping drive the next generation of wallet infrastructure with a focus on reliability, correctness, and multi-chain scalability. Own the design and delivery of backend services (Go) that power wallet operations, liquidity movements, and cross-chain bridging across custodial and non-custodial flows. Build and improve the distributed systems that manage transaction lifecycle, signing, broadcasting, and on-chain reconciliation across multiple blockchain protocols including Ethereum, Bitcoin, and Solana. Drive reliability and observability improvements for wallet services, contributing to incident response, post-mortems, and systemic fixes that strengthen Tier-0 system availability. Partner with Trading, Custody, Staking, and cross-platform teams to integrate wallet services with downstream products, defining clear contracts and resolving cross-team dependencies. Execute service decomposition and architecture improvements that break down legacy systems into modular, reusable platform services other teams can build on. Support engineering quality across the team through rigorous code reviews, design feedback, and sharing knowledge on architectural patterns and coding standards.",
-    "requirements": "5+ years of experience in software engineering, with proficiency in Go and hands-on experience designing and operating service-oriented distributed systems. | Demonstrated experience building, scaling, and maintaining production backend services with strict correctness and reliability requirements. | Familiarity with blockchain technologies such as transaction construction, on-chain data indexing, or cross-chain integrations across protocols like Ethereum, Bitcoin, or Solana. | Experience decomposing monolithic systems into scalable microservices or contributing to platform architecture that multiple teams depend on. | Proven ability to collaborate across teams, communicate technical trade-offs clearly, and drive projects from design through production with autonomy. | Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality.",
-    "source_url": "https://www.coinbase.com/careers/positions/8204215?gh_jid=8204215",
-    "date_posted": "2026-09-24",
-    "date_scraped": "2026-10-22",
-    "first_seen": "2026-09-29",
-    "slug": "coinbase-senior-software-engineer-blockchain-platform-wallets-liquidit-d40df73b"
-  },
-  {
     "role": "Staff Machine Learning Engineer(Platform - Identity)",
     "company": "Coinbase",
     "company_type": "Crypto Trading Firms",
@@ -1546,24 +1546,6 @@
     "date_scraped": "2026-10-22",
     "first_seen": "2026-09-29",
     "slug": "coinbase-senior-staff-software-engineer-institutional-exchange-698abe3b"
-  },
-  {
-    "role": "Senior Software Engineer, Agent Verification",
-    "company": "Coinbase",
-    "company_type": "Crypto Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$186,065",
-    "location": "Remote - USA",
-    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. Agent Verification builds systems that help Coinbase safely ship software in an AI-native development environment. The team develops automated code review, risk and policy evaluation, CI evidence, and merge controls that reduce routine manual work while preserving human judgment for higher-risk changes. As a Senior Software Engineer, you will design and build reliable backend services and integrations across source control, CI/CD, policy systems, and developer workflows. You will lead the adoption of a consistent and observable merge path, partner with Security, Compliance, Infrastructure, and product engineering teams, and improve how software changes are reviewed and shipped across Coinbase. We are looking for an experienced backend or platform engineer who has built distributed systems, developer infrastructure, CI/CD integrations, authorization or policy systems, or other high-reliability control planes. Experience with Go, GitHub integrations, AWS, Kubernetes, AI-assisted development, or policy-as-code is helpful. Lead the design and delivery of Coinbase\u2019s Unified Merge Gate, the system that determines whether a change can merge and explains what remains before it can proceed. Integrate automated review findings, policy and risk assessments, CI results, identity and attestation evidence, and required human judgment into one merge decision. Build reliable backend services and integrations across GitHub, CI and other Coinbase\u2019s policy systems. Migrate repositories from fragmented legacy controls to the Unified Merge Gate, with safe rollouts, observable decisions, and clear rollback paths. Partner with Security, Compliance, Infrastructure, Codeflow, ZTSC, and repository owners to turn control requirements into usable developer workflows. Measure the effect on human-review volume, time-to-merge, automated merge coverage, decision quality, and escaped defects.",
-    "requirements": "7+ years experience | Strong backend and distributed-systems experience in Go or a comparable language. | Experience designing APIs, durable state, failure recovery, observability, and safe rollout mechanisms. | Experience with CI/CD, source-control integrations, developer infrastructure, or another high-consequence control plane. | Strong security and authorization judgment. The engineer must understand why a technically convenient path may weaken a production gate. | Evidence of leading a cross-team technical project from design through migration and operational ownership. | Hands-on AI fluency. The candidate should know how to use and evaluate AI-assisted engineering workflows rather than discuss them only at a conceptual level. | Pay Transparency Notice: Base salary varies by location (see range below). Total compensation may also include equity and bonus eligibility, and benefits (medical, dental, vision, 401(k)).",
-    "source_url": "https://www.coinbase.com/careers/positions/8174949?gh_jid=8174949",
-    "date_posted": "2026-09-03",
-    "date_scraped": "2026-10-22",
-    "first_seen": "2026-09-29",
-    "slug": "coinbase-senior-software-engineer-agent-verification-625645a3"
   },
   {
     "role": "Staff Software Engineer, Security Platform",
@@ -2014,24 +1996,6 @@
     "date_scraped": "2026-10-22",
     "first_seen": "2026-09-29",
     "slug": "coinbase-senior-staff-software-engineer-blockchain-platform-573e4e5d"
-  },
-  {
-    "role": "Software Engineer",
-    "company": "Coinbase",
-    "company_type": "Crypto Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$152,405",
-    "location": "Remote - USA",
-    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. Own end-to-end development of user-facing features across the compliance agent platform using Golang, React, and cloud technologies, from design through production deployment. Lead assessment, selection, and implementation of third-party tools and vendor integrations that extend platform capabilities and accelerate delivery. Partner with product, design, security, and data teams to deliver cross-functional solutions to complex compliance and CX problems. Build and maintain scalable, high-traffic services leveraging event-driven architectures, caching, load balancing, and observability tooling across AWS and Kubernetes. Mentor engineers on design patterns, coding standards, testing strategies, and deployment best practices to raise the overall quality bar for the team.",
-    "requirements": "2+ years of professional software engineering experience building web applications with at least one modern backend language (Golang, Python, Java, or similar) and a frontend framework (React, Angular, Vue, or similar). | Familiarity with cloud infrastructure (AWS, GCP, or Azure) and containerized deployment environments (Kubernetes, Docker, or similar). | Experience working with distributed systems concepts such as caching, event-driven architectures, or API integrations. | Ability to communicate technical concepts to both technical and non-technical audiences through documentation, design proposals, or code reviews. | Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality.",
-    "source_url": "https://www.coinbase.com/careers/positions/8003605?gh_jid=8003605",
-    "date_posted": "2026-06-17",
-    "date_scraped": "2026-10-22",
-    "first_seen": "2026-09-29",
-    "slug": "coinbase-software-engineer-60acdd37"
   },
   {
     "role": "Senior Machine Learning Engineer, CX Intelligence",
@@ -2860,24 +2824,6 @@
     "date_scraped": "2026-10-22",
     "first_seen": "2026-09-17",
     "slug": "point72-software-engineer-corporate-systems-technology-ccce0cda"
-  },
-  {
-    "role": "2027 DMFI Quant Developer Intern",
-    "company": "Schonfeld",
-    "company_type": "Quantitative Hedge Funds",
-    "type": "Internship",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "London, England, United Kingdom",
-    "description": "We are seeking an exceptional intern to join our Discretionary Macro Fixed Income (DMFI) Quant team in London where you will have an opportunity to meaningfully contribute to building and enhancing our derivatives pricing and risk infrastructure, delivering solutions that directly impact our trading operations across multiple asset classes.",
-    "requirements": "Currently pursuing an undergraduate degree in Computer Science, Software Engineering, Financial Engineering, Mathematics, or a related field | Working knowledge of C++ and/or Python (coursework or project experience is fine) | Basic understanding of APIs, databases, or distributed systems (coursework or projects count!) | Interest in fixed income markets, financial data, or quantitative finance is highly encouraged | Curiosity, willingness to learn, and comfort asking questions | The ability to communicate software design and development ideas clearly and succinctly | Creative problem-solving skills and experience working with real-world datasets | Strong attention to detail",
-    "source_url": "https://job-boards.greenhouse.io/schonfeld/jobs/8207942",
-    "date_posted": "2026-09-16",
-    "date_scraped": "2026-10-22",
-    "first_seen": "2026-09-16",
-    "slug": "schonfeld-2027-dmfi-quant-developer-intern-465201b2"
   },
   {
     "role": "Software Engineer (Java) - Global Research Platform",
