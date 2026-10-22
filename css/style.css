@@ -2061,6 +2061,17 @@ body.members-theme .page-hero p {
   color: var(--ink);
 }
 
+#members-home-reset {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#members-home-reset:hover,
+#members-home-reset:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
 /* The rest of the site's footer uses a dark maroon marble image with
    light text; on the inverted members page that pairing goes dark-on-dark
    and disappears, so swap in a light marble to go with the (already

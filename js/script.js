@@ -60,6 +60,26 @@ if (teamTabButtons.length && window.location.hash) {
   if (linkedTab) activateTeamTab(linkedTab);
 }
 
+// "Welcome, Member!" heading (members-home.html) acts as a link back to
+// the default view (the TraderMath promo), away from whatever tab is open.
+const membersHomeReset = document.getElementById("members-home-reset");
+if (membersHomeReset) {
+  const resetToDefaultPanel = () => {
+    teamTabButtons.forEach((b) => b.classList.remove("active"));
+    document.querySelectorAll(".team-panel").forEach((panel) => panel.classList.remove("active"));
+    const defaultPanel = document.getElementById("members-default-panel");
+    if (defaultPanel) defaultPanel.classList.add("active");
+    defaultPanel.scrollIntoView({ behavior: "smooth" });
+  };
+  membersHomeReset.addEventListener("click", resetToDefaultPanel);
+  membersHomeReset.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      resetToDefaultPanel();
+    }
+  });
+}
+
 // Submit A Question form (members-home.html) -- posts to a Google Apps
 // Script web app, which appends a row to a Google Sheet (and saves any
 // uploaded images to Drive). See apps-script/submit-question/Code.gs for
