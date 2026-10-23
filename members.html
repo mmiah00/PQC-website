@@ -123,134 +123,27 @@
   // Inline (not in js/script.js) so this gate keeps working even if the
   // shared script fails to load for some visitors -- a placeholder gate,
   // not real security: anyone can view this page's source and see exactly
-  // how it works, even though the password hashes below don't reveal the
-  // plaintext emails directly.
+  // how it works.
+  //
+  // Accepted passwords: the shared fallback password plus a short list of
+  // e-board emails (both checked locally, below, since e-board isn't
+  // necessarily on the mailing list), and any email address on the
+  // mailing list sign-up sheet (checked live via MEMBERS_GATE_ENDPOINT --
+  // see apps-script/members-gate/Code.gs). Checking the mailing list live
+  // means new sign-ups work as passwords immediately, no manual list
+  // regeneration needed. Nothing typed here is ever sent in plaintext: we
+  // hash it client-side first and only send the hash, and the endpoint
+  // only ever answers "yes" or "no", it never returns the email list
+  // itself.
   (function () {
-    // Accepted passwords are each PQC member's own email address (not the
-    // plaintext -- see below) plus one shared fallback password. Emails are
-    // never written here in plaintext: this repo is public, so instead we
-    // store a SHA-256 hash of each lowercased, trimmed email and hash
-    // whatever's typed before comparing. This keeps the real email list out
-    // of the page source / git history, but it's still not real security
-    // (anyone could hash guesses client-side) -- same caveat as before.
-    var VALID_PASSWORD_HASHES = [
-      "036ef558a099f14bc5dabe8612a79a9438b2556334e88ae03941d2361a04b17a",
-      "044d0c6e8f4afdb83cf3740a90172fc1f9ac8b4740a7b0910afea9c442fd495e",
-      "0462d43cef6da9f06daaaa888c2f8de62c8a21f496d3b74b92e13c8bde4ded09",
-      "06a7eada011d4a23b1b8aa1feffa17b2d29cf32e0ae2e01fbb805347b48b112e",
-      "0d3bef827573fb212cff7ee58d21da83e8a027cfed0ba97d1acf2a64684028a2",
-      "0f068a696ee9d27aa8c53db9cf884411437668ddeaa010bcab5d74876dea99b4",
-      "10c67618d96b39a2671064be3741139bd51d9d25f70a930236eb669e1787d233",
-      "115308f23638cea54a3c9eb047933b2c9def84a75aaf3749faa16ad450e8fff1",
-      "11af416417eb0d1780d7de14a45ed13e76b41498d37fc9c0742f2776bcab5b1b",
-      "142772f6b0dfe27abeb419950d343d6d7f6ad8036fa5feb25118abe21ab34e26",
-      "16259308d8ce3c03bd869d0c2a0276a7739789d08199526133638e1f12055bb8",
-      "177ac8516f1d62e9851476d9126f25da3bf566a725d36a2c877d9c721495d1b0",
-      "1783b2d203988a2a66f214e7ee96f02988f21ba45c72d0665e27c22c2d3fa33e",
-      "1c14f413bf48b07fe8d5fc1505450e44e45b43b246e6b3a8d00543dd3c3f0734",
-      "1f387e49de6eeb63c05cc9672cff2af3b3e6a78a4df66651f75eb5b99d029a0b",
-      "2202f3000a75604ee99aad43b0ee298b93cac6c89e98093412a9709779556994",
-      "228600d580ce7a2c078c88a8e18e8f9d43e2986e204c1b7caaf282cc77c1a70a",
-      "246e843611be6225456234353731ea09505c25759b95160fd4f8bf8274fa41c8",
-      "26c493bfbaa5984e97067bb1376c8a47d49839950172e1653bc02bfbd98b85e7",
-      "2ca07514e8994d6c6d4bf19643677591f4dc21c99e960bd2dd1e25237b3ce0e2",
-      "2fba097dee92c60f79d03cc7e09c76c215da68a53bff668d995844294b60ac6e",
-      "32745619747460135c47d7a289860eb31916a0d6708c87677affadb30a47cbf0",
-      "34bcb68477c6abf18a015aa184134b1f52ca01ddbf84e8231c0a09f8aecc0e99",
-      "357da3e85ea6c89d2c43ed1d8162f77fe9b55560fe61f42f3b809ab3214425d3",
-      "3880bc6714aadf263acaf86bf5eab80a514f3b3011c75e1c257cefdc3ecc8163",
-      "3a069a82c826b38bf1a58bbc46c966af781d1c0b0b2bce78a28c4d2474296a8e",
-      "3da795a913de53134d6367832ff64164d9315478bdbd729fe62ae9ddf45f7078",
-      "3e5fdb874f8a6508fb3fffa60f0a2c1f4842b9a58f131675fc0cbff2aaead403",
-      "3f0b1d005db2998962ba415f9691f2f83184b913dce35e116c181450c9906abb",
-      "3f9ac8563cd13ccfc09af08577322996da0190b00935a63d3d963ea5fa259c42",
-      "41a99d5dc32f5d450e06ea2d9456fd354d34696a53f4693c53b95a352d5f436b",
-      "446541ef0c484ca0efa5df4882fa2b20b6bc965f0949cfeba19de779c7771187",
-      "480674f4e3dc5137d3befaf4c85ac1836644898764a49cb0c66aa1aae60b213f",
-      "4a36e17e0f57cb0bc7ce8ce150210d3f57ce6c7734e7b7fe8b0d8a369429eb7d",
-      "4b8a6e8f4e282410efbff5673a83e91f8ff2fab4d1ee77c8c53e980c39f82029",
-      "4b99ebbaaac0c471b481c52fe2dae49e22b8d4f0b1cfecd1a9e4c83d15acd6ff",
-      "4bbd15e86b83e78e6710930fad61844b4a0431c87682879946ca8825c38c954a",
-      "4c884ea9bf4dd50851dd4717bb7ef92050c95006f7c674ab09a6ad6f812657b7",
-      "4ecbb927ebd98497dacc427fc255bdfd4b984ce1f6bac33ecbff5236aff70d50",
-      "552c25e89887b6100785bb0e92df59ba62cc76e43e8569cdf33968fd5ab5ae19",
-      "5681e024be0ea8e1f7f30440582f2bdea3474b386e7b2dcdfa8a9655687a87fe",
-      "573e10983723ffc1147b41778142537d983720045232bfe3a313afa2b8ac4662",
-      "5843437f3d075854d85c8dcb4b29106c16cca6f497e1e03ff385ff1b58f8d9dd",
-      "58a9256689648f490d855c6c75fa8be7fb04a55598b11e8b89be102a0bb4164b",
-      "58c34a3f40baf5ef72892ed1d025cd1f2b861b679a9e48df0cf876c9afd759fb",
-      "59aacd630d4b3d9c0dbea4522ad85da4cdec2ca424001935527ee1163c1bff08",
-      "59df6afefeecbb7dbb16ee17e6d40a265a087e77e4d364301f99cf87f7fc5656",
-      "5a32a0d5ecb58ac038169acef3a796b5c4ec0d7512b8fca24dde4f51908ff5b8",
-      "5a74bdc0dbaac21a19991efc54eff5a67404ceebd9ea39aeba7a3eefeceecd6f",
-      "5b6f5dbf675866efb7b54fd2d77755d50901bb385fc1d497de83857a24e8ead7",
-      "5e09870f7f81ec3655260e229b1b85535b60d65734ea0bd0d3c7a5dc42538116",
-      "5e43bab04c851d281eeaefef7c372bb1a0e36eba98c6171be3165adc748b5280",
-      "5e57c80107399ab7dba95ef543bacdcbe7cff75c8a21b25ba18ae8c607636375",
-      "61cdeb2f94bdf48a6ff6afd6069831dbb258a49c080bb76f7c64ba27a13ee767",
-      "6205d6d0d30e54e93afd34afe9d22931d92da4797abed3deb41f554e195a2b99",
-      "62ac8045b5c55208fc0012427f6aa46a2468cda7285aef0bb2f42d88a1be814b",
-      "644be16f9e8e0868c986f4c6bad74087964b0f943d425d2309fd61ab595192fd",
-      "6e7f77fdb4ae425296e0e7cfc14fc54878790b2cd31dd08f5d4beab5139e4721",
-      "72d5aeaf348ffc07bdd085aa207a3bad441a44d8b117d7af0e9d8724b1317985",
-      "7552098407ef6750c3cb68fdd226bf0e014c3c69ea42b1027ee22f11396261ac",
-      "75ec4723e23b2e5cf3a16f03da71fa81c08a58540ca2a1aea2cb431f4424889f",
-      "7e1ad88da92c4b51e7338180102ac1fd2a30dfe3e74ec64c5e026b1ce5a49305",
-      "7f681f11d6a3fdce3b306baefb4389e4317e48b292994f8f4388fa70634a8e74",
-      "8010bca43aa923b62150bc9a95375711035980efdfe918126857ec9e48d36565",
-      "820ff7f93b39127332ae61b08d660a4d4356baa01a9123a97ab8d7286cc8da05",
-      "82c9ebad83c99f2f7bd7b8a5ccd212620f5f1a2f198c00bbe51fe29a9236f8d5",
-      "84d9b8ea9419a14ce4e192d5e4660938892c076a81bd303fd17d3513f6d67b95",
-      "862b0cef82a1f0e8149a1f6d3ced64facddac0a3c1dd469d778235964539e5a6",
-      "8d592b887b24640d72cb620003699cf09b0a4aed8b25414644a918371fc763de",
-      "8db21514550a7a73bf3783f96b7a543acb913b6db6b5d32d91e838c893fbea7b",
-      "9085202129602b5af128887d2286514e12ccab7ac007ccc15f64fd6ea142027a",
-      "94d21beff3bd4bea26f273e8b457f5d4e68ef89a24ab00a3740b2bd05a072758",
-      "96236ec3f06080a580fdfab372172b448812f45f277fcc98b9e90c83c0970472",
-      "9a2bab5bac88307a804a68476f8f0a420307b8c83c8edd35d0e276d53b837251",
-      "9d5dcb9b646f8b408080a63dfe1c1f01faab07155c50130d441dd5a17be0c545",
-      "9e2af71d2b6abc321b035f5fcbf33f949898da30ccf55fd4e0efcba3bde8563e",
-      "9ec60a783e64fb913679aa88123d5dd63f834d2b44c560df31e00f5db81dc68c",
-      "a075d17f3d453073853f813838c15b8023b8c487038436354fe599c3942e1f95",
-      "a1b844ffc730ca28d41c5b6a1afe971673bbb97dd450a480b0e6565c1efe4d53",
-      "a2b895d3acaef986a4e72bb1e2bc123a0a9b9deff98b277af3de17a883b56f27",
-      "a457bc7f4e930bcf81885424c029712533a436d0526aa21cdc9aecc91af1d5a6",
-      "a49d8de40322995a195d1c7f518508c5461ed4c1d9d34184175a504ba48585a1",
-      "a918932adcaa2c8f033686dacf1808bec929fff7ec8f226cb240c2e709ff173f",
-      "a97fa81d60503a4cdbb54a770f528ceed8317b50e4c4762a7fa380fd8daf7076",
-      "ab717a8eb4f39d189b367ff027e6c865df8cc8e1ab5f1a1ded4188a67a5162b8",
-      "ac35c41c443803ea21721115e7adcdccde6832daf6103dee3e1cf3333f77147f",
-      "ad8dd0b6629d1a78ce43ab0fd4320a2e64e076c4fd86e9d7448ffc21b54146a4",
-      "ae894f097cbbb4440ef64b7840b6d9a2da3d041149d946af49a03f2b9802b039",
-      "aef475d5838dd8ea2a5fcb04565a32d4d7448940700eec4d57dde62228f7211b",
-      "af265ace795d5727034f8d2679e9212edb2446585c26d16b1dd2dbd9dabc5d62",
-      "b135ef6a67a2282783c60bf9e1e3576b9f91966ddcacdb67c3a321ade9a73b8f",
-      "b666cb997fb9bc32d648fd5d18d0fe39105f09590adedf88f1d088ee487ab008",
-      "b7f3ff96c908fffc2f51da3809455598f58035b442f86b1758388d988f7ac85e",
-      "b8b836f49da6269601a7259e7b7f6686c0a4b305925ce1ede59ba8a39c5d7d48",
-      "be91720c965611e1da08f18378d4776d09ff0cdba016e62829b76b5a2d4cf013",
-      "bf5996d4ad329da73d54d03d9d9e95e601ad84f24f99b87cb77313bd812bcfa2",
-      "c1085d586dc39965f0ec78d7769c643f7742a8bf61d4098397943925e3e65814",
-      "c2d20ac0c2dc2601c4febad2e46ab2f2e60f427988cfa01fb2ef06d3b5c112e3",
-      "c8e1e81b3c763dac6ed8f48fe10186f393313c9a30c3c0aeeeb3941a6f33166c",
-      "d056fa051067f2bcebe63dd2c5495787022ccf22227111e06c45d2dce2ba6369",
-      "d0731fab35252269794948c370e8b721dcc5c2f3ea08e7359d8ec6fc5b7dac6c",
-      "d308c3029d24b2d220c8f2e0ef6a0d9228f79a669c7bd9260329e3ed8c08f796",
-      "d546fdcea323e02d13d720fc640e3ad4bc54ecc347f35903034d7733570f4009",
-      "d8493e2e352aaa122e16f0381904fa56d64b17693c19e5159a628661ccb44cf4",
-      "d9b623c04ddd8a02f4a4189a4db4f9cb51d57cf266c2f3cc8d4050e4183e97f8",
-      "d9e1df38c6bdaf5ab358b14c263df3de54d831a3bd3680396e6aca4482b1bc8f",
-      "dc2aa66271d812ee155fde5a527695c0af6349b18e49efb1e3b4eb21919cbbfc",
-      "dd9d45ad38b6aaf0e0ef3171a29ed8a88bb912b05032a7478a55cbe94cc5da7c",
-      "df355d71944b2e761b762421beb4c356772461956d86bd1b2c7a8e0fc5a6410f",
-      "e0240df627740a2844dfe0544885de196adce7b9d86a8a96aa3d40933e20ef29",
-      "e1702fbb11d7f7cd0310190b6224ce0272e3c62b24ee9eff5990eee1dcfca13d",
-      "ecffb5b41ed54674534324f99cba2a2089ed4cf32ff2b24d44f1ef70edec1325",
-      "ed069d6c08482a6063740fb9f246edd454911d62fcfcbe8f1ea796dc93b16c21",
-      "f5ef884a3d9c903a878f64056cd0e68f353c9e8e49b0409d3fa04d2ee15c7ba5",
-      "ff42937207ce389dc16e4ef57a5fc8f730952c9e1a58bc0a94a86f5f38a5f40f",
-      "ffbd201823276084354a59d305c49b7efd86930f43702249e7def7c824fd143e"
+    var LOCAL_PASSWORD_HASHES = [
+      "a075d17f3d453073853f813838c15b8023b8c487038436354fe599c3942e1f95", // p@ssw0rd
+      "32745619747460135c47d7a289860eb31916a0d6708c87677affadb30a47cbf0", // mmiah@uchicago.edu
+      "5681e024be0ea8e1f7f30440582f2bdea3474b386e7b2dcdfa8a9655687a87fe", // cdejager@uchicago.edu
+      "142772f6b0dfe27abeb419950d343d6d7f6ad8036fa5feb25118abe21ab34e26", // claireskim@uchicago.edu
+      "644be16f9e8e0868c986f4c6bad74087964b0f943d425d2309fd61ab595192fd" // mihika@uchicago.edu
     ];
+    var MEMBERS_GATE_ENDPOINT = "https://script.google.com/macros/s/AKfycbzHB_u-i_XEm-wUlOzKH2vhSH6IP3R-1GoYUEv2WnUezAMilSB_DCpzH4zzbKnI3dO8/exec";
     var MAX_ATTEMPTS = 5;
 
     var form = document.getElementById("password-gate-form");
@@ -291,6 +184,26 @@
       });
     }
 
+    function grantAccess() {
+      sessionStorage.setItem("pqcMemberAuth", "true");
+      sessionStorage.removeItem("pqcMemberAttempts");
+      window.location.href = "members-home.html";
+    }
+
+    function registerIncorrectAttempt() {
+      attemptsUsed += 1;
+      sessionStorage.setItem("pqcMemberAttempts", String(attemptsUsed));
+      passwordInput.value = "";
+      passwordInput.focus();
+
+      if (attemptsUsed >= MAX_ATTEMPTS) {
+        lockOut();
+      } else {
+        errorEl.textContent = "Incorrect password. Please try again.";
+        updateAttemptsDisplay();
+      }
+    }
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (attemptsUsed >= MAX_ATTEMPTS) {
@@ -299,26 +212,34 @@
       }
 
       var normalized = passwordInput.value.trim().toLowerCase();
+      var submitBtn = form.querySelector("button[type=submit]");
 
       sha256Hex(normalized).then(function (hash) {
-        if (VALID_PASSWORD_HASHES.indexOf(hash) !== -1) {
-          sessionStorage.setItem("pqcMemberAuth", "true");
-          sessionStorage.removeItem("pqcMemberAttempts");
-          window.location.href = "members-home.html";
+        if (LOCAL_PASSWORD_HASHES.indexOf(hash) !== -1) {
+          grantAccess();
           return;
         }
 
-        attemptsUsed += 1;
-        sessionStorage.setItem("pqcMemberAttempts", String(attemptsUsed));
-        passwordInput.value = "";
-        passwordInput.focus();
+        submitBtn.disabled = true;
+        errorEl.textContent = "";
 
-        if (attemptsUsed >= MAX_ATTEMPTS) {
-          lockOut();
-        } else {
-          errorEl.textContent = "Incorrect password. Please try again.";
-          updateAttemptsDisplay();
-        }
+        fetch(MEMBERS_GATE_ENDPOINT + "?hash=" + encodeURIComponent(hash))
+          .then(function (response) { return response.json(); })
+          .then(function (result) {
+            submitBtn.disabled = false;
+            if (!result.ok) throw new Error(result.error || "Unknown error");
+            if (result.valid) {
+              grantAccess();
+            } else {
+              registerIncorrectAttempt();
+            }
+          })
+          .catch(function () {
+            submitBtn.disabled = false;
+            // A failed check here (e.g. offline) is not the same as a
+            // wrong password -- don't burn one of their 5 attempts on it.
+            errorEl.textContent = "Unable to verify password right now. Please check your connection and try again.";
+          });
       }).catch(function () {
         errorEl.textContent = "Unable to verify password in this browser. Please try a different browser.";
       });

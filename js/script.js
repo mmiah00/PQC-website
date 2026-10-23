@@ -137,6 +137,7 @@ if (questionSubmitForm) {
       const result = await response.json();
       if (!result.ok) throw new Error(result.error || "Unknown error");
 
+      questionSubmitForm.reset();
       questionSubmitForm.hidden = true;
       const success = document.getElementById("question-submit-success");
       if (success) success.hidden = false;
@@ -150,6 +151,15 @@ if (questionSubmitForm) {
       submitBtn.textContent = "Submit Question";
     }
   });
+
+  const submitAnotherBtn = document.getElementById("question-submit-another");
+  if (submitAnotherBtn) {
+    submitAnotherBtn.addEventListener("click", () => {
+      const success = document.getElementById("question-submit-success");
+      if (success) success.hidden = true;
+      questionSubmitForm.hidden = false;
+    });
+  }
 }
 
 // Interview Question Bank flashcards (members-home.html) -- fetches
