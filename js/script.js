@@ -189,6 +189,7 @@ if (flashcardEl) {
   const reportStatusEl = document.getElementById("flashcard-report-status");
   const reportSubmitBtn = document.getElementById("flashcard-report-submit");
   const reportCancelBtn = document.getElementById("flashcard-report-cancel");
+  const filterResetBtn = document.getElementById("flashcard-filter-reset");
 
   let allQuestions = [];
   let filteredQuestions = [];
@@ -257,20 +258,36 @@ if (flashcardEl) {
 
   // Role, topic, and company filters all stack together (AND logic), same
   // pattern as the Opportunities job filters.
+  function selectedValues(selectEl) {
+    return Array.from(selectEl.selectedOptions).map((o) => o.value);
+  }
+
+  // Each filter is multi-select: picking several roles (say) matches any
+  // of them (OR), while the three filters still stack together (AND). No
+  // selection in a filter means "don't restrict by this" (matches all).
   function applyFilters() {
-    const role = roleFilter.value;
-    const topic = topicFilter.value;
-    const company = companyFilter.value;
+    const roles = selectedValues(roleFilter);
+    const topics = selectedValues(topicFilter);
+    const companies = selectedValues(companyFilter);
 
     filteredQuestions = allQuestions.filter((q) => {
-      const matchesRole = role === "all" || q.role === role;
-      const matchesTopic = topic === "all" || (q.topics || []).includes(topic);
-      const matchesCompany = company === "all" || q.company === company;
+      const matchesRole = !roles.length || roles.includes(q.role);
+      const matchesTopic = !topics.length || (q.topics || []).some((t) => topics.includes(t));
+      const matchesCompany = !companies.length || companies.includes(q.company);
       return matchesRole && matchesTopic && matchesCompany;
     });
     currentIndex = 0;
     isFlipped = false;
     renderCard();
+  }
+
+  function resetFilters() {
+    [roleFilter, topicFilter, companyFilter].forEach((select) => {
+      Array.from(select.options).forEach((option) => {
+        option.selected = false;
+      });
+    });
+    applyFilters();
   }
 
   function populateCompanyFilter() {
@@ -402,6 +419,7 @@ if (flashcardEl) {
   roleFilter.addEventListener("change", applyFilters);
   topicFilter.addEventListener("change", applyFilters);
   companyFilter.addEventListener("change", applyFilters);
+  filterResetBtn.addEventListener("click", resetFilters);
 
   statusEl.textContent = "Loading questions...";
   fetch(QUESTION_FORM_ENDPOINT)
@@ -767,6 +785,87 @@ if (eventsHighlightScroll && eventsHighlightPrev && eventsHighlightNext) {
   eventsHighlightNext.addEventListener("click", () => {
     eventsHighlightScroll.scrollBy({ left: eventsHighlightScroll.clientWidth, behavior: "smooth" });
   });
+}
+
+// Recruiting Guide tab (members-home.html) -- lists the files in the
+// shared Drive folder via its own Apps Script (see
+// apps-script/recruiting-guide/Code.gs) and lets members preview one in a
+// modal (download/open, scroll, or close) without leaving the site.
+const RECRUITING_GUIDE_ENDPOINT =
+  "https://script.google.com/macros/s/AKfycbyb0uNrcRkwXdjLg21AZCf05AsKixnVZq-qldVs8drBFUEk242w46O8UVDfHPfx2LLc/exec";
+
+const recruitingGuideGrid = document.getElementById("recruiting-guide-grid");
+if (recruitingGuideGrid) {
+  const statusEl = document.getElementById("recruiting-guide-status");
+  const modalEl = document.getElementById("file-preview-modal");
+  const backdropEl = document.getElementById("file-preview-backdrop");
+  const closeBtn = document.getElementById("file-preview-close");
+  const iframeEl = document.getElementById("file-preview-iframe");
+  const titleEl = document.getElementById("file-preview-title");
+  const downloadEl = document.getElementById("file-preview-download");
+
+  function fileIcon(mimeType) {
+    if (mimeType.indexOf("spreadsheet") !== -1 || mimeType.indexOf("ms-excel") !== -1) return "\u{1F4CA}";
+    if (mimeType.indexOf("presentation") !== -1 || mimeType.indexOf("powerpoint") !== -1) return "\u{1F4FD}️";
+    if (mimeType.indexOf("wordprocessingml") !== -1 || mimeType === "application/msword" || mimeType === "application/vnd.google-apps.document") {
+      return "\u{1F4DD}";
+    }
+    if (mimeType === "application/pdf") return "\u{1F4C4}";
+    if (mimeType.indexOf("image/") === 0) return "\u{1F5BC}️";
+    return "\u{1F4C1}";
+  }
+
+  function openFilePreview(file) {
+    titleEl.textContent = file.name;
+    iframeEl.src = file.previewUrl;
+    downloadEl.href = file.downloadUrl;
+    downloadEl.textContent = file.mimeType.indexOf("google-apps") !== -1 ? "Open In Drive" : "Download";
+    modalEl.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeFilePreview() {
+    modalEl.hidden = true;
+    iframeEl.src = "";
+    document.body.style.overflow = "";
+  }
+
+  backdropEl.addEventListener("click", closeFilePreview);
+  closeBtn.addEventListener("click", closeFilePreview);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !modalEl.hidden) closeFilePreview();
+  });
+
+  function renderFiles(files) {
+    if (!files.length) {
+      statusEl.textContent = "No files found in the folder yet.";
+      return;
+    }
+    statusEl.textContent = "";
+    files.forEach((file) => {
+      const card = document.createElement("button");
+      card.type = "button";
+      card.className = "recruiting-guide-file";
+      card.innerHTML = `
+        <span class="recruiting-guide-file-icon">${fileIcon(file.mimeType)}</span>
+        <span class="recruiting-guide-file-name"></span>
+      `;
+      card.querySelector(".recruiting-guide-file-name").textContent = file.name;
+      card.addEventListener("click", () => openFilePreview(file));
+      recruitingGuideGrid.appendChild(card);
+    });
+  }
+
+  statusEl.textContent = "Loading files...";
+  fetch(RECRUITING_GUIDE_ENDPOINT)
+    .then((res) => res.json())
+    .then((result) => {
+      if (!result.ok) throw new Error(result.error || "Unknown error");
+      renderFiles(result.files || []);
+    })
+    .catch(() => {
+      statusEl.textContent = "Couldn't load files right now. Please try the folder link above.";
+    });
 }
 
 // Note: the members.html password-gate logic lives inline in that page

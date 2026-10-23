@@ -11984,9 +11984,8 @@
 
           <div class="flashcard-controls">
             <div class="flashcard-filter-group">
-              <label for="flashcard-role-filter">Role</label>
-              <select id="flashcard-role-filter">
-                <option value="all">All Roles</option>
+              <label for="flashcard-role-filter">Role <span class="flashcard-filter-hint">(select multiple)</span></label>
+              <select id="flashcard-role-filter" multiple size="4">
                 <option value="Quant Researcher Intern">Quant Researcher Intern</option>
                 <option value="Quant Researcher (Full-Time)">Quant Researcher (Full-Time)</option>
                 <option value="Quant Trader Intern">Quant Trader Intern</option>
@@ -11997,9 +11996,8 @@
               </select>
             </div>
             <div class="flashcard-filter-group">
-              <label for="flashcard-topic-filter">Topic</label>
-              <select id="flashcard-topic-filter">
-                <option value="all">All Topics</option>
+              <label for="flashcard-topic-filter">Topic <span class="flashcard-filter-hint">(select multiple)</span></label>
+              <select id="flashcard-topic-filter" multiple size="4">
                 <option value="mental-math">Mental Math</option>
                 <option value="probability">Probability</option>
                 <option value="statistics">Statistics</option>
@@ -12011,12 +12009,14 @@
               </select>
             </div>
             <div class="flashcard-filter-group">
-              <label for="flashcard-company-filter">Company</label>
-              <select id="flashcard-company-filter">
-                <option value="all">All Companies</option>
-              </select>
+              <label for="flashcard-company-filter">Company <span class="flashcard-filter-hint">(select multiple)</span></label>
+              <select id="flashcard-company-filter" multiple size="4"></select>
             </div>
           </div>
+
+          <p class="flashcard-filter-reset-row">
+            <button type="button" class="flashcard-report-link" id="flashcard-filter-reset">Reset Filters</button>
+          </p>
 
           <div id="flashcard-status" class="flashcard-status"></div>
 
@@ -12545,15 +12545,34 @@
       </div>
 
       <div class="team-panel" id="panel-recruiting-guide">
-        <div class="card" style="max-width:760px;margin:0 auto;text-align:center;">
-          <h3>Recruiting Guide</h3>
-          <p>Our shared drive of recruiting materials, resume and interview cheatsheets, networking message outlines, and past interview problems collected by members, all in one place. More coming soon to this tab.</p>
-          <a href="https://drive.google.com/drive/u/1/folders/1_dt-_UggFM14RgD9K089_WWNLfv-HZCC" class="btn btn-primary" target="_blank" rel="noopener">View Recruiting Guide</a>
+        <div style="max-width:900px;margin:0 auto;">
+          <h3 style="text-align:center;">Recruiting Guide</h3>
+          <p style="text-align:center;">Our shared drive of recruiting materials, resume and interview cheatsheets, networking message outlines, and past interview problems collected by members, all in one place. Click a file to preview it.</p>
+          <p style="text-align:center;margin-bottom:20px;">
+            <a href="https://drive.google.com/drive/u/1/folders/1_dt-_UggFM14RgD9K089_WWNLfv-HZCC" class="btn btn-outline" target="_blank" rel="noopener">Open Folder In Google Drive</a>
+          </p>
+          <p id="recruiting-guide-status" class="flashcard-status"></p>
+          <div class="recruiting-guide-grid" id="recruiting-guide-grid"></div>
         </div>
       </div>
 
     </div>
   </section>
+
+  <!-- Recruiting Guide file preview modal -->
+  <div class="file-preview-modal" id="file-preview-modal" hidden>
+    <div class="file-preview-backdrop" id="file-preview-backdrop"></div>
+    <div class="file-preview-dialog" role="dialog" aria-modal="true" aria-label="File preview">
+      <div class="file-preview-header">
+        <span class="file-preview-title" id="file-preview-title"></span>
+        <div class="file-preview-actions">
+          <a href="#" id="file-preview-download" class="btn btn-outline" target="_blank" rel="noopener">Download</a>
+          <button type="button" id="file-preview-close" class="file-preview-close" aria-label="Close preview">&times;</button>
+        </div>
+      </div>
+      <iframe id="file-preview-iframe" class="file-preview-iframe" title="File preview"></iframe>
+    </div>
+  </div>
 
 </main>
 
