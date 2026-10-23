@@ -29,8 +29,13 @@
 //
 // To get the responses as an .xlsx file at any time: open the Sheet,
 // File > Download > Microsoft Excel (.xlsx).
+//
+// Adding "Solution" to an existing sheet: the "setup" function only adds
+// the header row once, on a brand-new sheet. If your sheet already has
+// data, just type "Solution" into cell I1 yourself (one time).
 
 const SHEET_NAME = "Responses";
+const REPORTS_SHEET_NAME = "Reports";
 const DRIVE_FOLDER_NAME = "PQC Submitted Question Images";
 
 function setup() {
@@ -45,6 +50,7 @@ function setup() {
       "Question",
       "Topics",
       "Image Links",
+      "Solution",
     ]);
   }
   getOrCreateFolder_();
@@ -57,6 +63,16 @@ function getSheet_() {
   return sheet;
 }
 
+function getReportsSheet_() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  let sheet = ss.getSheetByName(REPORTS_SHEET_NAME);
+  if (!sheet) {
+    sheet = ss.insertSheet(REPORTS_SHEET_NAME);
+    sheet.appendRow(["Timestamp", "Company", "Role", "Question", "Issue"]);
+  }
+  return sheet;
+}
+
 function getOrCreateFolder_() {
   const folders = DriveApp.getFoldersByName(DRIVE_FOLDER_NAME);
   if (folders.hasNext()) return folders.next();
@@ -66,6 +82,26 @@ function getOrCreateFolder_() {
 function doPost(e) {
   try {
     const data = JSON.parse(e.postData.contents);
+
+    // Admin utility, not used by the public form: finds the row whose
+    // Question cell exactly matches data.question and sets its Solution
+    // cell, for backfilling solutions onto already-submitted questions.
+    if (data.mode === "updateSolution") {
+      return respond_(updateSolution_(data.question, data.solution || ""));
+    }
+
+    // "Report a mistake" button on the Interview Question Bank flashcards:
+    // logs a flagged card to its own Reports sheet for the board to review.
+    if (data.mode === "report") {
+      getReportsSheet_().appendRow([
+        new Date(),
+        data.company || "",
+        data.role || "",
+        data.question || "",
+        data.issue || "",
+      ]);
+      return respond_({ ok: true });
+    }
 
     const imageLinks = (data.images || []).map(function (img) {
       const blob = Utilities.newBlob(
@@ -87,16 +123,25 @@ function doPost(e) {
       data.question || "",
       (data.topics || []).join(", "),
       imageLinks.join(", "),
+      data.solution || "",
     ]);
 
-    return ContentService.createTextOutput(
-      JSON.stringify({ ok: true })
-    ).setMimeType(ContentService.MimeType.JSON);
+    return respond_({ ok: true });
   } catch (err) {
-    return ContentService.createTextOutput(
-      JSON.stringify({ ok: false, error: String(err) })
-    ).setMimeType(ContentService.MimeType.JSON);
+    return respond_({ ok: false, error: String(err) });
   }
+}
+
+function updateSolution_(question, solution) {
+  const sheet = getSheet_();
+  const values = sheet.getDataRange().getValues();
+  for (let r = 1; r < values.length; r++) {
+    if (values[r][5] === question) {
+      sheet.getRange(r + 1, 9).setValue(solution); // column I = Solution
+      return { ok: true, updated: true };
+    }
+  }
+  return { ok: true, updated: false };
 }
 
 function doGet(e) {
@@ -112,15 +157,16 @@ function doGet(e) {
           round: row[4],
           question: row[5],
           topics: row[6] ? String(row[6]).split(",").map(function (t) { return t.trim(); }) : [],
+          solution: row[8] || "",
         };
       });
 
-    return ContentService.createTextOutput(
-      JSON.stringify({ ok: true, questions: questions })
-    ).setMimeType(ContentService.MimeType.JSON);
+    return respond_({ ok: true, questions: questions });
   } catch (err) {
-    return ContentService.createTextOutput(
-      JSON.stringify({ ok: false, error: String(err) })
-    ).setMimeType(ContentService.MimeType.JSON);
+    return respond_({ ok: false, error: String(err) });
   }
+}
+
+function respond_(obj) {
+  return ContentService.createTextOutput(JSON.stringify(obj)).setMimeType(ContentService.MimeType.JSON);
 }

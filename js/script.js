@@ -125,6 +125,7 @@ if (questionSubmitForm) {
         interviewType: formData.get("interview_type"),
         round: formData.get("round"),
         question: formData.get("question"),
+        solution: formData.get("solution"),
         topics: formData.getAll("topics"),
         images,
       };
@@ -174,19 +175,47 @@ if (flashcardEl) {
   const companyFilter = document.getElementById("flashcard-company-filter");
   const companyEl = document.getElementById("flashcard-company");
   const roleEl = document.getElementById("flashcard-role");
+  const sideLabelEl = document.getElementById("flashcard-side-label");
   const questionEl = document.getElementById("flashcard-question");
+  const hintEl = document.getElementById("flashcard-hint");
   const navEl = document.getElementById("flashcard-nav");
   const prevBtn = document.getElementById("flashcard-prev");
   const nextBtn = document.getElementById("flashcard-next");
+  const reportToggleEl = document.getElementById("flashcard-report-toggle");
+  const reportOpenBtn = document.getElementById("flashcard-report-open");
+  const reportPanelEl = document.getElementById("flashcard-report-panel");
+  const reportContextEl = document.getElementById("flashcard-report-context");
+  const reportTextEl = document.getElementById("flashcard-report-text");
+  const reportStatusEl = document.getElementById("flashcard-report-status");
+  const reportSubmitBtn = document.getElementById("flashcard-report-submit");
+  const reportCancelBtn = document.getElementById("flashcard-report-cancel");
 
   let allQuestions = [];
   let filteredQuestions = [];
   let currentIndex = 0;
+  let isFlipped = false;
+
+  function hasSolution(card) {
+    return Boolean(card.solution && String(card.solution).trim());
+  }
+
+  // Most text wraps its math in "$...$" (e.g. mixed prose like "a graph
+  // $g$ with..."), which auto-render below picks up on its own. Some
+  // (mostly short mental-math ones, e.g. "17 \times 18") are pure LaTeX
+  // with no "$" at all -- for those, wrap the whole thing so it still
+  // renders as math instead of showing raw LaTeX source.
+  function wrapLatexIfNeeded(text) {
+    const hasDelimiters = text.includes("$");
+    const looksLikeLatex = /\\[a-zA-Z]+/.test(text);
+    return !hasDelimiters && looksLikeLatex ? `$${text}$` : text;
+  }
 
   function renderCard() {
+    closeReportPanel();
     if (!filteredQuestions.length) {
       flashcardEl.hidden = true;
       navEl.hidden = true;
+      reportToggleEl.hidden = true;
       statusEl.textContent = allQuestions.length
         ? "No questions match these filters."
         : "No questions submitted yet. Be the first with Submit A Question!";
@@ -194,14 +223,27 @@ if (flashcardEl) {
     }
     flashcardEl.hidden = false;
     navEl.hidden = false;
+    reportToggleEl.hidden = false;
     const card = filteredQuestions[currentIndex];
+    const cardHasSolution = hasSolution(card);
+    const showingSolution = isFlipped && cardHasSolution;
+
     companyEl.textContent = card.company || "Unknown Company";
     roleEl.textContent = card.role || "Unknown Role";
-    questionEl.textContent = card.question;
+    sideLabelEl.hidden = !showingSolution;
+    questionEl.textContent = wrapLatexIfNeeded(showingSolution ? card.solution : card.question);
     statusEl.textContent = `Card ${currentIndex + 1} of ${filteredQuestions.length}`;
 
-    // Questions can contain LaTeX (e.g. "$n \leq 200$"); render it as math
-    // instead of showing the raw source, if KaTeX's auto-render loaded.
+    if (showingSolution) {
+      hintEl.textContent = "Click, or press Enter, for the next question";
+    } else if (cardHasSolution) {
+      hintEl.textContent = "Click, or press Enter, to reveal the solution";
+    } else {
+      hintEl.textContent = "Click, or use the arrow keys, to browse questions";
+    }
+
+    // Render LaTeX as math instead of showing the raw source, if KaTeX's
+    // auto-render loaded.
     if (window.renderMathInElement) {
       renderMathInElement(questionEl, {
         delimiters: [
@@ -227,6 +269,7 @@ if (flashcardEl) {
       return matchesRole && matchesTopic && matchesCompany;
     });
     currentIndex = 0;
+    isFlipped = false;
     renderCard();
   }
 
@@ -244,24 +287,41 @@ if (flashcardEl) {
   }
 
   // Both directions wrap around (circular): past the last card goes back
-  // to the first, and back from the first goes to the last.
+  // to the first, and back from the first goes to the last. Explicit
+  // prev/next (buttons or arrow keys) always lands on the question side.
   function showNextCard() {
     if (!filteredQuestions.length) return;
     currentIndex = (currentIndex + 1) % filteredQuestions.length;
+    isFlipped = false;
     renderCard();
   }
 
   function showPrevCard() {
     if (!filteredQuestions.length) return;
     currentIndex = (currentIndex - 1 + filteredQuestions.length) % filteredQuestions.length;
+    isFlipped = false;
     renderCard();
   }
 
-  flashcardEl.addEventListener("click", showNextCard);
+  // Clicking the card (or pressing Enter/Space while it's focused) first
+  // flips to the solution, if there is one; pressing again from there (or
+  // right away, when there's no solution) advances to the next question.
+  function activateCard() {
+    if (!filteredQuestions.length) return;
+    const card = filteredQuestions[currentIndex];
+    if (!isFlipped && hasSolution(card)) {
+      isFlipped = true;
+      renderCard();
+    } else {
+      showNextCard();
+    }
+  }
+
+  flashcardEl.addEventListener("click", activateCard);
   flashcardEl.addEventListener("keydown", (e) => {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
-      showNextCard();
+      activateCard();
     }
   });
   prevBtn.addEventListener("click", showPrevCard);
@@ -281,6 +341,62 @@ if (flashcardEl) {
       e.preventDefault();
       showNextCard();
     }
+  });
+
+  function closeReportPanel() {
+    reportPanelEl.hidden = true;
+    reportTextEl.value = "";
+    reportStatusEl.textContent = "";
+  }
+
+  reportOpenBtn.addEventListener("click", () => {
+    const card = filteredQuestions[currentIndex];
+    if (!card) return;
+    const preview = card.question.length > 120 ? `${card.question.slice(0, 120)}...` : card.question;
+    reportContextEl.textContent = `Reporting an issue with: ${card.company || "Unknown Company"} · ${card.role || "Unknown Role"} -- "${preview}"`;
+    reportStatusEl.textContent = "";
+    reportTextEl.value = "";
+    reportPanelEl.hidden = false;
+    reportTextEl.focus();
+  });
+
+  reportCancelBtn.addEventListener("click", closeReportPanel);
+
+  reportSubmitBtn.addEventListener("click", () => {
+    const card = filteredQuestions[currentIndex];
+    const issue = reportTextEl.value.trim();
+    if (!card) return;
+    if (!issue) {
+      reportStatusEl.textContent = "Please describe what's wrong before submitting.";
+      return;
+    }
+
+    reportSubmitBtn.disabled = true;
+    reportStatusEl.textContent = "Submitting...";
+
+    fetch(QUESTION_FORM_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({
+        mode: "report",
+        company: card.company,
+        role: card.role,
+        question: card.question,
+        issue,
+      }),
+    })
+      .then((res) => res.json())
+      .then((result) => {
+        if (!result.ok) throw new Error(result.error || "Unknown error");
+        reportStatusEl.textContent = "Thanks, your report was submitted.";
+        setTimeout(closeReportPanel, 1500);
+      })
+      .catch(() => {
+        reportStatusEl.textContent = "Something went wrong submitting your report. Please try again.";
+      })
+      .finally(() => {
+        reportSubmitBtn.disabled = false;
+      });
   });
 
   roleFilter.addEventListener("change", applyFilters);

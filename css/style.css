@@ -947,6 +947,23 @@ img { max-width: 100%; display: block; }
   color: #5a3a38;
 }
 
+.flashcard-side-label {
+  display: inline-block;
+  margin: 0;
+  padding: 3px 12px;
+  background: #f1dede;
+  color: #500509;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 999px;
+}
+
+.flashcard-side-label[hidden] {
+  display: none;
+}
+
 .flashcard-question {
   font-family: var(--font-head);
   font-size: 1.8rem;
@@ -974,6 +991,25 @@ img { max-width: 100%; display: block; }
 }
 
 .flashcard-nav[hidden] { display: none; }
+
+.flashcard-report-toggle {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.flashcard-report-link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.flashcard-report-link:hover {
+  color: var(--maroon-light);
+}
 
 /* ---------- FAQ / accordion ---------- */
 

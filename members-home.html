@@ -12022,13 +12022,29 @@
 
           <div id="flashcard" class="flashcard" tabindex="0" role="button" aria-label="Click for the next question" hidden>
             <p class="flashcard-meta"><span id="flashcard-company"></span> &middot; <span id="flashcard-role"></span></p>
+            <p class="flashcard-side-label" id="flashcard-side-label" hidden>Solution</p>
             <p class="flashcard-question" id="flashcard-question"></p>
-            <p class="flashcard-hint">Click, or use the arrow keys, to browse questions</p>
+            <p class="flashcard-hint" id="flashcard-hint">Click, or use the arrow keys, to browse questions</p>
           </div>
 
           <div class="flashcard-nav" id="flashcard-nav" hidden>
             <button type="button" class="btn btn-outline" id="flashcard-prev">&larr; Previous</button>
             <button type="button" class="btn btn-outline" id="flashcard-next">Next &rarr;</button>
+          </div>
+
+          <p class="flashcard-report-toggle" id="flashcard-report-toggle" hidden>
+            <button type="button" class="flashcard-report-link" id="flashcard-report-open">Report a mistake on this card</button>
+          </p>
+
+          <div class="card contact-form" id="flashcard-report-panel" hidden style="max-width:640px;margin:16px auto 0;text-align:left;">
+            <h4 style="margin-bottom:8px;">Report A Mistake</h4>
+            <p class="form-note" id="flashcard-report-context"></p>
+            <textarea id="flashcard-report-text" placeholder="What's wrong with this card? (typo, wrong answer, unclear wording, etc.)"></textarea>
+            <p class="form-note" id="flashcard-report-status" role="alert"></p>
+            <div style="display:flex;gap:12px;">
+              <button type="button" class="btn btn-primary" id="flashcard-report-submit">Submit Report</button>
+              <button type="button" class="btn btn-outline" id="flashcard-report-cancel">Cancel</button>
+            </div>
           </div>
         </div>
       </div>
@@ -12081,6 +12097,11 @@
               <label for="q-question">The Question</label>
               <p class="form-note">If the question includes any equations, please write them in LaTeX (e.g. <code>$n \leq 200$</code>) so they display properly in the question bank.</p>
               <textarea id="q-question" name="question" placeholder="Write out the question as best you remember it... Use LaTeX for any equations, e.g. $n \leq 200$" required></textarea>
+            </div>
+            <div>
+              <label for="q-solution">Solution (optional)</label>
+              <p class="form-note">If you know how to solve it, share the solution here. Other members will be able to flip the card to see it.</p>
+              <textarea id="q-solution" name="solution" placeholder="Walk through the solution, if you know it... LaTeX works here too."></textarea>
             </div>
             <div>
               <label for="q-images">Screenshots / Images (optional)</label>
