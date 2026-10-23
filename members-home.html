@@ -60,6 +60,7 @@
         <button class="team-tab-btn" data-target="panel-submit-question">Submit A Question</button>
         <button class="team-tab-btn" data-target="panel-readings">Suggested Readings</button>
         <button class="team-tab-btn" data-target="panel-linkedin">LinkedIn Contacts</button>
+        <button class="team-tab-btn" data-target="panel-recruiting-guide">Recruiting Guide</button>
       </div>
 
       <div class="team-panel active" id="members-default-panel">
@@ -12022,7 +12023,12 @@
           <div id="flashcard" class="flashcard" tabindex="0" role="button" aria-label="Click for the next question" hidden>
             <p class="flashcard-meta"><span id="flashcard-company"></span> &middot; <span id="flashcard-role"></span></p>
             <p class="flashcard-question" id="flashcard-question"></p>
-            <p class="flashcard-hint">Click for the next question &rarr;</p>
+            <p class="flashcard-hint">Click, or use the arrow keys, to browse questions</p>
+          </div>
+
+          <div class="flashcard-nav" id="flashcard-nav" hidden>
+            <button type="button" class="btn btn-outline" id="flashcard-prev">&larr; Previous</button>
+            <button type="button" class="btn btn-outline" id="flashcard-next">Next &rarr;</button>
           </div>
         </div>
       </div>
@@ -12514,6 +12520,14 @@
         <div class="card" style="max-width:760px;margin:0 auto;text-align:center;">
           <h3>LinkedIn Contacts</h3>
           <p>A directory of PQC alumni and industry contacts who have agreed to connect with current members on LinkedIn. Placeholder list, coming soon.</p>
+        </div>
+      </div>
+
+      <div class="team-panel" id="panel-recruiting-guide">
+        <div class="card" style="max-width:760px;margin:0 auto;text-align:center;">
+          <h3>Recruiting Guide</h3>
+          <p>Our shared drive of recruiting materials, resume and interview cheatsheets, networking message outlines, and past interview problems collected by members, all in one place. More coming soon to this tab.</p>
+          <a href="https://drive.google.com/drive/u/1/folders/1_dt-_UggFM14RgD9K089_WWNLfv-HZCC" class="btn btn-primary" target="_blank" rel="noopener">View Recruiting Guide</a>
         </div>
       </div>
 

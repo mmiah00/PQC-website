@@ -175,6 +175,9 @@ if (flashcardEl) {
   const companyEl = document.getElementById("flashcard-company");
   const roleEl = document.getElementById("flashcard-role");
   const questionEl = document.getElementById("flashcard-question");
+  const navEl = document.getElementById("flashcard-nav");
+  const prevBtn = document.getElementById("flashcard-prev");
+  const nextBtn = document.getElementById("flashcard-next");
 
   let allQuestions = [];
   let filteredQuestions = [];
@@ -183,12 +186,14 @@ if (flashcardEl) {
   function renderCard() {
     if (!filteredQuestions.length) {
       flashcardEl.hidden = true;
+      navEl.hidden = true;
       statusEl.textContent = allQuestions.length
         ? "No questions match these filters."
         : "No questions submitted yet. Be the first with Submit A Question!";
       return;
     }
     flashcardEl.hidden = false;
+    navEl.hidden = false;
     const card = filteredQuestions[currentIndex];
     companyEl.textContent = card.company || "Unknown Company";
     roleEl.textContent = card.role || "Unknown Role";
@@ -238,9 +243,17 @@ if (flashcardEl) {
     });
   }
 
+  // Both directions wrap around (circular): past the last card goes back
+  // to the first, and back from the first goes to the last.
   function showNextCard() {
     if (!filteredQuestions.length) return;
     currentIndex = (currentIndex + 1) % filteredQuestions.length;
+    renderCard();
+  }
+
+  function showPrevCard() {
+    if (!filteredQuestions.length) return;
+    currentIndex = (currentIndex - 1 + filteredQuestions.length) % filteredQuestions.length;
     renderCard();
   }
 
@@ -251,6 +264,25 @@ if (flashcardEl) {
       showNextCard();
     }
   });
+  prevBtn.addEventListener("click", showPrevCard);
+  nextBtn.addEventListener("click", showNextCard);
+
+  // Left/right arrow keys browse cards, but only when not typing in a
+  // form field elsewhere on the page (e.g. the Submit A Question form).
+  document.addEventListener("keydown", (e) => {
+    if (flashcardEl.hidden) return;
+    const activeTag = document.activeElement && document.activeElement.tagName;
+    if (activeTag === "INPUT" || activeTag === "TEXTAREA" || activeTag === "SELECT") return;
+
+    if (e.key === "ArrowLeft") {
+      e.preventDefault();
+      showPrevCard();
+    } else if (e.key === "ArrowRight") {
+      e.preventDefault();
+      showNextCard();
+    }
+  });
+
   roleFilter.addEventListener("change", applyFilters);
   topicFilter.addEventListener("change", applyFilters);
   companyFilter.addEventListener("change", applyFilters);

@@ -919,6 +919,15 @@ img { max-width: 100%; display: block; }
   color: #5a3a38;
 }
 
+.flashcard-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.flashcard-nav[hidden] { display: none; }
+
 /* ---------- FAQ / accordion ---------- */
 
 .accordion-item {
