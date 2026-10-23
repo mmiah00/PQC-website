@@ -1150,6 +1150,21 @@ img { max-width: 100%; display: block; }
   margin-bottom: 10px;
 }
 
+.calendar-event + .calendar-event {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--cream-line);
+}
+
+.calendar-event-flyer {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  margin-top: 12px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
 /* ---------- Timeline (Events / History) ---------- */
 
 .timeline {

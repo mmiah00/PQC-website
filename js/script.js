@@ -446,80 +446,59 @@ if (calGrid) {
   const calPrevBtn = document.getElementById("cal-prev");
   const calNextBtn = document.getElementById("cal-next");
 
-  // Keyed by "YYYY-MM-DD" (month is 1-indexed here for readability). A
+  // Keyed by "YYYY-MM-DD" (month is 1-indexed here for readability). Each
+  // key holds an array of events, since a day can have more than one (e.g.
+  // the GBM and an E-Board interview slot both landing on the 22nd). A
   // multi-day event (like the interview window) is just the same entry
   // repeated under each date in the range, so every day in it lights up.
+  // "image" is optional -- when present, that event's flyer is shown in
+  // the details panel.
   const calendarEvents = {
-    "2026-10-08": {
-      title: "Welcome Picnic",
-      date: "Thursday, October 8, 2026",
-      location: "The Quad near Eckhart Hall",
-      time: "3-5 PM",
-      description: "Kick off the year with a relaxed picnic at The Quad near Eckhart Hall. Enjoy snacks, soft drinks, and a chance to meet fellow PQC members, connect with new faces, and get to know the community before the semester's programming gets underway.",
-    },
-    "2026-10-16": {
-      title: "E-Board Applications Due",
-      date: "Friday, October 16, 2026",
-      location: "Submitted online",
-      time: "11:59 PM CT",
-      description: "Deadline to submit your application for an executive board position. Be sure to submit before 11:59 PM CT.",
-    },
-    "2026-10-21": {
-      title: "E-Board Interviews",
-      date: "October 21-28, 2026",
-      location: "Location TBD",
-      time: "Time TBD",
-      description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
-    },
-    "2026-10-22": {
-      title: "E-Board Interviews",
-      date: "October 21-28, 2026",
-      location: "Location TBD",
-      time: "Time TBD",
-      description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
-    },
-    "2026-10-23": {
-      title: "E-Board Interviews",
-      date: "October 21-28, 2026",
-      location: "Location TBD",
-      time: "Time TBD",
-      description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
-    },
-    "2026-10-24": {
-      title: "E-Board Interviews",
-      date: "October 21-28, 2026",
-      location: "Location TBD",
-      time: "Time TBD",
-      description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
-    },
-    "2026-10-25": {
-      title: "E-Board Interviews",
-      date: "October 21-28, 2026",
-      location: "Location TBD",
-      time: "Time TBD",
-      description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
-    },
-    "2026-10-26": {
-      title: "E-Board Interviews",
-      date: "October 21-28, 2026",
-      location: "Location TBD",
-      time: "Time TBD",
-      description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
-    },
-    "2026-10-27": {
-      title: "E-Board Interviews",
-      date: "October 21-28, 2026",
-      location: "Location TBD",
-      time: "Time TBD",
-      description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
-    },
-    "2026-10-28": {
-      title: "E-Board Interviews",
-      date: "October 21-28, 2026",
-      location: "Location TBD",
-      time: "Time TBD",
-      description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
-    },
+    "2026-10-08": [
+      {
+        title: "Welcome Picnic",
+        date: "Thursday, October 8, 2026",
+        location: "The Quad near Eckhart Hall",
+        time: "3-5 PM",
+        description: "Kick off the year with a relaxed picnic at The Quad near Eckhart Hall. Enjoy snacks, soft drinks, and a chance to meet fellow PQC members, connect with new faces, and get to know the community before the semester's programming gets underway.",
+        image: "assets/picnic-poster.png",
+      },
+    ],
+    "2026-10-16": [
+      {
+        title: "E-Board Applications Due",
+        date: "Friday, October 16, 2026",
+        location: "Submitted online",
+        time: "11:59 PM CT",
+        description: "Deadline to submit your application for an executive board position. Be sure to submit before 11:59 PM CT.",
+      },
+    ],
+    "2026-10-22": [
+      {
+        title: "GBM: Breaking Into Quant",
+        date: "Thursday, October 22, 2026",
+        location: "Eckhart 203",
+        time: "7 PM",
+        description: "Recruiting timelines and personal projects: explore quant recruiting timelines, brainstorm personal project ideas, and learn how to showcase your work on GitHub.",
+        image: "assets/GBM-10-22-26.png",
+      },
+      {
+        title: "E-Board Interviews",
+        date: "October 22-23, 2026",
+        location: "Regenstein Library",
+        time: "Time TBD",
+        description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
+      },
+    ],
+    "2026-10-23": [
+      {
+        title: "E-Board Interviews",
+        date: "October 22-23, 2026",
+        location: "Regenstein Library",
+        time: "Time TBD",
+        description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
+      },
+    ],
   };
 
   const monthNames = [
@@ -537,13 +516,20 @@ if (calGrid) {
   };
 
   const showEventDetails = (key) => {
-    const event = calendarEvents[key];
-    if (!event) return;
-    calDetails.innerHTML = `
-      <h4>${event.title}</h4>
-      <p class="job-meta"><span>${event.date}</span><span>${event.location}</span><span>${event.time}</span></p>
-      <p>${event.description}</p>
-    `;
+    const events = calendarEvents[key];
+    if (!events) return;
+    calDetails.innerHTML = events
+      .map(
+        (event) => `
+      <div class="calendar-event">
+        <h4>${event.title}</h4>
+        <p class="job-meta"><span>${event.date}</span><span>${event.location}</span><span>${event.time}</span></p>
+        <p>${event.description}</p>
+        ${event.image ? `<img src="${event.image}" alt="${event.title} flyer" class="calendar-event-flyer">` : ""}
+      </div>
+    `
+      )
+      .join("");
   };
 
   const renderCalendar = (year, month) => {
@@ -568,7 +554,8 @@ if (calGrid) {
 
       if (calendarEvents[key]) {
         cell.classList.add("has-event");
-        cell.setAttribute("aria-label", `${monthNames[month]} ${day}: ${calendarEvents[key].title}`);
+        const titles = calendarEvents[key].map((e) => e.title).join(", ");
+        cell.setAttribute("aria-label", `${monthNames[month]} ${day}: ${titles}`);
         cell.addEventListener("click", () => {
           calGrid.querySelectorAll(".calendar-day.selected").forEach((el) => el.classList.remove("selected"));
           cell.classList.add("selected");
