@@ -338,6 +338,50 @@ img { max-width: 100%; display: block; }
   flex: 0 0 260px;
 }
 
+/* ---------- Events page highlight carousel ---------- */
+
+.events-highlight-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.events-highlight-wrap .calendar-nav {
+  flex-shrink: 0;
+}
+
+.events-highlight-scroll {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: grab;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: var(--maroon-light) var(--cream-dim);
+}
+
+.events-highlight-scroll:active {
+  cursor: grabbing;
+}
+
+.events-highlight-track {
+  display: flex;
+}
+
+.events-highlight-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.events-highlight-hint {
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  margin-top: 12px;
+}
+
 .card {
   background: #fff;
   border: 1px solid var(--cream-line);
@@ -826,15 +870,16 @@ img { max-width: 100%; display: block; }
 
 .flashcard-controls {
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-end;
   justify-content: center;
-  gap: 16px 24px;
+  gap: 16px;
   margin: 20px 0;
 }
 
 .flashcard-filter-group {
   display: flex;
+  flex: 1 1 0;
+  min-width: 0;
   flex-direction: column;
   gap: 6px;
   align-items: flex-start;
@@ -847,6 +892,8 @@ img { max-width: 100%; display: block; }
 }
 
 .flashcard-controls select {
+  width: 100%;
+  min-width: 0;
   padding: 10px 14px;
   border: 1px solid var(--cream-line);
   border-radius: 8px;
@@ -1160,7 +1207,7 @@ img { max-width: 100%; display: block; }
   display: block;
   width: 100%;
   max-width: 280px;
-  margin-top: 12px;
+  margin: 12px auto 0;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
@@ -1945,6 +1992,14 @@ form.contact-form[hidden] { display: none; }
 /* ---------- Responsive ---------- */
 
 @media (max-width: 860px) {
+  .flashcard-controls {
+    flex-wrap: wrap;
+  }
+
+  .flashcard-filter-group {
+    flex: 1 1 160px;
+  }
+
   .nav-links {
     position: absolute;
     top: 100%;

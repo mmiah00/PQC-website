@@ -616,6 +616,43 @@ if (navGuideScroll && navGuideTrack && window.Lenis) {
   requestAnimationFrame(rafNavGuide);
 }
 
+// Same fluid horizontal scroll, applied to the Events page's event
+// highlight carousel (latest event first, scroll/swipe/arrows to see past
+// ones).
+const eventsHighlightScroll = document.getElementById("events-highlight-scroll");
+const eventsHighlightTrack = document.getElementById("events-highlight-track");
+const eventsHighlightPrev = document.getElementById("events-highlight-prev");
+const eventsHighlightNext = document.getElementById("events-highlight-next");
+
+if (eventsHighlightScroll && eventsHighlightTrack && window.Lenis) {
+  const eventsHighlightLenis = new window.Lenis({
+    wrapper: eventsHighlightScroll,
+    content: eventsHighlightTrack,
+    orientation: "horizontal",
+    gestureOrientation: "both",
+    smoothWheel: true,
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    wheelMultiplier: 1,
+    touchMultiplier: 1.5,
+  });
+
+  const rafEventsHighlight = (time) => {
+    eventsHighlightLenis.raf(time);
+    requestAnimationFrame(rafEventsHighlight);
+  };
+  requestAnimationFrame(rafEventsHighlight);
+}
+
+if (eventsHighlightScroll && eventsHighlightPrev && eventsHighlightNext) {
+  eventsHighlightPrev.addEventListener("click", () => {
+    eventsHighlightScroll.scrollBy({ left: -eventsHighlightScroll.clientWidth, behavior: "smooth" });
+  });
+  eventsHighlightNext.addEventListener("click", () => {
+    eventsHighlightScroll.scrollBy({ left: eventsHighlightScroll.clientWidth, behavior: "smooth" });
+  });
+}
+
 // Note: the members.html password-gate logic lives inline in that page
 // (not here), so it keeps working even if this shared script fails to
 // load for some visitors (a strict ad-blocker, a caching hiccup, etc.).
