@@ -2257,6 +2257,48 @@ body.members-theme .site-footer {
   word-break: break-word;
 }
 
+.recruiting-guide-file-meta {
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+}
+
+.recruiting-guide-folder {
+  background: var(--cream);
+}
+
+.recruiting-guide-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+}
+
+.recruiting-guide-breadcrumb[hidden] {
+  display: none;
+}
+
+.recruiting-guide-breadcrumb-item {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--ink);
+  font: inherit;
+  cursor: default;
+}
+
+button.recruiting-guide-breadcrumb-item {
+  color: var(--maroon-light);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.recruiting-guide-breadcrumb-sep {
+  color: var(--ink-soft);
+}
+
 .file-preview-modal {
   position: fixed;
   inset: 0;

@@ -1,10 +1,12 @@
 // PQC Recruiting Guide file listing.
 //
-// doGet lists the files directly inside a given Google Drive folder (not
-// subfolders) and returns their metadata as JSON: id, name, mimeType,
-// size, modified date, a preview URL (for the in-page viewer), and a
-// download URL where one makes sense. members-home.html's Recruiting
-// Guide tab fetches this to build the file gallery and preview modal.
+// doGet recursively lists a given Google Drive folder's files AND
+// subfolders (and their files, and so on) and returns it as a JSON tree:
+// { id, name, files: [...], folders: [...] }. Each file's metadata is id,
+// name, mimeType, size, modified date, a preview URL (for the in-page
+// viewer), and a download URL where one makes sense. members-home.html's
+// Recruiting Guide tab fetches this to build the file gallery and preview
+// modal, letting members browse into subfolders.
 //
 // Setup:
 //   1. In script.google.com, create a new standalone project (this one
@@ -43,40 +45,57 @@ const GOOGLE_NATIVE_PREVIEW = {
 function doGet(e) {
   try {
     const folder = DriveApp.getFolderById(FOLDER_ID);
-    const iterator = folder.getFiles();
-    const files = [];
-
-    while (iterator.hasNext()) {
-      const file = iterator.next();
-      const mimeType = file.getMimeType();
-      const id = file.getId();
-      const nativeKind = GOOGLE_NATIVE_PREVIEW[mimeType];
-
-      files.push({
-        id: id,
-        name: file.getName(),
-        mimeType: mimeType,
-        size: file.getSize(),
-        modified: file.getLastUpdated(),
-        previewUrl: nativeKind
-          ? "https://docs.google.com/" + nativeKind + "/d/" + id + "/preview"
-          : "https://drive.google.com/file/d/" + id + "/preview",
-        // Native Google Docs/Sheets/Slides don't have a single-format
-        // download URL, so for those we just link to the file itself.
-        downloadUrl: nativeKind
-          ? file.getUrl()
-          : "https://drive.google.com/uc?export=download&id=" + id,
-      });
-    }
-
-    files.sort(function (a, b) {
-      return a.name.localeCompare(b.name);
-    });
-
-    return respond_({ ok: true, files: files });
+    return respond_({ ok: true, folder: listFolder_(folder) });
   } catch (err) {
     return respond_({ ok: false, error: String(err) });
   }
+}
+
+// Recursively describes a folder: its own files, plus each subfolder
+// (recursed the same way), so the site can show nested folders instead of
+// only the files directly inside the top-level Recruiting Guide folder.
+function listFolder_(folder) {
+  const fileIterator = folder.getFiles();
+  const files = [];
+  while (fileIterator.hasNext()) {
+    files.push(fileToJson_(fileIterator.next()));
+  }
+  files.sort(byName_);
+
+  const folderIterator = folder.getFolders();
+  const folders = [];
+  while (folderIterator.hasNext()) {
+    folders.push(listFolder_(folderIterator.next()));
+  }
+  folders.sort(byName_);
+
+  return { id: folder.getId(), name: folder.getName(), files: files, folders: folders };
+}
+
+function fileToJson_(file) {
+  const mimeType = file.getMimeType();
+  const id = file.getId();
+  const nativeKind = GOOGLE_NATIVE_PREVIEW[mimeType];
+
+  return {
+    id: id,
+    name: file.getName(),
+    mimeType: mimeType,
+    size: file.getSize(),
+    modified: file.getLastUpdated(),
+    previewUrl: nativeKind
+      ? "https://docs.google.com/" + nativeKind + "/d/" + id + "/preview"
+      : "https://drive.google.com/file/d/" + id + "/preview",
+    // Native Google Docs/Sheets/Slides don't have a single-format
+    // download URL, so for those we just link to the file itself.
+    downloadUrl: nativeKind
+      ? file.getUrl()
+      : "https://drive.google.com/uc?export=download&id=" + id,
+  };
+}
+
+function byName_(a, b) {
+  return a.name.localeCompare(b.name);
 }
 
 function respond_(obj) {

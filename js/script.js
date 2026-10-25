@@ -797,12 +797,17 @@ const RECRUITING_GUIDE_ENDPOINT =
 const recruitingGuideGrid = document.getElementById("recruiting-guide-grid");
 if (recruitingGuideGrid) {
   const statusEl = document.getElementById("recruiting-guide-status");
+  const breadcrumbEl = document.getElementById("recruiting-guide-breadcrumb");
   const modalEl = document.getElementById("file-preview-modal");
   const backdropEl = document.getElementById("file-preview-backdrop");
   const closeBtn = document.getElementById("file-preview-close");
   const iframeEl = document.getElementById("file-preview-iframe");
   const titleEl = document.getElementById("file-preview-title");
   const downloadEl = document.getElementById("file-preview-download");
+
+  // Path of folder nodes from the root (the Recruiting Guide folder) down
+  // to whichever subfolder the member has clicked into.
+  let folderPath = [];
 
   function fileIcon(mimeType) {
     if (mimeType.indexOf("spreadsheet") !== -1 || mimeType.indexOf("ms-excel") !== -1) return "\u{1F4CA}";
@@ -836,12 +841,68 @@ if (recruitingGuideGrid) {
     if (e.key === "Escape" && !modalEl.hidden) closeFilePreview();
   });
 
-  function renderFiles(files) {
-    if (!files.length) {
-      statusEl.textContent = "No files found in the folder yet.";
+  function renderBreadcrumb() {
+    if (!breadcrumbEl) return;
+    if (folderPath.length < 2) {
+      breadcrumbEl.hidden = true;
+      breadcrumbEl.innerHTML = "";
+      return;
+    }
+    breadcrumbEl.hidden = false;
+    breadcrumbEl.innerHTML = "";
+    folderPath.forEach((node, i) => {
+      if (i > 0) {
+        const sep = document.createElement("span");
+        sep.className = "recruiting-guide-breadcrumb-sep";
+        sep.textContent = "/";
+        breadcrumbEl.appendChild(sep);
+      }
+      const isLast = i === folderPath.length - 1;
+      const crumb = document.createElement(isLast ? "span" : "button");
+      crumb.className = "recruiting-guide-breadcrumb-item";
+      crumb.textContent = node.name;
+      if (!isLast) {
+        crumb.type = "button";
+        crumb.addEventListener("click", () => {
+          folderPath = folderPath.slice(0, i + 1);
+          renderCurrentFolder();
+        });
+      }
+      breadcrumbEl.appendChild(crumb);
+    });
+  }
+
+  function renderCurrentFolder() {
+    const node = folderPath[folderPath.length - 1];
+    recruitingGuideGrid.innerHTML = "";
+    renderBreadcrumb();
+
+    const folders = node.folders || [];
+    const files = node.files || [];
+    if (!folders.length && !files.length) {
+      statusEl.textContent = "No files found in this folder yet.";
       return;
     }
     statusEl.textContent = "";
+
+    folders.forEach((folder) => {
+      const card = document.createElement("button");
+      card.type = "button";
+      card.className = "recruiting-guide-file recruiting-guide-folder";
+      const count = folder.files.length + folder.folders.length;
+      card.innerHTML = `
+        <span class="recruiting-guide-file-icon">\u{1F4C1}</span>
+        <span class="recruiting-guide-file-name"></span>
+        <span class="recruiting-guide-file-meta">${count} item${count === 1 ? "" : "s"}</span>
+      `;
+      card.querySelector(".recruiting-guide-file-name").textContent = folder.name;
+      card.addEventListener("click", () => {
+        folderPath.push(folder);
+        renderCurrentFolder();
+      });
+      recruitingGuideGrid.appendChild(card);
+    });
+
     files.forEach((file) => {
       const card = document.createElement("button");
       card.type = "button";
@@ -861,7 +922,8 @@ if (recruitingGuideGrid) {
     .then((res) => res.json())
     .then((result) => {
       if (!result.ok) throw new Error(result.error || "Unknown error");
-      renderFiles(result.files || []);
+      folderPath = [result.folder];
+      renderCurrentFolder();
     })
     .catch(() => {
       statusEl.textContent = "Couldn't load files right now. Please try the folder link above.";
