@@ -1,5 +1,23 @@
 [
   {
+    "role": "Core Data Engineer",
+    "company": "Flow Traders",
+    "company_type": "Market Makers",
+    "type": "Full-Time",
+    "category": "Quantitative Development",
+    "women_focused": "No",
+    "new_grad": "No",
+    "pay": "",
+    "location": "Amsterdam",
+    "description": "Flow Traders is looking for a Core Data Engineer to own the end-to-end lifecycle of our most fundamental data products, including our Security Master; our reconciled ETF Compositions; high-resolution historical market data; and records of our trades, orders, quotes, and inquiries. High-quality data is the cornerstone of Flow Traders' strategic direction - beyond reducing complexity and BAU for stakeholders across the organization, quality data is a key requirement for our growth of quantitative trading styles.\u200b Specifically, you will craft and execute the blueprint for these products, leveraging our Data Platform to build and monitor automated pipelines which ensure that users across the organization have reliable data at their fingertips when they need it. Further, you will become an expert in these data sets, leveraging that knowledge to optimize our use of the data we have and explore new sources for additional value. Finally, you will constantly collaborate with teams across the organization to ensure that our in-house systems are designed with data in mind, streamline additional data-related workflows, and work with stakeholders to maximize the value they extract from our data.\u200b As the architect and guardian of our most valuable data, you will have a unique opportunity to make your mark on Flow Traders. You will be accountable for delivering these data products at an exceptional level of quality, ensuring that they are not only timely and pristine, but powerful enough to drive Flow Traders' future growth. Ultimately, your work will not only provide highly visible benefits that every division feels every day, but it will also deliver one of the most important building blocks to the firm's strategic growth for the years to come.\u200b",
+    "requirements": "",
+    "source_url": "https://job-boards.greenhouse.io/flowtraders/jobs/8288641",
+    "date_posted": "2026-10-23",
+    "date_scraped": "2026-10-26",
+    "first_seen": "2026-10-26",
+    "slug": "flow-traders-core-data-engineer-c10be2a3"
+  },
+  {
     "role": "Senior Software Engineer - OTCTECH",
     "company": "Flow Traders",
     "company_type": "Market Makers",
@@ -746,7 +764,7 @@
     "women_focused": "No",
     "new_grad": "No",
     "pay": "$253.6",
-    "location": "Massachusetts",
+    "location": "Massachusetts; New York",
     "description": "",
     "requirements": "",
     "source_url": "https://job-boards.eu.greenhouse.io/mangroup/jobs/4737145101",
@@ -1366,24 +1384,6 @@
     "date_scraped": "2026-10-26",
     "first_seen": "2026-09-30",
     "slug": "coinbase-senior-staff-software-engineer-native-mobile-ea168b1a"
-  },
-  {
-    "role": "Software Engineer, CDP - Foundations",
-    "company": "Coinbase",
-    "company_type": "Crypto Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$152,405",
-    "location": "Remote - USA",
-    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. As a Software Engineer on the CDP Foundations team within the Developer group, you'll build the core platform capabilities that enable businesses to launch and scale crypto products. The CDP Foundations team's three pods, Portal and Platform Services, Custodial Foundations, and Fully Disclosed Onboarding and Eligibility, own the foundational experiences and primitives spanning the developer portal, shared customer services, custodial accounts and taxes, and KYC/KYB onboarding and eligibility APIs. You'll design and ship the backend services and APIs that make it easier for partners and their customers to securely access Coinbase's crypto infrastructure. Build, deploy, and maintain scalable, secure, and high-performing backend services in a microservices and distributed architecture Define internal and customer-facing APIs that serve as the building blocks for CDP, prioritizing clean design and a high-quality developer experience Lead end-to-end delivery of features from implementation through deployment and monitoring Strengthen operational excellence across the team by proactively addressing technical debt and driving improvements in reliability and observability Participate in code reviews and on-call rotation, lead incident response, and foster a team environment that welcomes constructive feedback to maintain high code quality standards",
-    "requirements": "2+ years of professional experience building and maintaining production backend services in a microservices or distributed systems environment | Experience designing and shipping internal or customer-facing APIs with a focus on high-quality developer experience and clean interface design | Familiarity deploying and testing in microservice ecosystems, including structured observability and monitoring tooling | Proven ability to communicate technical trade-offs clearly in writing and in live discussions with cross-functional partners | Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality. | Demonstrates the ability to responsibly use generative AI tools and copilots (e.g., LibreChat, Gemini, Glean) in daily workflows, continuously learn as tools evolve, and apply human\u2011in\u2011the\u2011loop practices to deliver business\u2011ready outputs and drive measurable improvements in efficiency, cost, and quality.",
-    "source_url": "https://www.coinbase.com/careers/positions/8241522?gh_jid=8241522",
-    "date_posted": "2026-09-29",
-    "date_scraped": "2026-10-26",
-    "first_seen": "2026-09-30",
-    "slug": "coinbase-software-engineer-cdp-foundations-2343c3fd"
   },
   {
     "role": "Staff Software Engineer, Mobile QA",
@@ -2340,24 +2340,6 @@
     "slug": "coinbase-senior-software-engineer-data-platform-30e17031"
   },
   {
-    "role": "Senior Staff Software Engineer, Data Platform",
-    "company": "Coinbase",
-    "company_type": "Crypto Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$253,895",
-    "location": "Remote - USA",
-    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. As a Senior Staff Software Engineer on the Data Platform team within Platform, you'll define and lead the technical strategy for Coinbase's data infrastructure, spanning ingestion, transformation, warehousing, streaming, and serving systems. This is a foundational role at the intersection of distributed systems, data engineering, and AI-readiness, reporting to the Senior Director of Engineering. You'll set architectural direction, drive multi-quarter roadmaps, and transition the organization from managed-service dependency toward engineering-built, platform-grade infrastructure that powers everything from fraud detection to modern multi-agent AI architectures. Own the technical strategy and architecture for Data Platform, setting direction across data ingestion, transformation, warehousing, streaming, and serving systems while driving engineering-led cost reduction at the infrastructure layer. Architect data infrastructure to natively support AI and ML workloads, ensuring pipelines, data lake systems, and compute can power ML training, feature stores, real-time inference, and multi-agent AI architectures at scale. Drive the evolution to near-real-time data availability, enabling downstream teams across Coinbase to act on fresher data for fraud detection, financial reporting, and analytics. Build alignment and secure commitment from senior leadership and cross-functional partners across product, infrastructure, analytics, ML, privacy, security, and compliance on technical priorities and tradeoffs. Serve as the primary technical voice for Data Platform in org-wide forums including OKR planning, architecture reviews, and long-term infrastructure strategy, while elevating senior engineering talent.",
-    "requirements": "12+ years building and operating large-scale distributed data infrastructure, including streaming platforms, data lakes, batch and real-time processing engines, and query/serving layers. | Record of owning end-to-end technical strategy and architecture for an entire data domain across multiple teams, with demonstrated success transitioning organizations from managed-service dependency toward platform-grade, engineering-built infrastructure. | Deep systems thinking across the full data lifecycle, with ability to reason about performance, reliability, cost, security, and privacy at each layer. | Demonstrated experience designing data systems that support ML training pipelines, feature stores, real-time inference, or AI agent workloads at scale, with familiarity across technologies such as CDC, Kafka, Databricks, Snowflake. | Platform mindset and product-manager orientation toward data infrastructure, focused on reducing friction for developer customers and creating compounding leverage. | Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality.",
-    "source_url": "https://www.coinbase.com/careers/positions/7711287?gh_jid=7711287",
-    "date_posted": "2026-03-12",
-    "date_scraped": "2026-10-26",
-    "first_seen": "2026-09-29",
-    "slug": "coinbase-senior-staff-software-engineer-data-platform-573eedd2"
-  },
-  {
     "role": "Staff Software Engineer, Frontend (Consumer - Advanced Trading)",
     "company": "Coinbase",
     "company_type": "Crypto Trading Firms",
@@ -2374,24 +2356,6 @@
     "date_scraped": "2026-10-26",
     "first_seen": "2026-09-29",
     "slug": "coinbase-staff-software-engineer-frontend-consumer-advanced-trading-8847492b"
-  },
-  {
-    "role": "Senior Staff Software Engineer, Core Automation",
-    "company": "Coinbase",
-    "company_type": "Crypto Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$253,895",
-    "location": "Remote - USA",
-    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. As a Senior Staff Software Engineer on the Core Automation team within Platform, you'll architect and build the Agentic AI systems that are reimagining how Coinbase delivers customer support and manages compliance at scale. This team is focused on automating high-volume operational processes with AI, then building the primitives and orchestration platform that let every domain at Coinbase leverage those capabilities. You'll own the technical vision for production AI systems that directly improve customer experience, strengthen compliance posture, and drive outsized efficiency gains. Own the design and implementation of Agentic AI systems powering Coinbase's customer support and compliance automation Architect a reusable platform of primitives, orchestration tools, and interfaces that enable other teams to adopt Agentic AI for their domains Drive cross-functional alignment with product, compliance, and operations stakeholders to translate business needs into scalable technical solutions Lead technical strategy for getting LLM-based applications from prototype to production, including grounding, hallucination reduction, and reliability at scale Mentor engineers across the team on system design, coding standards, and AI/ML best practices",
-    "requirements": "12+ years of backend software engineering experience, with deep proficiency in Golang or similar systems languages | Proven track record shipping LLM-based or Agentic AI applications to production, including measurable improvements in grounding and hallucination reduction | Demonstrated ability to architect distributed systems handling massive scale, with experience navigating ambiguous problem spaces to deliver high-impact solutions | Experience partnering with non-technical stakeholders (compliance, operations, customer support) to define requirements and drive adoption of technical platforms | Track record of influencing technical direction across multiple teams and mentoring senior engineers | Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality. | Pay Transparency Notice: Base salary varies by location (see range below). Total compensation may also include equity and bonus eligibility, and benefits (medical, dental, vision, 401(k)).",
-    "source_url": "https://www.coinbase.com/careers/positions/7580292?gh_jid=7580292",
-    "date_posted": "2026-01-30",
-    "date_scraped": "2026-10-26",
-    "first_seen": "2026-09-29",
-    "slug": "coinbase-senior-staff-software-engineer-core-automation-5f936a0b"
   },
   {
     "role": "Senior Software Engineer (EAA)",
@@ -6246,24 +6210,6 @@
     "slug": "virtu-financial-software-engineer-desktop-frontend-developer-c-winform-9b798e5b"
   },
   {
-    "role": "Software Engineer, Technology",
-    "company": "Point72",
-    "company_type": "Quantitative Hedge Funds",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "Bengaluru, India",
-    "description": "We are looking for an experienced professional to work as part of the Finance Technology team. In addition to tactical development, you will be responsible for delivering and creating programs to modernize and scale the platform through technology upgrades, cloud technology adoption, and re-architecting business processes. You will work alongside world-class engineers, partnering directly with Finance stakeholders to understand existing workflows and deliver scalable replacements. This position offers deep domain exposure across FP&A, investor reporting, and compensation, and contributes to the modernization roadmap. Specifically, you will: Build software applications and deliver software enhancements and projects supporting finance and investor processing. Work closely with business stakeholders to develop software solutions using test-driven and agile software development methodologies. Be responsible for system upgrades and features supporting resiliency and capacity improvements, automation and controls, and integration with internal and external vendors and services. Contributing to architecture of core platforms and accelerating modernizing leveraging AI tools Work with DevOps teams to manage and resolve operational issues and leverage CI/CD platforms while following DevOps practices within the team and projects. Continuously improve the platforms using the latest technologies and software development ideas. Participate in initiatives to transition select applications to cloud platforms, enhancing stability, scalability and performance of the existing platform. Develop close working relationships and collaborate with other technology teams to deliver cross-departmental initiatives.",
-    "requirements": "",
-    "source_url": "https://boards.greenhouse.io/point72/jobs/8372908002?gh_jid=8372908002",
-    "date_posted": "2026-04-21",
-    "date_scraped": "2026-10-26",
-    "first_seen": "2026-08-11",
-    "slug": "point72-software-engineer-technology-d08bfbca"
-  },
-  {
     "role": "Quantitative Developer - Systematic",
     "company": "Man Group",
     "company_type": "Quantitative Hedge Funds",
@@ -6640,24 +6586,6 @@
     "date_scraped": "2026-10-26",
     "first_seen": "2026-08-11",
     "slug": "point72-software-engineer-trading-and-compliance-technology-b8a517c3"
-  },
-  {
-    "role": "Software Engineer, Macro Middle Office",
-    "company": "Point72",
-    "company_type": "Quantitative Hedge Funds",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "Bengaluru, India",
-    "description": "",
-    "requirements": "",
-    "source_url": "https://boards.greenhouse.io/point72/jobs/8377024002?gh_jid=8377024002",
-    "date_posted": "2026-01-20",
-    "date_scraped": "2026-10-26",
-    "first_seen": "2026-08-11",
-    "slug": "point72-software-engineer-macro-middle-office-fc0741a7"
   },
   {
     "role": "Trader/Quant Analyst",
