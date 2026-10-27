@@ -18,24 +18,6 @@
     "slug": "jump-trading-campus-quantitative-researcher-trading-team-phd-postdoc-f-c4b76c96"
   },
   {
-    "role": "Core Data Engineer",
-    "company": "Flow Traders",
-    "company_type": "Market Makers",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "Amsterdam",
-    "description": "Flow Traders is looking for a Core Data Engineer to own the end-to-end lifecycle of our most fundamental data products, including our Security Master; our reconciled ETF Compositions; high-resolution historical market data; and records of our trades, orders, quotes, and inquiries. High-quality data is the cornerstone of Flow Traders' strategic direction - beyond reducing complexity and BAU for stakeholders across the organization, quality data is a key requirement for our growth of quantitative trading styles.\u200b Specifically, you will craft and execute the blueprint for these products, leveraging our Data Platform to build and monitor automated pipelines which ensure that users across the organization have reliable data at their fingertips when they need it. Further, you will become an expert in these data sets, leveraging that knowledge to optimize our use of the data we have and explore new sources for additional value. Finally, you will constantly collaborate with teams across the organization to ensure that our in-house systems are designed with data in mind, streamline additional data-related workflows, and work with stakeholders to maximize the value they extract from our data.\u200b As the architect and guardian of our most valuable data, you will have a unique opportunity to make your mark on Flow Traders. You will be accountable for delivering these data products at an exceptional level of quality, ensuring that they are not only timely and pristine, but powerful enough to drive Flow Traders' future growth. Ultimately, your work will not only provide highly visible benefits that every division feels every day, but it will also deliver one of the most important building blocks to the firm's strategic growth for the years to come.\u200b",
-    "requirements": "",
-    "source_url": "https://job-boards.greenhouse.io/flowtraders/jobs/8288641",
-    "date_posted": "2026-10-23",
-    "date_scraped": "2026-10-27",
-    "first_seen": "2026-10-26",
-    "slug": "flow-traders-core-data-engineer-c10be2a3"
-  },
-  {
     "role": "Senior Software Engineer - OTCTECH",
     "company": "Flow Traders",
     "company_type": "Market Makers",
@@ -3330,7 +3312,7 @@
     "slug": "tower-research-capital-quantitative-trader-researcher-graduate-program-9cd27dfc"
   },
   {
-    "role": "Quantitative Trader/Researcher Summer Internship 2027 (2028 Graduates)",
+    "role": "Quantitative Trader/Researcher Summer Internship 2027",
     "company": "Tower Research Capital",
     "company_type": "Proprietary Trading Firms",
     "type": "Internship",
