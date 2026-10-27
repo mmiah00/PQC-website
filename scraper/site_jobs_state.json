@@ -1,5 +1,23 @@
 [
   {
+    "role": "Senior Software Engineer, Certificates Management",
+    "company": "Coinbase",
+    "company_type": "Crypto Trading Firms",
+    "type": "Full-Time",
+    "category": "Quantitative Development",
+    "women_focused": "No",
+    "new_grad": "No",
+    "pay": "$186,065",
+    "location": "Remote - USA",
+    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. As a Senior Software Engineer within the Security Platform Engineering group, you'll serve as the primary execution anchor for our most critical regulatory and cryptographic initiatives. This team owns Coinbase's Public and Internal Certificate Management based systems, which is the bedrock for all Coinbase systems. You'll lead the development of high-availability services which provide novel certificate needs internally and with external partners. Lead the architecture and execution of critical cryptographic infrastructure Define technical strategies with a multi-quarter horizon, bringing clarity to highly ambiguous requirements for novel cryptographic solutions Own risky and ambitious initiatives, implementing secure and resilient cryptographic protocols in a high-stakes, zero-trust environment Shape engineering quality practices as a technical anchor and mentor within a team of senior engineers, driving rigorous code reviews and eliminating single points of failure Build alignment and secure commitment from cross-functional partners across Security, Product, and Policy to drive flawless execution",
+    "requirements": "5+ years of experience in software engineering with demonstrated success building highly available, distributed systems | Deep domain expertise in Public Key Infrastructure (PKI) and applied cryptography, with proven experience operating certificate authorities, automating X.509 certificate lifecycles (issuance, renewal, revocation, and trust-chain distribution), and safely protecting private key material with HSMs or cloud KMS | Extensive programming experience in systems languages such as Golang, Java, C++, or Rust, with ability to operate in a Golang-heavy environment | Proven track record operating Tier-0 or highly critical infrastructure where system resilience, security, and low latency are absolute prerequisites | Demonstrated experience leading a team's technical strategy, architecture, and deliverables for large-scale projects, including navigating complex regulatory requirements and translating them into robust engineering solutions | Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality.",
+    "source_url": "https://www.coinbase.com/careers/positions/8326127?gh_jid=8326127",
+    "date_posted": "2026-10-27",
+    "date_scraped": "2026-10-27",
+    "first_seen": "2026-10-27",
+    "slug": "coinbase-senior-software-engineer-certificates-management-177418b4"
+  },
+  {
     "role": "Campus Quantitative Researcher | Trading Team PhD/Postdoc (Full-Time)",
     "company": "Jump Trading",
     "company_type": "Proprietary Trading Firms",
@@ -3598,24 +3616,6 @@
     "date_scraped": "2026-10-27",
     "first_seen": "2026-09-09",
     "slug": "imc-trading-machine-learning-research-intern-summer-2027-sydney-9b078cdf"
-  },
-  {
-    "role": "Point72 Academy Coffee Chats \u2014 Class of 2029 (US)",
-    "company": "Point72",
-    "company_type": "Quantitative Hedge Funds",
-    "type": "Event",
-    "category": "Quant Event",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "United States",
-    "description": "Point72 Academy Coffee Chats\u2014Class of 2029 (US) Curious what it's really like to work as an investor at one of the world's leading global alternative investment firms? The Point72 Academy is where the next generation of investment talent gets built through hands-on casework, direct mentorship from experienced portfolio managers, and real exposure to how markets actually work. Since 2015, the Academy has launched over 250 analysts onto our platform[1], and some of those graduates are now running their own books as portfolio managers. If you're a Class of 2029 student who's intellectually curious about markets and companies, we want to hear from you. Register your interest below for a coffee chat, an informal, no-pressure conversation to explore the Academy and hear what a potential career in investing could look like. Chats happen either in person if we're visiting your campus, or virtually over Zoom.",
-    "requirements": "",
-    "source_url": "https://boards.greenhouse.io/point72/jobs/8730093002?gh_jid=8730093002",
-    "date_posted": "2026-08-24",
-    "date_scraped": "2026-10-27",
-    "first_seen": "2026-09-09",
-    "slug": "point72-point72-academy-coffee-chats-class-of-2029-us-e43a1e15"
   },
   {
     "role": "Client Portfolio Manager - Systematic",
@@ -7226,7 +7226,7 @@
     "women_focused": "No",
     "new_grad": "No",
     "pay": "",
-    "location": "New York, London, or Paris",
+    "location": "New York",
     "description": "We are seeking a small number of highly talented interns to assist in the development, optimization, and monitoring of our production trading platform and research infrastructure. Interns will work on small, highly collaborative teams.",
     "requirements": "",
     "source_url": "https://boards.greenhouse.io/point72/jobs/7297666002?gh_jid=7297666002",
