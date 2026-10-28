@@ -1,5 +1,23 @@
 [
   {
+    "role": "Algorithmic Trader - Delta One",
+    "company": "Simplex Trading",
+    "company_type": "Proprietary Trading Firms",
+    "type": "Full-Time",
+    "category": "Quantitative Trading",
+    "women_focused": "No",
+    "new_grad": "No",
+    "pay": "$150,000",
+    "location": "Chicago",
+    "description": "Our employees are our greatest asset. We have spent years building a team of talented, dedicated technologists, data-driven traders, and expert leaders with an emphasis on our core pillars: People, Process, Trading Edge, and Technology. Simplex is an in-office organization, helping to foster a collaborative and communicative culture.",
+    "requirements": "2+ years trading or researching CME equity index futures (ES/NQ) at a proprietary trading firm with sub-millisecond systems. | Hands-on experience with CME MDP 3.0 order-by-order market data: book building, queue-position tracking, iceberg and self-match-prevention inference, matching-engine latency behavior. | Built microprice or alpha models that ran live at microsecond horizons. Fluent in lead/lag analysis, half-lives, markouts, and adverse selection. | Passive quoting experience on FIFO futures markets: queue value, join and cancel logic, messaging-efficiency constraints, mass-quote protections. | Python research stack (polars or pandas, numpy, gradient-boosted trees, SQL). Reads C++. Has worked alongside FPGA or low-latency engineers. | Bonus: index basis and roll (cash, futures, BTIC), SPX options, or microwave network latency. | Annual base salary ranges from $150,000 to $200,000, and is influenced by a number of factors, including qualifications and experience. This role is also eligible for an annual discretionary bonus, of which can be a significant portion of total compensation. This full time role is also eligible for other forms of compensation and benefits including health/dental/vision insurance, and 401(k) contributions.",
+    "source_url": "https://job-boards.greenhouse.io/simplextrading/jobs/5466410008",
+    "date_posted": "2026-10-28",
+    "date_scraped": "2026-10-28",
+    "first_seen": "2026-10-28",
+    "slug": "simplex-trading-algorithmic-trader-delta-one-526607fc"
+  },
+  {
     "role": "Machine Learning Researcher",
     "company": "Jane Street",
     "company_type": "Proprietary Trading Firms",
@@ -1582,24 +1600,6 @@
     "date_scraped": "2026-10-28",
     "first_seen": "2026-09-29",
     "slug": "coinbase-staff-software-engineer-platform-financial-engineering-839ea97a"
-  },
-  {
-    "role": "Staff Machine Learning Engineer(Platform - Identity)",
-    "company": "Coinbase",
-    "company_type": "Crypto Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$218,025",
-    "location": "Remote - USA",
-    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d learn more about working at Coinbase. Staff Machine Learning Engineer, Identity Verification As a Staff Machine Learning Engineer on the Identity Verification team within the Platform group, you'll own the ML systems that determine whether a person, document, and capture session are legitimate. Every signup, account recovery, and high-risk action at Coinbase depends on these models. You'll lead the technical strategy for IDV ML end-to-end, from architecture through production enforcement, protecting the integrity of millions of accounts. Own the full IDV ML stack, including document authenticity models, 1:1 and 1:N face-match, liveness detection, presentation-attack detection, and deepfake/injection detection from feature pipeline through threshold tuning and production enforcement. Build identity-graph systems using GNNs that cluster accounts sharing biometric, device, and document signals to detect synthetic-identity rings and coordinated fraud at onboarding. Develop behavioral and device-intelligence models for capture-session anomaly detection, bot-vs-human classification, and device-fingerprint-based risk scoring at real-time latency. Drive vendor ML strategy by benchmarking external models against a Coinbase-owned evaluation set, designing dynamic routing logic across providers and geographies, and building the in-house evaluation layer that catches regressions before they reach users. Lead and mentor senior and mid-level engineers in the pod while partnering with ML Platform and Risk ML teams to align cross-company ML system design.",
-    "requirements": "8+ years deploying production ML systems at scale, with proven technical leadership owning cross-team ML architecture from design through production. | Domain experience in identity verification, biometrics, or account integrity with deep applied ML in at least two of: computer vision/biometrics, GNNs, sequence models, or NLP/LLMs. | Expert-level Python with production experience in TensorFlow or PyTorch, including model training, evaluation, and serving infrastructure. | Track record translating KYC/AML requirements and fraud trends into ML roadmaps and communicating trade-offs to Product, Compliance, Risk, and Security stakeholders. | Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality. | Pay Transparency Notice: Base salary varies by location (see range below). Total compensation may also include equity and bonus eligibility, and benefits (medical, dental, vision, 401(k)).",
-    "source_url": "https://www.coinbase.com/careers/positions/8211486?gh_jid=8211486",
-    "date_posted": "2026-09-17",
-    "date_scraped": "2026-10-28",
-    "first_seen": "2026-09-29",
-    "slug": "coinbase-staff-machine-learning-engineer-platform-identity-230233cb"
   },
   {
     "role": "Senior Data Scientist, Product",
@@ -5058,7 +5058,7 @@
     "slug": "virtu-financial-quantitative-strategist-6c75b0c1"
   },
   {
-    "role": "Quantitative Strategist (PhD)",
+    "role": "Quantitative Researcher (PhD)",
     "company": "Virtu Financial",
     "company_type": "Market Makers",
     "type": "Full-Time",
