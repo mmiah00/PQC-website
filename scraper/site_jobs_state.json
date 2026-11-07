@@ -2592,24 +2592,6 @@
     "slug": "coinbase-staff-software-engineer-platform-identity-idv-33196177"
   },
   {
-    "role": "Payments Risk Analyst II",
-    "company": "Coinbase",
-    "company_type": "Crypto Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Finance",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$135,320",
-    "location": "Remote - USA",
-    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d Learn more about working at Coinbase. Own end-to-end risk controls for ACH payments, scaling fraud prevention processes to keep pace with business expansion. Drive detection and mitigation of fraudulent deposit activity by implementing targeting logic against bad actors and high-risk behavior. Lead quantitative analysis of fraud performance, measuring rule precision and recall, assessing the financial impact of decisions, and surfacing tradeoffs to leadership with clear, data-backed recommendations. Partner cross-functionally with Product, Growth, Data Science, Risk ML, and Engineering to develop and iterate on risk management strategies, including the transition from heuristic rules to model-driven and synchronous friction controls. Execute investigations into anomalous customer and transaction behavior, proactively identifying monitoring gaps and closing them before they become losses.",
-    "requirements": "4+ years of experience in risk, fraud, or payments operations, with at least 2 years focused on payments fraud prevention in a fintech, e-commerce, or financial services environment. | 2+ years of hands-on experience querying and analyzing large datasets using SQL, with the ability to independently scope and execute analytics projects end-to-end. | Demonstrated experience using identity-provider data and fraud-detection tooling to implement and tune risk controls. | Proven ability to measure the financial impact of fraud decisions and communicate findings to senior leadership and cross-functional stakeholders. | Demonstrated working knowledge of ACH payment processing and applicable NACHA rules. | Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality. | Pay Transparency Notice: Base salary varies by location (see range below). Total compensation may also include equity and bonus eligibility, and benefits (medical, dental, vision, 401(k)).",
-    "source_url": "https://www.coinbase.com/careers/positions/7984814?gh_jid=7984814",
-    "date_posted": "2026-06-08",
-    "date_scraped": "2026-11-07",
-    "first_seen": "2026-09-29",
-    "slug": "coinbase-payments-risk-analyst-ii-5ab4e62e"
-  },
-  {
     "role": "Senior Software Engineer, Backend (Consumer - Risk)",
     "company": "Coinbase",
     "company_type": "Crypto Trading Firms",
