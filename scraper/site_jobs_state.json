@@ -1,5 +1,23 @@
 [
   {
+    "role": "Quant Researcher - Statistical Arbitrage",
+    "company": "Amber Group",
+    "company_type": "Crypto Trading Firms",
+    "type": "Full-Time",
+    "category": "Quantitative Trading",
+    "women_focused": "No",
+    "new_grad": "No",
+    "pay": "",
+    "location": "Hong Kong",
+    "description": "Exceptional analytical skills, particularly in terms of identifying opportunities when analyzing large data sets Extensive mathematical and statistical modeling skills A passion for solving problems and a drive for results Experience as a quantitative analyst/trader in systematic equities / statistical arbitrage strategies Candidates with quantitative development experience or will be considered",
+    "requirements": "Masters or PhD degree in a quantitative subject such as Computer Science, applied Mathematics, Statistics, or related field | Programming experience in languages such as Go, Python, Java and C++ is a strong plus. | Immediate available is higher preferred | Knowledge of written Chinese or spoken Mandarin a plus",
+    "source_url": "https://jobs.lever.co/ambergroup/b49b1bd3-75cf-45ee-9863-ff85e1bdf0fa",
+    "date_posted": "2023-02-10",
+    "date_scraped": "2026-11-10",
+    "first_seen": "2026-11-10",
+    "slug": "amber-group-quant-researcher-statistical-arbitrage-d72ddb06"
+  },
+  {
     "role": "Senior Software Engineer",
     "company": "Coinbase",
     "company_type": "Crypto Trading Firms",
@@ -18,7 +36,7 @@
     "slug": "coinbase-senior-software-engineer-dff29024"
   },
   {
-    "role": "Software Engineer-1",
+    "role": "Software Engineer-1, Money Movement",
     "company": "Coinbase",
     "company_type": "Crypto Trading Firms",
     "type": "Full-Time",
@@ -6678,24 +6696,6 @@
     "slug": "point72-trader-quant-analyst-b66f5772"
   },
   {
-    "role": "Quantitative Developer",
-    "company": "Point72",
-    "company_type": "Quantitative Hedge Funds",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "London",
-    "description": "About Cubist: Cubist Systematic Strategies, an affiliate of Point72, deploys systematic, computer-driven trading strategies across multiple liquid asset classes, including equities, futures and foreign exchange. The core of our effort is rigorous research into a wide range of market anomalies, fueled by our unparalleled access to a wide range of publicly available data sources. The team is focused on systematic equity trading. It is established, yet still pre-trade, offering an exciting opportunity to join at an early stage and be involved in a broad range of development areas. The team members come from a mixture of quant analyst and development backgrounds, using the combination of skills to achieve a common goal. All team members are based in the London office five days a week to maximize communication and interaction. Role and Responsibilities:An ideal growth role to suit a developer looking for additional responsibilities and independence. Responsibilities may include: \u2022 Building components for all aspects of live trading and research environments.\u2022 Driving automation and robustness of our processes.\u2022 Developing robust data checking and handling procedures.\u2022 Monitoring and troubleshooting any issues that should arise.\u2022 Shared responsibility for timely and correct operation of trading systems. Requirements: \u2022 Bachelor\u2019s degree or equivalent in computer science or other STEM discipline\u2022 2+ years commercial experience with Python and its data science libraries on Linux.\u2022 Pragmatic balance between attention to detail and delivery focus.\u2022 Ability to work with ambiguous requirements.\u2022 Self-driven, owning problems while knowing when to seek advice.\u2022 Knowledge of finance and trading systems a plus.\u2022 Experience with a systems programming language (e.g. C++, Rust) a plus. \u2022 Commercial use of cloud compute and containers a plus. \u2022 Strong analytical skills and command of statistics a plus. \u2022 Be in the office five days a week. \u2022 Commitment to the highest ethical standards.",
-    "requirements": "",
-    "source_url": "https://boards.greenhouse.io/point72/jobs/8191564002?gh_jid=8191564002",
-    "date_posted": "2025-09-30",
-    "date_scraped": "2026-11-10",
-    "first_seen": "2026-08-11",
-    "slug": "point72-quantitative-developer-bf82c22c"
-  },
-  {
     "role": "Intern Software Developer - London - 2027",
     "company": "Squarepoint Capital",
     "company_type": "Quantitative Hedge Funds",
@@ -7792,24 +7792,6 @@
     "date_scraped": "2026-11-10",
     "first_seen": "2026-08-11",
     "slug": "jane-street-software-engineer-30bb939d"
-  },
-  {
-    "role": "Quantitative Trader",
-    "company": "Virtu Financial",
-    "company_type": "Market Makers",
-    "type": "Full-Time",
-    "category": "Quantitative Trading",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$150,000 - $200,000",
-    "location": "Chicago",
-    "description": "Virtu is a leading financial firm that leverages cutting edge technology to deliver liquidity to the global markets and innovative, transparent trading solutions to our clients. As a market maker, Virtu provides deep liquidity that helps to create more efficient markets around the world. Our market structure expertise, broad diversification, and execution technology enables us to provide competitive bids and offers in over 19,000 securities, at over 235 venues, in 36 countries worldwide Our Quantitative Traders are responsible for the design, operation, and improvement of high\u2010performance algorithmic trading strategies deployed on electronic trading venues around the world. During an intensive period of mentorship and training in trade floor operations, Quantitative Traders learn the intricacies of each step of the trade flow process, eventually integrating into strategy deployment and operation. This team also has the opportunity to work closely with software engineers to enhance and further develop the firm\u2019s trading strategies. Quantitative Traders not only become experts in trading technology and its interaction with the market, but they also play a crucial role in the evolution of market micro structure and the driving forces behind liquidity. This is a great opportunity for the right candidate to kick start a career in the financial technology space.",
-    "requirements": "",
-    "source_url": "https://job-boards.greenhouse.io/virtu/jobs/4326632002",
-    "date_posted": "2020-02-04",
-    "date_scraped": "2026-11-10",
-    "first_seen": "2026-08-11",
-    "slug": "virtu-financial-quantitative-trader-08a83ef6"
   },
   {
     "role": "Software Engineer",
