@@ -864,24 +864,6 @@
     "slug": "imc-trading-trading-data-software-engineer-ad5febb8"
   },
   {
-    "role": "Quant Researcher - Statistical Arbitrage",
-    "company": "Amber Group",
-    "company_type": "Crypto Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Trading",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "Hong Kong",
-    "description": "Exceptional analytical skills, particularly in terms of identifying opportunities when analyzing large data sets Extensive mathematical and statistical modeling skills A passion for solving problems and a drive for results Experience as a quantitative analyst/trader in systematic equities / statistical arbitrage strategies Candidates with quantitative development experience or will be considered",
-    "requirements": "Masters or PhD degree in a quantitative subject such as Computer Science, applied Mathematics, Statistics, or related field | Programming experience in languages such as Go, Python, Java and C++ is a strong plus. | Immediate available is higher preferred | Knowledge of written Chinese or spoken Mandarin a plus",
-    "source_url": "https://jobs.lever.co/ambergroup/b49b1bd3-75cf-45ee-9863-ff85e1bdf0fa",
-    "date_posted": "2023-02-10",
-    "date_scraped": "2026-11-10",
-    "first_seen": "2026-10-23",
-    "slug": "amber-group-quant-researcher-statistical-arbitrage-d72ddb06"
-  },
-  {
     "role": "2027 Index Rebalancing Quantitative Research Intern",
     "company": "Schonfeld",
     "company_type": "Quantitative Hedge Funds",
@@ -6532,24 +6514,6 @@
     "date_scraped": "2026-11-10",
     "first_seen": "2026-08-11",
     "slug": "worldquant-quantitative-developer-301b6720"
-  },
-  {
-    "role": "Software Engineer Intern",
-    "company": "WorldQuant",
-    "company_type": "Quantitative Hedge Funds",
-    "type": "Internship",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "Hanoi",
-    "description": "WorldQuant develops and deploys systematic financial strategies across a broad range of asset classes and global markets. We seek to produce high-quality predictive signals (alphas) through our proprietary research platform to employ financial strategies focused on market inefficiencies. Our teams work collaboratively to drive the production of alphas and financial strategies \u2013 the foundation of a balanced, global investment platform. WorldQuant is built on a culture that pairs academic sensibility with accountability for results. Employees are encouraged to think openly about problems, balancing intellectualism and practicality. Excellent ideas come from anyone, anywhere. Employees are encouraged to challenge conventional thinking and possess an attitude of continuous improvement. Our goal is to hire the best and the brightest. We value intellectual horsepower first and foremost, and people who demonstrate an outstanding talent. There is no roadmap to future success, so we need people who can help us build it. Technologists at WorldQuant research, design, code, test and deploy projects while working collaboratively with researchers. Our environment is relaxed yet intellectually driven. We seek people who think in code and are motivated by being around like-minded people. The Role: We are looking for an exceptionally talented software engineer intern to join our team. You will be part of a business-facing team responsible for building and evolving the core systems that power our Quant strategies. You will be working with Quants very closely to develop, enhance, and support cutting-edge tools and systems that drive data decision making. The role provides a unique opportunity to gain exposure to full lifecycle of quant finance.",
-    "requirements": "",
-    "source_url": "https://job-boards.greenhouse.io/worldquant/jobs/4652485006",
-    "date_posted": "2026-02-22",
-    "date_scraped": "2026-11-10",
-    "first_seen": "2026-08-11",
-    "slug": "worldquant-software-engineer-intern-8e903bed"
   },
   {
     "role": "Senior Python Software Engineer",
