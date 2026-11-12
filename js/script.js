@@ -702,6 +702,15 @@ if (calGrid) {
         description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
       },
     ],
+    "2026-10-29": [
+      {
+        title: "General Meeting: Quant Skills & Stations",
+        date: "Thursday, October 29, 2026",
+        location: "Saieh 103",
+        time: "7:00 PM",
+        description: "Join us for an interactive workshop featuring hands-on activities, technical interview preparation, and personalized feedback. This week's stations include: GitHub & Personal Projects (get help building your technical portfolio and showcasing your projects), Market Making & Trading Games (practice trading concepts through interactive exercises), and Quant Interview Prep (work through probability, combinatorics, and technical interview questions). Members could also submit their resume ahead of time for a personalized, one-on-one resume review at the meeting.",
+      },
+    ],
     "2026-11-12": [
       {
         title: "General Meeting: Quant Skills & Stations",
