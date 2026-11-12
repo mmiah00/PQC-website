@@ -191,6 +191,90 @@ if (flashcardEl) {
   const reportCancelBtn = document.getElementById("flashcard-report-cancel");
   const filterResetBtn = document.getElementById("flashcard-filter-reset");
 
+  // Custom checklist dropdown used for the Role/Topic/Company filters,
+  // replacing the browser's native multi-select listbox (which needed
+  // ctrl-click to pick more than one option). Clicking the toggle opens a
+  // checkbox menu; checking boxes doesn't close it, so picking several is
+  // a plain click each, no modifier key needed.
+  function closeAllDropdowns(except) {
+    document.querySelectorAll(".multi-dropdown").forEach((root) => {
+      if (root === except) return;
+      const menu = root.querySelector(".multi-dropdown-menu");
+      if (!menu.hidden) {
+        menu.hidden = true;
+        root.classList.remove("is-open");
+        root.querySelector(".multi-dropdown-toggle").setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
+  function initMultiDropdown(rootEl) {
+    const toggle = rootEl.querySelector(".multi-dropdown-toggle");
+    const menu = rootEl.querySelector(".multi-dropdown-menu");
+    const emptyLabel = rootEl.dataset.emptyLabel || toggle.textContent;
+
+    function updateLabel() {
+      const checked = Array.from(menu.querySelectorAll("input:checked"));
+      if (!checked.length) {
+        toggle.textContent = emptyLabel;
+      } else if (checked.length === 1) {
+        toggle.textContent = checked[0].closest(".multi-dropdown-option").querySelector("span").textContent;
+      } else {
+        toggle.textContent = `${checked.length} selected`;
+      }
+    }
+
+    toggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const wasHidden = menu.hidden;
+      closeAllDropdowns(rootEl);
+      menu.hidden = !wasHidden;
+      rootEl.classList.toggle("is-open", wasHidden);
+      toggle.setAttribute("aria-expanded", String(wasHidden));
+    });
+
+    menu.addEventListener("click", (e) => e.stopPropagation());
+    rootEl.addEventListener("change", updateLabel);
+
+    return {
+      getSelected() {
+        return Array.from(menu.querySelectorAll("input:checked")).map((input) => input.value);
+      },
+      // Used for the Company filter, whose options come from submitted
+      // data rather than being fixed in the HTML -- built with textContent
+      // (not innerHTML) so a company name can't inject markup.
+      setMenuOptions(values) {
+        menu.innerHTML = "";
+        values.forEach((value) => {
+          const label = document.createElement("label");
+          label.className = "multi-dropdown-option";
+          const input = document.createElement("input");
+          input.type = "checkbox";
+          input.value = value;
+          const span = document.createElement("span");
+          span.textContent = value;
+          label.appendChild(input);
+          label.appendChild(span);
+          menu.appendChild(label);
+        });
+      },
+      reset() {
+        menu.querySelectorAll("input").forEach((input) => {
+          input.checked = false;
+        });
+        updateLabel();
+      },
+    };
+  }
+
+  const roleDropdown = initMultiDropdown(roleFilter);
+  const topicDropdown = initMultiDropdown(topicFilter);
+  const companyDropdown = initMultiDropdown(companyFilter);
+  document.addEventListener("click", () => closeAllDropdowns());
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeAllDropdowns();
+  });
+
   let allQuestions = [];
   let filteredQuestions = [];
   let currentIndex = 0;
@@ -256,19 +340,13 @@ if (flashcardEl) {
     }
   }
 
-  // Role, topic, and company filters all stack together (AND logic), same
-  // pattern as the Opportunities job filters.
-  function selectedValues(selectEl) {
-    return Array.from(selectEl.selectedOptions).map((o) => o.value);
-  }
-
   // Each filter is multi-select: picking several roles (say) matches any
   // of them (OR), while the three filters still stack together (AND). No
   // selection in a filter means "don't restrict by this" (matches all).
   function applyFilters() {
-    const roles = selectedValues(roleFilter);
-    const topics = selectedValues(topicFilter);
-    const companies = selectedValues(companyFilter);
+    const roles = roleDropdown.getSelected();
+    const topics = topicDropdown.getSelected();
+    const companies = companyDropdown.getSelected();
 
     filteredQuestions = allQuestions.filter((q) => {
       const matchesRole = !roles.length || roles.includes(q.role);
@@ -282,11 +360,7 @@ if (flashcardEl) {
   }
 
   function resetFilters() {
-    [roleFilter, topicFilter, companyFilter].forEach((select) => {
-      Array.from(select.options).forEach((option) => {
-        option.selected = false;
-      });
-    });
+    [roleDropdown, topicDropdown, companyDropdown].forEach((dropdown) => dropdown.reset());
     applyFilters();
   }
 
@@ -295,12 +369,7 @@ if (flashcardEl) {
       new Set(allQuestions.map((q) => q.company).filter(Boolean))
     ).sort((a, b) => a.localeCompare(b));
 
-    companies.forEach((company) => {
-      const option = document.createElement("option");
-      option.value = company;
-      option.textContent = company;
-      companyFilter.appendChild(option);
-    });
+    companyDropdown.setMenuOptions(companies);
   }
 
   // Both directions wrap around (circular): past the last card goes back
@@ -633,6 +702,25 @@ if (calGrid) {
         description: "Interviews for executive board applicants will take place during this window. Individual interview times will be scheduled separately.",
       },
     ],
+    "2026-11-12": [
+      {
+        title: "General Meeting: Quant Skills & Stations",
+        date: "Thursday, November 12, 2026",
+        location: "Saieh 103",
+        time: "7:00 PM",
+        description: "Join us for another interactive PQC meeting! We'll kick things off with a fun mental math competition before breaking into hands-on stations to practice technical skills, collaborate, and prepare for quant interviews. This week's stations include: Cold Emailing & Coffee Chats (learn how to reach out to industry professionals, write effective introductory emails, and navigate informational coffee chats), Probability & Interview Prep (continue practicing probability and combinatorics questions commonly asked in quant interviews), and Code a GitHub Project Together (work collaboratively to build a small coding project and learn how to organize and publish it on GitHub). No prior experience required -- come ready to learn, practice, and have fun!",
+        image: "assets/11-12-26-GBM.png",
+      },
+    ],
+    "2027-04-01": [
+      {
+        title: "PEAK6 Office Visit",
+        date: "Thursday, April 1, 2027",
+        location: "Location TBD",
+        time: "Time TBD",
+        description: "We are thinking that we could plan a session that includes some trading interview prep as well as a trading game. More details to come.",
+      },
+    ],
   };
 
   const monthNames = [
@@ -641,7 +729,7 @@ if (calGrid) {
   ];
 
   let calYear = 2026;
-  let calMonth = 9; // 0-indexed: October
+  let calMonth = 10; // 0-indexed: November
 
   const dateKey = (year, month, day) => {
     const mm = String(month + 1).padStart(2, "0");

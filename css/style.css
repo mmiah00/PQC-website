@@ -172,7 +172,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 24px 14px 0;
+  padding: 14px 24px;
 }
 
 .brand {
@@ -871,14 +871,14 @@ img { max-width: 100%; display: block; }
 .flashcard-controls {
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 16px;
   margin: 20px 0;
 }
 
 .flashcard-filter-group {
   display: flex;
-  flex: 1 1 0;
+  flex: 0 1 190px;
   min-width: 0;
   flex-direction: column;
   gap: 6px;
@@ -891,23 +891,6 @@ img { max-width: 100%; display: block; }
   color: var(--ink);
 }
 
-.flashcard-controls select {
-  width: 100%;
-  min-width: 0;
-  padding: 6px;
-  border: 1px solid var(--cream-line);
-  border-radius: 8px;
-  font-family: var(--font-body);
-  font-size: 0.88rem;
-  background: var(--cream);
-  color: var(--ink);
-}
-
-.flashcard-controls select option {
-  padding: 4px 6px;
-  border-radius: 4px;
-}
-
 .flashcard-filter-hint {
   font-weight: 400;
   font-size: 0.76rem;
@@ -917,8 +900,80 @@ img { max-width: 100%; display: block; }
 }
 
 .flashcard-filter-reset-row {
-  text-align: center;
+  text-align: right;
   margin: 4px 0 0;
+}
+
+/* Custom multi-select dropdown (role/topic/company filters): a toggle
+   button showing a summary of what's selected, opening a checklist menu
+   below it. Replaces the browser's native multi-select listbox, which
+   required ctrl-click to pick more than one option -- these checkboxes
+   don't. */
+.multi-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.multi-dropdown-toggle {
+  width: 100%;
+  min-width: 0;
+  padding: 8px 32px 8px 10px;
+  border: 1px solid var(--cream-line);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  background: var(--cream) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%235a3a38' d='M5.5 7.5l4.5 5 4.5-5z'/%3E%3C/svg%3E") no-repeat right 8px center;
+  background-size: 16px;
+  color: var(--ink);
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.multi-dropdown-toggle:hover,
+.multi-dropdown.is-open .multi-dropdown-toggle {
+  border-color: var(--maroon-light);
+}
+
+.multi-dropdown-menu {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  max-height: 220px;
+  overflow-y: auto;
+  padding: 6px;
+  background: var(--cream);
+  border: 1px solid var(--cream-line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.multi-dropdown-menu[hidden] {
+  display: none;
+}
+
+.multi-dropdown-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.multi-dropdown-option:hover {
+  background: var(--cream-dim);
+}
+
+.multi-dropdown-option input {
+  margin: 0;
 }
 
 .flashcard-status {

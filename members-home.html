@@ -11700,33 +11700,42 @@
 
           <div class="flashcard-controls">
             <div class="flashcard-filter-group">
-              <label for="flashcard-role-filter">Role <span class="flashcard-filter-hint">(select multiple)</span></label>
-              <select id="flashcard-role-filter" multiple size="4">
-                <option value="Quant Researcher Intern">Quant Researcher Intern</option>
-                <option value="Quant Researcher (Full-Time)">Quant Researcher (Full-Time)</option>
-                <option value="Quant Trader Intern">Quant Trader Intern</option>
-                <option value="Quant Trader (Full-Time)">Quant Trader (Full-Time)</option>
-                <option value="Quant Developer Intern">Quant Developer Intern</option>
-                <option value="Quant Developer (Full-Time)">Quant Developer (Full-Time)</option>
-                <option value="Other">Other</option>
-              </select>
+              <label id="flashcard-role-filter-label">Role</label>
+              <div class="multi-dropdown" id="flashcard-role-filter" data-empty-label="All Roles">
+                <button type="button" class="multi-dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-labelledby="flashcard-role-filter-label">All Roles</button>
+                <div class="multi-dropdown-menu" hidden>
+                  <label class="multi-dropdown-option"><input type="checkbox" value="Quant Researcher Intern"><span>Quant Researcher Intern</span></label>
+                  <label class="multi-dropdown-option"><input type="checkbox" value="Quant Researcher (Full-Time)"><span>Quant Researcher (Full-Time)</span></label>
+                  <label class="multi-dropdown-option"><input type="checkbox" value="Quant Trader Intern"><span>Quant Trader Intern</span></label>
+                  <label class="multi-dropdown-option"><input type="checkbox" value="Quant Trader (Full-Time)"><span>Quant Trader (Full-Time)</span></label>
+                  <label class="multi-dropdown-option"><input type="checkbox" value="Quant Developer Intern"><span>Quant Developer Intern</span></label>
+                  <label class="multi-dropdown-option"><input type="checkbox" value="Quant Developer (Full-Time)"><span>Quant Developer (Full-Time)</span></label>
+                  <label class="multi-dropdown-option"><input type="checkbox" value="Other"><span>Other</span></label>
+                </div>
+              </div>
             </div>
             <div class="flashcard-filter-group">
-              <label for="flashcard-topic-filter">Topic <span class="flashcard-filter-hint">(select multiple)</span></label>
-              <select id="flashcard-topic-filter" multiple size="4">
-                <option value="mental-math">Mental Math</option>
-                <option value="probability">Probability</option>
-                <option value="statistics">Statistics</option>
-                <option value="dsa">Data Structures &amp; Algorithms (DSA)</option>
-                <option value="resume">Resume</option>
-                <option value="options">Options</option>
-                <option value="finance">Finance</option>
-                <option value="other">Other</option>
-              </select>
+              <label id="flashcard-topic-filter-label">Topic</label>
+              <div class="multi-dropdown" id="flashcard-topic-filter" data-empty-label="All Topics">
+                <button type="button" class="multi-dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-labelledby="flashcard-topic-filter-label">All Topics</button>
+                <div class="multi-dropdown-menu" hidden>
+                  <label class="multi-dropdown-option"><input type="checkbox" value="mental-math"><span>Mental Math</span></label>
+                  <label class="multi-dropdown-option"><input type="checkbox" value="probability"><span>Probability</span></label>
+                  <label class="multi-dropdown-option"><input type="checkbox" value="statistics"><span>Statistics</span></label>
+                  <label class="multi-dropdown-option"><input type="checkbox" value="dsa"><span>Data Structures &amp; Algorithms (DSA)</span></label>
+                  <label class="multi-dropdown-option"><input type="checkbox" value="resume"><span>Resume</span></label>
+                  <label class="multi-dropdown-option"><input type="checkbox" value="options"><span>Options</span></label>
+                  <label class="multi-dropdown-option"><input type="checkbox" value="finance"><span>Finance</span></label>
+                  <label class="multi-dropdown-option"><input type="checkbox" value="other"><span>Other</span></label>
+                </div>
+              </div>
             </div>
             <div class="flashcard-filter-group">
-              <label for="flashcard-company-filter">Company <span class="flashcard-filter-hint">(select multiple)</span></label>
-              <select id="flashcard-company-filter" multiple size="4"></select>
+              <label id="flashcard-company-filter-label">Company</label>
+              <div class="multi-dropdown" id="flashcard-company-filter" data-empty-label="All Companies">
+                <button type="button" class="multi-dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-labelledby="flashcard-company-filter-label">All Companies</button>
+                <div class="multi-dropdown-menu" hidden></div>
+              </div>
             </div>
           </div>
 
