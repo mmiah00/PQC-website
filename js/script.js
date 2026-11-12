@@ -718,7 +718,7 @@ if (calGrid) {
         date: "Thursday, April 1, 2027",
         location: "Location TBD",
         time: "Time TBD",
-        description: "We are thinking that we could plan a session that includes some trading interview prep as well as a trading game. More details to come.",
+        description: "Get some trading interview prep with traders from PEAK6! PEAK6 will be hosting PQC to show us around the office, play a trading game, and get some trading interview prep. More details to come.",
       },
     ],
   };
