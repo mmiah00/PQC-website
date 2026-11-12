@@ -1,5 +1,23 @@
 [
   {
+    "role": "Graduate Risk Analyst",
+    "company": "IMC Trading",
+    "company_type": "Proprietary Trading Firms",
+    "type": "Full-Time",
+    "category": "Quantitative Finance",
+    "women_focused": "No",
+    "new_grad": "Yes",
+    "pay": "",
+    "location": "Amsterdam, Netherlands",
+    "description": "Your IMC journey begins with a three-week Global Trainee Program led by our seasoned engineers and traders, during which you\u2019ll link up with graduates from all IMC regions: Europe, the United States, India and Asia-Pacific. During this traineeship, you\u2019ll learn more about IMC, the basics of trading and options theory. Training continues back at your local office, where you\u2019ll receive support from a dedicated mentor. As a Graduate Risk Analyst, you operate at the beating heart of our business: in the dealing room of IMC\u2019s Amsterdam office. Your work supports IMC\u2019s critical day-to-day risk management activities, including the monitoring and analysis of our markets, as well as our credit, liquidity, and operational risks. What happens next is up to you!",
+    "requirements": "Recent or upcoming graduates seeking to join IMC full-time in February 2027 | An academic background in Mathematics, Physics and/or Econometrics or a related field | Proficiency in a programming language is preferred (Python, MATLAB or R) | First-class analytical skills and a desire to solve complicated problems creatively | A genuine interest in financial markets | Please note: If you have already applied for this position during the current recruitment season and were not selected, you may reapply when the next recruitment season begins in Summer 2027. We encourage you to focus on enhancing your skillset before reapplying. | Due to current U.S. immigration and visa restrictions, some candidates may not be eligible to obtain the U.S. business visa required as part of our Global Traineeship Programme. As the programme includes mandatory training in the United States shortly after joining, we are unfortunately unable to proceed with applications from candidates who are unable to obtain the required visa within the programme timeline. | If you are a dual passport holder of another nationality or a European citizen who wants to relocate back to Europe, you remain welcome to apply and should inform our campus recruitment team of your situation: CampusEU@imc.com.",
+    "source_url": "https://job-boards.eu.greenhouse.io/imc/jobs/5035003101",
+    "date_posted": "2026-11-12",
+    "date_scraped": "2026-11-12",
+    "first_seen": "2026-11-12",
+    "slug": "imc-trading-graduate-risk-analyst-7ca99b4c"
+  },
+  {
     "role": "Java Software Engineer",
     "company": "IMC Trading",
     "company_type": "Proprietary Trading Firms",
@@ -1240,24 +1258,6 @@
     "date_scraped": "2026-11-12",
     "first_seen": "2026-10-16",
     "slug": "coinbase-staff-software-engineer-backend-finhub-transfers-c23d5665"
-  },
-  {
-    "role": "Software Engineer,Technology",
-    "company": "Point72",
-    "company_type": "Quantitative Hedge Funds",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "Bengaluru, India",
-    "description": "A CAREER WITH POINT72\u2019S TECHNOLOGY TEAM As Point72 reimagines the future of investing, our technology group is constantly improving our company\u2019s technology infrastructure, positioning us at the forefront of a rapidly evolving technology landscape.We encourage professional development to ensure you bring innovative ideas to our products while satisfying your own intellectual curiosity. The Back Office Technology Team supports trade processing, position keeping, clearing/settlement, fund accounting, trade reconciliation and prime broker integrations. The team partners with Middle and Back Office business users to customize and implement solutions supporting trade processing and new business developments.",
-    "requirements": "",
-    "source_url": "https://boards.greenhouse.io/point72/jobs/8794061002?gh_jid=8794061002",
-    "date_posted": "2026-09-18",
-    "date_scraped": "2026-11-12",
-    "first_seen": "2026-10-16",
-    "slug": "point72-software-engineer-technology-b76bfac2"
   },
   {
     "role": "Software Engineer",
