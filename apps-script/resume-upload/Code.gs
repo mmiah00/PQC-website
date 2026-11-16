@@ -29,7 +29,7 @@
 //      version (Deploy > Manage deployments > edit > New version) for the
 //      live URL to pick up the change.
 
-const FOLDER_ID = "1n6HHsesc3-qncJxrtEkSofC-yejgai2j";
+const FOLDER_ID = "1c6QXUAVNodDkQOXOe7K8ffXNDSBEALhF";
 
 const ALLOWED_MIME_TYPES = {
   "application/pdf": "pdf",

@@ -216,8 +216,9 @@ if (resumeUploadForm) {
 
     try {
       const formData = new FormData(resumeUploadForm);
+      const fullName = `${formData.get("firstName") || ""} ${formData.get("lastName") || ""}`.trim();
       const payload = {
-        name: formData.get("name"),
+        name: fullName,
         email: formData.get("email"),
         mimeType: looksLikePdf ? "application/pdf" : ALLOWED_RESUME_MIME_TYPES[1],
         fileData: await fileToBase64(file),
