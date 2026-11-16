@@ -61,6 +61,7 @@
         <button class="team-tab-btn" data-target="panel-readings">Suggested Readings</button>
         <button class="team-tab-btn" data-target="panel-linkedin">LinkedIn Contacts</button>
         <button class="team-tab-btn" data-target="panel-recruiting-guide">Recruiting Guide</button>
+        <button class="team-tab-btn" data-target="panel-resume-upload">Resume Upload</button>
       </div>
 
       <div class="team-panel active" id="members-default-panel">
@@ -12296,6 +12297,37 @@
           <p id="recruiting-guide-status" class="flashcard-status"></p>
           <div class="recruiting-guide-breadcrumb" id="recruiting-guide-breadcrumb" hidden></div>
           <div class="recruiting-guide-grid" id="recruiting-guide-grid"></div>
+        </div>
+      </div>
+
+      <div class="team-panel" id="panel-resume-upload">
+        <div class="card" style="max-width:560px;margin:0 auto;">
+          <h3 style="text-align:center;">Resume Upload</h3>
+          <p style="text-align:center;">Upload your resume to our shared Google Drive folder, for E-board to reference for resume reviews and recruiting support. Uploading a new resume automatically replaces the old one you have on file.</p>
+
+          <form class="contact-form" id="resume-upload-form">
+            <div>
+              <label for="resume-name">Name</label>
+              <input type="text" id="resume-name" name="name" placeholder="e.g. Jane Doe" required>
+            </div>
+            <div>
+              <label for="resume-email">Email</label>
+              <p class="form-note">Used to find and replace your previous resume when you upload a new one -- please use the same email every time.</p>
+              <input type="email" id="resume-email" name="email" placeholder="you@uchicago.edu" required>
+            </div>
+            <div>
+              <label for="resume-file">Resume (PDF or DOCX)</label>
+              <input type="file" id="resume-file" name="resume" accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required>
+            </div>
+            <p class="form-note" id="resume-upload-error" role="alert"></p>
+            <button type="submit" class="btn btn-primary">Upload Resume</button>
+          </form>
+        </div>
+
+        <div class="card" id="resume-upload-success" hidden style="max-width:560px;margin:16px auto 0;text-align:center;">
+          <h3>Thanks!</h3>
+          <p>Your resume has been uploaded. Uploading again later will replace this one.</p>
+          <button type="button" class="btn btn-outline" id="resume-upload-another">Upload A Different File</button>
         </div>
       </div>
 

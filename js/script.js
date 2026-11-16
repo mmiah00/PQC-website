@@ -163,6 +163,98 @@ if (questionSubmitForm) {
   }
 }
 
+// Resume Upload form (members-home.html) -- posts a member's resume
+// (base64-encoded) to a Google Apps Script web app, which saves it into a
+// shared Drive folder, replacing whatever that same email uploaded before.
+// See apps-script/resume-upload/Code.gs for the server-side script and
+// deploy steps.
+const RESUME_UPLOAD_ENDPOINT =
+  "https://script.google.com/macros/s/AKfycbx4Lk_eUkcsRJ20cqQTzG6ykLpsX8bvEGTniMvwAd8nsMq04ff9F6MOVqYMjABFpre2/exec";
+
+const ALLOWED_RESUME_MIME_TYPES = [
+  "application/pdf",
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+];
+
+const resumeUploadForm = document.getElementById("resume-upload-form");
+if (resumeUploadForm) {
+  const fileToBase64 = (file) =>
+    new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result.split(",")[1]);
+      reader.onerror = () => reject(reader.error);
+      reader.readAsDataURL(file);
+    });
+
+  resumeUploadForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const submitBtn = resumeUploadForm.querySelector('button[type="submit"]');
+    const errorEl = document.getElementById("resume-upload-error");
+    if (errorEl) errorEl.textContent = "";
+
+    const fileInput = document.getElementById("resume-file");
+    const file = fileInput && fileInput.files ? fileInput.files[0] : null;
+
+    if (!file) {
+      if (errorEl) errorEl.textContent = "Please choose a file to upload.";
+      return;
+    }
+    // Browsers set .docx's MIME type reliably, but belt-and-suspenders
+    // with the extension in case a browser/OS combo reports it blank.
+    const looksLikePdf = file.type === "application/pdf" || /\.pdf$/i.test(file.name);
+    const looksLikeDocx =
+      file.type === "application/vnd.openxmlformats-officedocument.wordprocessingml.document" ||
+      /\.docx$/i.test(file.name);
+    if (!looksLikePdf && !looksLikeDocx) {
+      if (errorEl) errorEl.textContent = "Please upload a PDF or DOCX file.";
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Uploading...";
+
+    try {
+      const formData = new FormData(resumeUploadForm);
+      const payload = {
+        name: formData.get("name"),
+        email: formData.get("email"),
+        mimeType: looksLikePdf ? "application/pdf" : ALLOWED_RESUME_MIME_TYPES[1],
+        fileData: await fileToBase64(file),
+      };
+
+      const response = await fetch(RESUME_UPLOAD_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify(payload),
+      });
+      const result = await response.json();
+      if (!result.ok) throw new Error(result.error || "Unknown error");
+
+      resumeUploadForm.reset();
+      resumeUploadForm.hidden = true;
+      const success = document.getElementById("resume-upload-success");
+      if (success) success.hidden = false;
+    } catch (err) {
+      if (errorEl) {
+        errorEl.textContent = "Something went wrong uploading your resume. Please try again, or reach out to the board directly.";
+      }
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Upload Resume";
+    }
+  });
+
+  const uploadAnotherBtn = document.getElementById("resume-upload-another");
+  if (uploadAnotherBtn) {
+    uploadAnotherBtn.addEventListener("click", () => {
+      const success = document.getElementById("resume-upload-success");
+      if (success) success.hidden = true;
+      resumeUploadForm.hidden = false;
+    });
+  }
+}
+
 // Interview Question Bank flashcards (members-home.html) -- fetches
 // submitted questions from the same Apps Script endpoint used for
 // submissions (GET instead of POST) and shows one at a time; clicking a
