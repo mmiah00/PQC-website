@@ -936,24 +936,6 @@
     "slug": "point72-quantitative-developer-risk-technology-711df568"
   },
   {
-    "role": "2027 Emerging Markets and Delta One Quantitative Researcher/Strat Intern",
-    "company": "Schonfeld",
-    "company_type": "Quantitative Hedge Funds",
-    "type": "Internship",
-    "category": "Quantitative Research",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "Hong Kong, Hong Kong",
-    "description": "The RoleWe are seeking exceptional candidates to join our Quantitative Research and strat teams in Hong Kong where they will work with other researchers and developers on various research projects, including the design of novel predictive signals, enhancement of our algorithms for prediction, trade execution, portfolio construction, risk management, product and asset modelling. Interns will have an opportunity to meaningfully contribute to all facets of a successful quantitative trading business; help it grow and diversify. What You\u2019ll Do As a Quantitative Researcher/strat Intern you will be directly responsible for furthering our platform build and/or alpha research. You will understand the economics of a fundamental domain, and the corresponding insights that can be gathered from associated alternative data offerings. You will identify compelling differentiating factors, design novel predictive signals, backtest & validate hypotheses. You will have the opportunity to collaborate with senior team members to learn what it takes to be a successful quantitative strat + researcher. What You\u2019ll Bring Current BSc, MSc PhD student in quantitative or technical field such as statistics, economics, mathematics, physics, electrical engineering, or computer science (ideally with one or two years left in your academic program) Excellent programming skills in languages such as Python, C, C++, Java, SQL, or R Strong knowledge of probability and statistics (e.g., machine learning, time-series analysis and forecasting, pattern recognition, NLP, and unstructured data analysis). The ability to communicate research ideas clearly and succinctly Creative problem-solving skills and experience working with real-world datasets Strong attention to detail Please submit your CV/resume in English",
-    "requirements": "",
-    "source_url": "https://job-boards.greenhouse.io/schonfeld/jobs/8350719",
-    "date_posted": "2026-11-03",
-    "date_scraped": "2026-11-20",
-    "first_seen": "2026-11-03",
-    "slug": "schonfeld-2027-emerging-markets-and-delta-one-quantitative-researcher-12517fbe"
-  },
-  {
     "role": "Senior Software Engineer, Backend (Consumer - Risk)",
     "company": "Coinbase",
     "company_type": "Crypto Trading Firms",
@@ -1692,24 +1674,6 @@
     "slug": "100-women-in-finance-home-100-women-in-finance-60f9e478"
   },
   {
-    "role": "Software Engineer, Enterprise Apps",
-    "company": "Coinbase",
-    "company_type": "Crypto Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$341.240",
-    "location": "Remote - Brazil",
-    "description": "Ready to do the most impactful work of your career? At Coinbase, we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d Learn more about working at Coinbase. As a Software Engineer, Enterprise Apps on the CX Shared Agent Platforms and SFDC Solutions team within Coinbase's Enterprise Applications and Architecture org, you'll build the platforms and services that power customer experience and compliance operations across Coinbase. This team develops scalable internal tools, agent workflows, and integrations that help CX agents resolve customer issues and manage KYC and compliance processes with greater speed and accuracy. You'll own full-stack development of services and applications that directly improve agent productivity and customer satisfaction at scale. Build and ship full-stack services and applications using Golang, gRPC, TypeScript, and React to support CX agent workflows and automation. Own the design, implementation, and integration of third-party platforms (Salesforce, Maestro QA, Assembled) that extend Coinbase's internal CX tooling capabilities. Drive platform modernization efforts, including support for strategic platform transitions and evolving the agent platform landscape. Partner with product, design, security, and data teams to deliver cross-functional solutions to complex operational and compliance challenges. Lead code reviews, architecture discussions, and testing practices that raise the quality bar across the team and support reliable, high-traffic production systems. Identify and mitigate technical risks during design and implementation, proactively adapting approaches to maintain platform reliability.",
-    "requirements": "5+ years of experience in software engineering, with proficiency in Go and hands-on experience building scalable backend services using gRPC and event-driven architectures (Kafka or similar). | Demonstrated full-stack development capability with TypeScript/JavaScript and modern component-based frameworks (React), delivering production-quality applications. | Experience operating production systems on AWS with Kubernetes, Terraform, and CI/CD pipelines (BuildKite or similar), including implementation of rate limiters, caching, load balancing, and observability tooling. | Proven track record evaluating, integrating, and extending third-party SaaS platforms in a production enterprise environment. | Experience mentoring engineers on design patterns, testing practices, and deployment processes in a distributed, multi-timezone team. | Utilizes generative AI responsibly, maintaining human oversight to deliver business-ready outputs and drive measurable improvements in workflow efficiency, cost, and quality. | Demonstrates the ability to responsibly use generative AI tools and copilots (e.g., LibreChat, Gemini, Glean) in daily workflows, continuously learn as tools evolve, and apply human\u2011in\u2011the\u2011loop practices to deliver business\u2011ready outputs and drive measurable improvements in efficiency, cost, and quality.",
-    "source_url": "https://www.coinbase.com/careers/positions/8279479?gh_jid=8279479",
-    "date_posted": "2026-10-13",
-    "date_scraped": "2026-11-20",
-    "first_seen": "2026-10-13",
-    "slug": "coinbase-software-engineer-enterprise-apps-778aabbe"
-  },
-  {
     "role": "Quantitative Researcher - Entry Level 2027",
     "company": "Belvedere Trading",
     "company_type": "Proprietary Trading Firms",
@@ -2320,24 +2284,6 @@
     "date_scraped": "2026-11-20",
     "first_seen": "2026-09-29",
     "slug": "coinbase-senior-software-engineer-backend-overseer-platform-028825fd"
-  },
-  {
-    "role": "2027 Quantitative Research Intern",
-    "company": "Schonfeld",
-    "company_type": "Quantitative Hedge Funds",
-    "type": "Internship",
-    "category": "Quantitative Research",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "",
-    "location": "Hong Kong, Hong Kong",
-    "description": "As a Quantitative Research Intern at Schonfeld Strategic Advisors, you'll work at the intersection of data science, financial markets and systematic trading, solving real-world problems that drive live investment strategies. This internship offers hands-on experience in quantitative research, supported by structured onboarding, a meaningful project of your own, and direct mentorship from senior researchers and portfolio managers. The internship will be 3-6 months, including the summer.",
-    "requirements": "",
-    "source_url": "https://job-boards.greenhouse.io/schonfeld/jobs/8238448",
-    "date_posted": "2026-09-29",
-    "date_scraped": "2026-11-20",
-    "first_seen": "2026-09-29",
-    "slug": "schonfeld-2027-quantitative-research-intern-066466bd"
   },
   {
     "role": "Staff Software Engineer (Platform - Financial Engineering)",
@@ -4536,24 +4482,6 @@
     "slug": "imc-trading-machine-learning-engineer-7b995128"
   },
   {
-    "role": "Index Options Volatility Trader",
-    "company": "IMC Trading",
-    "company_type": "Proprietary Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Trading",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$250,000",
-    "location": "Chicago, United States",
-    "description": "Our Index Options desk focuses on monetizing flow and capitalizing on short-term mispricings. We are a highly collaborative group that combines strong market intuition with analytical rigor, working closely with dedicated quants and researchers to sharpen our edge. Together, we strive to develop deep expertise, ownership, and innovation in understanding counterparty behavior, flow dynamics, and volatility pricing. Maximize revenue by identifying and capitalizing on short-term mispricings in index options Monitor and react to flow patterns, volatility shifts, and liquidity changes across index products Collaborate with traders to manage the risk of a large book as a team Work closely with our best-in-class research and quant teams to analyze results and improve your approach Identify and analyze counterparty behavior and repetitive flow patterns to inform positioning and execution Provide feedback to enhance pricing models, risk systems, and execution tools Perform post-trade reviews to continuously improve execution and hedging Take on significant responsibility and ownership early in your time here to help drive strategies forward and succeed",
-    "requirements": "2+ years of index options volatility trading experience | BS, MS, or PhD, preferably in business, economics, or a STEM field | Ability to identify flow patterns and describe them analytically, with strong knowledge of repetitive market flows | Passionate about understanding volatility dynamics and willing to act quickly on your views to capture market opportunities | Entrepreneurial mindset with a healthy risk appetite; competitive by nature and a fast decision-maker | Analytical, reflective about past trades, and always seeking to improve | The Base Salary range for the role is included below. Base salary is only one component of total compensation; all full-time, permanent positions are eligible for a discretionary bonus and benefits, including paid leave and insurance. Please visit Benefits - US | IMC Trading for more comprehensive information.",
-    "source_url": "https://job-boards.eu.greenhouse.io/imc/jobs/4840228101",
-    "date_posted": "2026-05-18",
-    "date_scraped": "2026-11-20",
-    "first_seen": "2026-08-11",
-    "slug": "imc-trading-index-options-volatility-trader-d9f50311"
-  },
-  {
     "role": "Machine Learning Engineer, GenAI Technology",
     "company": "Point72",
     "company_type": "Quantitative Hedge Funds",
@@ -5380,24 +5308,6 @@
     "date_scraped": "2026-11-20",
     "first_seen": "2026-08-11",
     "slug": "virtu-financial-quantitative-strategist-phd-20c699d2"
-  },
-  {
-    "role": "Software Engineer - Python, Business Operations",
-    "company": "Akuna Capital",
-    "company_type": "Proprietary Trading Firms",
-    "type": "Full-Time",
-    "category": "Quantitative Development",
-    "women_focused": "No",
-    "new_grad": "No",
-    "pay": "$145,000",
-    "location": "Chicago, IL",
-    "description": "This role is the primary ongoing development resource for Business Operations technology, primarily supporting Procurement, Finance, and Human Resources. The current priority is a data infrastructure project that consolidates cost data from several internal systems into a unified cost-attribution framework, but the role is not scoped to that project alone - it will take on a broadening range of development work across these functions over time. A defining requirement of this role is applying AI capabilities - through native AI features in existing tools, API integrations, and protocols such as MCP (Model Context Protocol) - to improve data workflows, reporting, and operational processes across these functions. In this role, you will: Lead the development efforts for our FP&A Cost Attribution Project Serve as lead developer for the development of a bitemporal PostgreSQL database that enables traceable cost allocation, with a schema designed to become more granular as business requirements evolve Build and maintain integrations pulling data from Jira, NetSuite, Device42, and Bitbucket, among other data sources, to support cost attribution logic Support the project toward its Q1 2027 deployment target, including schema documentation and handoff materials, and maintain the system once in production Lead engineering efforts in support of our Business Operations teams Work with the Procurement team to rebuild the current quote order management systems Support Finance and HR operations by building data pipelines, automating reports, and integrating systems as needs arise Act as a general-purpose development resource across these functions, prioritizing work in coordination with the Director of Operations Identify and implement native AI features within tools already in use by Procurement, Finance, HR, Compliance, and Risk, such as AI capabilities embedded in NetSuite, Jira, Confluence, or other platforms Build custom integrations using APIs, MCP, or comparable protocols to connect large language models to internal systems and workflows Evaluate current manual processes across these functions and propose and implement AI-assisted or automated alternatives Work with the Security team to maintain security best practices and appropriate data-handling controls when integrating AI tooling with internal or vendor systems",
-    "requirements": "Bachelor's degree in Computer Science, Engineering, Information Systems, or equivalent practical experience | Professional software development experience (minimum 3-5 years), with demonstrated ability to work as a sole or lead developer on cross-functional projects | Strong proficiency in a backend language commonly used for data integration and automation work, such as Python | Strong SQL skills and relational database design experience; direct experience with PostgreSQL is preferred | Demonstrated experience building and consuming REST APIs, including authentication, error handling, and data transformation across systems that were not designed to work together | Direct experience integrating with at least several of the following, or clearly transferable equivalents: Jira/JSM (API/scripting), NetSuite (SuiteScript/SuiteTalk or equivalent), Atlassian Bitbucket/Git, and CMDB-type tools such as Device42 | Hands-on experience integrating LLM/AI APIs, such as Anthropic or OpenAI, into applications or workflows, including prompt construction and handling structured and unstructured outputs | Version control proficiency with Git and comfort working in a Bitbucket-based environment | Ability to communicate technical concepts and tradeoffs clearly to non-technical stakeholders in Finance, Procurement, and HR | Ability to work independently, manage competing priorities across multiple business functions, and operate with minimal direct technical oversight | Prior experience in financial services, trading, or a similarly data- and compliance-sensitive industry | Experience with cost allocation, chargeback, or FinOps-style frameworks | Experience building internal tools or dashboards for non-technical business users | Exposure to procurement or vendor management systems | The ability to react quickly and accurately to rapidly changing market conditions, including the ability to quickly and accurately respond and/or solve math and coding problems are essential functions of the role | In addition to technical skillsets, Akuna values the unique perspectives people can bring to the table to collaboratively solve complex problems and drive Akuna forward. We want everyone to feel empowered to apply. We welcome your application and encourage you to take the first steps toward your future with us! | In accordance with Illinois Equal Pay Act, the minimum base salary starts at $145,000. Exact compensation offered may vary based on many factors including, but not limited to, the candidate\u2019s experience, qualifications, and skill set. This role is also eligible for a discretionary performance bonus as part of the total compensation package and includes a comprehensive benefits package that may encompass employer-paid medical, dental, vision, retirement contributions, paid time off, and other benefits. The minimum base salary herein was determined in good faith by Akuna Capital LLC.",
-    "source_url": "https://www.akunacapital.com/careers/job/8096516/?gh_jid=8096516",
-    "date_posted": "2026-08-11",
-    "date_scraped": "2026-11-20",
-    "first_seen": "2026-08-11",
-    "slug": "akuna-capital-software-engineer-python-business-operations-2f17672e"
   },
   {
     "role": "Software Engineer, GPU Fleet",
