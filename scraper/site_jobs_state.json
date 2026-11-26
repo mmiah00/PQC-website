@@ -1,5 +1,23 @@
 [
   {
+    "role": "Senior Quant Researcher - Portfolio Optimization",
+    "company": "Squarepoint Capital",
+    "company_type": "Quantitative Hedge Funds",
+    "type": "Full-Time",
+    "category": "Quantitative Research",
+    "women_focused": "No",
+    "new_grad": "No",
+    "pay": "",
+    "location": "Geneva, Hong Kong, London, Paris, Singapore, Zug",
+    "description": "Research and develop new modeling approaches for portfolio optimization problems encountered by traders. Design and implement production-quality optimization software, turning new models and algorithms into robust and efficient solutions. Propose and implement improvements to existing optimization tools and infrastructure. Develop a strong understanding of trading strategies and their optimization requirements. Maintain the existing optimization software stack, including troubleshooting, bug fixing, and performance improvements. Support teams in adopting, integrating, and effectively using the optimization tools.",
+    "requirements": "Technical degree in Mathematics, Computer Science, Operations Research, Statistics, Physics, Financial Engineering, Econometrics, or a related quantitative field. | Professional experience in the financial industry. | Deep understanding of optimization and mathematical programming. | Strong understanding of object-oriented and functional programming paradigms. | Proficiency in at least one major programming language, such as C++, Java, or Scala. | Strong software development skills, with the ability to design, implement, test, and maintain production-quality software. | Proficiency in using AI-assisted development tools for coding, research, and problem solving. | Experience with major mathematical optimization solvers and libraries, such as SCIP, Gurobi, MOSEK, or IBM ILOG CPLEX. | Strong communication skills and the ability to collaborate effectively with colleagues across multiple regions. | Pragmatic, open-minded, and creative approach to problem solving. | Ability to work effectively under pressure.",
+    "source_url": "https://www.squarepoint-capital.com/open-opportunities?id=8370429&gh_jid=8370429",
+    "date_posted": "2026-11-26",
+    "date_scraped": "2026-11-26",
+    "first_seen": "2026-11-26",
+    "slug": "squarepoint-capital-senior-quant-researcher-portfolio-optimization-3ae7c2cb"
+  },
+  {
     "role": "Quantitative Developer",
     "company": "Numerix",
     "company_type": "Financial Technology Companies",
